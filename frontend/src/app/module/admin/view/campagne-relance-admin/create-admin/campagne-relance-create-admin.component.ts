@@ -10,14 +10,14 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
+import {TemplateRelanceVo} from '../../../../../controller/model/TemplateRelance.model';
+import {TemplateRelanceService} from '../../../../../controller/service/TemplateRelance.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 import {CampagneRelanceChercheurVo} from '../../../../../controller/model/CampagneRelanceChercheur.model';
 import {CampagneRelanceChercheurService} from '../../../../../controller/service/CampagneRelanceChercheur.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
-import {TemplateRelanceVo} from '../../../../../controller/model/TemplateRelance.model';
-import {TemplateRelanceService} from '../../../../../controller/service/TemplateRelance.service';
 @Component({
   selector: 'app-campagne-relance-create-admin',
   templateUrl: './campagne-relance-create-admin.component.html',
@@ -41,10 +41,10 @@ constructor(private datePipe: DatePipe, private campagneRelanceService: Campagne
  ,       private messageService: MessageService
  ,       private router: Router
  
+,       private templateRelanceService :TemplateRelanceService
+,       private campagneService :CampagneService
 ,       private campagneRelanceChercheurService :CampagneRelanceChercheurService
 ,       private chercheurService :ChercheurService
-,       private campagneService :CampagneService
-,       private templateRelanceService :TemplateRelanceService
 ) {
 
 }

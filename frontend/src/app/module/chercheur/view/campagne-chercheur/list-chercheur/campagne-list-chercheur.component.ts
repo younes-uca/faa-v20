@@ -70,9 +70,6 @@ export class CampagneListChercheurComponent implements OnInit {
         isPermistted ? this.campagneService.findAll().subscribe(campagnes => this.campagnes = campagnes,error=>console.log(error))
         : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
-navigateToCampagneCreate(){
-this.router.navigate(['/app/chercheur/campagne/create']);
-}
 
 
   public searchRequest(){
@@ -105,7 +102,7 @@ this.router.navigate(['/app/chercheur/campagne/create']);
            this.selectedCampagne = res;
             this.selectedCampagne.dateDepart = new Date(campagne.dateDepart);
             this.selectedCampagne.dateFin = new Date(campagne.dateFin);
-            this.navigateToCampagneCreate() ;
+            this.editCampagneDialog = true;
           });
         }else{
             this.messageService.add({
@@ -138,7 +135,7 @@ this.router.navigate(['/app/chercheur/campagne/create']);
         const isPermistted = await this.roleService.isPermitted(pojo, 'add');
         if(isPermistted){
          this.selectedCampagne = new CampagneVo();
-            this.navigateToCampagneCreate() ;
+            this.createCampagneDialog = true;
         }else{
              this.messageService.add({
                 severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'
@@ -207,7 +204,7 @@ public async duplicateCampagne(campagne: CampagneVo) {
 	       this.initDuplicateCampagne(res);
 	       this.selectedCampagne = res;
 	       this.selectedCampagne.id = null;
-            this.navigateToCampagneCreate() ;
+            this.createCampagneDialog = true;
 
 });
 

@@ -10,32 +10,32 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
+import {EncadrementVo} from '../../../../../controller/model/Encadrement.model';
+import {EncadrementService} from '../../../../../controller/service/Encadrement.service';
+import {DisciplineScientifiqueEncadrementDoctorantVo} from '../../../../../controller/model/DisciplineScientifiqueEncadrementDoctorant.model';
+import {DisciplineScientifiqueEncadrementDoctorantService} from '../../../../../controller/service/DisciplineScientifiqueEncadrementDoctorant.service';
 import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
 import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
 import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
-import {EnjeuxIrdEncadrementDoctorantVo} from '../../../../../controller/model/EnjeuxIrdEncadrementDoctorant.model';
-import {EnjeuxIrdEncadrementDoctorantService} from '../../../../../controller/service/EnjeuxIrdEncadrementDoctorant.service';
 import {FinancementDoctorantVo} from '../../../../../controller/model/FinancementDoctorant.model';
 import {FinancementDoctorantService} from '../../../../../controller/service/FinancementDoctorant.service';
-import {DoctorantVo} from '../../../../../controller/model/Doctorant.model';
-import {DoctorantService} from '../../../../../controller/service/Doctorant.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {ResponsabiliteEncadrementDoctorantVo} from '../../../../../controller/model/ResponsabiliteEncadrementDoctorant.model';
-import {ResponsabiliteEncadrementDoctorantService} from '../../../../../controller/service/ResponsabiliteEncadrementDoctorant.service';
-import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
-import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
-import {DisciplineScientifiqueEncadrementDoctorantVo} from '../../../../../controller/model/DisciplineScientifiqueEncadrementDoctorant.model';
-import {DisciplineScientifiqueEncadrementDoctorantService} from '../../../../../controller/service/DisciplineScientifiqueEncadrementDoctorant.service';
 import {CommunauteSavoirEncadrementDoctorantVo} from '../../../../../controller/model/CommunauteSavoirEncadrementDoctorant.model';
 import {CommunauteSavoirEncadrementDoctorantService} from '../../../../../controller/service/CommunauteSavoirEncadrementDoctorant.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {DoctorantVo} from '../../../../../controller/model/Doctorant.model';
+import {DoctorantService} from '../../../../../controller/service/Doctorant.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
-import {EncadrementVo} from '../../../../../controller/model/Encadrement.model';
-import {EncadrementService} from '../../../../../controller/service/Encadrement.service';
+import {EnjeuxIrdEncadrementDoctorantVo} from '../../../../../controller/model/EnjeuxIrdEncadrementDoctorant.model';
+import {EnjeuxIrdEncadrementDoctorantService} from '../../../../../controller/service/EnjeuxIrdEncadrementDoctorant.service';
+import {ResponsabiliteEncadrementDoctorantVo} from '../../../../../controller/model/ResponsabiliteEncadrementDoctorant.model';
+import {ResponsabiliteEncadrementDoctorantService} from '../../../../../controller/service/ResponsabiliteEncadrementDoctorant.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
+import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 @Component({
   selector: 'app-encadrement-doctorant-create-chercheur',
   templateUrl: './encadrement-doctorant-create-chercheur.component.html',
@@ -71,19 +71,19 @@ constructor(private datePipe: DatePipe, private encadrementDoctorantService: Enc
  ,       private messageService: MessageService
  ,       private router: Router
  
+,       private encadrementService :EncadrementService
+,       private disciplineScientifiqueEncadrementDoctorantService :DisciplineScientifiqueEncadrementDoctorantService
 ,       private enjeuxIrdService :EnjeuxIrdService
 ,       private disciplineScientifiqueService :DisciplineScientifiqueService
-,       private enjeuxIrdEncadrementDoctorantService :EnjeuxIrdEncadrementDoctorantService
 ,       private financementDoctorantService :FinancementDoctorantService
-,       private doctorantService :DoctorantService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private responsabiliteEncadrementDoctorantService :ResponsabiliteEncadrementDoctorantService
-,       private communauteSavoirService :CommunauteSavoirService
-,       private disciplineScientifiqueEncadrementDoctorantService :DisciplineScientifiqueEncadrementDoctorantService
 ,       private communauteSavoirEncadrementDoctorantService :CommunauteSavoirEncadrementDoctorantService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private doctorantService :DoctorantService
 ,       private etablissementService :EtablissementService
-,       private encadrementService :EncadrementService
+,       private enjeuxIrdEncadrementDoctorantService :EnjeuxIrdEncadrementDoctorantService
+,       private responsabiliteEncadrementDoctorantService :ResponsabiliteEncadrementDoctorantService
 ,       private paysService :PaysService
+,       private communauteSavoirService :CommunauteSavoirService
 ) {
 
 }

@@ -31,19 +31,13 @@ export class EtatCampagneService {
      private _searchEtatCampagne:EtatCampagneVo ;
 
     // methods
-    public archiver(etatCampagne: EtatCampagneVo): Observable<EtatCampagneVo> {
-        return this.http.put<EtatCampagneVo>(this.API + 'archiver/' ,etatCampagne);
-    }
-    public desarchiver(etatCampagne: EtatCampagneVo): Observable<EtatCampagneVo> {
-    return this.http.put<EtatCampagneVo>(this.API + 'desarchiver/' ,etatCampagne);
-    }
 
     public findAll(){
      return this.http.get<Array<EtatCampagneVo>>(this.API);
     }
 
     public save(): Observable<EtatCampagneVo> {
-           return this.http.post<EtatCampagneVo>(this.API, {...this.selectedEtatCampagne,dateCreation: moment(this.selectedEtatCampagne.dateCreation).format("YYYY-MM-DD")});
+         return this.http.post<EtatCampagneVo>(this.API, this.selectedEtatCampagne);
     }
 
     delete(etatCampagne: EtatCampagneVo) {

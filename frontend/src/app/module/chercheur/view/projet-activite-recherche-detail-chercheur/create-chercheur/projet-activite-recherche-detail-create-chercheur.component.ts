@@ -10,32 +10,32 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
-import {ProjetActiviteRechercheDetailInstitutionCoContractantVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailInstitutionCoContractant.model';
-import {ProjetActiviteRechercheDetailInstitutionCoContractantService} from '../../../../../controller/service/ProjetActiviteRechercheDetailInstitutionCoContractant.service';
-import {RoleProjetVo} from '../../../../../controller/model/RoleProjet.model';
-import {RoleProjetService} from '../../../../../controller/service/RoleProjet.service';
-import {ProjetActiviteRechercheDetailEnjeuxIrdVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailEnjeuxIrd.model';
-import {ProjetActiviteRechercheDetailEnjeuxIrdService} from '../../../../../controller/service/ProjetActiviteRechercheDetailEnjeuxIrd.service';
-import {ProjetActiviteRechercheDetailPaysVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailPays.model';
-import {ProjetActiviteRechercheDetailPaysService} from '../../../../../controller/service/ProjetActiviteRechercheDetailPays.service';
-import {ProjetActiviteRechercheVo} from '../../../../../controller/model/ProjetActiviteRecherche.model';
-import {ProjetActiviteRechercheService} from '../../../../../controller/service/ProjetActiviteRecherche.service';
-import {ProjetActiviteRechercheDetailInstrumentIrdVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailInstrumentIrd.model';
-import {ProjetActiviteRechercheDetailInstrumentIrdService} from '../../../../../controller/service/ProjetActiviteRechercheDetailInstrumentIrd.service';
-import {ProjetActiviteRechercheDetailEtablissementLanceurVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailEtablissementLanceur.model';
-import {ProjetActiviteRechercheDetailEtablissementLanceurService} from '../../../../../controller/service/ProjetActiviteRechercheDetailEtablissementLanceur.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
+import {ProjetActiviteRechercheDetailEtablissementLanceurVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailEtablissementLanceur.model';
+import {ProjetActiviteRechercheDetailEtablissementLanceurService} from '../../../../../controller/service/ProjetActiviteRechercheDetailEtablissementLanceur.service';
+import {ProjetActiviteRechercheVo} from '../../../../../controller/model/ProjetActiviteRecherche.model';
+import {ProjetActiviteRechercheService} from '../../../../../controller/service/ProjetActiviteRecherche.service';
+import {ProjetActiviteRechercheDetailEnjeuxIrdVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailEnjeuxIrd.model';
+import {ProjetActiviteRechercheDetailEnjeuxIrdService} from '../../../../../controller/service/ProjetActiviteRechercheDetailEnjeuxIrd.service';
+import {ProjetActiviteRechercheDetailInstitutionCoContractantVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailInstitutionCoContractant.model';
+import {ProjetActiviteRechercheDetailInstitutionCoContractantService} from '../../../../../controller/service/ProjetActiviteRechercheDetailInstitutionCoContractant.service';
 import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
 import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {StatusProjetVo} from '../../../../../controller/model/StatusProjet.model';
-import {StatusProjetService} from '../../../../../controller/service/StatusProjet.service';
+import {ProjetActiviteRechercheDetailPaysVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailPays.model';
+import {ProjetActiviteRechercheDetailPaysService} from '../../../../../controller/service/ProjetActiviteRechercheDetailPays.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {StatusProjetVo} from '../../../../../controller/model/StatusProjet.model';
+import {StatusProjetService} from '../../../../../controller/service/StatusProjet.service';
+import {ProjetActiviteRechercheDetailInstrumentIrdVo} from '../../../../../controller/model/ProjetActiviteRechercheDetailInstrumentIrd.model';
+import {ProjetActiviteRechercheDetailInstrumentIrdService} from '../../../../../controller/service/ProjetActiviteRechercheDetailInstrumentIrd.service';
+import {RoleProjetVo} from '../../../../../controller/model/RoleProjet.model';
+import {RoleProjetService} from '../../../../../controller/service/RoleProjet.service';
 @Component({
   selector: 'app-projet-activite-recherche-detail-create-chercheur',
   templateUrl: './projet-activite-recherche-detail-create-chercheur.component.html',
@@ -75,19 +75,19 @@ constructor(private datePipe: DatePipe, private projetActiviteRechercheDetailSer
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
-,       private projetActiviteRechercheDetailInstitutionCoContractantService :ProjetActiviteRechercheDetailInstitutionCoContractantService
-,       private roleProjetService :RoleProjetService
-,       private projetActiviteRechercheDetailEnjeuxIrdService :ProjetActiviteRechercheDetailEnjeuxIrdService
-,       private projetActiviteRechercheDetailPaysService :ProjetActiviteRechercheDetailPaysService
-,       private projetActiviteRechercheService :ProjetActiviteRechercheService
-,       private projetActiviteRechercheDetailInstrumentIrdService :ProjetActiviteRechercheDetailInstrumentIrdService
-,       private projetActiviteRechercheDetailEtablissementLanceurService :ProjetActiviteRechercheDetailEtablissementLanceurService
 ,       private instrumentIrdService :InstrumentIrdService
+,       private enjeuxIrdService :EnjeuxIrdService
+,       private projetActiviteRechercheDetailEtablissementLanceurService :ProjetActiviteRechercheDetailEtablissementLanceurService
+,       private projetActiviteRechercheService :ProjetActiviteRechercheService
+,       private projetActiviteRechercheDetailEnjeuxIrdService :ProjetActiviteRechercheDetailEnjeuxIrdService
+,       private projetActiviteRechercheDetailInstitutionCoContractantService :ProjetActiviteRechercheDetailInstitutionCoContractantService
 ,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private statusProjetService :StatusProjetService
+,       private projetActiviteRechercheDetailPaysService :ProjetActiviteRechercheDetailPaysService
 ,       private etablissementService :EtablissementService
 ,       private paysService :PaysService
+,       private statusProjetService :StatusProjetService
+,       private projetActiviteRechercheDetailInstrumentIrdService :ProjetActiviteRechercheDetailInstrumentIrdService
+,       private roleProjetService :RoleProjetService
 ) {
 
 }

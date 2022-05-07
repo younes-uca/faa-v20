@@ -9,40 +9,39 @@ import { environment } from 'src/environments/environment';
 import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
-import { TokenService } from 'src/app/controller/service/Token.service';
 
 import {NatureExpertiseVo} from '../../../../../controller/model/NatureExpertise.model';
 import {NatureExpertiseService} from '../../../../../controller/service/NatureExpertise.service';
+import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
+import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
 import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
 import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
 import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
 import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
-import {RoleEvaluationVo} from '../../../../../controller/model/RoleEvaluation.model';
-import {RoleEvaluationService} from '../../../../../controller/service/RoleEvaluation.service';
-import {EnjeuxIrdComiteEtCommissionEvaluationVo} from '../../../../../controller/model/EnjeuxIrdComiteEtCommissionEvaluation.model';
-import {EnjeuxIrdComiteEtCommissionEvaluationService} from '../../../../../controller/service/EnjeuxIrdComiteEtCommissionEvaluation.service';
-import {DisciplineScientifiqueComiteEtCommissionEvaluationVo} from '../../../../../controller/model/DisciplineScientifiqueComiteEtCommissionEvaluation.model';
-import {DisciplineScientifiqueComiteEtCommissionEvaluationService} from '../../../../../controller/service/DisciplineScientifiqueComiteEtCommissionEvaluation.service';
-import {RoleComiteEtCommissionEvaluationVo} from '../../../../../controller/model/RoleComiteEtCommissionEvaluation.model';
-import {RoleComiteEtCommissionEvaluationService} from '../../../../../controller/service/RoleComiteEtCommissionEvaluation.service';
-import {InstrumentIrdComiteEtCommissionEvaluationVo} from '../../../../../controller/model/InstrumentIrdComiteEtCommissionEvaluation.model';
-import {InstrumentIrdComiteEtCommissionEvaluationService} from '../../../../../controller/service/InstrumentIrdComiteEtCommissionEvaluation.service';
-import {EtablissementComiteEtCommissionEvaluationVo} from '../../../../../controller/model/EtablissementComiteEtCommissionEvaluation.model';
-import {EtablissementComiteEtCommissionEvaluationService} from '../../../../../controller/service/EtablissementComiteEtCommissionEvaluation.service';
-import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
-import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
-import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {TypeExpertiseEvaluationVo} from '../../../../../controller/model/TypeExpertiseEvaluation.model';
 import {TypeExpertiseEvaluationService} from '../../../../../controller/service/TypeExpertiseEvaluation.service';
+import {DisciplineScientifiqueComiteEtCommissionEvaluationVo} from '../../../../../controller/model/DisciplineScientifiqueComiteEtCommissionEvaluation.model';
+import {DisciplineScientifiqueComiteEtCommissionEvaluationService} from '../../../../../controller/service/DisciplineScientifiqueComiteEtCommissionEvaluation.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {InstrumentIrdComiteEtCommissionEvaluationVo} from '../../../../../controller/model/InstrumentIrdComiteEtCommissionEvaluation.model';
+import {InstrumentIrdComiteEtCommissionEvaluationService} from '../../../../../controller/service/InstrumentIrdComiteEtCommissionEvaluation.service';
+import {RoleComiteEtCommissionEvaluationVo} from '../../../../../controller/model/RoleComiteEtCommissionEvaluation.model';
+import {RoleComiteEtCommissionEvaluationService} from '../../../../../controller/service/RoleComiteEtCommissionEvaluation.service';
 import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
 import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
-import {ExpertiseVo} from '../../../../../controller/model/Expertise.model';
-import {ExpertiseService} from '../../../../../controller/service/Expertise.service';
+import {EtablissementComiteEtCommissionEvaluationVo} from '../../../../../controller/model/EtablissementComiteEtCommissionEvaluation.model';
+import {EtablissementComiteEtCommissionEvaluationService} from '../../../../../controller/service/EtablissementComiteEtCommissionEvaluation.service';
 import {TypeExpertiseEvaluationComiteEtCommissionEvaluationVo} from '../../../../../controller/model/TypeExpertiseEvaluationComiteEtCommissionEvaluation.model';
 import {TypeExpertiseEvaluationComiteEtCommissionEvaluationService} from '../../../../../controller/service/TypeExpertiseEvaluationComiteEtCommissionEvaluation.service';
+import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
+import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
+import {EnjeuxIrdComiteEtCommissionEvaluationVo} from '../../../../../controller/model/EnjeuxIrdComiteEtCommissionEvaluation.model';
+import {EnjeuxIrdComiteEtCommissionEvaluationService} from '../../../../../controller/service/EnjeuxIrdComiteEtCommissionEvaluation.service';
+import {ExpertiseVo} from '../../../../../controller/model/Expertise.model';
+import {ExpertiseService} from '../../../../../controller/service/Expertise.service';
+import {RoleEvaluationVo} from '../../../../../controller/model/RoleEvaluation.model';
+import {RoleEvaluationService} from '../../../../../controller/service/RoleEvaluation.service';
 @Component({
   selector: 'app-comite-et-commission-evaluation-create-chercheur',
   templateUrl: './comite-et-commission-evaluation-create-chercheur.component.html',
@@ -56,13 +55,6 @@ export class ComiteEtCommissionEvaluationCreateChercheurComponent implements OnI
         selectedDisciplineScientifiqueComiteEtCommissionEvaluations: DisciplineScientifiqueComiteEtCommissionEvaluationVo = new DisciplineScientifiqueComiteEtCommissionEvaluationVo();
         selectedEnjeuxIrdComiteEtCommissionEvaluations: EnjeuxIrdComiteEtCommissionEvaluationVo = new EnjeuxIrdComiteEtCommissionEvaluationVo();
         selectedInstrumentIrdComiteEtCommissionEvaluations: InstrumentIrdComiteEtCommissionEvaluationVo = new InstrumentIrdComiteEtCommissionEvaluationVo();
-    msgsContents: string;
-    info: string;
-    chercheurVo: ChercheurVo;
-    isLoaded: boolean = false;
-    isBlocked: boolean = true;
-    campagneVo: CampagneVo;
-    data: any;
     _submitted = false;
     private _errorMessages = new Array<string>();
 
@@ -95,59 +87,30 @@ constructor(private datePipe: DatePipe, private comiteEtCommissionEvaluationServ
  ,       private roleService:RoleService
  ,       private messageService: MessageService
  ,       private router: Router
-  ,       private tokenService: TokenService
+ 
 ,       private natureExpertiseService :NatureExpertiseService
+,       private instrumentIrdService :InstrumentIrdService
 ,       private disciplineScientifiqueService :DisciplineScientifiqueService
 ,       private enjeuxIrdService :EnjeuxIrdService
-,       private roleEvaluationService :RoleEvaluationService
-,       private enjeuxIrdComiteEtCommissionEvaluationService :EnjeuxIrdComiteEtCommissionEvaluationService
-,       private disciplineScientifiqueComiteEtCommissionEvaluationService :DisciplineScientifiqueComiteEtCommissionEvaluationService
-,       private roleComiteEtCommissionEvaluationService :RoleComiteEtCommissionEvaluationService
-,       private instrumentIrdComiteEtCommissionEvaluationService :InstrumentIrdComiteEtCommissionEvaluationService
-,       private etablissementComiteEtCommissionEvaluationService :EtablissementComiteEtCommissionEvaluationService
-,       private instrumentIrdService :InstrumentIrdService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private etablissementService :EtablissementService
 ,       private typeExpertiseEvaluationService :TypeExpertiseEvaluationService
+,       private disciplineScientifiqueComiteEtCommissionEvaluationService :DisciplineScientifiqueComiteEtCommissionEvaluationService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private instrumentIrdComiteEtCommissionEvaluationService :InstrumentIrdComiteEtCommissionEvaluationService
+,       private roleComiteEtCommissionEvaluationService :RoleComiteEtCommissionEvaluationService
 ,       private typeInstrumentIrdService :TypeInstrumentIrdService
-,       private expertiseService :ExpertiseService
+,       private etablissementComiteEtCommissionEvaluationService :EtablissementComiteEtCommissionEvaluationService
 ,       private typeExpertiseEvaluationComiteEtCommissionEvaluationService :TypeExpertiseEvaluationComiteEtCommissionEvaluationService
+,       private etablissementService :EtablissementService
+,       private enjeuxIrdComiteEtCommissionEvaluationService :EnjeuxIrdComiteEtCommissionEvaluationService
+,       private expertiseService :ExpertiseService
+,       private roleEvaluationService :RoleEvaluationService
 ) {
 
 }
 
 
- public loadCampagne(username) {
-    this.campagneService.findProgressCampagneByChercheurUsername(username).subscribe(data => {
-     if (data != null && data.id != null) {
-        let campagneVo = data;
-        this.comiteEtCommissionEvaluationService.findByChercheurUsernameAndCampagneId(this.tokenService.getUsername(), campagneVo['id']).subscribe(comiteEtCommissionEvaluation => {
-          this.isLoaded = false;
-          if (comiteEtCommissionEvaluation) {
-            this.msgsContents = 'Vous avez saisi les données comiteEtCommissionEvaluation de cette campagne';
-            this.info = 'info'
-            //this.selectedComiteEtCommissionEvaluation={ ...comiteEtCommissionEvaluation }['0']; TODO: in case non formulaire
-            this.selectedComiteEtCommissionEvaluation.campagneVo=campagneVo;
-            this.isLoaded = true;
-          }
-          else {
-            this.msgsContents =  "Il y a une campagne en cours, vous pouvez saisir les données"
-            this.selectedComiteEtCommissionEvaluation.campagneVo=campagneVo;
-            this.info = "info"
-            this.isLoaded = true;
-          }
-        });
-      }
-      else {
-        this.msgsContents = "Actuellement, aucune campagne en cours"
-        this.info = "warn"
-        this.isLoaded = false;
- }
-});
-}
 // methods
 ngOnInit(): void {
-        this.loadCampagne(this.tokenService.getUsername());
 
             this.typeExpertiseEvaluationService.findAll().subscribe(data => this.prepareTypeExpertiseEvaluationComiteEtCommissionEvaluations(data));
 
@@ -292,9 +255,6 @@ public save(){
 }
 
 public saveWithShowOption(showList: boolean){
-if(this.data) {
- this.selectedComiteEtCommissionEvaluation=this.data;
- }
      this.comiteEtCommissionEvaluationService.save().subscribe(comiteEtCommissionEvaluation=>{
        this.comiteEtCommissionEvaluations.push({...comiteEtCommissionEvaluation});
        this.createComiteEtCommissionEvaluationDialog = false;

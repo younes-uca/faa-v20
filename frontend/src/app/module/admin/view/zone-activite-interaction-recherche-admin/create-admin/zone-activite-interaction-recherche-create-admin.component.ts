@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
 import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-zone-activite-interaction-recherche-create-admin',
   templateUrl: './zone-activite-interaction-recherche-create-admin.component.html',
@@ -40,9 +40,9 @@ constructor(private datePipe: DatePipe, private zoneActiviteInteractionRecherche
  ,       private messageService: MessageService
  ,       private router: Router
  
+,       private paysService :PaysService
 ,       private chercheurService :ChercheurService
 ,       private zoneGeographiqueService :ZoneGeographiqueService
-,       private paysService :PaysService
 ) {
 
 }

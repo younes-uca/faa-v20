@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {VilleVo} from '../../../../../controller/model/Ville.model';
-import {VilleService} from '../../../../../controller/service/Ville.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {VilleVo} from '../../../../../controller/model/Ville.model';
+import {VilleService} from '../../../../../controller/service/Ville.service';
 @Component({
   selector: 'app-etablissement-projet-create-admin',
   templateUrl: './etablissement-projet-create-admin.component.html',
@@ -40,8 +40,8 @@ constructor(private datePipe: DatePipe, private etablissementProjetService: Etab
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private villeService :VilleService
 ,       private paysService :PaysService
+,       private villeService :VilleService
 ) {
 
 }

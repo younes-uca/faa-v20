@@ -9,32 +9,31 @@ import { environment } from 'src/environments/environment';
 import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
-import { TokenService } from 'src/app/controller/service/Token.service';
 
-import {FormatRencontreVo} from '../../../../../controller/model/FormatRencontre.model';
-import {FormatRencontreService} from '../../../../../controller/service/FormatRencontre.service';
-import {PaysRencontreMediaVo} from '../../../../../controller/model/PaysRencontreMedia.model';
-import {PaysRencontreMediaService} from '../../../../../controller/service/PaysRencontreMedia.service';
 import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
 import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
 import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
+import {FormatRencontreVo} from '../../../../../controller/model/FormatRencontre.model';
+import {FormatRencontreService} from '../../../../../controller/service/FormatRencontre.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {TypePubliqueVo} from '../../../../../controller/model/TypePublique.model';
+import {TypePubliqueService} from '../../../../../controller/service/TypePublique.service';
+import {CultureScientifiqueVo} from '../../../../../controller/model/CultureScientifique.model';
+import {CultureScientifiqueService} from '../../../../../controller/service/CultureScientifique.service';
+import {RencontreMediaDisciplineScientifiqueVo} from '../../../../../controller/model/RencontreMediaDisciplineScientifique.model';
+import {RencontreMediaDisciplineScientifiqueService} from '../../../../../controller/service/RencontreMediaDisciplineScientifique.service';
 import {RencontreMediaEnjeuxIrdVo} from '../../../../../controller/model/RencontreMediaEnjeuxIrd.model';
 import {RencontreMediaEnjeuxIrdService} from '../../../../../controller/service/RencontreMediaEnjeuxIrd.service';
 import {RencontreMediaPeriodeVo} from '../../../../../controller/model/RencontreMediaPeriode.model';
 import {RencontreMediaPeriodeService} from '../../../../../controller/service/RencontreMediaPeriode.service';
-import {RencontreMediaDisciplineScientifiqueVo} from '../../../../../controller/model/RencontreMediaDisciplineScientifique.model';
-import {RencontreMediaDisciplineScientifiqueService} from '../../../../../controller/service/RencontreMediaDisciplineScientifique.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {CultureScientifiqueVo} from '../../../../../controller/model/CultureScientifique.model';
-import {CultureScientifiqueService} from '../../../../../controller/service/CultureScientifique.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
 import {TypePubliqueRencontreMediaVo} from '../../../../../controller/model/TypePubliqueRencontreMedia.model';
 import {TypePubliqueRencontreMediaService} from '../../../../../controller/service/TypePubliqueRencontreMedia.service';
-import {TypePubliqueVo} from '../../../../../controller/model/TypePublique.model';
-import {TypePubliqueService} from '../../../../../controller/service/TypePublique.service';
+import {PaysRencontreMediaVo} from '../../../../../controller/model/PaysRencontreMedia.model';
+import {PaysRencontreMediaService} from '../../../../../controller/service/PaysRencontreMedia.service';
 @Component({
   selector: 'app-rencontre-media-create-chercheur',
   templateUrl: './rencontre-media-create-chercheur.component.html',
@@ -47,13 +46,6 @@ export class RencontreMediaCreateChercheurComponent implements OnInit {
         selectedRencontreMediaDisciplineScientifiques: RencontreMediaDisciplineScientifiqueVo = new RencontreMediaDisciplineScientifiqueVo();
         selectedRencontreMediaPeriodes: RencontreMediaPeriodeVo = new RencontreMediaPeriodeVo();
         selectedPaysRencontreMedias: PaysRencontreMediaVo = new PaysRencontreMediaVo();
-    msgsContents: string;
-    info: string;
-    chercheurVo: ChercheurVo;
-    isLoaded: boolean = false;
-    isBlocked: boolean = true;
-    campagneVo: CampagneVo;
-    data: any;
     _submitted = false;
     private _errorMessages = new Array<string>();
 
@@ -73,55 +65,26 @@ constructor(private datePipe: DatePipe, private rencontreMediaService: Rencontre
  ,       private roleService:RoleService
  ,       private messageService: MessageService
  ,       private router: Router
-  ,       private tokenService: TokenService
-,       private formatRencontreService :FormatRencontreService
-,       private paysRencontreMediaService :PaysRencontreMediaService
+ 
+,       private rencontreMediaDisciplineScientifiqueService :RencontreMediaDisciplineScientifiqueService
 ,       private enjeuxIrdService :EnjeuxIrdService
 ,       private disciplineScientifiqueService :DisciplineScientifiqueService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private rencontreMediaEnjeuxIrdService :RencontreMediaEnjeuxIrdService
-,       private cultureScientifiqueService :CultureScientifiqueService
+,       private formatRencontreService :FormatRencontreService
 ,       private rencontreMediaPeriodeService :RencontreMediaPeriodeService
 ,       private paysService :PaysService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private typePubliqueRencontreMediaService :TypePubliqueRencontreMediaService
 ,       private typePubliqueService :TypePubliqueService
-,       private rencontreMediaDisciplineScientifiqueService :RencontreMediaDisciplineScientifiqueService
+,       private cultureScientifiqueService :CultureScientifiqueService
+,       private paysRencontreMediaService :PaysRencontreMediaService
 ) {
 
 }
 
 
- public loadCampagne(username) {
-    this.campagneService.findProgressCampagneByChercheurUsername(username).subscribe(data => {
-     if (data != null && data.id != null) {
-        let campagneVo = data;
-        this.rencontreMediaService.findByChercheurUsernameAndCampagneId(this.tokenService.getUsername(), campagneVo['id']).subscribe(rencontreMedia => {
-          this.isLoaded = false;
-          if (rencontreMedia) {
-            this.msgsContents = 'Vous avez saisi les données rencontreMedia de cette campagne';
-            this.info = 'info'
-            //this.selectedRencontreMedia={ ...rencontreMedia }['0']; TODO: in case non formulaire
-            this.selectedRencontreMedia.campagneVo=campagneVo;
-            this.isLoaded = true;
-          }
-          else {
-            this.msgsContents =  "Il y a une campagne en cours, vous pouvez saisir les données"
-            this.selectedRencontreMedia.campagneVo=campagneVo;
-            this.info = "info"
-            this.isLoaded = true;
-          }
-        });
-      }
-      else {
-        this.msgsContents = "Actuellement, aucune campagne en cours"
-        this.info = "warn"
-        this.isLoaded = false;
- }
-});
-}
 // methods
 ngOnInit(): void {
-        this.loadCampagne(this.tokenService.getUsername());
 
             this.typePubliqueService.findAll().subscribe(data => this.prepareTypePubliqueRencontreMedias(data));
 
@@ -237,9 +200,6 @@ public save(){
 }
 
 public saveWithShowOption(showList: boolean){
-if(this.data) {
- this.selectedRencontreMedia=this.data;
- }
      this.rencontreMediaService.save().subscribe(rencontreMedia=>{
        this.rencontreMedias.push({...rencontreMedia});
        this.createRencontreMediaDialog = false;

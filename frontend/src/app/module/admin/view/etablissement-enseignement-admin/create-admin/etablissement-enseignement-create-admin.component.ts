@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
-import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
+import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
+import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
 @Component({
   selector: 'app-etablissement-enseignement-create-admin',
   templateUrl: './etablissement-enseignement-create-admin.component.html',
@@ -43,8 +43,8 @@ constructor(private datePipe: DatePipe, private etablissementEnseignementService
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enseignementService :EnseignementService
 ,       private etablissementService :EtablissementService
+,       private enseignementService :EnseignementService
 ) {
 
 }

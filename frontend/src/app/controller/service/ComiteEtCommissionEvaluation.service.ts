@@ -41,14 +41,6 @@ export class ComiteEtCommissionEvaluationService {
 
     // methods
 
-    public findByChercheurUsernameAndCampagneId(username: string, compagneId: number): Observable<ComiteEtCommissionEvaluationVo>{
-        return this.http.get<ComiteEtCommissionEvaluationVo>(this.API + 'username/' +username+ '/id/' +compagneId);
-        }
-
-    public findByChercheurId(id: string): Observable<Array<ComiteEtCommissionEvaluationVo>>{
-        return this.http.get<Array<ComiteEtCommissionEvaluationVo>>(this.API + 'chercheur/id/' +id);
-         }
-
     public findAll(){
      return this.http.get<Array<ComiteEtCommissionEvaluationVo>>(this.API);
     }

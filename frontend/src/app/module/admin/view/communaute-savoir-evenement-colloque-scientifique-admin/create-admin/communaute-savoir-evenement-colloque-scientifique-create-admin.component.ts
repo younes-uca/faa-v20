@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
-import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 import {EvenementColloqueScienntifiqueVo} from '../../../../../controller/model/EvenementColloqueScienntifique.model';
 import {EvenementColloqueScienntifiqueService} from '../../../../../controller/service/EvenementColloqueScienntifique.service';
+import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
+import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 @Component({
   selector: 'app-communaute-savoir-evenement-colloque-scientifique-create-admin',
   templateUrl: './communaute-savoir-evenement-colloque-scientifique-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private communauteSavoirEvenementColloqu
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private communauteSavoirService :CommunauteSavoirService
 ,       private evenementColloqueScienntifiqueService :EvenementColloqueScienntifiqueService
+,       private communauteSavoirService :CommunauteSavoirService
 ) {
 
 }

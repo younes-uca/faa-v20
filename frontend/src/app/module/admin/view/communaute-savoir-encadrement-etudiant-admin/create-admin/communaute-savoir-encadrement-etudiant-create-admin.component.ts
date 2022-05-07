@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
-import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 import {EncadrementEtudiantVo} from '../../../../../controller/model/EncadrementEtudiant.model';
 import {EncadrementEtudiantService} from '../../../../../controller/service/EncadrementEtudiant.service';
+import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
+import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 @Component({
   selector: 'app-communaute-savoir-encadrement-etudiant-create-admin',
   templateUrl: './communaute-savoir-encadrement-etudiant-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private communauteSavoirEncadrementEtudi
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private communauteSavoirService :CommunauteSavoirService
 ,       private encadrementEtudiantService :EncadrementEtudiantService
+,       private communauteSavoirService :CommunauteSavoirService
 ) {
 
 }

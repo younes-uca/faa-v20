@@ -40,14 +40,6 @@ export class RencontreMediaService {
 
     // methods
 
-    public findByChercheurUsernameAndCampagneId(username: string, compagneId: number): Observable<RencontreMediaVo>{
-        return this.http.get<RencontreMediaVo>(this.API + 'username/' +username+ '/id/' +compagneId);
-        }
-
-    public findByChercheurId(id: string): Observable<Array<RencontreMediaVo>>{
-        return this.http.get<Array<RencontreMediaVo>>(this.API + 'chercheur/id/' +id);
-         }
-
     public findAll(){
      return this.http.get<Array<RencontreMediaVo>>(this.API);
     }

@@ -9,46 +9,45 @@ import { environment } from 'src/environments/environment';
 import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
-import { TokenService } from 'src/app/controller/service/Token.service';
 
 import {OutilPedagogiqueLangueVo} from '../../../../../controller/model/OutilPedagogiqueLangue.model';
 import {OutilPedagogiqueLangueService} from '../../../../../controller/service/OutilPedagogiqueLangue.service';
-import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
-import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
-import {TypeOutilVo} from '../../../../../controller/model/TypeOutil.model';
-import {TypeOutilService} from '../../../../../controller/service/TypeOutil.service';
-import {PubliqueCibleVo} from '../../../../../controller/model/PubliqueCible.model';
-import {PubliqueCibleService} from '../../../../../controller/service/PubliqueCible.service';
-import {OutilPedagogiqueDisciplineScientifiqueVo} from '../../../../../controller/model/OutilPedagogiqueDisciplineScientifique.model';
-import {OutilPedagogiqueDisciplineScientifiqueService} from '../../../../../controller/service/OutilPedagogiqueDisciplineScientifique.service';
-import {TypeOutilPedagogiqueVo} from '../../../../../controller/model/TypeOutilPedagogique.model';
-import {TypeOutilPedagogiqueService} from '../../../../../controller/service/TypeOutilPedagogique.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
-import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
-import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
-import {OutilPedagogiquePaysConceptionVo} from '../../../../../controller/model/OutilPedagogiquePaysConception.model';
-import {OutilPedagogiquePaysConceptionService} from '../../../../../controller/service/OutilPedagogiquePaysConception.service';
-import {LangueVo} from '../../../../../controller/model/Langue.model';
-import {LangueService} from '../../../../../controller/service/Langue.service';
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
-import {OutilPedagogiquePaysDiffusionVo} from '../../../../../controller/model/OutilPedagogiquePaysDiffusion.model';
-import {OutilPedagogiquePaysDiffusionService} from '../../../../../controller/service/OutilPedagogiquePaysDiffusion.service';
-import {OutilPedagogiqueEnjeuxIrdVo} from '../../../../../controller/model/OutilPedagogiqueEnjeuxIrd.model';
-import {OutilPedagogiqueEnjeuxIrdService} from '../../../../../controller/service/OutilPedagogiqueEnjeuxIrd.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {OutilPedagogiquePubliqueCibleVo} from '../../../../../controller/model/OutilPedagogiquePubliqueCible.model';
-import {OutilPedagogiquePubliqueCibleService} from '../../../../../controller/service/OutilPedagogiquePubliqueCible.service';
-import {CultureScientifiqueVo} from '../../../../../controller/model/CultureScientifique.model';
-import {CultureScientifiqueService} from '../../../../../controller/service/CultureScientifique.service';
-import {OutilPedagogiqueInstrumentIrdVo} from '../../../../../controller/model/OutilPedagogiqueInstrumentIrd.model';
-import {OutilPedagogiqueInstrumentIrdService} from '../../../../../controller/service/OutilPedagogiqueInstrumentIrd.service';
+import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
+import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
 import {OutilPedagogiqueTypeInstrumentIrdVo} from '../../../../../controller/model/OutilPedagogiqueTypeInstrumentIrd.model';
 import {OutilPedagogiqueTypeInstrumentIrdService} from '../../../../../controller/service/OutilPedagogiqueTypeInstrumentIrd.service';
+import {TypeOutilVo} from '../../../../../controller/model/TypeOutil.model';
+import {TypeOutilService} from '../../../../../controller/service/TypeOutil.service';
+import {OutilPedagogiqueEnjeuxIrdVo} from '../../../../../controller/model/OutilPedagogiqueEnjeuxIrd.model';
+import {OutilPedagogiqueEnjeuxIrdService} from '../../../../../controller/service/OutilPedagogiqueEnjeuxIrd.service';
+import {OutilPedagogiquePubliqueCibleVo} from '../../../../../controller/model/OutilPedagogiquePubliqueCible.model';
+import {OutilPedagogiquePubliqueCibleService} from '../../../../../controller/service/OutilPedagogiquePubliqueCible.service';
+import {OutilPedagogiquePaysConceptionVo} from '../../../../../controller/model/OutilPedagogiquePaysConception.model';
+import {OutilPedagogiquePaysConceptionService} from '../../../../../controller/service/OutilPedagogiquePaysConception.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {TypeOutilPedagogiqueVo} from '../../../../../controller/model/TypeOutilPedagogique.model';
+import {TypeOutilPedagogiqueService} from '../../../../../controller/service/TypeOutilPedagogique.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
+import {PubliqueCibleVo} from '../../../../../controller/model/PubliqueCible.model';
+import {PubliqueCibleService} from '../../../../../controller/service/PubliqueCible.service';
+import {OutilPedagogiquePaysDiffusionVo} from '../../../../../controller/model/OutilPedagogiquePaysDiffusion.model';
+import {OutilPedagogiquePaysDiffusionService} from '../../../../../controller/service/OutilPedagogiquePaysDiffusion.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {OutilPedagogiqueDisciplineScientifiqueVo} from '../../../../../controller/model/OutilPedagogiqueDisciplineScientifique.model';
+import {OutilPedagogiqueDisciplineScientifiqueService} from '../../../../../controller/service/OutilPedagogiqueDisciplineScientifique.service';
+import {CultureScientifiqueVo} from '../../../../../controller/model/CultureScientifique.model';
+import {CultureScientifiqueService} from '../../../../../controller/service/CultureScientifique.service';
+import {LangueVo} from '../../../../../controller/model/Langue.model';
+import {LangueService} from '../../../../../controller/service/Langue.service';
+import {OutilPedagogiqueInstrumentIrdVo} from '../../../../../controller/model/OutilPedagogiqueInstrumentIrd.model';
+import {OutilPedagogiqueInstrumentIrdService} from '../../../../../controller/service/OutilPedagogiqueInstrumentIrd.service';
+import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
+import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 @Component({
   selector: 'app-outil-pedagogique-create-chercheur',
   templateUrl: './outil-pedagogique-create-chercheur.component.html',
@@ -65,13 +64,6 @@ export class OutilPedagogiqueCreateChercheurComponent implements OnInit {
         selectedOutilPedagogiquePaysDiffusions: OutilPedagogiquePaysDiffusionVo = new OutilPedagogiquePaysDiffusionVo();
         selectedOutilPedagogiqueInstrumentIrds: OutilPedagogiqueInstrumentIrdVo = new OutilPedagogiqueInstrumentIrdVo();
         selectedOutilPedagogiqueTypeInstrumentIrds: OutilPedagogiqueTypeInstrumentIrdVo = new OutilPedagogiqueTypeInstrumentIrdVo();
-    msgsContents: string;
-    info: string;
-    chercheurVo: ChercheurVo;
-    isLoaded: boolean = false;
-    isBlocked: boolean = true;
-    campagneVo: CampagneVo;
-    data: any;
     _submitted = false;
     private _errorMessages = new Array<string>();
 
@@ -95,62 +87,33 @@ constructor(private datePipe: DatePipe, private outilPedagogiqueService: OutilPe
  ,       private roleService:RoleService
  ,       private messageService: MessageService
  ,       private router: Router
-  ,       private tokenService: TokenService
+ 
 ,       private outilPedagogiqueLangueService :OutilPedagogiqueLangueService
-,       private langueService :LangueService
+,       private instrumentIrdService :InstrumentIrdService
 ,       private enjeuxIrdService :EnjeuxIrdService
 ,       private disciplineScientifiqueService :DisciplineScientifiqueService
-,       private outilPedagogiquePaysDiffusionService :OutilPedagogiquePaysDiffusionService
-,       private typeOutilService :TypeOutilService
 ,       private publiqueCibleService :PubliqueCibleService
+,       private outilPedagogiqueTypeInstrumentIrdService :OutilPedagogiqueTypeInstrumentIrdService
+,       private typeOutilService :TypeOutilService
+,       private outilPedagogiquePaysDiffusionService :OutilPedagogiquePaysDiffusionService
 ,       private outilPedagogiqueEnjeuxIrdService :OutilPedagogiqueEnjeuxIrdService
-,       private outilPedagogiqueDisciplineScientifiqueService :OutilPedagogiqueDisciplineScientifiqueService
-,       private typeOutilPedagogiqueService :TypeOutilPedagogiqueService
-,       private instrumentIrdService :InstrumentIrdService
 ,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private outilPedagogiqueDisciplineScientifiqueService :OutilPedagogiqueDisciplineScientifiqueService
 ,       private outilPedagogiquePubliqueCibleService :OutilPedagogiquePubliqueCibleService
 ,       private cultureScientifiqueService :CultureScientifiqueService
+,       private langueService :LangueService
 ,       private outilPedagogiqueInstrumentIrdService :OutilPedagogiqueInstrumentIrdService
-,       private outilPedagogiqueTypeInstrumentIrdService :OutilPedagogiqueTypeInstrumentIrdService
-,       private paysService :PaysService
 ,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ,       private outilPedagogiquePaysConceptionService :OutilPedagogiquePaysConceptionService
+,       private paysService :PaysService
+,       private typeOutilPedagogiqueService :TypeOutilPedagogiqueService
 ) {
 
 }
 
 
- public loadCampagne(username) {
-    this.campagneService.findProgressCampagneByChercheurUsername(username).subscribe(data => {
-     if (data != null && data.id != null) {
-        let campagneVo = data;
-        this.outilPedagogiqueService.findByChercheurUsernameAndCampagneId(this.tokenService.getUsername(), campagneVo['id']).subscribe(outilPedagogique => {
-          this.isLoaded = false;
-          if (outilPedagogique) {
-            this.msgsContents = 'Vous avez saisi les données outilPedagogique de cette campagne';
-            this.info = 'info'
-            //this.selectedOutilPedagogique={ ...outilPedagogique }['0']; TODO: in case non formulaire
-            this.selectedOutilPedagogique.campagneVo=campagneVo;
-            this.isLoaded = true;
-          }
-          else {
-            this.msgsContents =  "Il y a une campagne en cours, vous pouvez saisir les données"
-            this.selectedOutilPedagogique.campagneVo=campagneVo;
-            this.info = "info"
-            this.isLoaded = true;
-          }
-        });
-      }
-      else {
-        this.msgsContents = "Actuellement, aucune campagne en cours"
-        this.info = "warn"
-        this.isLoaded = false;
- }
-});
-}
 // methods
 ngOnInit(): void {
-        this.loadCampagne(this.tokenService.getUsername());
 
             this.enjeuxIrdService.findAll().subscribe(data => this.prepareOutilPedagogiqueEnjeuxIrds(data));
 
@@ -311,9 +274,6 @@ public save(){
 }
 
 public saveWithShowOption(showList: boolean){
-if(this.data) {
- this.selectedOutilPedagogique=this.data;
- }
      this.outilPedagogiqueService.save().subscribe(outilPedagogique=>{
        this.outilPedagogiques.push({...outilPedagogique});
        this.createOutilPedagogiqueDialog = false;

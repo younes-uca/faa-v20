@@ -1,14 +1,9 @@
-    <p-toast></p-toast>
-    <div class="card">
-        <p-message severity="{{info}}" text="{{msgsContents}}"></p-message>
-    </div>
-
-<p-panel header="Rencontre media"   *ngIf="isLoaded" >
-    <div class="p-fluid">
+        <p-dialog [(visible)]="createRencontreMediaDialog" [style]="{width: '70vw'}"
+                header="Rencontre media" [modal]="true"
+                styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
 
 
-
-            <ng-template pTemplate="content" [ngIf]="true">
+            <ng-template pTemplate="content" >
                 <p-tabView>
                     <p-tabPanel header="Rencontre media">
                         <div class="p-grid">
@@ -158,8 +153,12 @@
 
             </ng-template>
 
-            <ng-template pTemplate="footer" [ngIf]="true">
+            <ng-template pTemplate="footer" >
                 <div class="p-grid">
+                        <div>
+                            <button pButton pRipple label="Annuler" icon="pi pi-times"
+                                    class="p-button-text" (click)="hideCreateDialog()"></button>
+                        </div>
                     <div>
                         <button pButton pRipple label="Valider" icon="pi pi-check" style="margin:10px" (click)="save()"></button>
                     </div>
@@ -175,5 +174,4 @@
                             <app-discipline-scientifique-create-chercheur></app-discipline-scientifique-create-chercheur>
                             <app-pays-create-chercheur></app-pays-create-chercheur>
 
-    </div>
-</p-panel>
+    </p-dialog>

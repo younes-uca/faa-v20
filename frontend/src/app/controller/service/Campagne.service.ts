@@ -46,14 +46,6 @@ export class CampagneService {
         return this.http.get<CampagneVo>(this.API + 'searchByChercheurUsername/' + username);
     }
 
-    public findByChercheurUsernameAndCampagneId(username: string, compagneId: number): Observable<CampagneVo>{
-        return this.http.get<CampagneVo>(this.API + 'username/' +username+ '/id/' +compagneId);
-        }
-
-    public findByChercheurId(id: string): Observable<Array<CampagneVo>>{
-        return this.http.get<Array<CampagneVo>>(this.API + 'chercheur/id/' +id);
-         }
-
     public findAll(){
      return this.http.get<Array<CampagneVo>>(this.API);
     }

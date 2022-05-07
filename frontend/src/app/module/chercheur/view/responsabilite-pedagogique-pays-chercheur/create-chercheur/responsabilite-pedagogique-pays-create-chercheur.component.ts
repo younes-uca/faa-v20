@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ResponsabilitePedagogiqueVo} from '../../../../../controller/model/ResponsabilitePedagogique.model';
 import {ResponsabilitePedagogiqueService} from '../../../../../controller/service/ResponsabilitePedagogique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-responsabilite-pedagogique-pays-create-chercheur',
   templateUrl: './responsabilite-pedagogique-pays-create-chercheur.component.html',
@@ -41,8 +41,8 @@ constructor(private datePipe: DatePipe, private responsabilitePedagogiquePaysSer
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private paysService :PaysService
 ,       private responsabilitePedagogiqueService :ResponsabilitePedagogiqueService
+,       private paysService :PaysService
 ) {
 
 }

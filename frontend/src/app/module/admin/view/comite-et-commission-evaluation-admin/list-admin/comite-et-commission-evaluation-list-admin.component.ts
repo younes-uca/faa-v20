@@ -64,18 +64,11 @@ export class ComiteEtCommissionEvaluationListAdminComponent implements OnInit {
     }
     
     // methods
-    public async loadComiteEtCommissionEvaluations(){
-       const chercheur = this.authService.authenticatedUserByAdmin();
+      public async loadComiteEtCommissionEvaluations(){
         await this.roleService.findAll();
-        if (chercheur !== null){
-            const isPermistted = await this.roleService.isPermitted('ComiteEtCommissionEvaluation', 'list');
-            isPermistted ? this.comiteEtCommissionEvaluationService.findByChercheurId(chercheur.id).subscribe(comiteEtCommissionEvaluations => this.comiteEtCommissionEvaluations = comiteEtCommissionEvaluations,error => console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});}
-        else{
-            const isPermistted = await this.roleService.isPermitted('ComiteEtCommissionEvaluation', 'list');
-            isPermistted ? this.comiteEtCommissionEvaluationService.findAll().subscribe(comiteEtCommissionEvaluations => this.comiteEtCommissionEvaluations = comiteEtCommissionEvaluations,error=>console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
-        }
+        const isPermistted = await this.roleService.isPermitted('ComiteEtCommissionEvaluation', 'list');
+        isPermistted ? this.comiteEtCommissionEvaluationService.findAll().subscribe(comiteEtCommissionEvaluations => this.comiteEtCommissionEvaluations = comiteEtCommissionEvaluations,error=>console.log(error))
+        : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
 
 

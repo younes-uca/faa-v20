@@ -64,18 +64,11 @@ export class OutilPedagogiqueListAdminComponent implements OnInit {
     }
     
     // methods
-    public async loadOutilPedagogiques(){
-       const chercheur = this.authService.authenticatedUserByAdmin();
+      public async loadOutilPedagogiques(){
         await this.roleService.findAll();
-        if (chercheur !== null){
-            const isPermistted = await this.roleService.isPermitted('OutilPedagogique', 'list');
-            isPermistted ? this.outilPedagogiqueService.findByChercheurId(chercheur.id).subscribe(outilPedagogiques => this.outilPedagogiques = outilPedagogiques,error => console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});}
-        else{
-            const isPermistted = await this.roleService.isPermitted('OutilPedagogique', 'list');
-            isPermistted ? this.outilPedagogiqueService.findAll().subscribe(outilPedagogiques => this.outilPedagogiques = outilPedagogiques,error=>console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
-        }
+        const isPermistted = await this.roleService.isPermitted('OutilPedagogique', 'list');
+        isPermistted ? this.outilPedagogiqueService.findAll().subscribe(outilPedagogiques => this.outilPedagogiques = outilPedagogiques,error=>console.log(error))
+        : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
 
 

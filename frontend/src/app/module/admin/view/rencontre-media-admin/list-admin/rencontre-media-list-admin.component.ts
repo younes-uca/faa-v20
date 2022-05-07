@@ -61,18 +61,11 @@ export class RencontreMediaListAdminComponent implements OnInit {
     }
     
     // methods
-    public async loadRencontreMedias(){
-       const chercheur = this.authService.authenticatedUserByAdmin();
+      public async loadRencontreMedias(){
         await this.roleService.findAll();
-        if (chercheur !== null){
-            const isPermistted = await this.roleService.isPermitted('RencontreMedia', 'list');
-            isPermistted ? this.rencontreMediaService.findByChercheurId(chercheur.id).subscribe(rencontreMedias => this.rencontreMedias = rencontreMedias,error => console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});}
-        else{
-            const isPermistted = await this.roleService.isPermitted('RencontreMedia', 'list');
-            isPermistted ? this.rencontreMediaService.findAll().subscribe(rencontreMedias => this.rencontreMedias = rencontreMedias,error=>console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
-        }
+        const isPermistted = await this.roleService.isPermitted('RencontreMedia', 'list');
+        isPermistted ? this.rencontreMediaService.findAll().subscribe(rencontreMedias => this.rencontreMedias = rencontreMedias,error=>console.log(error))
+        : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
 
 

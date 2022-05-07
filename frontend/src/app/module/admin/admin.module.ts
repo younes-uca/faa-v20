@@ -94,11 +94,6 @@ import { TypeEtudeEditAdminComponent } from './view/type-etude-admin/edit-admin/
 import { TypeEtudeViewAdminComponent } from './view/type-etude-admin/view-admin/type-etude-view-admin.component';
 import { TypeEtudeListAdminComponent } from './view/type-etude-admin/list-admin/type-etude-list-admin.component';
 import { TypeEtudeAdminComponent } from './view/type-etude-admin/type-etude-admin.component';
-import { ComiteEtCommissionEvaluationCreateAdminComponent } from './view/comite-et-commission-evaluation-admin/create-admin/comite-et-commission-evaluation-create-admin.component';
-import { ComiteEtCommissionEvaluationEditAdminComponent } from './view/comite-et-commission-evaluation-admin/edit-admin/comite-et-commission-evaluation-edit-admin.component';
-import { ComiteEtCommissionEvaluationViewAdminComponent } from './view/comite-et-commission-evaluation-admin/view-admin/comite-et-commission-evaluation-view-admin.component';
-import { ComiteEtCommissionEvaluationListAdminComponent } from './view/comite-et-commission-evaluation-admin/list-admin/comite-et-commission-evaluation-list-admin.component';
-import { ComiteEtCommissionEvaluationAdminComponent } from './view/comite-et-commission-evaluation-admin/comite-et-commission-evaluation-admin.component';
 import { EnseignementZoneGeographiqueCreateAdminComponent } from './view/enseignement-zone-geographique-admin/create-admin/enseignement-zone-geographique-create-admin.component';
 import { EnseignementZoneGeographiqueEditAdminComponent } from './view/enseignement-zone-geographique-admin/edit-admin/enseignement-zone-geographique-edit-admin.component';
 import { EnseignementZoneGeographiqueViewAdminComponent } from './view/enseignement-zone-geographique-admin/view-admin/enseignement-zone-geographique-view-admin.component';
@@ -189,6 +184,11 @@ import { OutilPedagogiqueInstrumentIrdEditAdminComponent } from './view/outil-pe
 import { OutilPedagogiqueInstrumentIrdViewAdminComponent } from './view/outil-pedagogique-instrument-ird-admin/view-admin/outil-pedagogique-instrument-ird-view-admin.component';
 import { OutilPedagogiqueInstrumentIrdListAdminComponent } from './view/outil-pedagogique-instrument-ird-admin/list-admin/outil-pedagogique-instrument-ird-list-admin.component';
 import { OutilPedagogiqueInstrumentIrdAdminComponent } from './view/outil-pedagogique-instrument-ird-admin/outil-pedagogique-instrument-ird-admin.component';
+import { OutilPedagogiqueCreateAdminComponent } from './view/outil-pedagogique-admin/create-admin/outil-pedagogique-create-admin.component';
+import { OutilPedagogiqueEditAdminComponent } from './view/outil-pedagogique-admin/edit-admin/outil-pedagogique-edit-admin.component';
+import { OutilPedagogiqueViewAdminComponent } from './view/outil-pedagogique-admin/view-admin/outil-pedagogique-view-admin.component';
+import { OutilPedagogiqueListAdminComponent } from './view/outil-pedagogique-admin/list-admin/outil-pedagogique-list-admin.component';
+import { OutilPedagogiqueAdminComponent } from './view/outil-pedagogique-admin/outil-pedagogique-admin.component';
 import { TypeOutilPedagogiqueCreateAdminComponent } from './view/type-outil-pedagogique-admin/create-admin/type-outil-pedagogique-create-admin.component';
 import { TypeOutilPedagogiqueEditAdminComponent } from './view/type-outil-pedagogique-admin/edit-admin/type-outil-pedagogique-edit-admin.component';
 import { TypeOutilPedagogiqueViewAdminComponent } from './view/type-outil-pedagogique-admin/view-admin/type-outil-pedagogique-view-admin.component';
@@ -254,11 +254,6 @@ import { ZoneGeographiqueConseilsScientifiqueEditAdminComponent } from './view/z
 import { ZoneGeographiqueConseilsScientifiqueViewAdminComponent } from './view/zone-geographique-conseils-scientifique-admin/view-admin/zone-geographique-conseils-scientifique-view-admin.component';
 import { ZoneGeographiqueConseilsScientifiqueListAdminComponent } from './view/zone-geographique-conseils-scientifique-admin/list-admin/zone-geographique-conseils-scientifique-list-admin.component';
 import { ZoneGeographiqueConseilsScientifiqueAdminComponent } from './view/zone-geographique-conseils-scientifique-admin/zone-geographique-conseils-scientifique-admin.component';
-import { EtatCampagneCreateAdminComponent } from './view/etat-campagne-admin/create-admin/etat-campagne-create-admin.component';
-import { EtatCampagneEditAdminComponent } from './view/etat-campagne-admin/edit-admin/etat-campagne-edit-admin.component';
-import { EtatCampagneViewAdminComponent } from './view/etat-campagne-admin/view-admin/etat-campagne-view-admin.component';
-import { EtatCampagneListAdminComponent } from './view/etat-campagne-admin/list-admin/etat-campagne-list-admin.component';
-import { EtatCampagneAdminComponent } from './view/etat-campagne-admin/etat-campagne-admin.component';
 import { EnjeuxIrdCreateAdminComponent } from './view/enjeux-ird-admin/create-admin/enjeux-ird-create-admin.component';
 import { EnjeuxIrdEditAdminComponent } from './view/enjeux-ird-admin/edit-admin/enjeux-ird-edit-admin.component';
 import { EnjeuxIrdViewAdminComponent } from './view/enjeux-ird-admin/view-admin/enjeux-ird-view-admin.component';
@@ -354,11 +349,6 @@ import { EtablissementProjetEditAdminComponent } from './view/etablissement-proj
 import { EtablissementProjetViewAdminComponent } from './view/etablissement-projet-admin/view-admin/etablissement-projet-view-admin.component';
 import { EtablissementProjetListAdminComponent } from './view/etablissement-projet-admin/list-admin/etablissement-projet-list-admin.component';
 import { EtablissementProjetAdminComponent } from './view/etablissement-projet-admin/etablissement-projet-admin.component';
-import { OutilPedagogiqueCreateAdminComponent } from './view/outil-pedagogique-admin/create-admin/outil-pedagogique-create-admin.component';
-import { OutilPedagogiqueEditAdminComponent } from './view/outil-pedagogique-admin/edit-admin/outil-pedagogique-edit-admin.component';
-import { OutilPedagogiqueViewAdminComponent } from './view/outil-pedagogique-admin/view-admin/outil-pedagogique-view-admin.component';
-import { OutilPedagogiqueListAdminComponent } from './view/outil-pedagogique-admin/list-admin/outil-pedagogique-list-admin.component';
-import { OutilPedagogiqueAdminComponent } from './view/outil-pedagogique-admin/outil-pedagogique-admin.component';
 import { ContexteCreateAdminComponent } from './view/contexte-admin/create-admin/contexte-create-admin.component';
 import { ContexteEditAdminComponent } from './view/contexte-admin/edit-admin/contexte-edit-admin.component';
 import { ContexteViewAdminComponent } from './view/contexte-admin/view-admin/contexte-view-admin.component';
@@ -379,6 +369,11 @@ import { TypeExpertiseEvaluationComiteEtCommissionEvaluationEditAdminComponent }
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationViewAdminComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-admin/view-admin/type-expertise-evaluation-comite-et-commission-evaluation-view-admin.component';
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationListAdminComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-admin/list-admin/type-expertise-evaluation-comite-et-commission-evaluation-list-admin.component';
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-admin/type-expertise-evaluation-comite-et-commission-evaluation-admin.component';
+import { RencontreMediaCreateAdminComponent } from './view/rencontre-media-admin/create-admin/rencontre-media-create-admin.component';
+import { RencontreMediaEditAdminComponent } from './view/rencontre-media-admin/edit-admin/rencontre-media-edit-admin.component';
+import { RencontreMediaViewAdminComponent } from './view/rencontre-media-admin/view-admin/rencontre-media-view-admin.component';
+import { RencontreMediaListAdminComponent } from './view/rencontre-media-admin/list-admin/rencontre-media-list-admin.component';
+import { RencontreMediaAdminComponent } from './view/rencontre-media-admin/rencontre-media-admin.component';
 import { NiveauEtudeCreateAdminComponent } from './view/niveau-etude-admin/create-admin/niveau-etude-create-admin.component';
 import { NiveauEtudeEditAdminComponent } from './view/niveau-etude-admin/edit-admin/niveau-etude-edit-admin.component';
 import { NiveauEtudeViewAdminComponent } from './view/niveau-etude-admin/view-admin/niveau-etude-view-admin.component';
@@ -689,6 +684,11 @@ import { CategorieFaqEditAdminComponent } from './view/categorie-faq-admin/edit-
 import { CategorieFaqViewAdminComponent } from './view/categorie-faq-admin/view-admin/categorie-faq-view-admin.component';
 import { CategorieFaqListAdminComponent } from './view/categorie-faq-admin/list-admin/categorie-faq-list-admin.component';
 import { CategorieFaqAdminComponent } from './view/categorie-faq-admin/categorie-faq-admin.component';
+import { ComiteEtCommissionEvaluationCreateAdminComponent } from './view/comite-et-commission-evaluation-admin/create-admin/comite-et-commission-evaluation-create-admin.component';
+import { ComiteEtCommissionEvaluationEditAdminComponent } from './view/comite-et-commission-evaluation-admin/edit-admin/comite-et-commission-evaluation-edit-admin.component';
+import { ComiteEtCommissionEvaluationViewAdminComponent } from './view/comite-et-commission-evaluation-admin/view-admin/comite-et-commission-evaluation-view-admin.component';
+import { ComiteEtCommissionEvaluationListAdminComponent } from './view/comite-et-commission-evaluation-admin/list-admin/comite-et-commission-evaluation-list-admin.component';
+import { ComiteEtCommissionEvaluationAdminComponent } from './view/comite-et-commission-evaluation-admin/comite-et-commission-evaluation-admin.component';
 import { ModaliteEtudeCreateAdminComponent } from './view/modalite-etude-admin/create-admin/modalite-etude-create-admin.component';
 import { ModaliteEtudeEditAdminComponent } from './view/modalite-etude-admin/edit-admin/modalite-etude-edit-admin.component';
 import { ModaliteEtudeViewAdminComponent } from './view/modalite-etude-admin/view-admin/modalite-etude-view-admin.component';
@@ -724,11 +724,6 @@ import { ModaliteInterventionEditAdminComponent } from './view/modalite-interven
 import { ModaliteInterventionViewAdminComponent } from './view/modalite-intervention-admin/view-admin/modalite-intervention-view-admin.component';
 import { ModaliteInterventionListAdminComponent } from './view/modalite-intervention-admin/list-admin/modalite-intervention-list-admin.component';
 import { ModaliteInterventionAdminComponent } from './view/modalite-intervention-admin/modalite-intervention-admin.component';
-import { CampagneCreateAdminComponent } from './view/campagne-admin/create-admin/campagne-create-admin.component';
-import { CampagneEditAdminComponent } from './view/campagne-admin/edit-admin/campagne-edit-admin.component';
-import { CampagneViewAdminComponent } from './view/campagne-admin/view-admin/campagne-view-admin.component';
-import { CampagneListAdminComponent } from './view/campagne-admin/list-admin/campagne-list-admin.component';
-import { CampagneAdminComponent } from './view/campagne-admin/campagne-admin.component';
 import { ZoneGeographiqueFormationContinueCreateAdminComponent } from './view/zone-geographique-formation-continue-admin/create-admin/zone-geographique-formation-continue-create-admin.component';
 import { ZoneGeographiqueFormationContinueEditAdminComponent } from './view/zone-geographique-formation-continue-admin/edit-admin/zone-geographique-formation-continue-edit-admin.component';
 import { ZoneGeographiqueFormationContinueViewAdminComponent } from './view/zone-geographique-formation-continue-admin/view-admin/zone-geographique-formation-continue-view-admin.component';
@@ -1039,6 +1034,11 @@ import { TypeExpertiseEvaluationEditAdminComponent } from './view/type-expertise
 import { TypeExpertiseEvaluationViewAdminComponent } from './view/type-expertise-evaluation-admin/view-admin/type-expertise-evaluation-view-admin.component';
 import { TypeExpertiseEvaluationListAdminComponent } from './view/type-expertise-evaluation-admin/list-admin/type-expertise-evaluation-list-admin.component';
 import { TypeExpertiseEvaluationAdminComponent } from './view/type-expertise-evaluation-admin/type-expertise-evaluation-admin.component';
+import { EtatCampagneCreateAdminComponent } from './view/etat-campagne-admin/create-admin/etat-campagne-create-admin.component';
+import { EtatCampagneEditAdminComponent } from './view/etat-campagne-admin/edit-admin/etat-campagne-edit-admin.component';
+import { EtatCampagneViewAdminComponent } from './view/etat-campagne-admin/view-admin/etat-campagne-view-admin.component';
+import { EtatCampagneListAdminComponent } from './view/etat-campagne-admin/list-admin/etat-campagne-list-admin.component';
+import { EtatCampagneAdminComponent } from './view/etat-campagne-admin/etat-campagne-admin.component';
 import { TypeSavoirCreateAdminComponent } from './view/type-savoir-admin/create-admin/type-savoir-create-admin.component';
 import { TypeSavoirEditAdminComponent } from './view/type-savoir-admin/edit-admin/type-savoir-edit-admin.component';
 import { TypeSavoirViewAdminComponent } from './view/type-savoir-admin/view-admin/type-savoir-view-admin.component';
@@ -1094,11 +1094,6 @@ import { PaysCommanditaireEditAdminComponent } from './view/pays-commanditaire-a
 import { PaysCommanditaireViewAdminComponent } from './view/pays-commanditaire-admin/view-admin/pays-commanditaire-view-admin.component';
 import { PaysCommanditaireListAdminComponent } from './view/pays-commanditaire-admin/list-admin/pays-commanditaire-list-admin.component';
 import { PaysCommanditaireAdminComponent } from './view/pays-commanditaire-admin/pays-commanditaire-admin.component';
-import { RencontreMediaCreateAdminComponent } from './view/rencontre-media-admin/create-admin/rencontre-media-create-admin.component';
-import { RencontreMediaEditAdminComponent } from './view/rencontre-media-admin/edit-admin/rencontre-media-edit-admin.component';
-import { RencontreMediaViewAdminComponent } from './view/rencontre-media-admin/view-admin/rencontre-media-view-admin.component';
-import { RencontreMediaListAdminComponent } from './view/rencontre-media-admin/list-admin/rencontre-media-list-admin.component';
-import { RencontreMediaAdminComponent } from './view/rencontre-media-admin/rencontre-media-admin.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateAdminComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin/create-admin/rencontre-grand-publique-jeune-publique-type-instrument-ird-create-admin.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdEditAdminComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin/edit-admin/rencontre-grand-publique-jeune-publique-type-instrument-ird-edit-admin.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewAdminComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin/view-admin/rencontre-grand-publique-jeune-publique-type-instrument-ird-view-admin.component';
@@ -1149,6 +1144,11 @@ import { EtablissementConseilsScientifiqueEditAdminComponent } from './view/etab
 import { EtablissementConseilsScientifiqueViewAdminComponent } from './view/etablissement-conseils-scientifique-admin/view-admin/etablissement-conseils-scientifique-view-admin.component';
 import { EtablissementConseilsScientifiqueListAdminComponent } from './view/etablissement-conseils-scientifique-admin/list-admin/etablissement-conseils-scientifique-list-admin.component';
 import { EtablissementConseilsScientifiqueAdminComponent } from './view/etablissement-conseils-scientifique-admin/etablissement-conseils-scientifique-admin.component';
+import { CampagneCreateAdminComponent } from './view/campagne-admin/create-admin/campagne-create-admin.component';
+import { CampagneEditAdminComponent } from './view/campagne-admin/edit-admin/campagne-edit-admin.component';
+import { CampagneViewAdminComponent } from './view/campagne-admin/view-admin/campagne-view-admin.component';
+import { CampagneListAdminComponent } from './view/campagne-admin/list-admin/campagne-list-admin.component';
+import { CampagneAdminComponent } from './view/campagne-admin/campagne-admin.component';
 import { EtatCampagneChercheurCreateAdminComponent } from './view/etat-campagne-chercheur-admin/create-admin/etat-campagne-chercheur-create-admin.component';
 import { EtatCampagneChercheurEditAdminComponent } from './view/etat-campagne-chercheur-admin/edit-admin/etat-campagne-chercheur-edit-admin.component';
 import { EtatCampagneChercheurViewAdminComponent } from './view/etat-campagne-chercheur-admin/view-admin/etat-campagne-chercheur-view-admin.component';
@@ -1251,11 +1251,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     TypeEtudeViewAdminComponent,
     TypeEtudeEditAdminComponent,
     TypeEtudeAdminComponent,
-    ComiteEtCommissionEvaluationCreateAdminComponent,
-    ComiteEtCommissionEvaluationListAdminComponent,
-    ComiteEtCommissionEvaluationViewAdminComponent,
-    ComiteEtCommissionEvaluationEditAdminComponent,
-    ComiteEtCommissionEvaluationAdminComponent,
     EnseignementZoneGeographiqueCreateAdminComponent,
     EnseignementZoneGeographiqueListAdminComponent,
     EnseignementZoneGeographiqueViewAdminComponent,
@@ -1346,6 +1341,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     OutilPedagogiqueInstrumentIrdViewAdminComponent,
     OutilPedagogiqueInstrumentIrdEditAdminComponent,
     OutilPedagogiqueInstrumentIrdAdminComponent,
+    OutilPedagogiqueCreateAdminComponent,
+    OutilPedagogiqueListAdminComponent,
+    OutilPedagogiqueViewAdminComponent,
+    OutilPedagogiqueEditAdminComponent,
+    OutilPedagogiqueAdminComponent,
     TypeOutilPedagogiqueCreateAdminComponent,
     TypeOutilPedagogiqueListAdminComponent,
     TypeOutilPedagogiqueViewAdminComponent,
@@ -1411,11 +1411,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     ZoneGeographiqueConseilsScientifiqueViewAdminComponent,
     ZoneGeographiqueConseilsScientifiqueEditAdminComponent,
     ZoneGeographiqueConseilsScientifiqueAdminComponent,
-    EtatCampagneCreateAdminComponent,
-    EtatCampagneListAdminComponent,
-    EtatCampagneViewAdminComponent,
-    EtatCampagneEditAdminComponent,
-    EtatCampagneAdminComponent,
     EnjeuxIrdCreateAdminComponent,
     EnjeuxIrdListAdminComponent,
     EnjeuxIrdViewAdminComponent,
@@ -1511,11 +1506,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     EtablissementProjetViewAdminComponent,
     EtablissementProjetEditAdminComponent,
     EtablissementProjetAdminComponent,
-    OutilPedagogiqueCreateAdminComponent,
-    OutilPedagogiqueListAdminComponent,
-    OutilPedagogiqueViewAdminComponent,
-    OutilPedagogiqueEditAdminComponent,
-    OutilPedagogiqueAdminComponent,
     ContexteCreateAdminComponent,
     ContexteListAdminComponent,
     ContexteViewAdminComponent,
@@ -1536,6 +1526,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     TypeExpertiseEvaluationComiteEtCommissionEvaluationViewAdminComponent,
     TypeExpertiseEvaluationComiteEtCommissionEvaluationEditAdminComponent,
     TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent,
+    RencontreMediaCreateAdminComponent,
+    RencontreMediaListAdminComponent,
+    RencontreMediaViewAdminComponent,
+    RencontreMediaEditAdminComponent,
+    RencontreMediaAdminComponent,
     NiveauEtudeCreateAdminComponent,
     NiveauEtudeListAdminComponent,
     NiveauEtudeViewAdminComponent,
@@ -1846,6 +1841,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     CategorieFaqViewAdminComponent,
     CategorieFaqEditAdminComponent,
     CategorieFaqAdminComponent,
+    ComiteEtCommissionEvaluationCreateAdminComponent,
+    ComiteEtCommissionEvaluationListAdminComponent,
+    ComiteEtCommissionEvaluationViewAdminComponent,
+    ComiteEtCommissionEvaluationEditAdminComponent,
+    ComiteEtCommissionEvaluationAdminComponent,
     ModaliteEtudeCreateAdminComponent,
     ModaliteEtudeListAdminComponent,
     ModaliteEtudeViewAdminComponent,
@@ -1881,11 +1881,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     ModaliteInterventionViewAdminComponent,
     ModaliteInterventionEditAdminComponent,
     ModaliteInterventionAdminComponent,
-    CampagneCreateAdminComponent,
-    CampagneListAdminComponent,
-    CampagneViewAdminComponent,
-    CampagneEditAdminComponent,
-    CampagneAdminComponent,
     ZoneGeographiqueFormationContinueCreateAdminComponent,
     ZoneGeographiqueFormationContinueListAdminComponent,
     ZoneGeographiqueFormationContinueViewAdminComponent,
@@ -2196,6 +2191,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     TypeExpertiseEvaluationViewAdminComponent,
     TypeExpertiseEvaluationEditAdminComponent,
     TypeExpertiseEvaluationAdminComponent,
+    EtatCampagneCreateAdminComponent,
+    EtatCampagneListAdminComponent,
+    EtatCampagneViewAdminComponent,
+    EtatCampagneEditAdminComponent,
+    EtatCampagneAdminComponent,
     TypeSavoirCreateAdminComponent,
     TypeSavoirListAdminComponent,
     TypeSavoirViewAdminComponent,
@@ -2251,11 +2251,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     PaysCommanditaireViewAdminComponent,
     PaysCommanditaireEditAdminComponent,
     PaysCommanditaireAdminComponent,
-    RencontreMediaCreateAdminComponent,
-    RencontreMediaListAdminComponent,
-    RencontreMediaViewAdminComponent,
-    RencontreMediaEditAdminComponent,
-    RencontreMediaAdminComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateAdminComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdListAdminComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewAdminComponent,
@@ -2306,6 +2301,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
     EtablissementConseilsScientifiqueViewAdminComponent,
     EtablissementConseilsScientifiqueEditAdminComponent,
     EtablissementConseilsScientifiqueAdminComponent,
+    CampagneCreateAdminComponent,
+    CampagneListAdminComponent,
+    CampagneViewAdminComponent,
+    CampagneEditAdminComponent,
+    CampagneAdminComponent,
     EtatCampagneChercheurCreateAdminComponent,
     EtatCampagneChercheurListAdminComponent,
     EtatCampagneChercheurViewAdminComponent,
@@ -2423,11 +2423,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   TypeEtudeViewAdminComponent,
   TypeEtudeEditAdminComponent,
   TypeEtudeAdminComponent,
-  ComiteEtCommissionEvaluationCreateAdminComponent,
-  ComiteEtCommissionEvaluationListAdminComponent,
-  ComiteEtCommissionEvaluationViewAdminComponent,
-  ComiteEtCommissionEvaluationEditAdminComponent,
-  ComiteEtCommissionEvaluationAdminComponent,
   EnseignementZoneGeographiqueCreateAdminComponent,
   EnseignementZoneGeographiqueListAdminComponent,
   EnseignementZoneGeographiqueViewAdminComponent,
@@ -2518,6 +2513,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   OutilPedagogiqueInstrumentIrdViewAdminComponent,
   OutilPedagogiqueInstrumentIrdEditAdminComponent,
   OutilPedagogiqueInstrumentIrdAdminComponent,
+  OutilPedagogiqueCreateAdminComponent,
+  OutilPedagogiqueListAdminComponent,
+  OutilPedagogiqueViewAdminComponent,
+  OutilPedagogiqueEditAdminComponent,
+  OutilPedagogiqueAdminComponent,
   TypeOutilPedagogiqueCreateAdminComponent,
   TypeOutilPedagogiqueListAdminComponent,
   TypeOutilPedagogiqueViewAdminComponent,
@@ -2583,11 +2583,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   ZoneGeographiqueConseilsScientifiqueViewAdminComponent,
   ZoneGeographiqueConseilsScientifiqueEditAdminComponent,
   ZoneGeographiqueConseilsScientifiqueAdminComponent,
-  EtatCampagneCreateAdminComponent,
-  EtatCampagneListAdminComponent,
-  EtatCampagneViewAdminComponent,
-  EtatCampagneEditAdminComponent,
-  EtatCampagneAdminComponent,
   EnjeuxIrdCreateAdminComponent,
   EnjeuxIrdListAdminComponent,
   EnjeuxIrdViewAdminComponent,
@@ -2683,11 +2678,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   EtablissementProjetViewAdminComponent,
   EtablissementProjetEditAdminComponent,
   EtablissementProjetAdminComponent,
-  OutilPedagogiqueCreateAdminComponent,
-  OutilPedagogiqueListAdminComponent,
-  OutilPedagogiqueViewAdminComponent,
-  OutilPedagogiqueEditAdminComponent,
-  OutilPedagogiqueAdminComponent,
   ContexteCreateAdminComponent,
   ContexteListAdminComponent,
   ContexteViewAdminComponent,
@@ -2708,6 +2698,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   TypeExpertiseEvaluationComiteEtCommissionEvaluationViewAdminComponent,
   TypeExpertiseEvaluationComiteEtCommissionEvaluationEditAdminComponent,
   TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent,
+  RencontreMediaCreateAdminComponent,
+  RencontreMediaListAdminComponent,
+  RencontreMediaViewAdminComponent,
+  RencontreMediaEditAdminComponent,
+  RencontreMediaAdminComponent,
   NiveauEtudeCreateAdminComponent,
   NiveauEtudeListAdminComponent,
   NiveauEtudeViewAdminComponent,
@@ -3018,6 +3013,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   CategorieFaqViewAdminComponent,
   CategorieFaqEditAdminComponent,
   CategorieFaqAdminComponent,
+  ComiteEtCommissionEvaluationCreateAdminComponent,
+  ComiteEtCommissionEvaluationListAdminComponent,
+  ComiteEtCommissionEvaluationViewAdminComponent,
+  ComiteEtCommissionEvaluationEditAdminComponent,
+  ComiteEtCommissionEvaluationAdminComponent,
   ModaliteEtudeCreateAdminComponent,
   ModaliteEtudeListAdminComponent,
   ModaliteEtudeViewAdminComponent,
@@ -3053,11 +3053,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   ModaliteInterventionViewAdminComponent,
   ModaliteInterventionEditAdminComponent,
   ModaliteInterventionAdminComponent,
-  CampagneCreateAdminComponent,
-  CampagneListAdminComponent,
-  CampagneViewAdminComponent,
-  CampagneEditAdminComponent,
-  CampagneAdminComponent,
   ZoneGeographiqueFormationContinueCreateAdminComponent,
   ZoneGeographiqueFormationContinueListAdminComponent,
   ZoneGeographiqueFormationContinueViewAdminComponent,
@@ -3368,6 +3363,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   TypeExpertiseEvaluationViewAdminComponent,
   TypeExpertiseEvaluationEditAdminComponent,
   TypeExpertiseEvaluationAdminComponent,
+  EtatCampagneCreateAdminComponent,
+  EtatCampagneListAdminComponent,
+  EtatCampagneViewAdminComponent,
+  EtatCampagneEditAdminComponent,
+  EtatCampagneAdminComponent,
   TypeSavoirCreateAdminComponent,
   TypeSavoirListAdminComponent,
   TypeSavoirViewAdminComponent,
@@ -3423,11 +3423,6 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   PaysCommanditaireViewAdminComponent,
   PaysCommanditaireEditAdminComponent,
   PaysCommanditaireAdminComponent,
-  RencontreMediaCreateAdminComponent,
-  RencontreMediaListAdminComponent,
-  RencontreMediaViewAdminComponent,
-  RencontreMediaEditAdminComponent,
-  RencontreMediaAdminComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateAdminComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdListAdminComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewAdminComponent,
@@ -3478,6 +3473,11 @@ import {SwitchChercheurAdminComponent} from './view/switch_chercheur/switch-cher
   EtablissementConseilsScientifiqueViewAdminComponent,
   EtablissementConseilsScientifiqueEditAdminComponent,
   EtablissementConseilsScientifiqueAdminComponent,
+  CampagneCreateAdminComponent,
+  CampagneListAdminComponent,
+  CampagneViewAdminComponent,
+  CampagneEditAdminComponent,
+  CampagneAdminComponent,
   EtatCampagneChercheurCreateAdminComponent,
   EtatCampagneChercheurListAdminComponent,
   EtatCampagneChercheurViewAdminComponent,

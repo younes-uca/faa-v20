@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {TypePubliqueVo} from '../../../../../controller/model/TypePublique.model';
-import {TypePubliqueService} from '../../../../../controller/service/TypePublique.service';
 import {RencontreMediaVo} from '../../../../../controller/model/RencontreMedia.model';
 import {RencontreMediaService} from '../../../../../controller/service/RencontreMedia.service';
+import {TypePubliqueVo} from '../../../../../controller/model/TypePublique.model';
+import {TypePubliqueService} from '../../../../../controller/service/TypePublique.service';
 @Component({
   selector: 'app-type-publique-rencontre-media-create-chercheur',
   templateUrl: './type-publique-rencontre-media-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private typePubliqueRencontreMediaServic
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private typePubliqueService :TypePubliqueService
 ,       private rencontreMediaService :RencontreMediaService
+,       private typePubliqueService :TypePubliqueService
 ) {
 
 }

@@ -105,12 +105,6 @@ private validateEtatCampagneCode(){
 
 
 
-
-
-
-
-
-
 //openPopup
 // methods
 

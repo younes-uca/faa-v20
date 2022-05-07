@@ -28,9 +28,6 @@ export class EtatCampagneListChercheurComponent implements OnInit {
     exportData: any[] = [];
     criteriaData: any[] = [];
     fileName = 'EtatCampagne';
-     yesOrNoArchive :any[] =[];
-     yesOrNoAdmin :any[] =[];
-     yesOrNoVisible :any[] =[];
 
 
     constructor(private datePipe: DatePipe, private etatCampagneService: EtatCampagneService,private messageService: MessageService,private confirmationService: ConfirmationService,private roleService:RoleService, private router: Router , private authService: AuthService , private exportService: ExportService
@@ -41,9 +38,6 @@ export class EtatCampagneListChercheurComponent implements OnInit {
       this.loadEtatCampagnes();
       this.initExport();
       this.initCol();
-    this.yesOrNoArchive =  [{label: 'Archive', value: null},{label: 'Oui', value: 1},{label: 'Non', value: 0}];
-    this.yesOrNoAdmin =  [{label: 'Admin', value: null},{label: 'Oui', value: 1},{label: 'Non', value: 0}];
-    this.yesOrNoVisible =  [{label: 'Visible', value: null},{label: 'Oui', value: 1},{label: 'Non', value: 0}];
     }
     
     // methods
@@ -68,12 +62,6 @@ export class EtatCampagneListChercheurComponent implements OnInit {
                             {field: 'libelle', header: 'Libelle'},
                             {field: 'code', header: 'Code'},
                             {field: 'ordre', header: 'Ordre'},
-                            {field: 'archive', header: 'Archive'},
-                            {field: 'dateArchivage', header: 'Date archivage'},
-                            {field: 'dateCreation', header: 'Date creation'},
-                            {field: 'admin', header: 'Admin'},
-                            {field: 'visible', header: 'Visible'},
-                            {field: 'username', header: 'Username'},
         ];
     }
     
@@ -82,8 +70,6 @@ export class EtatCampagneListChercheurComponent implements OnInit {
          if(isPermistted){
           this.etatCampagneService.findByIdWithAssociatedList(etatCampagne).subscribe(res => {
            this.selectedEtatCampagne = res;
-            this.selectedEtatCampagne.dateArchivage = new Date(etatCampagne.dateArchivage);
-            this.selectedEtatCampagne.dateCreation = new Date(etatCampagne.dateCreation);
             this.editEtatCampagneDialog = true;
           });
         }else{
@@ -101,8 +87,6 @@ export class EtatCampagneListChercheurComponent implements OnInit {
         if(isPermistted){
            this.etatCampagneService.findByIdWithAssociatedList(etatCampagne).subscribe(res => {
            this.selectedEtatCampagne = res;
-            this.selectedEtatCampagne.dateArchivage = new Date(etatCampagne.dateArchivage);
-            this.selectedEtatCampagne.dateCreation = new Date(etatCampagne.dateCreation);
             this.viewEtatCampagneDialog = true;
           });
         }else{
@@ -191,12 +175,6 @@ public async duplicateEtatCampagne(etatCampagne: EtatCampagneVo) {
                     'Libelle': e.libelle ,
                     'Code': e.code ,
                     'Ordre': e.ordre ,
-                    'Archive': e.archive? 'Vrai' : 'Faux' ,
-                    'Date archivage': this.datePipe.transform(e.dateArchivage , 'dd-MM-yyyy'),
-                    'Date creation': this.datePipe.transform(e.dateCreation , 'dd-MM-yyyy'),
-                    'Admin': e.admin? 'Vrai' : 'Faux' ,
-                    'Visible': e.visible? 'Vrai' : 'Faux' ,
-                    'Username': e.username ,
      }
       });
 
@@ -205,14 +183,6 @@ public async duplicateEtatCampagne(etatCampagne: EtatCampagneVo) {
             'Code': this.searchEtatCampagne.code ? this.searchEtatCampagne.code : environment.emptyForExport ,
             'Ordre Min': this.searchEtatCampagne.ordreMin ? this.searchEtatCampagne.ordreMin : environment.emptyForExport ,
             'Ordre Max': this.searchEtatCampagne.ordreMax ? this.searchEtatCampagne.ordreMax : environment.emptyForExport ,
-            'Archive': this.searchEtatCampagne.archive ? (this.searchEtatCampagne.archive ? environment.trueValue : environment.falseValue) : environment.emptyForExport ,
-            'Date archivage Min': this.searchEtatCampagne.dateArchivageMin ? this.datePipe.transform(this.searchEtatCampagne.dateArchivageMin , this.dateFormat) : environment.emptyForExport ,
-            'Date archivage Max': this.searchEtatCampagne.dateArchivageMax ? this.datePipe.transform(this.searchEtatCampagne.dateArchivageMax , this.dateFormat) : environment.emptyForExport ,
-            'Date creation Min': this.searchEtatCampagne.dateCreationMin ? this.datePipe.transform(this.searchEtatCampagne.dateCreationMin , this.dateFormat) : environment.emptyForExport ,
-            'Date creation Max': this.searchEtatCampagne.dateCreationMax ? this.datePipe.transform(this.searchEtatCampagne.dateCreationMax , this.dateFormat) : environment.emptyForExport ,
-            'Admin': this.searchEtatCampagne.admin ? (this.searchEtatCampagne.admin ? environment.trueValue : environment.falseValue) : environment.emptyForExport ,
-            'Visible': this.searchEtatCampagne.visible ? (this.searchEtatCampagne.visible ? environment.trueValue : environment.falseValue) : environment.emptyForExport ,
-            'Username': this.searchEtatCampagne.username ? this.searchEtatCampagne.username : environment.emptyForExport ,
      }];
 
       }

@@ -12,12 +12,12 @@ import {StringUtilService} from '../../../../../controller/service/StringUtil.se
 
 import {SemanticRelationshipVo} from '../../../../../controller/model/SemanticRelationship.model';
 import {SemanticRelationshipService} from '../../../../../controller/service/SemanticRelationship.service';
-import {DisciplineScientifiqueParentVo} from '../../../../../controller/model/DisciplineScientifiqueParent.model';
-import {DisciplineScientifiqueParentService} from '../../../../../controller/service/DisciplineScientifiqueParent.service';
-import {DisciplineScientifiqueErcVo} from '../../../../../controller/model/DisciplineScientifiqueErc.model';
-import {DisciplineScientifiqueErcService} from '../../../../../controller/service/DisciplineScientifiqueErc.service';
 import {DisciplineScientifiqueErcAssociationVo} from '../../../../../controller/model/DisciplineScientifiqueErcAssociation.model';
 import {DisciplineScientifiqueErcAssociationService} from '../../../../../controller/service/DisciplineScientifiqueErcAssociation.service';
+import {DisciplineScientifiqueErcVo} from '../../../../../controller/model/DisciplineScientifiqueErc.model';
+import {DisciplineScientifiqueErcService} from '../../../../../controller/service/DisciplineScientifiqueErc.service';
+import {DisciplineScientifiqueParentVo} from '../../../../../controller/model/DisciplineScientifiqueParent.model';
+import {DisciplineScientifiqueParentService} from '../../../../../controller/service/DisciplineScientifiqueParent.service';
 @Component({
   selector: 'app-discipline-scientifique-create-chercheur',
   templateUrl: './discipline-scientifique-create-chercheur.component.html',
@@ -46,9 +46,9 @@ constructor(private datePipe: DatePipe, private disciplineScientifiqueService: D
  ,       private router: Router
  
 ,       private semanticRelationshipService :SemanticRelationshipService
-,       private disciplineScientifiqueParentService :DisciplineScientifiqueParentService
-,       private disciplineScientifiqueErcService :DisciplineScientifiqueErcService
 ,       private disciplineScientifiqueErcAssociationService :DisciplineScientifiqueErcAssociationService
+,       private disciplineScientifiqueErcService :DisciplineScientifiqueErcService
+,       private disciplineScientifiqueParentService :DisciplineScientifiqueParentService
 ) {
 
 }

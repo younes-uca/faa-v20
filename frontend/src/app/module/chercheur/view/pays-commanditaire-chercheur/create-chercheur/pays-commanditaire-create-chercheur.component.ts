@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
 import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-pays-commanditaire-create-chercheur',
   templateUrl: './pays-commanditaire-create-chercheur.component.html',
@@ -48,8 +48,8 @@ constructor(private datePipe: DatePipe, private paysCommanditaireService: PaysCo
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private paysService :PaysService
 ,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
+,       private paysService :PaysService
 ) {
 
 }

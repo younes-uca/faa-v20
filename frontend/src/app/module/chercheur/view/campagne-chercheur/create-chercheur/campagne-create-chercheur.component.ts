@@ -9,54 +9,53 @@ import { environment } from 'src/environments/environment';
 import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
-import { TokenService } from 'src/app/controller/service/Token.service';
 
-import {CampagneChercheurFermetureVo} from '../../../../../controller/model/CampagneChercheurFermeture.model';
-import {CampagneChercheurFermetureService} from '../../../../../controller/service/CampagneChercheurFermeture.service';
-import {TemplateOuvertureVo} from '../../../../../controller/model/TemplateOuverture.model';
-import {TemplateOuvertureService} from '../../../../../controller/service/TemplateOuverture.service';
-import {ProjetActiviteRechercheDetailVo} from '../../../../../controller/model/ProjetActiviteRechercheDetail.model';
-import {ProjetActiviteRechercheDetailService} from '../../../../../controller/service/ProjetActiviteRechercheDetail.service';
-import {EtatCampagneChercheurVo} from '../../../../../controller/model/EtatCampagneChercheur.model';
-import {EtatCampagneChercheurService} from '../../../../../controller/service/EtatCampagneChercheur.service';
 import {EtatCampagneVo} from '../../../../../controller/model/EtatCampagne.model';
 import {EtatCampagneService} from '../../../../../controller/service/EtatCampagne.service';
-import {CampagneRappelVo} from '../../../../../controller/model/CampagneRappel.model';
-import {CampagneRappelService} from '../../../../../controller/service/CampagneRappel.service';
-import {CampagneRelanceChercheurVo} from '../../../../../controller/model/CampagneRelanceChercheur.model';
-import {CampagneRelanceChercheurService} from '../../../../../controller/service/CampagneRelanceChercheur.service';
-import {TypeParticipationVo} from '../../../../../controller/model/TypeParticipation.model';
-import {TypeParticipationService} from '../../../../../controller/service/TypeParticipation.service';
-import {DistinctionEtablissementPaysVo} from '../../../../../controller/model/DistinctionEtablissementPays.model';
-import {DistinctionEtablissementPaysService} from '../../../../../controller/service/DistinctionEtablissementPays.service';
-import {TemplateRelanceVo} from '../../../../../controller/model/TemplateRelance.model';
-import {TemplateRelanceService} from '../../../../../controller/service/TemplateRelance.service';
-import {CampagneRappelChercheurVo} from '../../../../../controller/model/CampagneRappelChercheur.model';
-import {CampagneRappelChercheurService} from '../../../../../controller/service/CampagneRappelChercheur.service';
-import {GestionEquipeDetailVo} from '../../../../../controller/model/GestionEquipeDetail.model';
-import {GestionEquipeDetailService} from '../../../../../controller/service/GestionEquipeDetail.service';
-import {ProjetActiviteRechercheVo} from '../../../../../controller/model/ProjetActiviteRecherche.model';
-import {ProjetActiviteRechercheService} from '../../../../../controller/service/ProjetActiviteRecherche.service';
-import {InstrumentsEtDispositifsIrdVo} from '../../../../../controller/model/InstrumentsEtDispositifsIrd.model';
-import {InstrumentsEtDispositifsIrdService} from '../../../../../controller/service/InstrumentsEtDispositifsIrd.service';
-import {DistinctionVo} from '../../../../../controller/model/Distinction.model';
-import {DistinctionService} from '../../../../../controller/service/Distinction.service';
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
-import {CampagneRelanceVo} from '../../../../../controller/model/CampagneRelance.model';
-import {CampagneRelanceService} from '../../../../../controller/service/CampagneRelance.service';
 import {CampagneChercheurOuvertureVo} from '../../../../../controller/model/CampagneChercheurOuverture.model';
 import {CampagneChercheurOuvertureService} from '../../../../../controller/service/CampagneChercheurOuverture.service';
-import {TemplateClotureVo} from '../../../../../controller/model/TemplateCloture.model';
-import {TemplateClotureService} from '../../../../../controller/service/TemplateCloture.service';
-import {GestionEquipeVo} from '../../../../../controller/model/GestionEquipe.model';
-import {GestionEquipeService} from '../../../../../controller/service/GestionEquipe.service';
+import {CampagneRappelChercheurVo} from '../../../../../controller/model/CampagneRappelChercheur.model';
+import {CampagneRappelChercheurService} from '../../../../../controller/service/CampagneRappelChercheur.service';
+import {DistinctionEtablissementPaysVo} from '../../../../../controller/model/DistinctionEtablissementPays.model';
+import {DistinctionEtablissementPaysService} from '../../../../../controller/service/DistinctionEtablissementPays.service';
+import {ProjetActiviteRechercheVo} from '../../../../../controller/model/ProjetActiviteRecherche.model';
+import {ProjetActiviteRechercheService} from '../../../../../controller/service/ProjetActiviteRecherche.service';
+import {TemplateOuvertureVo} from '../../../../../controller/model/TemplateOuverture.model';
+import {TemplateOuvertureService} from '../../../../../controller/service/TemplateOuverture.service';
 import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
 import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {TemplateRappelVo} from '../../../../../controller/model/TemplateRappel.model';
-import {TemplateRappelService} from '../../../../../controller/service/TemplateRappel.service';
+import {CampagneChercheurFermetureVo} from '../../../../../controller/model/CampagneChercheurFermeture.model';
+import {CampagneChercheurFermetureService} from '../../../../../controller/service/CampagneChercheurFermeture.service';
+import {TypeParticipationVo} from '../../../../../controller/model/TypeParticipation.model';
+import {TypeParticipationService} from '../../../../../controller/service/TypeParticipation.service';
+import {CampagneRappelVo} from '../../../../../controller/model/CampagneRappel.model';
+import {CampagneRappelService} from '../../../../../controller/service/CampagneRappel.service';
+import {InstrumentsEtDispositifsIrdVo} from '../../../../../controller/model/InstrumentsEtDispositifsIrd.model';
+import {InstrumentsEtDispositifsIrdService} from '../../../../../controller/service/InstrumentsEtDispositifsIrd.service';
+import {GestionEquipeVo} from '../../../../../controller/model/GestionEquipe.model';
+import {GestionEquipeService} from '../../../../../controller/service/GestionEquipe.service';
+import {DistinctionVo} from '../../../../../controller/model/Distinction.model';
+import {DistinctionService} from '../../../../../controller/service/Distinction.service';
+import {TemplateClotureVo} from '../../../../../controller/model/TemplateCloture.model';
+import {TemplateClotureService} from '../../../../../controller/service/TemplateCloture.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {EtatCampagneChercheurVo} from '../../../../../controller/model/EtatCampagneChercheur.model';
+import {EtatCampagneChercheurService} from '../../../../../controller/service/EtatCampagneChercheur.service';
+import {CampagneRelanceChercheurVo} from '../../../../../controller/model/CampagneRelanceChercheur.model';
+import {CampagneRelanceChercheurService} from '../../../../../controller/service/CampagneRelanceChercheur.service';
+import {TemplateRelanceVo} from '../../../../../controller/model/TemplateRelance.model';
+import {TemplateRelanceService} from '../../../../../controller/service/TemplateRelance.service';
+import {CampagneRelanceVo} from '../../../../../controller/model/CampagneRelance.model';
+import {CampagneRelanceService} from '../../../../../controller/service/CampagneRelance.service';
+import {GestionEquipeDetailVo} from '../../../../../controller/model/GestionEquipeDetail.model';
+import {GestionEquipeDetailService} from '../../../../../controller/service/GestionEquipeDetail.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {ProjetActiviteRechercheDetailVo} from '../../../../../controller/model/ProjetActiviteRechercheDetail.model';
+import {ProjetActiviteRechercheDetailService} from '../../../../../controller/service/ProjetActiviteRechercheDetail.service';
+import {TemplateRappelVo} from '../../../../../controller/model/TemplateRappel.model';
+import {TemplateRappelService} from '../../../../../controller/service/TemplateRappel.service';
 @Component({
   selector: 'app-campagne-create-chercheur',
   templateUrl: './campagne-create-chercheur.component.html',
@@ -72,13 +71,6 @@ export class CampagneCreateChercheurComponent implements OnInit {
         selectedProjetActiviteRecherches: ProjetActiviteRechercheVo = new ProjetActiviteRechercheVo();
         selectedInstrumentsEtDispositifsIrds: InstrumentsEtDispositifsIrdVo = new InstrumentsEtDispositifsIrdVo();
         selectedGestionEquipes: GestionEquipeVo = new GestionEquipeVo();
-    msgsContents: string;
-    info: string;
-    chercheurVo: ChercheurVo;
-    isLoaded: boolean = false;
-    isBlocked: boolean = true;
-    campagneVo: CampagneVo;
-    data: any;
     _submitted = false;
     private _errorMessages = new Array<string>();
 
@@ -97,61 +89,32 @@ constructor(private datePipe: DatePipe, private campagneService: CampagneService
  ,       private roleService:RoleService
  ,       private messageService: MessageService
  ,       private router: Router
-  ,       private tokenService: TokenService
-,       private campagneRappelService :CampagneRappelService
-,       private chercheurService :ChercheurService
-,       private campagneChercheurFermetureService :CampagneChercheurFermetureService
-,       private typeParticipationService :TypeParticipationService
-,       private templateOuvertureService :TemplateOuvertureService
-,       private templateClotureService :TemplateClotureService
+ 
 ,       private templateRelanceService :TemplateRelanceService
-,       private gestionEquipeService :GestionEquipeService
 ,       private projetActiviteRechercheService :ProjetActiviteRechercheService
 ,       private instrumentsEtDispositifsIrdService :InstrumentsEtDispositifsIrdService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private etatCampagneChercheurService :EtatCampagneChercheurService
-,       private campagneRelanceService :CampagneRelanceService
-,       private distinctionService :DistinctionService
-,       private campagneChercheurOuvertureService :CampagneChercheurOuvertureService
-,       private templateRappelService :TemplateRappelService
-,       private paysService :PaysService
 ,       private etatCampagneService :EtatCampagneService
+,       private templateOuvertureService :TemplateOuvertureService
+,       private campagneRelanceService :CampagneRelanceService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private campagneChercheurFermetureService :CampagneChercheurFermetureService
+,       private chercheurService :ChercheurService
+,       private typeParticipationService :TypeParticipationService
+,       private campagneChercheurOuvertureService :CampagneChercheurOuvertureService
+,       private campagneRappelService :CampagneRappelService
+,       private gestionEquipeService :GestionEquipeService
+,       private distinctionService :DistinctionService
+,       private templateClotureService :TemplateClotureService
+,       private paysService :PaysService
+,       private etatCampagneChercheurService :EtatCampagneChercheurService
+,       private templateRappelService :TemplateRappelService
 ) {
 
 }
 
 
- public loadCampagne(username) {
-    this.campagneService.findProgressCampagneByChercheurUsername(username).subscribe(data => {
-     if (data != null && data.id != null) {
-        let campagneVo = data;
-        this.campagneService.findByChercheurUsernameAndCampagneId(this.tokenService.getUsername(), campagneVo['id']).subscribe(campagne => {
-          this.isLoaded = false;
-          if (campagne) {
-            this.msgsContents = 'Vous avez saisi les données campagne de cette campagne';
-            this.info = 'info'
-            //this.selectedCampagne={ ...campagne }['0']; TODO: in case non formulaire
-            this.selectedCampagne.campagneVo=campagneVo;
-            this.isLoaded = true;
-          }
-          else {
-            this.msgsContents =  "Il y a une campagne en cours, vous pouvez saisir les données"
-            this.selectedCampagne.campagneVo=campagneVo;
-            this.info = "info"
-            this.isLoaded = true;
-          }
-        });
-      }
-      else {
-        this.msgsContents = "Actuellement, aucune campagne en cours"
-        this.info = "warn"
-        this.isLoaded = false;
- }
-});
-}
 // methods
 ngOnInit(): void {
-        this.loadCampagne(this.tokenService.getUsername());
 
 
                 this.selectedCampagneChercheurOuvertures.chercheurVo = new ChercheurVo();
@@ -434,9 +397,6 @@ public save(){
 }
 
 public saveWithShowOption(showList: boolean){
-if(this.data) {
- this.selectedCampagne=this.data;
- }
      this.campagneService.save().subscribe(campagne=>{
        this.campagnes.push({...campagne});
        this.createCampagneDialog = false;

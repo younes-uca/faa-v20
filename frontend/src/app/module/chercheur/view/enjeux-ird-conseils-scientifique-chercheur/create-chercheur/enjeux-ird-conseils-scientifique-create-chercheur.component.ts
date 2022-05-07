@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {ConseilsScientifiqueVo} from '../../../../../controller/model/ConseilsScientifique.model';
 import {ConseilsScientifiqueService} from '../../../../../controller/service/ConseilsScientifique.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-enjeux-ird-conseils-scientifique-create-chercheur',
   templateUrl: './enjeux-ird-conseils-scientifique-create-chercheur.component.html',
@@ -41,8 +41,8 @@ constructor(private datePipe: DatePipe, private enjeuxIrdConseilsScientifiqueSer
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private conseilsScientifiqueService :ConseilsScientifiqueService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

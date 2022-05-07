@@ -14,16 +14,16 @@ import {VieInstitutionnelleDetailInstrumentIrdVo} from '../../../../../controlle
 import {VieInstitutionnelleDetailInstrumentIrdService} from '../../../../../controller/service/VieInstitutionnelleDetailInstrumentIrd.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
-import {VieInstitutionnelleDetailEtablissementVo} from '../../../../../controller/model/VieInstitutionnelleDetailEtablissement.model';
-import {VieInstitutionnelleDetailEtablissementService} from '../../../../../controller/service/VieInstitutionnelleDetailEtablissement.service';
 import {TypeInstanceVo} from '../../../../../controller/model/TypeInstance.model';
 import {TypeInstanceService} from '../../../../../controller/service/TypeInstance.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
-import {StructureIrdVo} from '../../../../../controller/model/StructureIrd.model';
-import {StructureIrdService} from '../../../../../controller/service/StructureIrd.service';
+import {VieInstitutionnelleDetailEtablissementVo} from '../../../../../controller/model/VieInstitutionnelleDetailEtablissement.model';
+import {VieInstitutionnelleDetailEtablissementService} from '../../../../../controller/service/VieInstitutionnelleDetailEtablissement.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {StructureIrdVo} from '../../../../../controller/model/StructureIrd.model';
+import {StructureIrdService} from '../../../../../controller/service/StructureIrd.service';
 import {VieInstitutionnelleVo} from '../../../../../controller/model/VieInstitutionnelle.model';
 import {VieInstitutionnelleService} from '../../../../../controller/service/VieInstitutionnelle.service';
 @Component({
@@ -58,11 +58,11 @@ constructor(private datePipe: DatePipe, private vieInstitutionnelleDetailService
  
 ,       private vieInstitutionnelleDetailInstrumentIrdService :VieInstitutionnelleDetailInstrumentIrdService
 ,       private instrumentIrdService :InstrumentIrdService
-,       private vieInstitutionnelleDetailEtablissementService :VieInstitutionnelleDetailEtablissementService
 ,       private typeInstanceService :TypeInstanceService
 ,       private etablissementService :EtablissementService
-,       private structureIrdService :StructureIrdService
+,       private vieInstitutionnelleDetailEtablissementService :VieInstitutionnelleDetailEtablissementService
 ,       private paysService :PaysService
+,       private structureIrdService :StructureIrdService
 ,       private vieInstitutionnelleService :VieInstitutionnelleService
 ) {
 

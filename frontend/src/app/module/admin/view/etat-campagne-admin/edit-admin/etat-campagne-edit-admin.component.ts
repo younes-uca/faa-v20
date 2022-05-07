@@ -33,8 +33,6 @@ public edit(){
 this.editWithShowOption(false);
 }
 public editWithShowOption(showList: boolean){
-            this.selectedEtatCampagne.dateArchivage = DateUtils.toDate(this.selectedEtatCampagne.dateArchivage);
-            this.selectedEtatCampagne.dateCreation = DateUtils.toDate(this.selectedEtatCampagne.dateCreation);
     this.etatCampagneService.edit().subscribe(etatCampagne=>{
     const myIndex = this.etatCampagnes.findIndex(e => e.id === this.selectedEtatCampagne.id);
     this.etatCampagnes[myIndex] = this.selectedEtatCampagne;

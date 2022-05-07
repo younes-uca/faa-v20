@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
 import {SavoirEtInnovationVo} from '../../../../../controller/model/SavoirEtInnovation.model';
 import {SavoirEtInnovationService} from '../../../../../controller/service/SavoirEtInnovation.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
 import {StatusContratEtConventionVo} from '../../../../../controller/model/StatusContratEtConvention.model';
 import {StatusContratEtConventionService} from '../../../../../controller/service/StatusContratEtConvention.service';
 @Component({
@@ -41,8 +41,8 @@ constructor(private datePipe: DatePipe, private contratEtConventionIrdService: C
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private savoirEtInnovationService :SavoirEtInnovationService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private statusContratEtConventionService :StatusContratEtConventionService
 ) {
 

@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
-import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 import {ConseilEtComiteScientifiqueVo} from '../../../../../controller/model/ConseilEtComiteScientifique.model';
 import {ConseilEtComiteScientifiqueService} from '../../../../../controller/service/ConseilEtComiteScientifique.service';
+import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
+import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 @Component({
   selector: 'app-communaute-savoir-conseil-et-comite-scientifique-create-chercheur',
   templateUrl: './communaute-savoir-conseil-et-comite-scientifique-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private communauteSavoirConseilEtComiteS
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private communauteSavoirService :CommunauteSavoirService
 ,       private conseilEtComiteScientifiqueService :ConseilEtComiteScientifiqueService
+,       private communauteSavoirService :CommunauteSavoirService
 ) {
 
 }

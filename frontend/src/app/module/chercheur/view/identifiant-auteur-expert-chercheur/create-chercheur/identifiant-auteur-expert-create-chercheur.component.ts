@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {IdentifiantRechercheVo} from '../../../../../controller/model/IdentifiantRecherche.model';
 import {IdentifiantRechercheService} from '../../../../../controller/service/IdentifiantRecherche.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 @Component({
   selector: 'app-identifiant-auteur-expert-create-chercheur',
   templateUrl: './identifiant-auteur-expert-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private identifiantAuteurExpertService: 
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private chercheurService :ChercheurService
 ,       private identifiantRechercheService :IdentifiantRechercheService
+,       private chercheurService :ChercheurService
 ) {
 
 }

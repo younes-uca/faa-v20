@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
 import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-formation-continue-enjeux-ird-create-chercheur',
   templateUrl: './formation-continue-enjeux-ird-create-chercheur.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private formationContinueEnjeuxIrdServic
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private formationContinueService :FormationContinueService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

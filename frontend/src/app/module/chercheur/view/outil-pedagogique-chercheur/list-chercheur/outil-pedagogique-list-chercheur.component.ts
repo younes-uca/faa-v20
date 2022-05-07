@@ -70,9 +70,6 @@ export class OutilPedagogiqueListChercheurComponent implements OnInit {
         isPermistted ? this.outilPedagogiqueService.findAll().subscribe(outilPedagogiques => this.outilPedagogiques = outilPedagogiques,error=>console.log(error))
         : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
-navigateToOutilPedagogiqueCreate(){
-this.router.navigate(['/app/chercheur/outilPedagogique/create']);
-}
 
 
   public searchRequest(){
@@ -103,7 +100,7 @@ this.router.navigate(['/app/chercheur/outilPedagogique/create']);
           this.outilPedagogiqueService.findByIdWithAssociatedList(outilPedagogique).subscribe(res => {
            this.selectedOutilPedagogique = res;
             this.selectedOutilPedagogique.dateDiffusion = new Date(outilPedagogique.dateDiffusion);
-            this.navigateToOutilPedagogiqueCreate() ;
+            this.editOutilPedagogiqueDialog = true;
           });
         }else{
             this.messageService.add({
@@ -135,7 +132,7 @@ this.router.navigate(['/app/chercheur/outilPedagogique/create']);
         const isPermistted = await this.roleService.isPermitted(pojo, 'add');
         if(isPermistted){
          this.selectedOutilPedagogique = new OutilPedagogiqueVo();
-            this.navigateToOutilPedagogiqueCreate() ;
+            this.createOutilPedagogiqueDialog = true;
         }else{
              this.messageService.add({
                 severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'
@@ -197,7 +194,7 @@ public async duplicateOutilPedagogique(outilPedagogique: OutilPedagogiqueVo) {
 	       this.initDuplicateOutilPedagogique(res);
 	       this.selectedOutilPedagogique = res;
 	       this.selectedOutilPedagogique.id = null;
-            this.navigateToOutilPedagogiqueCreate() ;
+            this.createOutilPedagogiqueDialog = true;
 
 });
 

@@ -53,9 +53,6 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueAdminComponent } from './v
 import { TypeEtudeAdminComponent } from './view/type-etude-admin/type-etude-admin.component';
 
 
-import { ComiteEtCommissionEvaluationAdminComponent } from './view/comite-et-commission-evaluation-admin/comite-et-commission-evaluation-admin.component';
-
-
 import { EnseignementZoneGeographiqueAdminComponent } from './view/enseignement-zone-geographique-admin/enseignement-zone-geographique-admin.component';
 
 
@@ -110,6 +107,9 @@ import { VieInstitutionnelleDetailEtablissementAdminComponent } from './view/vie
 import { OutilPedagogiqueInstrumentIrdAdminComponent } from './view/outil-pedagogique-instrument-ird-admin/outil-pedagogique-instrument-ird-admin.component';
 
 
+import { OutilPedagogiqueAdminComponent } from './view/outil-pedagogique-admin/outil-pedagogique-admin.component';
+
+
 import { TypeOutilPedagogiqueAdminComponent } from './view/type-outil-pedagogique-admin/type-outil-pedagogique-admin.component';
 
 
@@ -147,9 +147,6 @@ import { NiveauResponsabilitePedagogiqueAdminComponent } from './view/niveau-res
 
 
 import { ZoneGeographiqueConseilsScientifiqueAdminComponent } from './view/zone-geographique-conseils-scientifique-admin/zone-geographique-conseils-scientifique-admin.component';
-
-
-import { EtatCampagneAdminComponent } from './view/etat-campagne-admin/etat-campagne-admin.component';
 
 
 import { EnjeuxIrdAdminComponent } from './view/enjeux-ird-admin/enjeux-ird-admin.component';
@@ -209,9 +206,6 @@ import { CaracterisationAdminComponent } from './view/caracterisation-admin/cara
 import { EtablissementProjetAdminComponent } from './view/etablissement-projet-admin/etablissement-projet-admin.component';
 
 
-import { OutilPedagogiqueAdminComponent } from './view/outil-pedagogique-admin/outil-pedagogique-admin.component';
-
-
 import { ContexteAdminComponent } from './view/contexte-admin/contexte-admin.component';
 
 
@@ -222,6 +216,9 @@ import { EnjeuxIrdComiteEtCommissionEvaluationAdminComponent } from './view/enje
 
 
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-admin/type-expertise-evaluation-comite-et-commission-evaluation-admin.component';
+
+
+import { RencontreMediaAdminComponent } from './view/rencontre-media-admin/rencontre-media-admin.component';
 
 
 import { NiveauEtudeAdminComponent } from './view/niveau-etude-admin/niveau-etude-admin.component';
@@ -410,6 +407,9 @@ import { CommunauteSavoirChercheurAdminComponent } from './view/communaute-savoi
 import { CategorieFaqAdminComponent } from './view/categorie-faq-admin/categorie-faq-admin.component';
 
 
+import { ComiteEtCommissionEvaluationAdminComponent } from './view/comite-et-commission-evaluation-admin/comite-et-commission-evaluation-admin.component';
+
+
 import { ModaliteEtudeAdminComponent } from './view/modalite-etude-admin/modalite-etude-admin.component';
 
 
@@ -429,9 +429,6 @@ import { ConsultanceScientifiquePonctuelleAdminComponent } from './view/consulta
 
 
 import { ModaliteInterventionAdminComponent } from './view/modalite-intervention-admin/modalite-intervention-admin.component';
-
-
-import { CampagneAdminComponent } from './view/campagne-admin/campagne-admin.component';
 
 
 import { ZoneGeographiqueFormationContinueAdminComponent } from './view/zone-geographique-formation-continue-admin/zone-geographique-formation-continue-admin.component';
@@ -620,6 +617,9 @@ import { EvenementColloqueScienntifiquePaysAdminComponent } from './view/eveneme
 import { TypeExpertiseEvaluationAdminComponent } from './view/type-expertise-evaluation-admin/type-expertise-evaluation-admin.component';
 
 
+import { EtatCampagneAdminComponent } from './view/etat-campagne-admin/etat-campagne-admin.component';
+
+
 import { TypeSavoirAdminComponent } from './view/type-savoir-admin/type-savoir-admin.component';
 
 
@@ -653,9 +653,6 @@ import { NationaliteAdminComponent } from './view/nationalite-admin/nationalite-
 import { PaysCommanditaireAdminComponent } from './view/pays-commanditaire-admin/pays-commanditaire-admin.component';
 
 
-import { RencontreMediaAdminComponent } from './view/rencontre-media-admin/rencontre-media-admin.component';
-
-
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdAdminComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin.component';
 
 
@@ -684,6 +681,9 @@ import { ChercheurAdminComponent } from './view/chercheur-admin/chercheur-admin.
 
 
 import { EtablissementConseilsScientifiqueAdminComponent } from './view/etablissement-conseils-scientifique-admin/etablissement-conseils-scientifique-admin.component';
+
+
+import { CampagneAdminComponent } from './view/campagne-admin/campagne-admin.component';
 
 
 import { EtatCampagneChercheurAdminComponent } from './view/etat-campagne-chercheur-admin/etat-campagne-chercheur-admin.component';
@@ -880,17 +880,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: TypeEtudeAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'comite-et-commission-evaluation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ComiteEtCommissionEvaluationAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1095,6 +1084,17 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
+                            path: 'outil-pedagogique',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: OutilPedagogiqueAdminComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'type-outil-pedagogique',
                             children: [
                                 {
@@ -1232,17 +1232,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: ZoneGeographiqueConseilsScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etat-campagne',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtatCampagneAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1458,17 +1447,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'outil-pedagogique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: OutilPedagogiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'contexte',
                             children: [
                                 {
@@ -1507,6 +1485,17 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
+                            path: 'rencontre-media',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: RencontreMediaAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2195,6 +2184,17 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
+                            path: 'comite-et-commission-evaluation',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: ComiteEtCommissionEvaluationAdminComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'modalite-etude',
                             children: [
                                 {
@@ -2266,17 +2266,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: ModaliteInterventionAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'campagne',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CampagneAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2965,6 +2954,17 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
+                            path: 'etat-campagne',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: EtatCampagneAdminComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'type-savoir',
                             children: [
                                 {
@@ -3086,17 +3086,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'rencontre-media',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: RencontreMediaAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'rencontre-grand-publique-jeune-publique-type-instrument-ird',
                             children: [
                                 {
@@ -3201,6 +3190,17 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: EtablissementConseilsScientifiqueAdminComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
+                            path: 'campagne',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: CampagneAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]

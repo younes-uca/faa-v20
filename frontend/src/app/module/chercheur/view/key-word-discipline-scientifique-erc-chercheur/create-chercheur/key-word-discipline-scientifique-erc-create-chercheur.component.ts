@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {KeyWordVo} from '../../../../../controller/model/KeyWord.model';
-import {KeyWordService} from '../../../../../controller/service/KeyWord.service';
 import {DisciplineScientifiqueErcVo} from '../../../../../controller/model/DisciplineScientifiqueErc.model';
 import {DisciplineScientifiqueErcService} from '../../../../../controller/service/DisciplineScientifiqueErc.service';
+import {KeyWordVo} from '../../../../../controller/model/KeyWord.model';
+import {KeyWordService} from '../../../../../controller/service/KeyWord.service';
 @Component({
   selector: 'app-key-word-discipline-scientifique-erc-create-chercheur',
   templateUrl: './key-word-discipline-scientifique-erc-create-chercheur.component.html',
@@ -40,8 +40,8 @@ constructor(private datePipe: DatePipe, private keyWordDisciplineScientifiqueErc
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private keyWordService :KeyWordService
 ,       private disciplineScientifiqueErcService :DisciplineScientifiqueErcService
+,       private keyWordService :KeyWordService
 ) {
 
 }

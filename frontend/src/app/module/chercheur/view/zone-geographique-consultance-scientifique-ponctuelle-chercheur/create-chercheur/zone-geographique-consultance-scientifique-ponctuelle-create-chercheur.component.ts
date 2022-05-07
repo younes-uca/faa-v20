@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
-import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
 import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
+import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
+import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
 @Component({
   selector: 'app-zone-geographique-consultance-scientifique-ponctuelle-create-chercheur',
   templateUrl: './zone-geographique-consultance-scientifique-ponctuelle-create-chercheur.component.html',
@@ -52,9 +52,9 @@ constructor(private datePipe: DatePipe, private zoneGeographiqueConsultanceScien
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private zoneGeographiqueService :ZoneGeographiqueService
-,       private paysService :PaysService
 ,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
+,       private paysService :PaysService
+,       private zoneGeographiqueService :ZoneGeographiqueService
 ) {
 
 }

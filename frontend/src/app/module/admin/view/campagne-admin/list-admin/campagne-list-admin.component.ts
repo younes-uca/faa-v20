@@ -64,18 +64,11 @@ export class CampagneListAdminComponent implements OnInit {
     }
     
     // methods
-    public async loadCampagnes(){
-       const chercheur = this.authService.authenticatedUserByAdmin();
+      public async loadCampagnes(){
         await this.roleService.findAll();
-        if (chercheur !== null){
-            const isPermistted = await this.roleService.isPermitted('Campagne', 'list');
-            isPermistted ? this.campagneService.findByChercheurId(chercheur.id).subscribe(campagnes => this.campagnes = campagnes,error => console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});}
-        else{
-            const isPermistted = await this.roleService.isPermitted('Campagne', 'list');
-            isPermistted ? this.campagneService.findAll().subscribe(campagnes => this.campagnes = campagnes,error=>console.log(error))
-                : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
-        }
+        const isPermistted = await this.roleService.isPermitted('Campagne', 'list');
+        isPermistted ? this.campagneService.findAll().subscribe(campagnes => this.campagnes = campagnes,error=>console.log(error))
+        : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
 
 

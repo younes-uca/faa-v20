@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {CategorieNotificationVo} from '../../../../../controller/model/CategorieNotification.model';
 import {CategorieNotificationService} from '../../../../../controller/service/CategorieNotification.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 @Component({
   selector: 'app-notification-create-admin',
   templateUrl: './notification-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private notificationService: Notificatio
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private chercheurService :ChercheurService
 ,       private categorieNotificationService :CategorieNotificationService
+,       private chercheurService :ChercheurService
 ) {
 
 }

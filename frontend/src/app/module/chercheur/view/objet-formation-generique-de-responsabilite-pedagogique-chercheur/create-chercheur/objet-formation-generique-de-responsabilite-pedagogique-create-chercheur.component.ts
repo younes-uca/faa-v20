@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ObjetFormationGeneriqueVo} from '../../../../../controller/model/ObjetFormationGenerique.model';
-import {ObjetFormationGeneriqueService} from '../../../../../controller/service/ObjetFormationGenerique.service';
 import {ResponsabilitePedagogiqueVo} from '../../../../../controller/model/ResponsabilitePedagogique.model';
 import {ResponsabilitePedagogiqueService} from '../../../../../controller/service/ResponsabilitePedagogique.service';
+import {ObjetFormationGeneriqueVo} from '../../../../../controller/model/ObjetFormationGenerique.model';
+import {ObjetFormationGeneriqueService} from '../../../../../controller/service/ObjetFormationGenerique.service';
 @Component({
   selector: 'app-objet-formation-generique-de-responsabilite-pedagogique-create-chercheur',
   templateUrl: './objet-formation-generique-de-responsabilite-pedagogique-create-chercheur.component.html',
@@ -41,8 +41,8 @@ constructor(private datePipe: DatePipe, private objetFormationGeneriqueDeRespons
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private objetFormationGeneriqueService :ObjetFormationGeneriqueService
 ,       private responsabilitePedagogiqueService :ResponsabilitePedagogiqueService
+,       private objetFormationGeneriqueService :ObjetFormationGeneriqueService
 ) {
 
 }

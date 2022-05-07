@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
-import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
+import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
+import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 @Component({
   selector: 'app-etablissement-comite-et-commission-evaluation-create-chercheur',
   templateUrl: './etablissement-comite-et-commission-evaluation-create-chercheur.component.html',
@@ -45,8 +45,8 @@ constructor(private datePipe: DatePipe, private etablissementComiteEtCommissionE
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ,       private etablissementService :EtablissementService
+,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ) {
 
 }

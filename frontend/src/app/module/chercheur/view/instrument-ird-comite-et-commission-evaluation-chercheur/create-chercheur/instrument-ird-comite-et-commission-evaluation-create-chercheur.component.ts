@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
-import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
+import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
+import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
 import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 @Component({
@@ -50,8 +50,8 @@ constructor(private datePipe: DatePipe, private instrumentIrdComiteEtCommissionE
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ,       private instrumentIrdService :InstrumentIrdService
+,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ) {
 

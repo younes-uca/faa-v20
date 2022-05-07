@@ -13,26 +13,26 @@ import { TokenService } from 'src/app/controller/service/Token.service';
 
 import {VieInstitutionnelleDetailInstrumentIrdVo} from '../../../../../controller/model/VieInstitutionnelleDetailInstrumentIrd.model';
 import {VieInstitutionnelleDetailInstrumentIrdService} from '../../../../../controller/service/VieInstitutionnelleDetailInstrumentIrd.service';
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
-import {TypeInstanceVo} from '../../../../../controller/model/TypeInstance.model';
-import {TypeInstanceService} from '../../../../../controller/service/TypeInstance.service';
-import {VieInstitutionnelleDetailVo} from '../../../../../controller/model/VieInstitutionnelleDetail.model';
-import {VieInstitutionnelleDetailService} from '../../../../../controller/service/VieInstitutionnelleDetail.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {VieInstitutionnelleDetailEtablissementVo} from '../../../../../controller/model/VieInstitutionnelleDetailEtablissement.model';
-import {VieInstitutionnelleDetailEtablissementService} from '../../../../../controller/service/VieInstitutionnelleDetailEtablissement.service';
-import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
-import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
 import {CampagneVo} from '../../../../../controller/model/Campagne.model';
 import {CampagneService} from '../../../../../controller/service/Campagne.service';
+import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
+import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
+import {TypeInstanceVo} from '../../../../../controller/model/TypeInstance.model';
+import {TypeInstanceService} from '../../../../../controller/service/TypeInstance.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {VieInstitutionnelleDetailVo} from '../../../../../controller/model/VieInstitutionnelleDetail.model';
+import {VieInstitutionnelleDetailService} from '../../../../../controller/service/VieInstitutionnelleDetail.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
-import {StructureIrdVo} from '../../../../../controller/model/StructureIrd.model';
-import {StructureIrdService} from '../../../../../controller/service/StructureIrd.service';
+import {VieInstitutionnelleDetailEtablissementVo} from '../../../../../controller/model/VieInstitutionnelleDetailEtablissement.model';
+import {VieInstitutionnelleDetailEtablissementService} from '../../../../../controller/service/VieInstitutionnelleDetailEtablissement.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {StructureIrdVo} from '../../../../../controller/model/StructureIrd.model';
+import {StructureIrdService} from '../../../../../controller/service/StructureIrd.service';
 @Component({
   selector: 'app-vie-institutionnelle-create-chercheur',
   templateUrl: './vie-institutionnelle-create-chercheur.component.html',
@@ -66,15 +66,15 @@ constructor(private datePipe: DatePipe, private vieInstitutionnelleService: VieI
  ,       private messageService: MessageService
  ,       private router: Router
   ,       private tokenService: TokenService
-,       private chercheurService :ChercheurService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private campagneService :CampagneService
 ,       private instrumentIrdService :InstrumentIrdService
 ,       private typeInstanceService :TypeInstanceService
-,       private campagneService :CampagneService
 ,       private etablissementService :EtablissementService
-,       private structureIrdService :StructureIrdService
 ,       private paysService :PaysService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private chercheurService :ChercheurService
 ,       private vieInstitutionnelleDetailService :VieInstitutionnelleDetailService
+,       private structureIrdService :StructureIrdService
 ) {
 
 }

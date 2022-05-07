@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 @Component({
   selector: 'app-instrument-ird-chercheur-create-admin',
   templateUrl: './instrument-ird-chercheur-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private instrumentIrdChercheurService: I
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private chercheurService :ChercheurService
 ,       private instrumentIrdService :InstrumentIrdService
+,       private chercheurService :ChercheurService
 ) {
 
 }

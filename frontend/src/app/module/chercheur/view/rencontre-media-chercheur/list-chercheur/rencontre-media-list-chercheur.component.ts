@@ -67,9 +67,6 @@ export class RencontreMediaListChercheurComponent implements OnInit {
         isPermistted ? this.rencontreMediaService.findAll().subscribe(rencontreMedias => this.rencontreMedias = rencontreMedias,error=>console.log(error))
         : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
-navigateToRencontreMediaCreate(){
-this.router.navigate(['/app/chercheur/rencontreMedia/create']);
-}
 
 
   public searchRequest(){
@@ -95,7 +92,7 @@ this.router.navigate(['/app/chercheur/rencontreMedia/create']);
          if(isPermistted){
           this.rencontreMediaService.findByIdWithAssociatedList(rencontreMedia).subscribe(res => {
            this.selectedRencontreMedia = res;
-            this.navigateToRencontreMediaCreate() ;
+            this.editRencontreMediaDialog = true;
           });
         }else{
             this.messageService.add({
@@ -126,7 +123,7 @@ this.router.navigate(['/app/chercheur/rencontreMedia/create']);
         const isPermistted = await this.roleService.isPermitted(pojo, 'add');
         if(isPermistted){
          this.selectedRencontreMedia = new RencontreMediaVo();
-            this.navigateToRencontreMediaCreate() ;
+            this.createRencontreMediaDialog = true;
         }else{
              this.messageService.add({
                 severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'
@@ -195,7 +192,7 @@ public async duplicateRencontreMedia(rencontreMedia: RencontreMediaVo) {
 	       this.initDuplicateRencontreMedia(res);
 	       this.selectedRencontreMedia = res;
 	       this.selectedRencontreMedia.id = null;
-            this.navigateToRencontreMediaCreate() ;
+            this.createRencontreMediaDialog = true;
 
 });
 

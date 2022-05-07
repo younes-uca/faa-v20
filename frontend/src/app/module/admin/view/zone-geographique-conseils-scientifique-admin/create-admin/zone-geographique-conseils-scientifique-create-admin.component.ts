@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
-import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ConseilsScientifiqueVo} from '../../../../../controller/model/ConseilsScientifique.model';
 import {ConseilsScientifiqueService} from '../../../../../controller/service/ConseilsScientifique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
+import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
+import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
 @Component({
   selector: 'app-zone-geographique-conseils-scientifique-create-admin',
   templateUrl: './zone-geographique-conseils-scientifique-create-admin.component.html',
@@ -45,9 +45,9 @@ constructor(private datePipe: DatePipe, private zoneGeographiqueConseilsScientif
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private zoneGeographiqueService :ZoneGeographiqueService
-,       private paysService :PaysService
 ,       private conseilsScientifiqueService :ConseilsScientifiqueService
+,       private paysService :PaysService
+,       private zoneGeographiqueService :ZoneGeographiqueService
 ) {
 
 }

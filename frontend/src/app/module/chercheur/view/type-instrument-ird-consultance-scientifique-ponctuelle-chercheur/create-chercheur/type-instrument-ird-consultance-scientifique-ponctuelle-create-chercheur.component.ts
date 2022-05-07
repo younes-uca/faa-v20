@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
-import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
 import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
+import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
+import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 @Component({
   selector: 'app-type-instrument-ird-consultance-scientifique-ponctuelle-create-chercheur',
   templateUrl: './type-instrument-ird-consultance-scientifique-ponctuelle-create-chercheur.component.html',
@@ -48,8 +48,8 @@ constructor(private datePipe: DatePipe, private typeInstrumentIrdConsultanceScie
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
+,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ) {
 
 }

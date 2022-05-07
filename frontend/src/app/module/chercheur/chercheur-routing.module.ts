@@ -54,10 +54,6 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent } from 
 import { TypeEtudeChercheurComponent } from './view/type-etude-chercheur/type-etude-chercheur.component';
 
 
-import { ComiteEtCommissionEvaluationChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/comite-et-commission-evaluation-chercheur.component';
-
-import { ComiteEtCommissionEvaluationCreateChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/create-chercheur/comite-et-commission-evaluation-create-chercheur.component';
-
 import { EnseignementZoneGeographiqueChercheurComponent } from './view/enseignement-zone-geographique-chercheur/enseignement-zone-geographique-chercheur.component';
 
 
@@ -113,6 +109,9 @@ import { VieInstitutionnelleDetailEtablissementChercheurComponent } from './view
 import { OutilPedagogiqueInstrumentIrdChercheurComponent } from './view/outil-pedagogique-instrument-ird-chercheur/outil-pedagogique-instrument-ird-chercheur.component';
 
 
+import { OutilPedagogiqueChercheurComponent } from './view/outil-pedagogique-chercheur/outil-pedagogique-chercheur.component';
+
+
 import { TypeOutilPedagogiqueChercheurComponent } from './view/type-outil-pedagogique-chercheur/type-outil-pedagogique-chercheur.component';
 
 
@@ -150,9 +149,6 @@ import { NiveauResponsabilitePedagogiqueChercheurComponent } from './view/niveau
 
 
 import { ZoneGeographiqueConseilsScientifiqueChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/zone-geographique-conseils-scientifique-chercheur.component';
-
-
-import { EtatCampagneChercheurComponent } from './view/etat-campagne-chercheur/etat-campagne-chercheur.component';
 
 
 import { EnjeuxIrdChercheurComponent } from './view/enjeux-ird-chercheur/enjeux-ird-chercheur.component';
@@ -213,10 +209,6 @@ import { CaracterisationChercheurComponent } from './view/caracterisation-cherch
 import { EtablissementProjetChercheurComponent } from './view/etablissement-projet-chercheur/etablissement-projet-chercheur.component';
 
 
-import { OutilPedagogiqueChercheurComponent } from './view/outil-pedagogique-chercheur/outil-pedagogique-chercheur.component';
-
-import { OutilPedagogiqueCreateChercheurComponent } from './view/outil-pedagogique-chercheur/create-chercheur/outil-pedagogique-create-chercheur.component';
-
 import { ContexteChercheurComponent } from './view/contexte-chercheur/contexte-chercheur.component';
 
 
@@ -227,6 +219,9 @@ import { EnjeuxIrdComiteEtCommissionEvaluationChercheurComponent } from './view/
 
 
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationChercheurComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-chercheur/type-expertise-evaluation-comite-et-commission-evaluation-chercheur.component';
+
+
+import { RencontreMediaChercheurComponent } from './view/rencontre-media-chercheur/rencontre-media-chercheur.component';
 
 
 import { NiveauEtudeChercheurComponent } from './view/niveau-etude-chercheur/niveau-etude-chercheur.component';
@@ -418,6 +413,9 @@ import { CommunauteSavoirChercheurChercheurComponent } from './view/communaute-s
 import { CategorieFaqChercheurComponent } from './view/categorie-faq-chercheur/categorie-faq-chercheur.component';
 
 
+import { ComiteEtCommissionEvaluationChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/comite-et-commission-evaluation-chercheur.component';
+
+
 import { ModaliteEtudeChercheurComponent } from './view/modalite-etude-chercheur/modalite-etude-chercheur.component';
 
 
@@ -438,10 +436,6 @@ import { ConsultanceScientifiquePonctuelleChercheurComponent } from './view/cons
 
 import { ModaliteInterventionChercheurComponent } from './view/modalite-intervention-chercheur/modalite-intervention-chercheur.component';
 
-
-import { CampagneChercheurComponent } from './view/campagne-chercheur/campagne-chercheur.component';
-
-import { CampagneCreateChercheurComponent } from './view/campagne-chercheur/create-chercheur/campagne-create-chercheur.component';
 
 import { ZoneGeographiqueFormationContinueChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/zone-geographique-formation-continue-chercheur.component';
 
@@ -633,6 +627,9 @@ import { EvenementColloqueScienntifiquePaysChercheurComponent } from './view/eve
 import { TypeExpertiseEvaluationChercheurComponent } from './view/type-expertise-evaluation-chercheur/type-expertise-evaluation-chercheur.component';
 
 
+import { EtatCampagneChercheurComponent } from './view/etat-campagne-chercheur/etat-campagne-chercheur.component';
+
+
 import { TypeSavoirChercheurComponent } from './view/type-savoir-chercheur/type-savoir-chercheur.component';
 
 
@@ -666,10 +663,6 @@ import { NationaliteChercheurComponent } from './view/nationalite-chercheur/nati
 import { PaysCommanditaireChercheurComponent } from './view/pays-commanditaire-chercheur/pays-commanditaire-chercheur.component';
 
 
-import { RencontreMediaChercheurComponent } from './view/rencontre-media-chercheur/rencontre-media-chercheur.component';
-
-import { RencontreMediaCreateChercheurComponent } from './view/rencontre-media-chercheur/create-chercheur/rencontre-media-create-chercheur.component';
-
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur.component';
 
 
@@ -698,6 +691,9 @@ import { ChercheurChercheurComponent } from './view/chercheur-chercheur/chercheu
 
 
 import { EtablissementConseilsScientifiqueChercheurComponent } from './view/etablissement-conseils-scientifique-chercheur/etablissement-conseils-scientifique-chercheur.component';
+
+
+import { CampagneChercheurComponent } from './view/campagne-chercheur/campagne-chercheur.component';
 
 
 import { EtatCampagneChercheurChercheurComponent } from './view/etat-campagne-chercheur-chercheur/etat-campagne-chercheur-chercheur.component';
@@ -899,22 +895,6 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                                 {
                                     path: 'list',
                                     component: TypeEtudeChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'comite-et-commission-evaluation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ComiteEtCommissionEvaluationChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                                 ,{
-                                    path: 'create',
-                                    component: ComiteEtCommissionEvaluationCreateChercheurComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1124,6 +1104,17 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                         },
                         {
 
+                            path: 'outil-pedagogique',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: OutilPedagogiqueChercheurComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'type-outil-pedagogique',
                             children: [
                                 {
@@ -1261,17 +1252,6 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                                 {
                                     path: 'list',
                                     component: ZoneGeographiqueConseilsScientifiqueChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etat-campagne',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtatCampagneChercheurComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1492,22 +1472,6 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                         },
                         {
 
-                            path: 'outil-pedagogique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: OutilPedagogiqueChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                                 ,{
-                                    path: 'create',
-                                    component: OutilPedagogiqueCreateChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'contexte',
                             children: [
                                 {
@@ -1546,6 +1510,17 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                                 {
                                     path: 'list',
                                     component: TypeExpertiseEvaluationComiteEtCommissionEvaluationChercheurComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
+                            path: 'rencontre-media',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: RencontreMediaChercheurComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2249,6 +2224,17 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                         },
                         {
 
+                            path: 'comite-et-commission-evaluation',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: ComiteEtCommissionEvaluationChercheurComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'modalite-etude',
                             children: [
                                 {
@@ -2320,22 +2306,6 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                                 {
                                     path: 'list',
                                     component: ModaliteInterventionChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'campagne',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CampagneChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                                 ,{
-                                    path: 'create',
-                                    component: CampagneCreateChercheurComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -3044,6 +3014,17 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                         },
                         {
 
+                            path: 'etat-campagne',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: EtatCampagneChercheurComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
                             path: 'type-savoir',
                             children: [
                                 {
@@ -3165,22 +3146,6 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                         },
                         {
 
-                            path: 'rencontre-media',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: RencontreMediaChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                                 ,{
-                                    path: 'create',
-                                    component: RencontreMediaCreateChercheurComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'rencontre-grand-publique-jeune-publique-type-instrument-ird',
                             children: [
                                 {
@@ -3285,6 +3250,17 @@ import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formatio
                                 {
                                     path: 'list',
                                     component: EtablissementConseilsScientifiqueChercheurComponent ,
+                                    canActivate: [AuthGuard]
+                                }
+                            ]
+                        },
+                        {
+
+                            path: 'campagne',
+                            children: [
+                                {
+                                    path: 'list',
+                                    component: CampagneChercheurComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]

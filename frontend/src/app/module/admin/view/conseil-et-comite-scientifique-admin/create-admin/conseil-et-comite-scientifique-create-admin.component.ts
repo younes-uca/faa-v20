@@ -10,24 +10,24 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
-import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
-import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
+import {CommunauteSavoirConseilEtComiteScientifiqueVo} from '../../../../../controller/model/CommunauteSavoirConseilEtComiteScientifique.model';
+import {CommunauteSavoirConseilEtComiteScientifiqueService} from '../../../../../controller/service/CommunauteSavoirConseilEtComiteScientifique.service';
 import {CampagneVo} from '../../../../../controller/model/Campagne.model';
 import {CampagneService} from '../../../../../controller/service/Campagne.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
-import {DisciplineScientifiqueConseilEtComiteScientifiqueVo} from '../../../../../controller/model/DisciplineScientifiqueConseilEtComiteScientifique.model';
-import {DisciplineScientifiqueConseilEtComiteScientifiqueService} from '../../../../../controller/service/DisciplineScientifiqueConseilEtComiteScientifique.service';
+import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
+import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
-import {CommunauteSavoirConseilEtComiteScientifiqueVo} from '../../../../../controller/model/CommunauteSavoirConseilEtComiteScientifique.model';
-import {CommunauteSavoirConseilEtComiteScientifiqueService} from '../../../../../controller/service/CommunauteSavoirConseilEtComiteScientifique.service';
+import {DisciplineScientifiqueConseilEtComiteScientifiqueVo} from '../../../../../controller/model/DisciplineScientifiqueConseilEtComiteScientifique.model';
+import {DisciplineScientifiqueConseilEtComiteScientifiqueService} from '../../../../../controller/service/DisciplineScientifiqueConseilEtComiteScientifique.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
+import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
 @Component({
   selector: 'app-conseil-et-comite-scientifique-create-admin',
   templateUrl: './conseil-et-comite-scientifique-create-admin.component.html',
@@ -58,15 +58,15 @@ constructor(private datePipe: DatePipe, private conseilEtComiteScientifiqueServi
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private disciplineScientifiqueService :DisciplineScientifiqueService
-,       private chercheurService :ChercheurService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private communauteSavoirService :CommunauteSavoirService
+,       private communauteSavoirConseilEtComiteScientifiqueService :CommunauteSavoirConseilEtComiteScientifiqueService
 ,       private campagneService :CampagneService
 ,       private etablissementService :EtablissementService
-,       private disciplineScientifiqueConseilEtComiteScientifiqueService :DisciplineScientifiqueConseilEtComiteScientifiqueService
+,       private disciplineScientifiqueService :DisciplineScientifiqueService
 ,       private paysService :PaysService
-,       private communauteSavoirConseilEtComiteScientifiqueService :CommunauteSavoirConseilEtComiteScientifiqueService
+,       private disciplineScientifiqueConseilEtComiteScientifiqueService :DisciplineScientifiqueConseilEtComiteScientifiqueService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private chercheurService :ChercheurService
+,       private communauteSavoirService :CommunauteSavoirService
 ) {
 
 }

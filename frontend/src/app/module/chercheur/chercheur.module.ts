@@ -94,11 +94,6 @@ import { TypeEtudeEditChercheurComponent } from './view/type-etude-chercheur/edi
 import { TypeEtudeViewChercheurComponent } from './view/type-etude-chercheur/view-chercheur/type-etude-view-chercheur.component';
 import { TypeEtudeListChercheurComponent } from './view/type-etude-chercheur/list-chercheur/type-etude-list-chercheur.component';
 import { TypeEtudeChercheurComponent } from './view/type-etude-chercheur/type-etude-chercheur.component';
-import { ComiteEtCommissionEvaluationCreateChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/create-chercheur/comite-et-commission-evaluation-create-chercheur.component';
-import { ComiteEtCommissionEvaluationEditChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/edit-chercheur/comite-et-commission-evaluation-edit-chercheur.component';
-import { ComiteEtCommissionEvaluationViewChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/view-chercheur/comite-et-commission-evaluation-view-chercheur.component';
-import { ComiteEtCommissionEvaluationListChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/list-chercheur/comite-et-commission-evaluation-list-chercheur.component';
-import { ComiteEtCommissionEvaluationChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/comite-et-commission-evaluation-chercheur.component';
 import { EnseignementZoneGeographiqueCreateChercheurComponent } from './view/enseignement-zone-geographique-chercheur/create-chercheur/enseignement-zone-geographique-create-chercheur.component';
 import { EnseignementZoneGeographiqueEditChercheurComponent } from './view/enseignement-zone-geographique-chercheur/edit-chercheur/enseignement-zone-geographique-edit-chercheur.component';
 import { EnseignementZoneGeographiqueViewChercheurComponent } from './view/enseignement-zone-geographique-chercheur/view-chercheur/enseignement-zone-geographique-view-chercheur.component';
@@ -189,6 +184,11 @@ import { OutilPedagogiqueInstrumentIrdEditChercheurComponent } from './view/outi
 import { OutilPedagogiqueInstrumentIrdViewChercheurComponent } from './view/outil-pedagogique-instrument-ird-chercheur/view-chercheur/outil-pedagogique-instrument-ird-view-chercheur.component';
 import { OutilPedagogiqueInstrumentIrdListChercheurComponent } from './view/outil-pedagogique-instrument-ird-chercheur/list-chercheur/outil-pedagogique-instrument-ird-list-chercheur.component';
 import { OutilPedagogiqueInstrumentIrdChercheurComponent } from './view/outil-pedagogique-instrument-ird-chercheur/outil-pedagogique-instrument-ird-chercheur.component';
+import { OutilPedagogiqueCreateChercheurComponent } from './view/outil-pedagogique-chercheur/create-chercheur/outil-pedagogique-create-chercheur.component';
+import { OutilPedagogiqueEditChercheurComponent } from './view/outil-pedagogique-chercheur/edit-chercheur/outil-pedagogique-edit-chercheur.component';
+import { OutilPedagogiqueViewChercheurComponent } from './view/outil-pedagogique-chercheur/view-chercheur/outil-pedagogique-view-chercheur.component';
+import { OutilPedagogiqueListChercheurComponent } from './view/outil-pedagogique-chercheur/list-chercheur/outil-pedagogique-list-chercheur.component';
+import { OutilPedagogiqueChercheurComponent } from './view/outil-pedagogique-chercheur/outil-pedagogique-chercheur.component';
 import { TypeOutilPedagogiqueCreateChercheurComponent } from './view/type-outil-pedagogique-chercheur/create-chercheur/type-outil-pedagogique-create-chercheur.component';
 import { TypeOutilPedagogiqueEditChercheurComponent } from './view/type-outil-pedagogique-chercheur/edit-chercheur/type-outil-pedagogique-edit-chercheur.component';
 import { TypeOutilPedagogiqueViewChercheurComponent } from './view/type-outil-pedagogique-chercheur/view-chercheur/type-outil-pedagogique-view-chercheur.component';
@@ -254,11 +254,6 @@ import { ZoneGeographiqueConseilsScientifiqueEditChercheurComponent } from './vi
 import { ZoneGeographiqueConseilsScientifiqueViewChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/view-chercheur/zone-geographique-conseils-scientifique-view-chercheur.component';
 import { ZoneGeographiqueConseilsScientifiqueListChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/list-chercheur/zone-geographique-conseils-scientifique-list-chercheur.component';
 import { ZoneGeographiqueConseilsScientifiqueChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/zone-geographique-conseils-scientifique-chercheur.component';
-import { EtatCampagneCreateChercheurComponent } from './view/etat-campagne-chercheur/create-chercheur/etat-campagne-create-chercheur.component';
-import { EtatCampagneEditChercheurComponent } from './view/etat-campagne-chercheur/edit-chercheur/etat-campagne-edit-chercheur.component';
-import { EtatCampagneViewChercheurComponent } from './view/etat-campagne-chercheur/view-chercheur/etat-campagne-view-chercheur.component';
-import { EtatCampagneListChercheurComponent } from './view/etat-campagne-chercheur/list-chercheur/etat-campagne-list-chercheur.component';
-import { EtatCampagneChercheurComponent } from './view/etat-campagne-chercheur/etat-campagne-chercheur.component';
 import { EnjeuxIrdCreateChercheurComponent } from './view/enjeux-ird-chercheur/create-chercheur/enjeux-ird-create-chercheur.component';
 import { EnjeuxIrdEditChercheurComponent } from './view/enjeux-ird-chercheur/edit-chercheur/enjeux-ird-edit-chercheur.component';
 import { EnjeuxIrdViewChercheurComponent } from './view/enjeux-ird-chercheur/view-chercheur/enjeux-ird-view-chercheur.component';
@@ -354,11 +349,6 @@ import { EtablissementProjetEditChercheurComponent } from './view/etablissement-
 import { EtablissementProjetViewChercheurComponent } from './view/etablissement-projet-chercheur/view-chercheur/etablissement-projet-view-chercheur.component';
 import { EtablissementProjetListChercheurComponent } from './view/etablissement-projet-chercheur/list-chercheur/etablissement-projet-list-chercheur.component';
 import { EtablissementProjetChercheurComponent } from './view/etablissement-projet-chercheur/etablissement-projet-chercheur.component';
-import { OutilPedagogiqueCreateChercheurComponent } from './view/outil-pedagogique-chercheur/create-chercheur/outil-pedagogique-create-chercheur.component';
-import { OutilPedagogiqueEditChercheurComponent } from './view/outil-pedagogique-chercheur/edit-chercheur/outil-pedagogique-edit-chercheur.component';
-import { OutilPedagogiqueViewChercheurComponent } from './view/outil-pedagogique-chercheur/view-chercheur/outil-pedagogique-view-chercheur.component';
-import { OutilPedagogiqueListChercheurComponent } from './view/outil-pedagogique-chercheur/list-chercheur/outil-pedagogique-list-chercheur.component';
-import { OutilPedagogiqueChercheurComponent } from './view/outil-pedagogique-chercheur/outil-pedagogique-chercheur.component';
 import { ContexteCreateChercheurComponent } from './view/contexte-chercheur/create-chercheur/contexte-create-chercheur.component';
 import { ContexteEditChercheurComponent } from './view/contexte-chercheur/edit-chercheur/contexte-edit-chercheur.component';
 import { ContexteViewChercheurComponent } from './view/contexte-chercheur/view-chercheur/contexte-view-chercheur.component';
@@ -379,6 +369,11 @@ import { TypeExpertiseEvaluationComiteEtCommissionEvaluationEditChercheurCompone
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationViewChercheurComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-chercheur/view-chercheur/type-expertise-evaluation-comite-et-commission-evaluation-view-chercheur.component';
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationListChercheurComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-chercheur/list-chercheur/type-expertise-evaluation-comite-et-commission-evaluation-list-chercheur.component';
 import { TypeExpertiseEvaluationComiteEtCommissionEvaluationChercheurComponent } from './view/type-expertise-evaluation-comite-et-commission-evaluation-chercheur/type-expertise-evaluation-comite-et-commission-evaluation-chercheur.component';
+import { RencontreMediaCreateChercheurComponent } from './view/rencontre-media-chercheur/create-chercheur/rencontre-media-create-chercheur.component';
+import { RencontreMediaEditChercheurComponent } from './view/rencontre-media-chercheur/edit-chercheur/rencontre-media-edit-chercheur.component';
+import { RencontreMediaViewChercheurComponent } from './view/rencontre-media-chercheur/view-chercheur/rencontre-media-view-chercheur.component';
+import { RencontreMediaListChercheurComponent } from './view/rencontre-media-chercheur/list-chercheur/rencontre-media-list-chercheur.component';
+import { RencontreMediaChercheurComponent } from './view/rencontre-media-chercheur/rencontre-media-chercheur.component';
 import { NiveauEtudeCreateChercheurComponent } from './view/niveau-etude-chercheur/create-chercheur/niveau-etude-create-chercheur.component';
 import { NiveauEtudeEditChercheurComponent } from './view/niveau-etude-chercheur/edit-chercheur/niveau-etude-edit-chercheur.component';
 import { NiveauEtudeViewChercheurComponent } from './view/niveau-etude-chercheur/view-chercheur/niveau-etude-view-chercheur.component';
@@ -689,6 +684,11 @@ import { CategorieFaqEditChercheurComponent } from './view/categorie-faq-cherche
 import { CategorieFaqViewChercheurComponent } from './view/categorie-faq-chercheur/view-chercheur/categorie-faq-view-chercheur.component';
 import { CategorieFaqListChercheurComponent } from './view/categorie-faq-chercheur/list-chercheur/categorie-faq-list-chercheur.component';
 import { CategorieFaqChercheurComponent } from './view/categorie-faq-chercheur/categorie-faq-chercheur.component';
+import { ComiteEtCommissionEvaluationCreateChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/create-chercheur/comite-et-commission-evaluation-create-chercheur.component';
+import { ComiteEtCommissionEvaluationEditChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/edit-chercheur/comite-et-commission-evaluation-edit-chercheur.component';
+import { ComiteEtCommissionEvaluationViewChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/view-chercheur/comite-et-commission-evaluation-view-chercheur.component';
+import { ComiteEtCommissionEvaluationListChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/list-chercheur/comite-et-commission-evaluation-list-chercheur.component';
+import { ComiteEtCommissionEvaluationChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/comite-et-commission-evaluation-chercheur.component';
 import { ModaliteEtudeCreateChercheurComponent } from './view/modalite-etude-chercheur/create-chercheur/modalite-etude-create-chercheur.component';
 import { ModaliteEtudeEditChercheurComponent } from './view/modalite-etude-chercheur/edit-chercheur/modalite-etude-edit-chercheur.component';
 import { ModaliteEtudeViewChercheurComponent } from './view/modalite-etude-chercheur/view-chercheur/modalite-etude-view-chercheur.component';
@@ -724,11 +724,6 @@ import { ModaliteInterventionEditChercheurComponent } from './view/modalite-inte
 import { ModaliteInterventionViewChercheurComponent } from './view/modalite-intervention-chercheur/view-chercheur/modalite-intervention-view-chercheur.component';
 import { ModaliteInterventionListChercheurComponent } from './view/modalite-intervention-chercheur/list-chercheur/modalite-intervention-list-chercheur.component';
 import { ModaliteInterventionChercheurComponent } from './view/modalite-intervention-chercheur/modalite-intervention-chercheur.component';
-import { CampagneCreateChercheurComponent } from './view/campagne-chercheur/create-chercheur/campagne-create-chercheur.component';
-import { CampagneEditChercheurComponent } from './view/campagne-chercheur/edit-chercheur/campagne-edit-chercheur.component';
-import { CampagneViewChercheurComponent } from './view/campagne-chercheur/view-chercheur/campagne-view-chercheur.component';
-import { CampagneListChercheurComponent } from './view/campagne-chercheur/list-chercheur/campagne-list-chercheur.component';
-import { CampagneChercheurComponent } from './view/campagne-chercheur/campagne-chercheur.component';
 import { ZoneGeographiqueFormationContinueCreateChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/create-chercheur/zone-geographique-formation-continue-create-chercheur.component';
 import { ZoneGeographiqueFormationContinueEditChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/edit-chercheur/zone-geographique-formation-continue-edit-chercheur.component';
 import { ZoneGeographiqueFormationContinueViewChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/view-chercheur/zone-geographique-formation-continue-view-chercheur.component';
@@ -1039,6 +1034,11 @@ import { TypeExpertiseEvaluationEditChercheurComponent } from './view/type-exper
 import { TypeExpertiseEvaluationViewChercheurComponent } from './view/type-expertise-evaluation-chercheur/view-chercheur/type-expertise-evaluation-view-chercheur.component';
 import { TypeExpertiseEvaluationListChercheurComponent } from './view/type-expertise-evaluation-chercheur/list-chercheur/type-expertise-evaluation-list-chercheur.component';
 import { TypeExpertiseEvaluationChercheurComponent } from './view/type-expertise-evaluation-chercheur/type-expertise-evaluation-chercheur.component';
+import { EtatCampagneCreateChercheurComponent } from './view/etat-campagne-chercheur/create-chercheur/etat-campagne-create-chercheur.component';
+import { EtatCampagneEditChercheurComponent } from './view/etat-campagne-chercheur/edit-chercheur/etat-campagne-edit-chercheur.component';
+import { EtatCampagneViewChercheurComponent } from './view/etat-campagne-chercheur/view-chercheur/etat-campagne-view-chercheur.component';
+import { EtatCampagneListChercheurComponent } from './view/etat-campagne-chercheur/list-chercheur/etat-campagne-list-chercheur.component';
+import { EtatCampagneChercheurComponent } from './view/etat-campagne-chercheur/etat-campagne-chercheur.component';
 import { TypeSavoirCreateChercheurComponent } from './view/type-savoir-chercheur/create-chercheur/type-savoir-create-chercheur.component';
 import { TypeSavoirEditChercheurComponent } from './view/type-savoir-chercheur/edit-chercheur/type-savoir-edit-chercheur.component';
 import { TypeSavoirViewChercheurComponent } from './view/type-savoir-chercheur/view-chercheur/type-savoir-view-chercheur.component';
@@ -1094,11 +1094,6 @@ import { PaysCommanditaireEditChercheurComponent } from './view/pays-commanditai
 import { PaysCommanditaireViewChercheurComponent } from './view/pays-commanditaire-chercheur/view-chercheur/pays-commanditaire-view-chercheur.component';
 import { PaysCommanditaireListChercheurComponent } from './view/pays-commanditaire-chercheur/list-chercheur/pays-commanditaire-list-chercheur.component';
 import { PaysCommanditaireChercheurComponent } from './view/pays-commanditaire-chercheur/pays-commanditaire-chercheur.component';
-import { RencontreMediaCreateChercheurComponent } from './view/rencontre-media-chercheur/create-chercheur/rencontre-media-create-chercheur.component';
-import { RencontreMediaEditChercheurComponent } from './view/rencontre-media-chercheur/edit-chercheur/rencontre-media-edit-chercheur.component';
-import { RencontreMediaViewChercheurComponent } from './view/rencontre-media-chercheur/view-chercheur/rencontre-media-view-chercheur.component';
-import { RencontreMediaListChercheurComponent } from './view/rencontre-media-chercheur/list-chercheur/rencontre-media-list-chercheur.component';
-import { RencontreMediaChercheurComponent } from './view/rencontre-media-chercheur/rencontre-media-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/create-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-create-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdEditChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/edit-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-edit-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/view-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-view-chercheur.component';
@@ -1149,6 +1144,11 @@ import { EtablissementConseilsScientifiqueEditChercheurComponent } from './view/
 import { EtablissementConseilsScientifiqueViewChercheurComponent } from './view/etablissement-conseils-scientifique-chercheur/view-chercheur/etablissement-conseils-scientifique-view-chercheur.component';
 import { EtablissementConseilsScientifiqueListChercheurComponent } from './view/etablissement-conseils-scientifique-chercheur/list-chercheur/etablissement-conseils-scientifique-list-chercheur.component';
 import { EtablissementConseilsScientifiqueChercheurComponent } from './view/etablissement-conseils-scientifique-chercheur/etablissement-conseils-scientifique-chercheur.component';
+import { CampagneCreateChercheurComponent } from './view/campagne-chercheur/create-chercheur/campagne-create-chercheur.component';
+import { CampagneEditChercheurComponent } from './view/campagne-chercheur/edit-chercheur/campagne-edit-chercheur.component';
+import { CampagneViewChercheurComponent } from './view/campagne-chercheur/view-chercheur/campagne-view-chercheur.component';
+import { CampagneListChercheurComponent } from './view/campagne-chercheur/list-chercheur/campagne-list-chercheur.component';
+import { CampagneChercheurComponent } from './view/campagne-chercheur/campagne-chercheur.component';
 import { EtatCampagneChercheurCreateChercheurComponent } from './view/etat-campagne-chercheur-chercheur/create-chercheur/etat-campagne-chercheur-create-chercheur.component';
 import { EtatCampagneChercheurEditChercheurComponent } from './view/etat-campagne-chercheur-chercheur/edit-chercheur/etat-campagne-chercheur-edit-chercheur.component';
 import { EtatCampagneChercheurViewChercheurComponent } from './view/etat-campagne-chercheur-chercheur/view-chercheur/etat-campagne-chercheur-view-chercheur.component';
@@ -1249,11 +1249,6 @@ import {MessagesModule} from 'primeng/messages';
     TypeEtudeViewChercheurComponent,
     TypeEtudeEditChercheurComponent,
     TypeEtudeChercheurComponent,
-    ComiteEtCommissionEvaluationCreateChercheurComponent,
-    ComiteEtCommissionEvaluationListChercheurComponent,
-    ComiteEtCommissionEvaluationViewChercheurComponent,
-    ComiteEtCommissionEvaluationEditChercheurComponent,
-    ComiteEtCommissionEvaluationChercheurComponent,
     EnseignementZoneGeographiqueCreateChercheurComponent,
     EnseignementZoneGeographiqueListChercheurComponent,
     EnseignementZoneGeographiqueViewChercheurComponent,
@@ -1344,6 +1339,11 @@ import {MessagesModule} from 'primeng/messages';
     OutilPedagogiqueInstrumentIrdViewChercheurComponent,
     OutilPedagogiqueInstrumentIrdEditChercheurComponent,
     OutilPedagogiqueInstrumentIrdChercheurComponent,
+    OutilPedagogiqueCreateChercheurComponent,
+    OutilPedagogiqueListChercheurComponent,
+    OutilPedagogiqueViewChercheurComponent,
+    OutilPedagogiqueEditChercheurComponent,
+    OutilPedagogiqueChercheurComponent,
     TypeOutilPedagogiqueCreateChercheurComponent,
     TypeOutilPedagogiqueListChercheurComponent,
     TypeOutilPedagogiqueViewChercheurComponent,
@@ -1409,11 +1409,6 @@ import {MessagesModule} from 'primeng/messages';
     ZoneGeographiqueConseilsScientifiqueViewChercheurComponent,
     ZoneGeographiqueConseilsScientifiqueEditChercheurComponent,
     ZoneGeographiqueConseilsScientifiqueChercheurComponent,
-    EtatCampagneCreateChercheurComponent,
-    EtatCampagneListChercheurComponent,
-    EtatCampagneViewChercheurComponent,
-    EtatCampagneEditChercheurComponent,
-    EtatCampagneChercheurComponent,
     EnjeuxIrdCreateChercheurComponent,
     EnjeuxIrdListChercheurComponent,
     EnjeuxIrdViewChercheurComponent,
@@ -1509,11 +1504,6 @@ import {MessagesModule} from 'primeng/messages';
     EtablissementProjetViewChercheurComponent,
     EtablissementProjetEditChercheurComponent,
     EtablissementProjetChercheurComponent,
-    OutilPedagogiqueCreateChercheurComponent,
-    OutilPedagogiqueListChercheurComponent,
-    OutilPedagogiqueViewChercheurComponent,
-    OutilPedagogiqueEditChercheurComponent,
-    OutilPedagogiqueChercheurComponent,
     ContexteCreateChercheurComponent,
     ContexteListChercheurComponent,
     ContexteViewChercheurComponent,
@@ -1534,6 +1524,11 @@ import {MessagesModule} from 'primeng/messages';
     TypeExpertiseEvaluationComiteEtCommissionEvaluationViewChercheurComponent,
     TypeExpertiseEvaluationComiteEtCommissionEvaluationEditChercheurComponent,
     TypeExpertiseEvaluationComiteEtCommissionEvaluationChercheurComponent,
+    RencontreMediaCreateChercheurComponent,
+    RencontreMediaListChercheurComponent,
+    RencontreMediaViewChercheurComponent,
+    RencontreMediaEditChercheurComponent,
+    RencontreMediaChercheurComponent,
     NiveauEtudeCreateChercheurComponent,
     NiveauEtudeListChercheurComponent,
     NiveauEtudeViewChercheurComponent,
@@ -1844,6 +1839,11 @@ import {MessagesModule} from 'primeng/messages';
     CategorieFaqViewChercheurComponent,
     CategorieFaqEditChercheurComponent,
     CategorieFaqChercheurComponent,
+    ComiteEtCommissionEvaluationCreateChercheurComponent,
+    ComiteEtCommissionEvaluationListChercheurComponent,
+    ComiteEtCommissionEvaluationViewChercheurComponent,
+    ComiteEtCommissionEvaluationEditChercheurComponent,
+    ComiteEtCommissionEvaluationChercheurComponent,
     ModaliteEtudeCreateChercheurComponent,
     ModaliteEtudeListChercheurComponent,
     ModaliteEtudeViewChercheurComponent,
@@ -1879,11 +1879,6 @@ import {MessagesModule} from 'primeng/messages';
     ModaliteInterventionViewChercheurComponent,
     ModaliteInterventionEditChercheurComponent,
     ModaliteInterventionChercheurComponent,
-    CampagneCreateChercheurComponent,
-    CampagneListChercheurComponent,
-    CampagneViewChercheurComponent,
-    CampagneEditChercheurComponent,
-    CampagneChercheurComponent,
     ZoneGeographiqueFormationContinueCreateChercheurComponent,
     ZoneGeographiqueFormationContinueListChercheurComponent,
     ZoneGeographiqueFormationContinueViewChercheurComponent,
@@ -2194,6 +2189,11 @@ import {MessagesModule} from 'primeng/messages';
     TypeExpertiseEvaluationViewChercheurComponent,
     TypeExpertiseEvaluationEditChercheurComponent,
     TypeExpertiseEvaluationChercheurComponent,
+    EtatCampagneCreateChercheurComponent,
+    EtatCampagneListChercheurComponent,
+    EtatCampagneViewChercheurComponent,
+    EtatCampagneEditChercheurComponent,
+    EtatCampagneChercheurComponent,
     TypeSavoirCreateChercheurComponent,
     TypeSavoirListChercheurComponent,
     TypeSavoirViewChercheurComponent,
@@ -2249,11 +2249,6 @@ import {MessagesModule} from 'primeng/messages';
     PaysCommanditaireViewChercheurComponent,
     PaysCommanditaireEditChercheurComponent,
     PaysCommanditaireChercheurComponent,
-    RencontreMediaCreateChercheurComponent,
-    RencontreMediaListChercheurComponent,
-    RencontreMediaViewChercheurComponent,
-    RencontreMediaEditChercheurComponent,
-    RencontreMediaChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdListChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent,
@@ -2304,6 +2299,11 @@ import {MessagesModule} from 'primeng/messages';
     EtablissementConseilsScientifiqueViewChercheurComponent,
     EtablissementConseilsScientifiqueEditChercheurComponent,
     EtablissementConseilsScientifiqueChercheurComponent,
+    CampagneCreateChercheurComponent,
+    CampagneListChercheurComponent,
+    CampagneViewChercheurComponent,
+    CampagneEditChercheurComponent,
+    CampagneChercheurComponent,
     EtatCampagneChercheurCreateChercheurComponent,
     EtatCampagneChercheurListChercheurComponent,
     EtatCampagneChercheurViewChercheurComponent,
@@ -2420,11 +2420,6 @@ import {MessagesModule} from 'primeng/messages';
   TypeEtudeViewChercheurComponent,
   TypeEtudeEditChercheurComponent,
   TypeEtudeChercheurComponent,
-  ComiteEtCommissionEvaluationCreateChercheurComponent,
-  ComiteEtCommissionEvaluationListChercheurComponent,
-  ComiteEtCommissionEvaluationViewChercheurComponent,
-  ComiteEtCommissionEvaluationEditChercheurComponent,
-  ComiteEtCommissionEvaluationChercheurComponent,
   EnseignementZoneGeographiqueCreateChercheurComponent,
   EnseignementZoneGeographiqueListChercheurComponent,
   EnseignementZoneGeographiqueViewChercheurComponent,
@@ -2515,6 +2510,11 @@ import {MessagesModule} from 'primeng/messages';
   OutilPedagogiqueInstrumentIrdViewChercheurComponent,
   OutilPedagogiqueInstrumentIrdEditChercheurComponent,
   OutilPedagogiqueInstrumentIrdChercheurComponent,
+  OutilPedagogiqueCreateChercheurComponent,
+  OutilPedagogiqueListChercheurComponent,
+  OutilPedagogiqueViewChercheurComponent,
+  OutilPedagogiqueEditChercheurComponent,
+  OutilPedagogiqueChercheurComponent,
   TypeOutilPedagogiqueCreateChercheurComponent,
   TypeOutilPedagogiqueListChercheurComponent,
   TypeOutilPedagogiqueViewChercheurComponent,
@@ -2580,11 +2580,6 @@ import {MessagesModule} from 'primeng/messages';
   ZoneGeographiqueConseilsScientifiqueViewChercheurComponent,
   ZoneGeographiqueConseilsScientifiqueEditChercheurComponent,
   ZoneGeographiqueConseilsScientifiqueChercheurComponent,
-  EtatCampagneCreateChercheurComponent,
-  EtatCampagneListChercheurComponent,
-  EtatCampagneViewChercheurComponent,
-  EtatCampagneEditChercheurComponent,
-  EtatCampagneChercheurComponent,
   EnjeuxIrdCreateChercheurComponent,
   EnjeuxIrdListChercheurComponent,
   EnjeuxIrdViewChercheurComponent,
@@ -2680,11 +2675,6 @@ import {MessagesModule} from 'primeng/messages';
   EtablissementProjetViewChercheurComponent,
   EtablissementProjetEditChercheurComponent,
   EtablissementProjetChercheurComponent,
-  OutilPedagogiqueCreateChercheurComponent,
-  OutilPedagogiqueListChercheurComponent,
-  OutilPedagogiqueViewChercheurComponent,
-  OutilPedagogiqueEditChercheurComponent,
-  OutilPedagogiqueChercheurComponent,
   ContexteCreateChercheurComponent,
   ContexteListChercheurComponent,
   ContexteViewChercheurComponent,
@@ -2705,6 +2695,11 @@ import {MessagesModule} from 'primeng/messages';
   TypeExpertiseEvaluationComiteEtCommissionEvaluationViewChercheurComponent,
   TypeExpertiseEvaluationComiteEtCommissionEvaluationEditChercheurComponent,
   TypeExpertiseEvaluationComiteEtCommissionEvaluationChercheurComponent,
+  RencontreMediaCreateChercheurComponent,
+  RencontreMediaListChercheurComponent,
+  RencontreMediaViewChercheurComponent,
+  RencontreMediaEditChercheurComponent,
+  RencontreMediaChercheurComponent,
   NiveauEtudeCreateChercheurComponent,
   NiveauEtudeListChercheurComponent,
   NiveauEtudeViewChercheurComponent,
@@ -3015,6 +3010,11 @@ import {MessagesModule} from 'primeng/messages';
   CategorieFaqViewChercheurComponent,
   CategorieFaqEditChercheurComponent,
   CategorieFaqChercheurComponent,
+  ComiteEtCommissionEvaluationCreateChercheurComponent,
+  ComiteEtCommissionEvaluationListChercheurComponent,
+  ComiteEtCommissionEvaluationViewChercheurComponent,
+  ComiteEtCommissionEvaluationEditChercheurComponent,
+  ComiteEtCommissionEvaluationChercheurComponent,
   ModaliteEtudeCreateChercheurComponent,
   ModaliteEtudeListChercheurComponent,
   ModaliteEtudeViewChercheurComponent,
@@ -3050,11 +3050,6 @@ import {MessagesModule} from 'primeng/messages';
   ModaliteInterventionViewChercheurComponent,
   ModaliteInterventionEditChercheurComponent,
   ModaliteInterventionChercheurComponent,
-  CampagneCreateChercheurComponent,
-  CampagneListChercheurComponent,
-  CampagneViewChercheurComponent,
-  CampagneEditChercheurComponent,
-  CampagneChercheurComponent,
   ZoneGeographiqueFormationContinueCreateChercheurComponent,
   ZoneGeographiqueFormationContinueListChercheurComponent,
   ZoneGeographiqueFormationContinueViewChercheurComponent,
@@ -3365,6 +3360,11 @@ import {MessagesModule} from 'primeng/messages';
   TypeExpertiseEvaluationViewChercheurComponent,
   TypeExpertiseEvaluationEditChercheurComponent,
   TypeExpertiseEvaluationChercheurComponent,
+  EtatCampagneCreateChercheurComponent,
+  EtatCampagneListChercheurComponent,
+  EtatCampagneViewChercheurComponent,
+  EtatCampagneEditChercheurComponent,
+  EtatCampagneChercheurComponent,
   TypeSavoirCreateChercheurComponent,
   TypeSavoirListChercheurComponent,
   TypeSavoirViewChercheurComponent,
@@ -3420,11 +3420,6 @@ import {MessagesModule} from 'primeng/messages';
   PaysCommanditaireViewChercheurComponent,
   PaysCommanditaireEditChercheurComponent,
   PaysCommanditaireChercheurComponent,
-  RencontreMediaCreateChercheurComponent,
-  RencontreMediaListChercheurComponent,
-  RencontreMediaViewChercheurComponent,
-  RencontreMediaEditChercheurComponent,
-  RencontreMediaChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdListChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent,
@@ -3475,6 +3470,11 @@ import {MessagesModule} from 'primeng/messages';
   EtablissementConseilsScientifiqueViewChercheurComponent,
   EtablissementConseilsScientifiqueEditChercheurComponent,
   EtablissementConseilsScientifiqueChercheurComponent,
+  CampagneCreateChercheurComponent,
+  CampagneListChercheurComponent,
+  CampagneViewChercheurComponent,
+  CampagneEditChercheurComponent,
+  CampagneChercheurComponent,
   EtatCampagneChercheurCreateChercheurComponent,
   EtatCampagneChercheurListChercheurComponent,
   EtatCampagneChercheurViewChercheurComponent,

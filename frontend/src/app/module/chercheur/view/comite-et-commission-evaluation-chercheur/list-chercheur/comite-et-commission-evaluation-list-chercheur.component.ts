@@ -70,9 +70,6 @@ export class ComiteEtCommissionEvaluationListChercheurComponent implements OnIni
         isPermistted ? this.comiteEtCommissionEvaluationService.findAll().subscribe(comiteEtCommissionEvaluations => this.comiteEtCommissionEvaluations = comiteEtCommissionEvaluations,error=>console.log(error))
         : this.messageService.add({severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'});
     }
-navigateToComiteEtCommissionEvaluationCreate(){
-this.router.navigate(['/app/chercheur/comiteEtCommissionEvaluation/create']);
-}
 
 
   public searchRequest(){
@@ -101,7 +98,7 @@ this.router.navigate(['/app/chercheur/comiteEtCommissionEvaluation/create']);
          if(isPermistted){
           this.comiteEtCommissionEvaluationService.findByIdWithAssociatedList(comiteEtCommissionEvaluation).subscribe(res => {
            this.selectedComiteEtCommissionEvaluation = res;
-            this.navigateToComiteEtCommissionEvaluationCreate() ;
+            this.editComiteEtCommissionEvaluationDialog = true;
           });
         }else{
             this.messageService.add({
@@ -132,7 +129,7 @@ this.router.navigate(['/app/chercheur/comiteEtCommissionEvaluation/create']);
         const isPermistted = await this.roleService.isPermitted(pojo, 'add');
         if(isPermistted){
          this.selectedComiteEtCommissionEvaluation = new ComiteEtCommissionEvaluationVo();
-            this.navigateToComiteEtCommissionEvaluationCreate() ;
+            this.createComiteEtCommissionEvaluationDialog = true;
         }else{
              this.messageService.add({
                 severity: 'error', summary: 'erreur', detail: 'problème d\'autorisation'
@@ -201,7 +198,7 @@ public async duplicateComiteEtCommissionEvaluation(comiteEtCommissionEvaluation:
 	       this.initDuplicateComiteEtCommissionEvaluation(res);
 	       this.selectedComiteEtCommissionEvaluation = res;
 	       this.selectedComiteEtCommissionEvaluation.id = null;
-            this.navigateToComiteEtCommissionEvaluationCreate() ;
+            this.createComiteEtCommissionEvaluationDialog = true;
 
 });
 

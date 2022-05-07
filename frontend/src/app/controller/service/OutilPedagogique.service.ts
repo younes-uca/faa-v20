@@ -43,14 +43,6 @@ export class OutilPedagogiqueService {
 
     // methods
 
-    public findByChercheurUsernameAndCampagneId(username: string, compagneId: number): Observable<OutilPedagogiqueVo>{
-        return this.http.get<OutilPedagogiqueVo>(this.API + 'username/' +username+ '/id/' +compagneId);
-        }
-
-    public findByChercheurId(id: string): Observable<Array<OutilPedagogiqueVo>>{
-        return this.http.get<Array<OutilPedagogiqueVo>>(this.API + 'chercheur/id/' +id);
-         }
-
     public findAll(){
      return this.http.get<Array<OutilPedagogiqueVo>>(this.API);
     }

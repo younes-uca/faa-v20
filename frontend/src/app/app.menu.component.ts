@@ -893,11 +893,6 @@ export class AppMenuComponent implements OnInit {
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/outil-pedagogique/list']
                     },
-                    {
-                      label: 'Nouveau Outil pedagogique',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/outil-pedagogique/create']
-                    },
                 ]
               },
               {
@@ -956,22 +951,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Rencontre media',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Rencontre media',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/rencontre-media/list']
-                    },
-                    {
-                      label: 'Nouveau Rencontre media',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/rencontre-media/create']
-                    },
-                ]
-              },
-              {
                 label: 'Discipline scientifique',
                 icon: 'pi pi-wallet',
                 items:[
@@ -979,6 +958,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Discipline scientifique',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/discipline-scientifique/list']
+                    },
+                ]
+              },
+              {
+                label: 'Rencontre media',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Rencontre media',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/rencontre-media/list']
                     },
                 ]
               },
@@ -2615,11 +2605,6 @@ export class AppMenuComponent implements OnInit {
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/campagne/list']
                     },
-                    {
-                      label: 'Nouveau Campagne',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/campagne/create']
-                    },
                 ]
               },
               {
@@ -2630,11 +2615,6 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Comite et commission evaluation',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/comite-et-commission-evaluation/list']
-                    },
-                    {
-                      label: 'Nouveau Comite et commission evaluation',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/comite-et-commission-evaluation/create']
                     },
                 ]
               },
@@ -3474,11 +3454,6 @@ export class AppMenuComponent implements OnInit {
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/outil-pedagogique/list']
                     },
-                    {
-                      label: 'Nouveau Outil pedagogique',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/outil-pedagogique/create']
-                    },
                 ]
               },
               {
@@ -3537,22 +3512,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Rencontre media',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Rencontre media',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/rencontre-media/list']
-                    },
-                    {
-                      label: 'Nouveau Rencontre media',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/rencontre-media/create']
-                    },
-                ]
-              },
-              {
                 label: 'Discipline scientifique',
                 icon: 'pi pi-wallet',
                 items:[
@@ -3560,6 +3519,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Discipline scientifique',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/discipline-scientifique/list']
+                    },
+                ]
+              },
+              {
+                label: 'Rencontre media',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Rencontre media',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/rencontre-media/list']
                     },
                 ]
               },
@@ -5196,11 +5166,6 @@ export class AppMenuComponent implements OnInit {
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/campagne/list']
                     },
-                    {
-                      label: 'Nouveau Campagne',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/campagne/create']
-                    },
                 ]
               },
               {
@@ -5211,11 +5176,6 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Comite et commission evaluation',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/comite-et-commission-evaluation/list']
-                    },
-                    {
-                      label: 'Nouveau Comite et commission evaluation',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/comite-et-commission-evaluation/create']
                     },
                 ]
               },

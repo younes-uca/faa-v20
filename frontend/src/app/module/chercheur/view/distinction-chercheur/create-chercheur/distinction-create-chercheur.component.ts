@@ -11,20 +11,20 @@ import {StringUtilService} from '../../../../../controller/service/StringUtil.se
 
 import { TokenService } from 'src/app/controller/service/Token.service';
 
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
-import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
-import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
-import {TypeParticipationVo} from '../../../../../controller/model/TypeParticipation.model';
-import {TypeParticipationService} from '../../../../../controller/service/TypeParticipation.service';
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
 import {DistinctionEtablissementPaysVo} from '../../../../../controller/model/DistinctionEtablissementPays.model';
 import {DistinctionEtablissementPaysService} from '../../../../../controller/service/DistinctionEtablissementPays.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
 import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
+import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {TypeParticipationVo} from '../../../../../controller/model/TypeParticipation.model';
+import {TypeParticipationService} from '../../../../../controller/service/TypeParticipation.service';
 @Component({
   selector: 'app-distinction-create-chercheur',
   templateUrl: './distinction-create-chercheur.component.html',
@@ -59,13 +59,13 @@ constructor(private datePipe: DatePipe, private distinctionService: DistinctionS
  ,       private messageService: MessageService
  ,       private router: Router
   ,       private tokenService: TokenService
-,       private chercheurService :ChercheurService
-,       private etatEtapeCampagneService :EtatEtapeCampagneService
-,       private typeParticipationService :TypeParticipationService
-,       private campagneService :CampagneService
 ,       private distinctionEtablissementPaysService :DistinctionEtablissementPaysService
+,       private campagneService :CampagneService
 ,       private etablissementService :EtablissementService
 ,       private paysService :PaysService
+,       private etatEtapeCampagneService :EtatEtapeCampagneService
+,       private chercheurService :ChercheurService
+,       private typeParticipationService :TypeParticipationService
 ) {
 
 }
