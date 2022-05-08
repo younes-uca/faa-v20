@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {CommunauteSavoirVo} from '../../../../../controller/model/CommunauteSavoir.model';
 import {CommunauteSavoirService} from '../../../../../controller/service/CommunauteSavoir.service';
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 @Component({
   selector: 'app-communaute-savoir-chercheur-create-chercheur',
   templateUrl: './communaute-savoir-chercheur-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private communauteSavoirChercheurService
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private chercheurService :ChercheurService
 ,       private communauteSavoirService :CommunauteSavoirService
+,       private chercheurService :ChercheurService
 ) {
 
 }

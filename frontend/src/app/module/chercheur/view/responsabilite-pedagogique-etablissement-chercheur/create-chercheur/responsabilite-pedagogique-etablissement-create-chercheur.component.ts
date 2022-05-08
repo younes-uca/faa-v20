@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
-import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {ResponsabilitePedagogiqueVo} from '../../../../../controller/model/ResponsabilitePedagogique.model';
 import {ResponsabilitePedagogiqueService} from '../../../../../controller/service/ResponsabilitePedagogique.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
+import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 @Component({
   selector: 'app-responsabilite-pedagogique-etablissement-create-chercheur',
   templateUrl: './responsabilite-pedagogique-etablissement-create-chercheur.component.html',
@@ -44,9 +44,9 @@ constructor(private datePipe: DatePipe, private responsabilitePedagogiqueEtablis
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private etablissementService :EtablissementService
 ,       private responsabilitePedagogiqueService :ResponsabilitePedagogiqueService
 ,       private paysService :PaysService
+,       private etablissementService :EtablissementService
 ) {
 
 }

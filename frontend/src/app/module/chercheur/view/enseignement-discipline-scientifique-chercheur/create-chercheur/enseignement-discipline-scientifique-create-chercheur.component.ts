@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
-import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
 import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
 import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
+import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
+import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
 @Component({
   selector: 'app-enseignement-discipline-scientifique-create-chercheur',
   templateUrl: './enseignement-discipline-scientifique-create-chercheur.component.html',
@@ -45,8 +45,8 @@ constructor(private datePipe: DatePipe, private enseignementDisciplineScientifiq
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private disciplineScientifiqueService :DisciplineScientifiqueService
 ,       private enseignementService :EnseignementService
+,       private disciplineScientifiqueService :DisciplineScientifiqueService
 ) {
 
 }

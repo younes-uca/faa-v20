@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import com.ird.faa.service.util.StringUtil;
-import com.ird.faa.security.common.SecurityUtil;
-import com.ird.faa.security.bean.User;
 import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import com.ird.faa.bean.OutilPedagogique;
@@ -95,11 +92,7 @@ private EntityManager entityManager;
 
 @Override
 public List<OutilPedagogique> findAll(){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-    return outilPedagogiqueDao.findByChercheurUsername(currentUser.getUsername());
-    }
-    return new ArrayList<>();
+        return outilPedagogiqueDao.findAll();
 }
         @Override
         public List<OutilPedagogique> findByCultureScientifiqueId(Long id){
@@ -271,21 +264,6 @@ prepareSave(outilPedagogique);
 
 OutilPedagogique result =null;
 
-    User currentUser = SecurityUtil.getCurrentUser();
-    if (currentUser == null || StringUtil.isEmpty(currentUser.getUsername())) {
-    return result;
-    }
-    String username = currentUser.getUsername();
-    Chercheur loadedChercheur = chercheurService.findByUsername(username);
-    if (loadedChercheur == null) {
-    return result;
-    }
-    Campagne laodedCampagne = campagneService.findProgressCampagneByChercheurUsername(username);
-    if (laodedCampagne == null) {
-    return result;
-    } else {
-    outilPedagogique.setChercheur(loadedChercheur);
-    outilPedagogique.setCampagne(laodedCampagne);
 
     findCultureScientifique(outilPedagogique);
     findEtatEtapeCampagne(outilPedagogique);
@@ -302,7 +280,6 @@ OutilPedagogique savedOutilPedagogique = outilPedagogiqueDao.save(outilPedagogiq
        saveOutilPedagogiqueInstrumentIrds(savedOutilPedagogique,outilPedagogique.getOutilPedagogiqueInstrumentIrds());
        saveOutilPedagogiqueTypeInstrumentIrds(savedOutilPedagogique,outilPedagogique.getOutilPedagogiqueTypeInstrumentIrds());
 result = savedOutilPedagogique;
-}
 
 return result;
 }
@@ -384,11 +361,8 @@ return 1;
 
 
 public List<OutilPedagogique> findByCriteria(OutilPedagogiqueVo outilPedagogiqueVo){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())) {
 
 String query = "SELECT o FROM OutilPedagogique o where 1=1 ";
-    query += SearchUtil.addConstraint("o", "chercheur.username", "=", currentUser.getUsername());
 
             query += SearchUtil.addConstraint( "o", "id","=",outilPedagogiqueVo.getId());
             query += SearchUtil.addConstraint( "o", "nom","LIKE",outilPedagogiqueVo.getNom());
@@ -410,8 +384,6 @@ String query = "SELECT o FROM OutilPedagogique o where 1=1 ";
     }
 
 return entityManager.createQuery(query).getResultList();
-}
-return new ArrayList<>();
 }
         private  void saveOutilPedagogiqueEnjeuxIrds(OutilPedagogique outilPedagogique,List<OutilPedagogiqueEnjeuxIrd> outilPedagogiqueEnjeuxIrds){
 
@@ -592,10 +564,5 @@ private void associateOutilPedagogiqueTypeInstrumentIrd(OutilPedagogique outilPe
     }
     }
 
-@Override
-public List<OutilPedagogique> findByChercheurUsernameAndCampagneId(String username, Long compagneId){
-List<OutilPedagogique> resultat= outilPedagogiqueDao.findByChercheurUsernameAndCampagneId(username, compagneId);
-    return resultat;
-}
 
 }

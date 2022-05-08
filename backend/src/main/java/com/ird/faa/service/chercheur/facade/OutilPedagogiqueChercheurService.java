@@ -33,7 +33,6 @@ public interface OutilPedagogiqueChercheurService extends AbstractService<OutilP
 
 
 
-   public List<OutilPedagogique> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
 
 
 

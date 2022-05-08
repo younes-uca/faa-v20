@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {RencontreGrandPubliqueJeunePubliqueVo} from '../../../../../controller/model/RencontreGrandPubliqueJeunePublique.model';
 import {RencontreGrandPubliqueJeunePubliqueService} from '../../../../../controller/service/RencontreGrandPubliqueJeunePublique.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-rencontre-grand-publique-jeune-publique-enjeux-ird-create-admin',
   templateUrl: './rencontre-grand-publique-jeune-publique-enjeux-ird-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private rencontreGrandPubliqueJeunePubli
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private rencontreGrandPubliqueJeunePubliqueService :RencontreGrandPubliqueJeunePubliqueService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

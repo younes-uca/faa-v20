@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {ResponsabilitePedagogiqueVo} from '../../../../../controller/model/ResponsabilitePedagogique.model';
 import {ResponsabilitePedagogiqueService} from '../../../../../controller/service/ResponsabilitePedagogique.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-responsabilite-pedagogique-enjeux-ird-create-admin',
   templateUrl: './responsabilite-pedagogique-enjeux-ird-create-admin.component.html',
@@ -41,8 +41,8 @@ constructor(private datePipe: DatePipe, private responsabilitePedagogiqueEnjeuxI
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private responsabilitePedagogiqueService :ResponsabilitePedagogiqueService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

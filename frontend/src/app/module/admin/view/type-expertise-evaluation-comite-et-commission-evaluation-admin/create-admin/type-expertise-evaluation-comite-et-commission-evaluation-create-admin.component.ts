@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
-import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 import {TypeExpertiseEvaluationVo} from '../../../../../controller/model/TypeExpertiseEvaluation.model';
 import {TypeExpertiseEvaluationService} from '../../../../../controller/service/TypeExpertiseEvaluation.service';
+import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
+import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 @Component({
   selector: 'app-type-expertise-evaluation-comite-et-commission-evaluation-create-admin',
   templateUrl: './type-expertise-evaluation-comite-et-commission-evaluation-create-admin.component.html',
@@ -46,8 +46,8 @@ constructor(private datePipe: DatePipe, private typeExpertiseEvaluationComiteEtC
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ,       private typeExpertiseEvaluationService :TypeExpertiseEvaluationService
+,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ) {
 
 }

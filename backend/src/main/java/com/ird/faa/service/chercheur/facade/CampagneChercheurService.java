@@ -67,7 +67,6 @@ public interface CampagneChercheurService extends AbstractService<Campagne,Long,
 
     Campagne findProgressCampagneByChercheurUsername(String username);
 
-   public List<Campagne> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
 
 
 

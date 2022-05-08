@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
-import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 import {PaysVo} from '../../../../../controller/model/Pays.model';
 import {PaysService} from '../../../../../controller/service/Pays.service';
+import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
+import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 @Component({
   selector: 'app-pays-formation-continue-create-chercheur',
   templateUrl: './pays-formation-continue-create-chercheur.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private paysFormationContinueService: Pa
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private formationContinueService :FormationContinueService
 ,       private paysService :PaysService
+,       private formationContinueService :FormationContinueService
 ) {
 
 }

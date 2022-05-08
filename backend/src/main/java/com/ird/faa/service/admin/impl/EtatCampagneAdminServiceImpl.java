@@ -15,7 +15,6 @@ import com.ird.faa.service.admin.facade.EtatCampagneAdminService;
 import com.ird.faa.ws.rest.provided.vo.EtatCampagneVo;
 import com.ird.faa.service.util.*;
 
-import com.ird.faa.service.core.facade.ArchivableService;
 import com.ird.faa.service.core.impl.AbstractServiceImpl;
 
 @Service
@@ -24,8 +23,6 @@ public class EtatCampagneAdminServiceImpl extends AbstractServiceImpl<EtatCampag
 @Autowired
 private EtatCampagneDao etatCampagneDao;
 
-@Autowired
-private ArchivableService<EtatCampagne> archivableService;
 
 
 @Autowired
@@ -72,29 +69,6 @@ return etatCampagneDao.getOne(id);
 public EtatCampagne findByIdWithAssociatedList(Long id){
 return findById(id);
 }
-     @Override
-    public EtatCampagne archiver(EtatCampagne etatCampagne) {
-        if (etatCampagne.getArchive() == null) {
-        etatCampagne.setArchive(false);
-        }
-        etatCampagne.setArchive(true);
-        etatCampagne.setDateArchivage(new Date());
-        etatCampagneDao.save(etatCampagne);
-        return etatCampagne;
-
-    }
-
-    @Override
-    public EtatCampagne desarchiver(EtatCampagne etatCampagne) {
-    if (etatCampagne.getArchive() == null) {
-    etatCampagne.setArchive(false);
-    }
-    etatCampagne.setArchive(false);
-    etatCampagne.setDateArchivage(null);
-    etatCampagneDao.save(etatCampagne);
-    return etatCampagne;
-    }
-
 
 
 @Transactional
@@ -113,28 +87,12 @@ public EtatCampagne update(EtatCampagne etatCampagne){
 EtatCampagne foundedEtatCampagne = findById(etatCampagne.getId());
 if(foundedEtatCampagne==null) return null;
 else{
-    archivableService.prepare(etatCampagne);
 return  etatCampagneDao.save(etatCampagne);
 }
-}
-private void prepareSave(EtatCampagne etatCampagne){
-etatCampagne.setDateCreation(new Date());
-if(etatCampagne.getArchive() == null)
-  etatCampagne.setArchive(false);
-if(etatCampagne.getAdmin() == null)
-  etatCampagne.setAdmin(false);
-if(etatCampagne.getVisible() == null)
-  etatCampagne.setVisible(false);
-
-    etatCampagne.setAdmin(true);
-    etatCampagne.setVisible(true);
-
-
 }
 
 @Override
 public EtatCampagne save (EtatCampagne etatCampagne){
-prepareSave(etatCampagne);
 
 EtatCampagne result =null;
     EtatCampagne foundedEtatCampagne = findByCode(etatCampagne.getCode());
@@ -181,15 +139,7 @@ String query = "SELECT o FROM EtatCampagne o where 1=1 ";
             query += SearchUtil.addConstraint( "o", "libelle","LIKE",etatCampagneVo.getLibelle());
             query += SearchUtil.addConstraint( "o", "code","LIKE",etatCampagneVo.getCode());
             query += SearchUtil.addConstraint( "o", "ordre","=",etatCampagneVo.getOrdre());
-            query += SearchUtil.addConstraint( "o", "archive","=",etatCampagneVo.getArchive());
-        query += SearchUtil.addConstraintDate( "o", "dateArchivage","=",etatCampagneVo.getDateArchivage());
-        query += SearchUtil.addConstraintDate( "o", "dateCreation","=",etatCampagneVo.getDateCreation());
-            query += SearchUtil.addConstraint( "o", "admin","=",etatCampagneVo.getAdmin());
-            query += SearchUtil.addConstraint( "o", "visible","=",etatCampagneVo.getVisible());
-            query += SearchUtil.addConstraint( "o", "username","LIKE",etatCampagneVo.getUsername());
             query += SearchUtil.addConstraintMinMax("o","ordre",etatCampagneVo.getOrdreMin(),etatCampagneVo.getOrdreMax());
-            query += SearchUtil.addConstraintMinMaxDate("o","dateArchivage",etatCampagneVo.getDateArchivageMin(),etatCampagneVo.getDateArchivageMax());
-            query += SearchUtil.addConstraintMinMaxDate("o","dateCreation",etatCampagneVo.getDateCreationMin(),etatCampagneVo.getDateCreationMax());
 query+= " ORDER BY o.ordre";
 return entityManager.createQuery(query).getResultList();
 }

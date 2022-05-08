@@ -12,10 +12,10 @@ import {StringUtilService} from '../../../../../controller/service/StringUtil.se
 
 import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
 import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
 import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-zone-geographique-consultance-scientifique-ponctuelle-create-admin',
   templateUrl: './zone-geographique-consultance-scientifique-ponctuelle-create-admin.component.html',
@@ -53,8 +53,8 @@ constructor(private datePipe: DatePipe, private zoneGeographiqueConsultanceScien
  ,       private router: Router
  
 ,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
-,       private paysService :PaysService
 ,       private zoneGeographiqueService :ZoneGeographiqueService
+,       private paysService :PaysService
 ) {
 
 }

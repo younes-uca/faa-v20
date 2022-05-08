@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
-import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 import {ObjetFormationGeneriqueVo} from '../../../../../controller/model/ObjetFormationGenerique.model';
 import {ObjetFormationGeneriqueService} from '../../../../../controller/service/ObjetFormationGenerique.service';
+import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
+import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 @Component({
   selector: 'app-formation-continue-objet-formation-generique-create-chercheur',
   templateUrl: './formation-continue-objet-formation-generique-create-chercheur.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private formationContinueObjetFormationG
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private formationContinueService :FormationContinueService
 ,       private objetFormationGeneriqueService :ObjetFormationGeneriqueService
+,       private formationContinueService :FormationContinueService
 ) {
 
 }

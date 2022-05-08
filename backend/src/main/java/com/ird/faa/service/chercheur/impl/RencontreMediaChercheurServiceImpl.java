@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import com.ird.faa.service.util.StringUtil;
-import com.ird.faa.security.common.SecurityUtil;
-import com.ird.faa.security.bean.User;
 import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import com.ird.faa.bean.RencontreMedia;
@@ -75,11 +72,7 @@ private EntityManager entityManager;
 
 @Override
 public List<RencontreMedia> findAll(){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-    return rencontreMediaDao.findByChercheurUsername(currentUser.getUsername());
-    }
-    return new ArrayList<>();
+        return rencontreMediaDao.findAll();
 }
 
         @Override
@@ -232,21 +225,6 @@ public RencontreMedia save (RencontreMedia rencontreMedia){
 
 RencontreMedia result =null;
 
-    User currentUser = SecurityUtil.getCurrentUser();
-    if (currentUser == null || StringUtil.isEmpty(currentUser.getUsername())) {
-    return result;
-    }
-    String username = currentUser.getUsername();
-    Chercheur loadedChercheur = chercheurService.findByUsername(username);
-    if (loadedChercheur == null) {
-    return result;
-    }
-    Campagne laodedCampagne = campagneService.findProgressCampagneByChercheurUsername(username);
-    if (laodedCampagne == null) {
-    return result;
-    } else {
-    rencontreMedia.setChercheur(loadedChercheur);
-    rencontreMedia.setCampagne(laodedCampagne);
 
     findFormatRencontre(rencontreMedia);
     findCultureScientifique(rencontreMedia);
@@ -260,7 +238,6 @@ RencontreMedia savedRencontreMedia = rencontreMediaDao.save(rencontreMedia);
        saveRencontreMediaPeriodes(savedRencontreMedia,rencontreMedia.getRencontreMediaPeriodes());
        savePaysRencontreMedias(savedRencontreMedia,rencontreMedia.getPaysRencontreMedias());
 result = savedRencontreMedia;
-}
 
 return result;
 }
@@ -318,11 +295,8 @@ return 1;
 
 
 public List<RencontreMedia> findByCriteria(RencontreMediaVo rencontreMediaVo){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())) {
 
 String query = "SELECT o FROM RencontreMedia o where 1=1 ";
-    query += SearchUtil.addConstraint("o", "chercheur.username", "=", currentUser.getUsername());
 
             query += SearchUtil.addConstraint( "o", "id","=",rencontreMediaVo.getId());
             query += SearchUtil.addConstraint( "o", "intituleSujet","LIKE",rencontreMediaVo.getIntituleSujet());
@@ -343,8 +317,6 @@ String query = "SELECT o FROM RencontreMedia o where 1=1 ";
     }
 
 return entityManager.createQuery(query).getResultList();
-}
-return new ArrayList<>();
 }
         private  void saveTypePubliqueRencontreMedias(RencontreMedia rencontreMedia,List<TypePubliqueRencontreMedia> typePubliqueRencontreMedias){
 
@@ -469,10 +441,5 @@ private void associatePaysRencontreMedia(RencontreMedia rencontreMedia, List<Pay
     }
     }
 
-@Override
-public List<RencontreMedia> findByChercheurUsernameAndCampagneId(String username, Long compagneId){
-List<RencontreMedia> resultat= rencontreMediaDao.findByChercheurUsernameAndCampagneId(username, compagneId);
-    return resultat;
-}
 
 }

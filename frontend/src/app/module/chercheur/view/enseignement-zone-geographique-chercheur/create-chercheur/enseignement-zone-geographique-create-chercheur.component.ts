@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
 import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
 import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
 import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-enseignement-zone-geographique-create-chercheur',
   templateUrl: './enseignement-zone-geographique-create-chercheur.component.html',
@@ -48,9 +48,9 @@ constructor(private datePipe: DatePipe, private enseignementZoneGeographiqueServ
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private paysService :PaysService
 ,       private enseignementService :EnseignementService
 ,       private zoneGeographiqueService :ZoneGeographiqueService
+,       private paysService :PaysService
 ) {
 
 }

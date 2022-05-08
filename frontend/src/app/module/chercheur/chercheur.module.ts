@@ -18,12 +18,34 @@ import {PanelModule} from 'primeng/panel';
 import {InputNumberModule} from 'primeng/inputnumber';
 import {BadgeModule} from 'primeng/badge';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { ArchivableChercheurModule } from './view/archivable/archivable.module';
+
 
 import { GestionEquipeDetailCreateChercheurComponent } from './view/gestion-equipe-detail-chercheur/create-chercheur/gestion-equipe-detail-create-chercheur.component';
 import { GestionEquipeDetailEditChercheurComponent } from './view/gestion-equipe-detail-chercheur/edit-chercheur/gestion-equipe-detail-edit-chercheur.component';
 import { GestionEquipeDetailViewChercheurComponent } from './view/gestion-equipe-detail-chercheur/view-chercheur/gestion-equipe-detail-view-chercheur.component';
 import { GestionEquipeDetailListChercheurComponent } from './view/gestion-equipe-detail-chercheur/list-chercheur/gestion-equipe-detail-list-chercheur.component';
 import { GestionEquipeDetailChercheurComponent } from './view/gestion-equipe-detail-chercheur/gestion-equipe-detail-chercheur.component';
+import { KeyWordDisciplineScientifiqueErcCreateChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/create-chercheur/key-word-discipline-scientifique-erc-create-chercheur.component';
+import { KeyWordDisciplineScientifiqueErcEditChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/edit-chercheur/key-word-discipline-scientifique-erc-edit-chercheur.component';
+import { KeyWordDisciplineScientifiqueErcViewChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/view-chercheur/key-word-discipline-scientifique-erc-view-chercheur.component';
+import { KeyWordDisciplineScientifiqueErcListChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/list-chercheur/key-word-discipline-scientifique-erc-list-chercheur.component';
+import { KeyWordDisciplineScientifiqueErcChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/key-word-discipline-scientifique-erc-chercheur.component';
+import { GradeCreateChercheurComponent } from './view/grade-chercheur/create-chercheur/grade-create-chercheur.component';
+import { GradeEditChercheurComponent } from './view/grade-chercheur/edit-chercheur/grade-edit-chercheur.component';
+import { GradeViewChercheurComponent } from './view/grade-chercheur/view-chercheur/grade-view-chercheur.component';
+import { GradeListChercheurComponent } from './view/grade-chercheur/list-chercheur/grade-list-chercheur.component';
+import { GradeChercheurComponent } from './view/grade-chercheur/grade-chercheur.component';
+import { DoctorantCreateChercheurComponent } from './view/doctorant-chercheur/create-chercheur/doctorant-create-chercheur.component';
+import { DoctorantEditChercheurComponent } from './view/doctorant-chercheur/edit-chercheur/doctorant-edit-chercheur.component';
+import { DoctorantViewChercheurComponent } from './view/doctorant-chercheur/view-chercheur/doctorant-view-chercheur.component';
+import { DoctorantListChercheurComponent } from './view/doctorant-chercheur/list-chercheur/doctorant-list-chercheur.component';
+import { DoctorantChercheurComponent } from './view/doctorant-chercheur/doctorant-chercheur.component';
+import { ResponsabiliteEncadrementDoctorantCreateChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/create-chercheur/responsabilite-encadrement-doctorant-create-chercheur.component';
+import { ResponsabiliteEncadrementDoctorantEditChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/edit-chercheur/responsabilite-encadrement-doctorant-edit-chercheur.component';
+import { ResponsabiliteEncadrementDoctorantViewChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/view-chercheur/responsabilite-encadrement-doctorant-view-chercheur.component';
+import { ResponsabiliteEncadrementDoctorantListChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/list-chercheur/responsabilite-encadrement-doctorant-list-chercheur.component';
+import { ResponsabiliteEncadrementDoctorantChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/responsabilite-encadrement-doctorant-chercheur.component';
 import { LangueCreateChercheurComponent } from './view/langue-chercheur/create-chercheur/langue-create-chercheur.component';
 import { LangueEditChercheurComponent } from './view/langue-chercheur/edit-chercheur/langue-edit-chercheur.component';
 import { LangueViewChercheurComponent } from './view/langue-chercheur/view-chercheur/langue-view-chercheur.component';
@@ -34,21 +56,41 @@ import { OutilPedagogiquePubliqueCibleEditChercheurComponent } from './view/outi
 import { OutilPedagogiquePubliqueCibleViewChercheurComponent } from './view/outil-pedagogique-publique-cible-chercheur/view-chercheur/outil-pedagogique-publique-cible-view-chercheur.component';
 import { OutilPedagogiquePubliqueCibleListChercheurComponent } from './view/outil-pedagogique-publique-cible-chercheur/list-chercheur/outil-pedagogique-publique-cible-list-chercheur.component';
 import { OutilPedagogiquePubliqueCibleChercheurComponent } from './view/outil-pedagogique-publique-cible-chercheur/outil-pedagogique-publique-cible-chercheur.component';
+import { RoleProjetCreateChercheurComponent } from './view/role-projet-chercheur/create-chercheur/role-projet-create-chercheur.component';
+import { RoleProjetEditChercheurComponent } from './view/role-projet-chercheur/edit-chercheur/role-projet-edit-chercheur.component';
+import { RoleProjetViewChercheurComponent } from './view/role-projet-chercheur/view-chercheur/role-projet-view-chercheur.component';
+import { RoleProjetListChercheurComponent } from './view/role-projet-chercheur/list-chercheur/role-projet-list-chercheur.component';
+import { RoleProjetChercheurComponent } from './view/role-projet-chercheur/role-projet-chercheur.component';
+import { DisciplineScientifiqueCreateChercheurComponent } from './view/discipline-scientifique-chercheur/create-chercheur/discipline-scientifique-create-chercheur.component';
+import { DisciplineScientifiqueEditChercheurComponent } from './view/discipline-scientifique-chercheur/edit-chercheur/discipline-scientifique-edit-chercheur.component';
+import { DisciplineScientifiqueViewChercheurComponent } from './view/discipline-scientifique-chercheur/view-chercheur/discipline-scientifique-view-chercheur.component';
+import { DisciplineScientifiqueListChercheurComponent } from './view/discipline-scientifique-chercheur/list-chercheur/discipline-scientifique-list-chercheur.component';
+import { DisciplineScientifiqueChercheurComponent } from './view/discipline-scientifique-chercheur/discipline-scientifique-chercheur.component';
 import { StatusContratEtConventionCreateChercheurComponent } from './view/status-contrat-et-convention-chercheur/create-chercheur/status-contrat-et-convention-create-chercheur.component';
 import { StatusContratEtConventionEditChercheurComponent } from './view/status-contrat-et-convention-chercheur/edit-chercheur/status-contrat-et-convention-edit-chercheur.component';
 import { StatusContratEtConventionViewChercheurComponent } from './view/status-contrat-et-convention-chercheur/view-chercheur/status-contrat-et-convention-view-chercheur.component';
 import { StatusContratEtConventionListChercheurComponent } from './view/status-contrat-et-convention-chercheur/list-chercheur/status-contrat-et-convention-list-chercheur.component';
 import { StatusContratEtConventionChercheurComponent } from './view/status-contrat-et-convention-chercheur/status-contrat-et-convention-chercheur.component';
-import { VilleCreateChercheurComponent } from './view/ville-chercheur/create-chercheur/ville-create-chercheur.component';
-import { VilleEditChercheurComponent } from './view/ville-chercheur/edit-chercheur/ville-edit-chercheur.component';
-import { VilleViewChercheurComponent } from './view/ville-chercheur/view-chercheur/ville-view-chercheur.component';
-import { VilleListChercheurComponent } from './view/ville-chercheur/list-chercheur/ville-list-chercheur.component';
-import { VilleChercheurComponent } from './view/ville-chercheur/ville-chercheur.component';
+import { DisciplineScientifiqueErcParentCreateChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/create-chercheur/discipline-scientifique-erc-parent-create-chercheur.component';
+import { DisciplineScientifiqueErcParentEditChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/edit-chercheur/discipline-scientifique-erc-parent-edit-chercheur.component';
+import { DisciplineScientifiqueErcParentViewChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/view-chercheur/discipline-scientifique-erc-parent-view-chercheur.component';
+import { DisciplineScientifiqueErcParentListChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/list-chercheur/discipline-scientifique-erc-parent-list-chercheur.component';
+import { DisciplineScientifiqueErcParentChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/discipline-scientifique-erc-parent-chercheur.component';
+import { ResponsabiliteDirectionEncadrementEtudiantCreateChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/create-chercheur/responsabilite-direction-encadrement-etudiant-create-chercheur.component';
+import { ResponsabiliteDirectionEncadrementEtudiantEditChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/edit-chercheur/responsabilite-direction-encadrement-etudiant-edit-chercheur.component';
+import { ResponsabiliteDirectionEncadrementEtudiantViewChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/view-chercheur/responsabilite-direction-encadrement-etudiant-view-chercheur.component';
+import { ResponsabiliteDirectionEncadrementEtudiantListChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/list-chercheur/responsabilite-direction-encadrement-etudiant-list-chercheur.component';
+import { ResponsabiliteDirectionEncadrementEtudiantChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/responsabilite-direction-encadrement-etudiant-chercheur.component';
 import { ResponsabilitePedagogiqueCreateChercheurComponent } from './view/responsabilite-pedagogique-chercheur/create-chercheur/responsabilite-pedagogique-create-chercheur.component';
 import { ResponsabilitePedagogiqueEditChercheurComponent } from './view/responsabilite-pedagogique-chercheur/edit-chercheur/responsabilite-pedagogique-edit-chercheur.component';
 import { ResponsabilitePedagogiqueViewChercheurComponent } from './view/responsabilite-pedagogique-chercheur/view-chercheur/responsabilite-pedagogique-view-chercheur.component';
 import { ResponsabilitePedagogiqueListChercheurComponent } from './view/responsabilite-pedagogique-chercheur/list-chercheur/responsabilite-pedagogique-list-chercheur.component';
 import { ResponsabilitePedagogiqueChercheurComponent } from './view/responsabilite-pedagogique-chercheur/responsabilite-pedagogique-chercheur.component';
+import { CaracterisationCreateChercheurComponent } from './view/caracterisation-chercheur/create-chercheur/caracterisation-create-chercheur.component';
+import { CaracterisationEditChercheurComponent } from './view/caracterisation-chercheur/edit-chercheur/caracterisation-edit-chercheur.component';
+import { CaracterisationViewChercheurComponent } from './view/caracterisation-chercheur/view-chercheur/caracterisation-view-chercheur.component';
+import { CaracterisationListChercheurComponent } from './view/caracterisation-chercheur/list-chercheur/caracterisation-list-chercheur.component';
+import { CaracterisationChercheurComponent } from './view/caracterisation-chercheur/caracterisation-chercheur.component';
 import { ConseilEtComiteScientifiqueCreateChercheurComponent } from './view/conseil-et-comite-scientifique-chercheur/create-chercheur/conseil-et-comite-scientifique-create-chercheur.component';
 import { ConseilEtComiteScientifiqueEditChercheurComponent } from './view/conseil-et-comite-scientifique-chercheur/edit-chercheur/conseil-et-comite-scientifique-edit-chercheur.component';
 import { ConseilEtComiteScientifiqueViewChercheurComponent } from './view/conseil-et-comite-scientifique-chercheur/view-chercheur/conseil-et-comite-scientifique-view-chercheur.component';
@@ -59,26 +101,16 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirEditCherch
 import { DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-chercheur/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-chercheur.component';
-import { FournisseurAppelProjetRechercheCreateChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/create-chercheur/fournisseur-appel-projet-recherche-create-chercheur.component';
-import { FournisseurAppelProjetRechercheEditChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/edit-chercheur/fournisseur-appel-projet-recherche-edit-chercheur.component';
-import { FournisseurAppelProjetRechercheViewChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/view-chercheur/fournisseur-appel-projet-recherche-view-chercheur.component';
-import { FournisseurAppelProjetRechercheListChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/list-chercheur/fournisseur-appel-projet-recherche-list-chercheur.component';
-import { FournisseurAppelProjetRechercheChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/fournisseur-appel-projet-recherche-chercheur.component';
-import { GradeCreateChercheurComponent } from './view/grade-chercheur/create-chercheur/grade-create-chercheur.component';
-import { GradeEditChercheurComponent } from './view/grade-chercheur/edit-chercheur/grade-edit-chercheur.component';
-import { GradeViewChercheurComponent } from './view/grade-chercheur/view-chercheur/grade-view-chercheur.component';
-import { GradeListChercheurComponent } from './view/grade-chercheur/list-chercheur/grade-list-chercheur.component';
-import { GradeChercheurComponent } from './view/grade-chercheur/grade-chercheur.component';
+import { DepartementScientifiqueCreateChercheurComponent } from './view/departement-scientifique-chercheur/create-chercheur/departement-scientifique-create-chercheur.component';
+import { DepartementScientifiqueEditChercheurComponent } from './view/departement-scientifique-chercheur/edit-chercheur/departement-scientifique-edit-chercheur.component';
+import { DepartementScientifiqueViewChercheurComponent } from './view/departement-scientifique-chercheur/view-chercheur/departement-scientifique-view-chercheur.component';
+import { DepartementScientifiqueListChercheurComponent } from './view/departement-scientifique-chercheur/list-chercheur/departement-scientifique-list-chercheur.component';
+import { DepartementScientifiqueChercheurComponent } from './view/departement-scientifique-chercheur/departement-scientifique-chercheur.component';
 import { TypeEtudeEnseignementCreateChercheurComponent } from './view/type-etude-enseignement-chercheur/create-chercheur/type-etude-enseignement-create-chercheur.component';
 import { TypeEtudeEnseignementEditChercheurComponent } from './view/type-etude-enseignement-chercheur/edit-chercheur/type-etude-enseignement-edit-chercheur.component';
 import { TypeEtudeEnseignementViewChercheurComponent } from './view/type-etude-enseignement-chercheur/view-chercheur/type-etude-enseignement-view-chercheur.component';
 import { TypeEtudeEnseignementListChercheurComponent } from './view/type-etude-enseignement-chercheur/list-chercheur/type-etude-enseignement-list-chercheur.component';
 import { TypeEtudeEnseignementChercheurComponent } from './view/type-etude-enseignement-chercheur/type-etude-enseignement-chercheur.component';
-import { TypeOutilCreateChercheurComponent } from './view/type-outil-chercheur/create-chercheur/type-outil-create-chercheur.component';
-import { TypeOutilEditChercheurComponent } from './view/type-outil-chercheur/edit-chercheur/type-outil-edit-chercheur.component';
-import { TypeOutilViewChercheurComponent } from './view/type-outil-chercheur/view-chercheur/type-outil-view-chercheur.component';
-import { TypeOutilListChercheurComponent } from './view/type-outil-chercheur/list-chercheur/type-outil-list-chercheur.component';
-import { TypeOutilChercheurComponent } from './view/type-outil-chercheur/type-outil-chercheur.component';
 import { SavoirEtInnovationCreateChercheurComponent } from './view/savoir-et-innovation-chercheur/create-chercheur/savoir-et-innovation-create-chercheur.component';
 import { SavoirEtInnovationEditChercheurComponent } from './view/savoir-et-innovation-chercheur/edit-chercheur/savoir-et-innovation-edit-chercheur.component';
 import { SavoirEtInnovationViewChercheurComponent } from './view/savoir-et-innovation-chercheur/view-chercheur/savoir-et-innovation-view-chercheur.component';
@@ -89,16 +121,21 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueEditChercheurComponent } f
 import { DeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-chercheur/developpement-de-savoir-et-innovation-scientifique-chercheur.component';
-import { TypeEtudeCreateChercheurComponent } from './view/type-etude-chercheur/create-chercheur/type-etude-create-chercheur.component';
-import { TypeEtudeEditChercheurComponent } from './view/type-etude-chercheur/edit-chercheur/type-etude-edit-chercheur.component';
-import { TypeEtudeViewChercheurComponent } from './view/type-etude-chercheur/view-chercheur/type-etude-view-chercheur.component';
-import { TypeEtudeListChercheurComponent } from './view/type-etude-chercheur/list-chercheur/type-etude-list-chercheur.component';
-import { TypeEtudeChercheurComponent } from './view/type-etude-chercheur/type-etude-chercheur.component';
+import { StructureIrdCreateChercheurComponent } from './view/structure-ird-chercheur/create-chercheur/structure-ird-create-chercheur.component';
+import { StructureIrdEditChercheurComponent } from './view/structure-ird-chercheur/edit-chercheur/structure-ird-edit-chercheur.component';
+import { StructureIrdViewChercheurComponent } from './view/structure-ird-chercheur/view-chercheur/structure-ird-view-chercheur.component';
+import { StructureIrdListChercheurComponent } from './view/structure-ird-chercheur/list-chercheur/structure-ird-list-chercheur.component';
+import { StructureIrdChercheurComponent } from './view/structure-ird-chercheur/structure-ird-chercheur.component';
 import { EnseignementZoneGeographiqueCreateChercheurComponent } from './view/enseignement-zone-geographique-chercheur/create-chercheur/enseignement-zone-geographique-create-chercheur.component';
 import { EnseignementZoneGeographiqueEditChercheurComponent } from './view/enseignement-zone-geographique-chercheur/edit-chercheur/enseignement-zone-geographique-edit-chercheur.component';
 import { EnseignementZoneGeographiqueViewChercheurComponent } from './view/enseignement-zone-geographique-chercheur/view-chercheur/enseignement-zone-geographique-view-chercheur.component';
 import { EnseignementZoneGeographiqueListChercheurComponent } from './view/enseignement-zone-geographique-chercheur/list-chercheur/enseignement-zone-geographique-list-chercheur.component';
 import { EnseignementZoneGeographiqueChercheurComponent } from './view/enseignement-zone-geographique-chercheur/enseignement-zone-geographique-chercheur.component';
+import { DisciplineScientifiqueErcAssociationCreateChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/create-chercheur/discipline-scientifique-erc-association-create-chercheur.component';
+import { DisciplineScientifiqueErcAssociationEditChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/edit-chercheur/discipline-scientifique-erc-association-edit-chercheur.component';
+import { DisciplineScientifiqueErcAssociationViewChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/view-chercheur/discipline-scientifique-erc-association-view-chercheur.component';
+import { DisciplineScientifiqueErcAssociationListChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/list-chercheur/discipline-scientifique-erc-association-list-chercheur.component';
+import { DisciplineScientifiqueErcAssociationChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/discipline-scientifique-erc-association-chercheur.component';
 import { IdentifiantAuteurExpertCreateChercheurComponent } from './view/identifiant-auteur-expert-chercheur/create-chercheur/identifiant-auteur-expert-create-chercheur.component';
 import { IdentifiantAuteurExpertEditChercheurComponent } from './view/identifiant-auteur-expert-chercheur/edit-chercheur/identifiant-auteur-expert-edit-chercheur.component';
 import { IdentifiantAuteurExpertViewChercheurComponent } from './view/identifiant-auteur-expert-chercheur/view-chercheur/identifiant-auteur-expert-view-chercheur.component';
@@ -109,21 +146,16 @@ import { CommunauteSavoirEncadrementDoctorantEditChercheurComponent } from './vi
 import { CommunauteSavoirEncadrementDoctorantViewChercheurComponent } from './view/communaute-savoir-encadrement-doctorant-chercheur/view-chercheur/communaute-savoir-encadrement-doctorant-view-chercheur.component';
 import { CommunauteSavoirEncadrementDoctorantListChercheurComponent } from './view/communaute-savoir-encadrement-doctorant-chercheur/list-chercheur/communaute-savoir-encadrement-doctorant-list-chercheur.component';
 import { CommunauteSavoirEncadrementDoctorantChercheurComponent } from './view/communaute-savoir-encadrement-doctorant-chercheur/communaute-savoir-encadrement-doctorant-chercheur.component';
-import { SemanticRelationshipCreateChercheurComponent } from './view/semantic-relationship-chercheur/create-chercheur/semantic-relationship-create-chercheur.component';
-import { SemanticRelationshipEditChercheurComponent } from './view/semantic-relationship-chercheur/edit-chercheur/semantic-relationship-edit-chercheur.component';
-import { SemanticRelationshipViewChercheurComponent } from './view/semantic-relationship-chercheur/view-chercheur/semantic-relationship-view-chercheur.component';
-import { SemanticRelationshipListChercheurComponent } from './view/semantic-relationship-chercheur/list-chercheur/semantic-relationship-list-chercheur.component';
-import { SemanticRelationshipChercheurComponent } from './view/semantic-relationship-chercheur/semantic-relationship-chercheur.component';
 import { ZoneActiviteInteractionRechercheCreateChercheurComponent } from './view/zone-activite-interaction-recherche-chercheur/create-chercheur/zone-activite-interaction-recherche-create-chercheur.component';
 import { ZoneActiviteInteractionRechercheEditChercheurComponent } from './view/zone-activite-interaction-recherche-chercheur/edit-chercheur/zone-activite-interaction-recherche-edit-chercheur.component';
 import { ZoneActiviteInteractionRechercheViewChercheurComponent } from './view/zone-activite-interaction-recherche-chercheur/view-chercheur/zone-activite-interaction-recherche-view-chercheur.component';
 import { ZoneActiviteInteractionRechercheListChercheurComponent } from './view/zone-activite-interaction-recherche-chercheur/list-chercheur/zone-activite-interaction-recherche-list-chercheur.component';
 import { ZoneActiviteInteractionRechercheChercheurComponent } from './view/zone-activite-interaction-recherche-chercheur/zone-activite-interaction-recherche-chercheur.component';
-import { TypeExpertCreateChercheurComponent } from './view/type-expert-chercheur/create-chercheur/type-expert-create-chercheur.component';
-import { TypeExpertEditChercheurComponent } from './view/type-expert-chercheur/edit-chercheur/type-expert-edit-chercheur.component';
-import { TypeExpertViewChercheurComponent } from './view/type-expert-chercheur/view-chercheur/type-expert-view-chercheur.component';
-import { TypeExpertListChercheurComponent } from './view/type-expert-chercheur/list-chercheur/type-expert-list-chercheur.component';
-import { TypeExpertChercheurComponent } from './view/type-expert-chercheur/type-expert-chercheur.component';
+import { TypeOutilCreateChercheurComponent } from './view/type-outil-chercheur/create-chercheur/type-outil-create-chercheur.component';
+import { TypeOutilEditChercheurComponent } from './view/type-outil-chercheur/edit-chercheur/type-outil-edit-chercheur.component';
+import { TypeOutilViewChercheurComponent } from './view/type-outil-chercheur/view-chercheur/type-outil-view-chercheur.component';
+import { TypeOutilListChercheurComponent } from './view/type-outil-chercheur/list-chercheur/type-outil-list-chercheur.component';
+import { TypeOutilChercheurComponent } from './view/type-outil-chercheur/type-outil-chercheur.component';
 import { DisciplineScientifiqueConseilsScientifiqueCreateChercheurComponent } from './view/discipline-scientifique-conseils-scientifique-chercheur/create-chercheur/discipline-scientifique-conseils-scientifique-create-chercheur.component';
 import { DisciplineScientifiqueConseilsScientifiqueEditChercheurComponent } from './view/discipline-scientifique-conseils-scientifique-chercheur/edit-chercheur/discipline-scientifique-conseils-scientifique-edit-chercheur.component';
 import { DisciplineScientifiqueConseilsScientifiqueViewChercheurComponent } from './view/discipline-scientifique-conseils-scientifique-chercheur/view-chercheur/discipline-scientifique-conseils-scientifique-view-chercheur.component';
@@ -139,16 +171,6 @@ import { CommunauteSavoirEncadrementEtudiantEditChercheurComponent } from './vie
 import { CommunauteSavoirEncadrementEtudiantViewChercheurComponent } from './view/communaute-savoir-encadrement-etudiant-chercheur/view-chercheur/communaute-savoir-encadrement-etudiant-view-chercheur.component';
 import { CommunauteSavoirEncadrementEtudiantListChercheurComponent } from './view/communaute-savoir-encadrement-etudiant-chercheur/list-chercheur/communaute-savoir-encadrement-etudiant-list-chercheur.component';
 import { CommunauteSavoirEncadrementEtudiantChercheurComponent } from './view/communaute-savoir-encadrement-etudiant-chercheur/communaute-savoir-encadrement-etudiant-chercheur.component';
-import { StatusProjetCreateChercheurComponent } from './view/status-projet-chercheur/create-chercheur/status-projet-create-chercheur.component';
-import { StatusProjetEditChercheurComponent } from './view/status-projet-chercheur/edit-chercheur/status-projet-edit-chercheur.component';
-import { StatusProjetViewChercheurComponent } from './view/status-projet-chercheur/view-chercheur/status-projet-view-chercheur.component';
-import { StatusProjetListChercheurComponent } from './view/status-projet-chercheur/list-chercheur/status-projet-list-chercheur.component';
-import { StatusProjetChercheurComponent } from './view/status-projet-chercheur/status-projet-chercheur.component';
-import { ModaliteCreateChercheurComponent } from './view/modalite-chercheur/create-chercheur/modalite-create-chercheur.component';
-import { ModaliteEditChercheurComponent } from './view/modalite-chercheur/edit-chercheur/modalite-edit-chercheur.component';
-import { ModaliteViewChercheurComponent } from './view/modalite-chercheur/view-chercheur/modalite-view-chercheur.component';
-import { ModaliteListChercheurComponent } from './view/modalite-chercheur/list-chercheur/modalite-list-chercheur.component';
-import { ModaliteChercheurComponent } from './view/modalite-chercheur/modalite-chercheur.component';
 import { ConseilsScientifiqueCreateChercheurComponent } from './view/conseils-scientifique-chercheur/create-chercheur/conseils-scientifique-create-chercheur.component';
 import { ConseilsScientifiqueEditChercheurComponent } from './view/conseils-scientifique-chercheur/edit-chercheur/conseils-scientifique-edit-chercheur.component';
 import { ConseilsScientifiqueViewChercheurComponent } from './view/conseils-scientifique-chercheur/view-chercheur/conseils-scientifique-view-chercheur.component';
@@ -159,16 +181,16 @@ import { InstrumentsEtDispositifsIrdEditChercheurComponent } from './view/instru
 import { InstrumentsEtDispositifsIrdViewChercheurComponent } from './view/instruments-et-dispositifs-ird-chercheur/view-chercheur/instruments-et-dispositifs-ird-view-chercheur.component';
 import { InstrumentsEtDispositifsIrdListChercheurComponent } from './view/instruments-et-dispositifs-ird-chercheur/list-chercheur/instruments-et-dispositifs-ird-list-chercheur.component';
 import { InstrumentsEtDispositifsIrdChercheurComponent } from './view/instruments-et-dispositifs-ird-chercheur/instruments-et-dispositifs-ird-chercheur.component';
-import { NiveauFormationCreateChercheurComponent } from './view/niveau-formation-chercheur/create-chercheur/niveau-formation-create-chercheur.component';
-import { NiveauFormationEditChercheurComponent } from './view/niveau-formation-chercheur/edit-chercheur/niveau-formation-edit-chercheur.component';
-import { NiveauFormationViewChercheurComponent } from './view/niveau-formation-chercheur/view-chercheur/niveau-formation-view-chercheur.component';
-import { NiveauFormationListChercheurComponent } from './view/niveau-formation-chercheur/list-chercheur/niveau-formation-list-chercheur.component';
-import { NiveauFormationChercheurComponent } from './view/niveau-formation-chercheur/niveau-formation-chercheur.component';
 import { EtatReclamationCreateChercheurComponent } from './view/etat-reclamation-chercheur/create-chercheur/etat-reclamation-create-chercheur.component';
 import { EtatReclamationEditChercheurComponent } from './view/etat-reclamation-chercheur/edit-chercheur/etat-reclamation-edit-chercheur.component';
 import { EtatReclamationViewChercheurComponent } from './view/etat-reclamation-chercheur/view-chercheur/etat-reclamation-view-chercheur.component';
 import { EtatReclamationListChercheurComponent } from './view/etat-reclamation-chercheur/list-chercheur/etat-reclamation-list-chercheur.component';
 import { EtatReclamationChercheurComponent } from './view/etat-reclamation-chercheur/etat-reclamation-chercheur.component';
+import { TemplateOuvertureCreateChercheurComponent } from './view/template-ouverture-chercheur/create-chercheur/template-ouverture-create-chercheur.component';
+import { TemplateOuvertureEditChercheurComponent } from './view/template-ouverture-chercheur/edit-chercheur/template-ouverture-edit-chercheur.component';
+import { TemplateOuvertureViewChercheurComponent } from './view/template-ouverture-chercheur/view-chercheur/template-ouverture-view-chercheur.component';
+import { TemplateOuvertureListChercheurComponent } from './view/template-ouverture-chercheur/list-chercheur/template-ouverture-list-chercheur.component';
+import { TemplateOuvertureChercheurComponent } from './view/template-ouverture-chercheur/template-ouverture-chercheur.component';
 import { NotificationCreateChercheurComponent } from './view/notification-chercheur/create-chercheur/notification-create-chercheur.component';
 import { NotificationEditChercheurComponent } from './view/notification-chercheur/edit-chercheur/notification-edit-chercheur.component';
 import { NotificationViewChercheurComponent } from './view/notification-chercheur/view-chercheur/notification-view-chercheur.component';
@@ -194,16 +216,16 @@ import { TypeOutilPedagogiqueEditChercheurComponent } from './view/type-outil-pe
 import { TypeOutilPedagogiqueViewChercheurComponent } from './view/type-outil-pedagogique-chercheur/view-chercheur/type-outil-pedagogique-view-chercheur.component';
 import { TypeOutilPedagogiqueListChercheurComponent } from './view/type-outil-pedagogique-chercheur/list-chercheur/type-outil-pedagogique-list-chercheur.component';
 import { TypeOutilPedagogiqueChercheurComponent } from './view/type-outil-pedagogique-chercheur/type-outil-pedagogique-chercheur.component';
-import { InstrumentIrdCreateChercheurComponent } from './view/instrument-ird-chercheur/create-chercheur/instrument-ird-create-chercheur.component';
-import { InstrumentIrdEditChercheurComponent } from './view/instrument-ird-chercheur/edit-chercheur/instrument-ird-edit-chercheur.component';
-import { InstrumentIrdViewChercheurComponent } from './view/instrument-ird-chercheur/view-chercheur/instrument-ird-view-chercheur.component';
-import { InstrumentIrdListChercheurComponent } from './view/instrument-ird-chercheur/list-chercheur/instrument-ird-list-chercheur.component';
-import { InstrumentIrdChercheurComponent } from './view/instrument-ird-chercheur/instrument-ird-chercheur.component';
-import { SexeCreateChercheurComponent } from './view/sexe-chercheur/create-chercheur/sexe-create-chercheur.component';
-import { SexeEditChercheurComponent } from './view/sexe-chercheur/edit-chercheur/sexe-edit-chercheur.component';
-import { SexeViewChercheurComponent } from './view/sexe-chercheur/view-chercheur/sexe-view-chercheur.component';
-import { SexeListChercheurComponent } from './view/sexe-chercheur/list-chercheur/sexe-list-chercheur.component';
-import { SexeChercheurComponent } from './view/sexe-chercheur/sexe-chercheur.component';
+import { NatureExpertiseCreateChercheurComponent } from './view/nature-expertise-chercheur/create-chercheur/nature-expertise-create-chercheur.component';
+import { NatureExpertiseEditChercheurComponent } from './view/nature-expertise-chercheur/edit-chercheur/nature-expertise-edit-chercheur.component';
+import { NatureExpertiseViewChercheurComponent } from './view/nature-expertise-chercheur/view-chercheur/nature-expertise-view-chercheur.component';
+import { NatureExpertiseListChercheurComponent } from './view/nature-expertise-chercheur/list-chercheur/nature-expertise-list-chercheur.component';
+import { NatureExpertiseChercheurComponent } from './view/nature-expertise-chercheur/nature-expertise-chercheur.component';
+import { ObjetFormationGeneriqueCreateChercheurComponent } from './view/objet-formation-generique-chercheur/create-chercheur/objet-formation-generique-create-chercheur.component';
+import { ObjetFormationGeneriqueEditChercheurComponent } from './view/objet-formation-generique-chercheur/edit-chercheur/objet-formation-generique-edit-chercheur.component';
+import { ObjetFormationGeneriqueViewChercheurComponent } from './view/objet-formation-generique-chercheur/view-chercheur/objet-formation-generique-view-chercheur.component';
+import { ObjetFormationGeneriqueListChercheurComponent } from './view/objet-formation-generique-chercheur/list-chercheur/objet-formation-generique-list-chercheur.component';
+import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formation-generique-chercheur/objet-formation-generique-chercheur.component';
 import { DisciplineScientifiqueChercheurCreateChercheurComponent } from './view/discipline-scientifique-chercheur-chercheur/create-chercheur/discipline-scientifique-chercheur-create-chercheur.component';
 import { DisciplineScientifiqueChercheurEditChercheurComponent } from './view/discipline-scientifique-chercheur-chercheur/edit-chercheur/discipline-scientifique-chercheur-edit-chercheur.component';
 import { DisciplineScientifiqueChercheurViewChercheurComponent } from './view/discipline-scientifique-chercheur-chercheur/view-chercheur/discipline-scientifique-chercheur-view-chercheur.component';
@@ -224,26 +246,26 @@ import { CommunauteSavoirEvenementColloqueScientifiqueEditChercheurComponent } f
 import { CommunauteSavoirEvenementColloqueScientifiqueViewChercheurComponent } from './view/communaute-savoir-evenement-colloque-scientifique-chercheur/view-chercheur/communaute-savoir-evenement-colloque-scientifique-view-chercheur.component';
 import { CommunauteSavoirEvenementColloqueScientifiqueListChercheurComponent } from './view/communaute-savoir-evenement-colloque-scientifique-chercheur/list-chercheur/communaute-savoir-evenement-colloque-scientifique-list-chercheur.component';
 import { CommunauteSavoirEvenementColloqueScientifiqueChercheurComponent } from './view/communaute-savoir-evenement-colloque-scientifique-chercheur/communaute-savoir-evenement-colloque-scientifique-chercheur.component';
+import { PubliqueCibleCreateChercheurComponent } from './view/publique-cible-chercheur/create-chercheur/publique-cible-create-chercheur.component';
+import { PubliqueCibleEditChercheurComponent } from './view/publique-cible-chercheur/edit-chercheur/publique-cible-edit-chercheur.component';
+import { PubliqueCibleViewChercheurComponent } from './view/publique-cible-chercheur/view-chercheur/publique-cible-view-chercheur.component';
+import { PubliqueCibleListChercheurComponent } from './view/publique-cible-chercheur/list-chercheur/publique-cible-list-chercheur.component';
+import { PubliqueCibleChercheurComponent } from './view/publique-cible-chercheur/publique-cible-chercheur.component';
 import { VieInstitutionnelleDetailCreateChercheurComponent } from './view/vie-institutionnelle-detail-chercheur/create-chercheur/vie-institutionnelle-detail-create-chercheur.component';
 import { VieInstitutionnelleDetailEditChercheurComponent } from './view/vie-institutionnelle-detail-chercheur/edit-chercheur/vie-institutionnelle-detail-edit-chercheur.component';
 import { VieInstitutionnelleDetailViewChercheurComponent } from './view/vie-institutionnelle-detail-chercheur/view-chercheur/vie-institutionnelle-detail-view-chercheur.component';
 import { VieInstitutionnelleDetailListChercheurComponent } from './view/vie-institutionnelle-detail-chercheur/list-chercheur/vie-institutionnelle-detail-list-chercheur.component';
 import { VieInstitutionnelleDetailChercheurComponent } from './view/vie-institutionnelle-detail-chercheur/vie-institutionnelle-detail-chercheur.component';
-import { PubliqueFormationCreateChercheurComponent } from './view/publique-formation-chercheur/create-chercheur/publique-formation-create-chercheur.component';
-import { PubliqueFormationEditChercheurComponent } from './view/publique-formation-chercheur/edit-chercheur/publique-formation-edit-chercheur.component';
-import { PubliqueFormationViewChercheurComponent } from './view/publique-formation-chercheur/view-chercheur/publique-formation-view-chercheur.component';
-import { PubliqueFormationListChercheurComponent } from './view/publique-formation-chercheur/list-chercheur/publique-formation-list-chercheur.component';
-import { PubliqueFormationChercheurComponent } from './view/publique-formation-chercheur/publique-formation-chercheur.component';
-import { EtudiantCreateChercheurComponent } from './view/etudiant-chercheur/create-chercheur/etudiant-create-chercheur.component';
-import { EtudiantEditChercheurComponent } from './view/etudiant-chercheur/edit-chercheur/etudiant-edit-chercheur.component';
-import { EtudiantViewChercheurComponent } from './view/etudiant-chercheur/view-chercheur/etudiant-view-chercheur.component';
-import { EtudiantListChercheurComponent } from './view/etudiant-chercheur/list-chercheur/etudiant-list-chercheur.component';
-import { EtudiantChercheurComponent } from './view/etudiant-chercheur/etudiant-chercheur.component';
-import { FormatRencontreCreateChercheurComponent } from './view/format-rencontre-chercheur/create-chercheur/format-rencontre-create-chercheur.component';
-import { FormatRencontreEditChercheurComponent } from './view/format-rencontre-chercheur/edit-chercheur/format-rencontre-edit-chercheur.component';
-import { FormatRencontreViewChercheurComponent } from './view/format-rencontre-chercheur/view-chercheur/format-rencontre-view-chercheur.component';
-import { FormatRencontreListChercheurComponent } from './view/format-rencontre-chercheur/list-chercheur/format-rencontre-list-chercheur.component';
-import { FormatRencontreChercheurComponent } from './view/format-rencontre-chercheur/format-rencontre-chercheur.component';
+import { EtablissementProjetCreateChercheurComponent } from './view/etablissement-projet-chercheur/create-chercheur/etablissement-projet-create-chercheur.component';
+import { EtablissementProjetEditChercheurComponent } from './view/etablissement-projet-chercheur/edit-chercheur/etablissement-projet-edit-chercheur.component';
+import { EtablissementProjetViewChercheurComponent } from './view/etablissement-projet-chercheur/view-chercheur/etablissement-projet-view-chercheur.component';
+import { EtablissementProjetListChercheurComponent } from './view/etablissement-projet-chercheur/list-chercheur/etablissement-projet-list-chercheur.component';
+import { EtablissementProjetChercheurComponent } from './view/etablissement-projet-chercheur/etablissement-projet-chercheur.component';
+import { StatusProjetCreateChercheurComponent } from './view/status-projet-chercheur/create-chercheur/status-projet-create-chercheur.component';
+import { StatusProjetEditChercheurComponent } from './view/status-projet-chercheur/edit-chercheur/status-projet-edit-chercheur.component';
+import { StatusProjetViewChercheurComponent } from './view/status-projet-chercheur/view-chercheur/status-projet-view-chercheur.component';
+import { StatusProjetListChercheurComponent } from './view/status-projet-chercheur/list-chercheur/status-projet-list-chercheur.component';
+import { StatusProjetChercheurComponent } from './view/status-projet-chercheur/status-projet-chercheur.component';
 import { NiveauResponsabilitePedagogiqueCreateChercheurComponent } from './view/niveau-responsabilite-pedagogique-chercheur/create-chercheur/niveau-responsabilite-pedagogique-create-chercheur.component';
 import { NiveauResponsabilitePedagogiqueEditChercheurComponent } from './view/niveau-responsabilite-pedagogique-chercheur/edit-chercheur/niveau-responsabilite-pedagogique-edit-chercheur.component';
 import { NiveauResponsabilitePedagogiqueViewChercheurComponent } from './view/niveau-responsabilite-pedagogique-chercheur/view-chercheur/niveau-responsabilite-pedagogique-view-chercheur.component';
@@ -254,31 +276,31 @@ import { ZoneGeographiqueConseilsScientifiqueEditChercheurComponent } from './vi
 import { ZoneGeographiqueConseilsScientifiqueViewChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/view-chercheur/zone-geographique-conseils-scientifique-view-chercheur.component';
 import { ZoneGeographiqueConseilsScientifiqueListChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/list-chercheur/zone-geographique-conseils-scientifique-list-chercheur.component';
 import { ZoneGeographiqueConseilsScientifiqueChercheurComponent } from './view/zone-geographique-conseils-scientifique-chercheur/zone-geographique-conseils-scientifique-chercheur.component';
-import { EnjeuxIrdCreateChercheurComponent } from './view/enjeux-ird-chercheur/create-chercheur/enjeux-ird-create-chercheur.component';
-import { EnjeuxIrdEditChercheurComponent } from './view/enjeux-ird-chercheur/edit-chercheur/enjeux-ird-edit-chercheur.component';
-import { EnjeuxIrdViewChercheurComponent } from './view/enjeux-ird-chercheur/view-chercheur/enjeux-ird-view-chercheur.component';
-import { EnjeuxIrdListChercheurComponent } from './view/enjeux-ird-chercheur/list-chercheur/enjeux-ird-list-chercheur.component';
-import { EnjeuxIrdChercheurComponent } from './view/enjeux-ird-chercheur/enjeux-ird-chercheur.component';
 import { EtablissementConsultanceScientifiquePonctuelleCreateChercheurComponent } from './view/etablissement-consultance-scientifique-ponctuelle-chercheur/create-chercheur/etablissement-consultance-scientifique-ponctuelle-create-chercheur.component';
 import { EtablissementConsultanceScientifiquePonctuelleEditChercheurComponent } from './view/etablissement-consultance-scientifique-ponctuelle-chercheur/edit-chercheur/etablissement-consultance-scientifique-ponctuelle-edit-chercheur.component';
 import { EtablissementConsultanceScientifiquePonctuelleViewChercheurComponent } from './view/etablissement-consultance-scientifique-ponctuelle-chercheur/view-chercheur/etablissement-consultance-scientifique-ponctuelle-view-chercheur.component';
 import { EtablissementConsultanceScientifiquePonctuelleListChercheurComponent } from './view/etablissement-consultance-scientifique-ponctuelle-chercheur/list-chercheur/etablissement-consultance-scientifique-ponctuelle-list-chercheur.component';
 import { EtablissementConsultanceScientifiquePonctuelleChercheurComponent } from './view/etablissement-consultance-scientifique-ponctuelle-chercheur/etablissement-consultance-scientifique-ponctuelle-chercheur.component';
-import { CampagneRelanceChercheurCreateChercheurComponent } from './view/campagne-relance-chercheur-chercheur/create-chercheur/campagne-relance-chercheur-create-chercheur.component';
-import { CampagneRelanceChercheurEditChercheurComponent } from './view/campagne-relance-chercheur-chercheur/edit-chercheur/campagne-relance-chercheur-edit-chercheur.component';
-import { CampagneRelanceChercheurViewChercheurComponent } from './view/campagne-relance-chercheur-chercheur/view-chercheur/campagne-relance-chercheur-view-chercheur.component';
-import { CampagneRelanceChercheurListChercheurComponent } from './view/campagne-relance-chercheur-chercheur/list-chercheur/campagne-relance-chercheur-list-chercheur.component';
-import { CampagneRelanceChercheurChercheurComponent } from './view/campagne-relance-chercheur-chercheur/campagne-relance-chercheur-chercheur.component';
-import { ContratEtConventionIrdCreateChercheurComponent } from './view/contrat-et-convention-ird-chercheur/create-chercheur/contrat-et-convention-ird-create-chercheur.component';
-import { ContratEtConventionIrdEditChercheurComponent } from './view/contrat-et-convention-ird-chercheur/edit-chercheur/contrat-et-convention-ird-edit-chercheur.component';
-import { ContratEtConventionIrdViewChercheurComponent } from './view/contrat-et-convention-ird-chercheur/view-chercheur/contrat-et-convention-ird-view-chercheur.component';
-import { ContratEtConventionIrdListChercheurComponent } from './view/contrat-et-convention-ird-chercheur/list-chercheur/contrat-et-convention-ird-list-chercheur.component';
-import { ContratEtConventionIrdChercheurComponent } from './view/contrat-et-convention-ird-chercheur/contrat-et-convention-ird-chercheur.component';
 import { PubliqueProfessionelCreateChercheurComponent } from './view/publique-professionel-chercheur/create-chercheur/publique-professionel-create-chercheur.component';
 import { PubliqueProfessionelEditChercheurComponent } from './view/publique-professionel-chercheur/edit-chercheur/publique-professionel-edit-chercheur.component';
 import { PubliqueProfessionelViewChercheurComponent } from './view/publique-professionel-chercheur/view-chercheur/publique-professionel-view-chercheur.component';
 import { PubliqueProfessionelListChercheurComponent } from './view/publique-professionel-chercheur/list-chercheur/publique-professionel-list-chercheur.component';
 import { PubliqueProfessionelChercheurComponent } from './view/publique-professionel-chercheur/publique-professionel-chercheur.component';
+import { CampagneRelanceChercheurCreateChercheurComponent } from './view/campagne-relance-chercheur-chercheur/create-chercheur/campagne-relance-chercheur-create-chercheur.component';
+import { CampagneRelanceChercheurEditChercheurComponent } from './view/campagne-relance-chercheur-chercheur/edit-chercheur/campagne-relance-chercheur-edit-chercheur.component';
+import { CampagneRelanceChercheurViewChercheurComponent } from './view/campagne-relance-chercheur-chercheur/view-chercheur/campagne-relance-chercheur-view-chercheur.component';
+import { CampagneRelanceChercheurListChercheurComponent } from './view/campagne-relance-chercheur-chercheur/list-chercheur/campagne-relance-chercheur-list-chercheur.component';
+import { CampagneRelanceChercheurChercheurComponent } from './view/campagne-relance-chercheur-chercheur/campagne-relance-chercheur-chercheur.component';
+import { TypeEnseignementCreateChercheurComponent } from './view/type-enseignement-chercheur/create-chercheur/type-enseignement-create-chercheur.component';
+import { TypeEnseignementEditChercheurComponent } from './view/type-enseignement-chercheur/edit-chercheur/type-enseignement-edit-chercheur.component';
+import { TypeEnseignementViewChercheurComponent } from './view/type-enseignement-chercheur/view-chercheur/type-enseignement-view-chercheur.component';
+import { TypeEnseignementListChercheurComponent } from './view/type-enseignement-chercheur/list-chercheur/type-enseignement-list-chercheur.component';
+import { TypeEnseignementChercheurComponent } from './view/type-enseignement-chercheur/type-enseignement-chercheur.component';
+import { ContratEtConventionIrdCreateChercheurComponent } from './view/contrat-et-convention-ird-chercheur/create-chercheur/contrat-et-convention-ird-create-chercheur.component';
+import { ContratEtConventionIrdEditChercheurComponent } from './view/contrat-et-convention-ird-chercheur/edit-chercheur/contrat-et-convention-ird-edit-chercheur.component';
+import { ContratEtConventionIrdViewChercheurComponent } from './view/contrat-et-convention-ird-chercheur/view-chercheur/contrat-et-convention-ird-view-chercheur.component';
+import { ContratEtConventionIrdListChercheurComponent } from './view/contrat-et-convention-ird-chercheur/list-chercheur/contrat-et-convention-ird-list-chercheur.component';
+import { ContratEtConventionIrdChercheurComponent } from './view/contrat-et-convention-ird-chercheur/contrat-et-convention-ird-chercheur.component';
 import { ProjetActiviteRechercheDetailPaysCreateChercheurComponent } from './view/projet-activite-recherche-detail-pays-chercheur/create-chercheur/projet-activite-recherche-detail-pays-create-chercheur.component';
 import { ProjetActiviteRechercheDetailPaysEditChercheurComponent } from './view/projet-activite-recherche-detail-pays-chercheur/edit-chercheur/projet-activite-recherche-detail-pays-edit-chercheur.component';
 import { ProjetActiviteRechercheDetailPaysViewChercheurComponent } from './view/projet-activite-recherche-detail-pays-chercheur/view-chercheur/projet-activite-recherche-detail-pays-view-chercheur.component';
@@ -299,16 +321,16 @@ import { VieInstitutionnelleDetailInstrumentIrdEditChercheurComponent } from './
 import { VieInstitutionnelleDetailInstrumentIrdViewChercheurComponent } from './view/vie-institutionnelle-detail-instrument-ird-chercheur/view-chercheur/vie-institutionnelle-detail-instrument-ird-view-chercheur.component';
 import { VieInstitutionnelleDetailInstrumentIrdListChercheurComponent } from './view/vie-institutionnelle-detail-instrument-ird-chercheur/list-chercheur/vie-institutionnelle-detail-instrument-ird-list-chercheur.component';
 import { VieInstitutionnelleDetailInstrumentIrdChercheurComponent } from './view/vie-institutionnelle-detail-instrument-ird-chercheur/vie-institutionnelle-detail-instrument-ird-chercheur.component';
-import { DisciplineScientifiqueErcCreateChercheurComponent } from './view/discipline-scientifique-erc-chercheur/create-chercheur/discipline-scientifique-erc-create-chercheur.component';
-import { DisciplineScientifiqueErcEditChercheurComponent } from './view/discipline-scientifique-erc-chercheur/edit-chercheur/discipline-scientifique-erc-edit-chercheur.component';
-import { DisciplineScientifiqueErcViewChercheurComponent } from './view/discipline-scientifique-erc-chercheur/view-chercheur/discipline-scientifique-erc-view-chercheur.component';
-import { DisciplineScientifiqueErcListChercheurComponent } from './view/discipline-scientifique-erc-chercheur/list-chercheur/discipline-scientifique-erc-list-chercheur.component';
-import { DisciplineScientifiqueErcChercheurComponent } from './view/discipline-scientifique-erc-chercheur/discipline-scientifique-erc-chercheur.component';
 import { EvenementColloqueScienntifiqueEnjeuxIrdCreateChercheurComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-chercheur/create-chercheur/evenement-colloque-scienntifique-enjeux-ird-create-chercheur.component';
 import { EvenementColloqueScienntifiqueEnjeuxIrdEditChercheurComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-chercheur/edit-chercheur/evenement-colloque-scienntifique-enjeux-ird-edit-chercheur.component';
 import { EvenementColloqueScienntifiqueEnjeuxIrdViewChercheurComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-chercheur/view-chercheur/evenement-colloque-scienntifique-enjeux-ird-view-chercheur.component';
 import { EvenementColloqueScienntifiqueEnjeuxIrdListChercheurComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-chercheur/list-chercheur/evenement-colloque-scienntifique-enjeux-ird-list-chercheur.component';
 import { EvenementColloqueScienntifiqueEnjeuxIrdChercheurComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-chercheur/evenement-colloque-scienntifique-enjeux-ird-chercheur.component';
+import { NationaliteCreateChercheurComponent } from './view/nationalite-chercheur/create-chercheur/nationalite-create-chercheur.component';
+import { NationaliteEditChercheurComponent } from './view/nationalite-chercheur/edit-chercheur/nationalite-edit-chercheur.component';
+import { NationaliteViewChercheurComponent } from './view/nationalite-chercheur/view-chercheur/nationalite-view-chercheur.component';
+import { NationaliteListChercheurComponent } from './view/nationalite-chercheur/list-chercheur/nationalite-list-chercheur.component';
+import { NationaliteChercheurComponent } from './view/nationalite-chercheur/nationalite-chercheur.component';
 import { CultureScientifiqueCreateChercheurComponent } from './view/culture-scientifique-chercheur/create-chercheur/culture-scientifique-create-chercheur.component';
 import { CultureScientifiqueEditChercheurComponent } from './view/culture-scientifique-chercheur/edit-chercheur/culture-scientifique-edit-chercheur.component';
 import { CultureScientifiqueViewChercheurComponent } from './view/culture-scientifique-chercheur/view-chercheur/culture-scientifique-view-chercheur.component';
@@ -324,41 +346,16 @@ import { PaysZoneGeographiqueEditChercheurComponent } from './view/pays-zone-geo
 import { PaysZoneGeographiqueViewChercheurComponent } from './view/pays-zone-geographique-chercheur/view-chercheur/pays-zone-geographique-view-chercheur.component';
 import { PaysZoneGeographiqueListChercheurComponent } from './view/pays-zone-geographique-chercheur/list-chercheur/pays-zone-geographique-list-chercheur.component';
 import { PaysZoneGeographiqueChercheurComponent } from './view/pays-zone-geographique-chercheur/pays-zone-geographique-chercheur.component';
-import { RoleProjetCreateChercheurComponent } from './view/role-projet-chercheur/create-chercheur/role-projet-create-chercheur.component';
-import { RoleProjetEditChercheurComponent } from './view/role-projet-chercheur/edit-chercheur/role-projet-edit-chercheur.component';
-import { RoleProjetViewChercheurComponent } from './view/role-projet-chercheur/view-chercheur/role-projet-view-chercheur.component';
-import { RoleProjetListChercheurComponent } from './view/role-projet-chercheur/list-chercheur/role-projet-list-chercheur.component';
-import { RoleProjetChercheurComponent } from './view/role-projet-chercheur/role-projet-chercheur.component';
-import { ResponsabiliteDirectionEncadrementEtudiantCreateChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/create-chercheur/responsabilite-direction-encadrement-etudiant-create-chercheur.component';
-import { ResponsabiliteDirectionEncadrementEtudiantEditChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/edit-chercheur/responsabilite-direction-encadrement-etudiant-edit-chercheur.component';
-import { ResponsabiliteDirectionEncadrementEtudiantViewChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/view-chercheur/responsabilite-direction-encadrement-etudiant-view-chercheur.component';
-import { ResponsabiliteDirectionEncadrementEtudiantListChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/list-chercheur/responsabilite-direction-encadrement-etudiant-list-chercheur.component';
-import { ResponsabiliteDirectionEncadrementEtudiantChercheurComponent } from './view/responsabilite-direction-encadrement-etudiant-chercheur/responsabilite-direction-encadrement-etudiant-chercheur.component';
 import { EncadrementEtudiantCreateChercheurComponent } from './view/encadrement-etudiant-chercheur/create-chercheur/encadrement-etudiant-create-chercheur.component';
 import { EncadrementEtudiantEditChercheurComponent } from './view/encadrement-etudiant-chercheur/edit-chercheur/encadrement-etudiant-edit-chercheur.component';
 import { EncadrementEtudiantViewChercheurComponent } from './view/encadrement-etudiant-chercheur/view-chercheur/encadrement-etudiant-view-chercheur.component';
 import { EncadrementEtudiantListChercheurComponent } from './view/encadrement-etudiant-chercheur/list-chercheur/encadrement-etudiant-list-chercheur.component';
 import { EncadrementEtudiantChercheurComponent } from './view/encadrement-etudiant-chercheur/encadrement-etudiant-chercheur.component';
-import { CaracterisationCreateChercheurComponent } from './view/caracterisation-chercheur/create-chercheur/caracterisation-create-chercheur.component';
-import { CaracterisationEditChercheurComponent } from './view/caracterisation-chercheur/edit-chercheur/caracterisation-edit-chercheur.component';
-import { CaracterisationViewChercheurComponent } from './view/caracterisation-chercheur/view-chercheur/caracterisation-view-chercheur.component';
-import { CaracterisationListChercheurComponent } from './view/caracterisation-chercheur/list-chercheur/caracterisation-list-chercheur.component';
-import { CaracterisationChercheurComponent } from './view/caracterisation-chercheur/caracterisation-chercheur.component';
-import { EtablissementProjetCreateChercheurComponent } from './view/etablissement-projet-chercheur/create-chercheur/etablissement-projet-create-chercheur.component';
-import { EtablissementProjetEditChercheurComponent } from './view/etablissement-projet-chercheur/edit-chercheur/etablissement-projet-edit-chercheur.component';
-import { EtablissementProjetViewChercheurComponent } from './view/etablissement-projet-chercheur/view-chercheur/etablissement-projet-view-chercheur.component';
-import { EtablissementProjetListChercheurComponent } from './view/etablissement-projet-chercheur/list-chercheur/etablissement-projet-list-chercheur.component';
-import { EtablissementProjetChercheurComponent } from './view/etablissement-projet-chercheur/etablissement-projet-chercheur.component';
-import { ContexteCreateChercheurComponent } from './view/contexte-chercheur/create-chercheur/contexte-create-chercheur.component';
-import { ContexteEditChercheurComponent } from './view/contexte-chercheur/edit-chercheur/contexte-edit-chercheur.component';
-import { ContexteViewChercheurComponent } from './view/contexte-chercheur/view-chercheur/contexte-view-chercheur.component';
-import { ContexteListChercheurComponent } from './view/contexte-chercheur/list-chercheur/contexte-list-chercheur.component';
-import { ContexteChercheurComponent } from './view/contexte-chercheur/contexte-chercheur.component';
-import { KeyWordCreateChercheurComponent } from './view/key-word-chercheur/create-chercheur/key-word-create-chercheur.component';
-import { KeyWordEditChercheurComponent } from './view/key-word-chercheur/edit-chercheur/key-word-edit-chercheur.component';
-import { KeyWordViewChercheurComponent } from './view/key-word-chercheur/view-chercheur/key-word-view-chercheur.component';
-import { KeyWordListChercheurComponent } from './view/key-word-chercheur/list-chercheur/key-word-list-chercheur.component';
-import { KeyWordChercheurComponent } from './view/key-word-chercheur/key-word-chercheur.component';
+import { EnjeuxIrdCreateChercheurComponent } from './view/enjeux-ird-chercheur/create-chercheur/enjeux-ird-create-chercheur.component';
+import { EnjeuxIrdEditChercheurComponent } from './view/enjeux-ird-chercheur/edit-chercheur/enjeux-ird-edit-chercheur.component';
+import { EnjeuxIrdViewChercheurComponent } from './view/enjeux-ird-chercheur/view-chercheur/enjeux-ird-view-chercheur.component';
+import { EnjeuxIrdListChercheurComponent } from './view/enjeux-ird-chercheur/list-chercheur/enjeux-ird-list-chercheur.component';
+import { EnjeuxIrdChercheurComponent } from './view/enjeux-ird-chercheur/enjeux-ird-chercheur.component';
 import { EnjeuxIrdComiteEtCommissionEvaluationCreateChercheurComponent } from './view/enjeux-ird-comite-et-commission-evaluation-chercheur/create-chercheur/enjeux-ird-comite-et-commission-evaluation-create-chercheur.component';
 import { EnjeuxIrdComiteEtCommissionEvaluationEditChercheurComponent } from './view/enjeux-ird-comite-et-commission-evaluation-chercheur/edit-chercheur/enjeux-ird-comite-et-commission-evaluation-edit-chercheur.component';
 import { EnjeuxIrdComiteEtCommissionEvaluationViewChercheurComponent } from './view/enjeux-ird-comite-et-commission-evaluation-chercheur/view-chercheur/enjeux-ird-comite-et-commission-evaluation-view-chercheur.component';
@@ -374,16 +371,11 @@ import { RencontreMediaEditChercheurComponent } from './view/rencontre-media-che
 import { RencontreMediaViewChercheurComponent } from './view/rencontre-media-chercheur/view-chercheur/rencontre-media-view-chercheur.component';
 import { RencontreMediaListChercheurComponent } from './view/rencontre-media-chercheur/list-chercheur/rencontre-media-list-chercheur.component';
 import { RencontreMediaChercheurComponent } from './view/rencontre-media-chercheur/rencontre-media-chercheur.component';
-import { NiveauEtudeCreateChercheurComponent } from './view/niveau-etude-chercheur/create-chercheur/niveau-etude-create-chercheur.component';
-import { NiveauEtudeEditChercheurComponent } from './view/niveau-etude-chercheur/edit-chercheur/niveau-etude-edit-chercheur.component';
-import { NiveauEtudeViewChercheurComponent } from './view/niveau-etude-chercheur/view-chercheur/niveau-etude-view-chercheur.component';
-import { NiveauEtudeListChercheurComponent } from './view/niveau-etude-chercheur/list-chercheur/niveau-etude-list-chercheur.component';
-import { NiveauEtudeChercheurComponent } from './view/niveau-etude-chercheur/niveau-etude-chercheur.component';
-import { EntiteAdministrativeCreateChercheurComponent } from './view/entite-administrative-chercheur/create-chercheur/entite-administrative-create-chercheur.component';
-import { EntiteAdministrativeEditChercheurComponent } from './view/entite-administrative-chercheur/edit-chercheur/entite-administrative-edit-chercheur.component';
-import { EntiteAdministrativeViewChercheurComponent } from './view/entite-administrative-chercheur/view-chercheur/entite-administrative-view-chercheur.component';
-import { EntiteAdministrativeListChercheurComponent } from './view/entite-administrative-chercheur/list-chercheur/entite-administrative-list-chercheur.component';
-import { EntiteAdministrativeChercheurComponent } from './view/entite-administrative-chercheur/entite-administrative-chercheur.component';
+import { TypeExpertCreateChercheurComponent } from './view/type-expert-chercheur/create-chercheur/type-expert-create-chercheur.component';
+import { TypeExpertEditChercheurComponent } from './view/type-expert-chercheur/edit-chercheur/type-expert-edit-chercheur.component';
+import { TypeExpertViewChercheurComponent } from './view/type-expert-chercheur/view-chercheur/type-expert-view-chercheur.component';
+import { TypeExpertListChercheurComponent } from './view/type-expert-chercheur/list-chercheur/type-expert-list-chercheur.component';
+import { TypeExpertChercheurComponent } from './view/type-expert-chercheur/type-expert-chercheur.component';
 import { ReclamationCreateChercheurComponent } from './view/reclamation-chercheur/create-chercheur/reclamation-create-chercheur.component';
 import { ReclamationEditChercheurComponent } from './view/reclamation-chercheur/edit-chercheur/reclamation-edit-chercheur.component';
 import { ReclamationViewChercheurComponent } from './view/reclamation-chercheur/view-chercheur/reclamation-view-chercheur.component';
@@ -409,51 +401,46 @@ import { DisciplineScientifiqueEvenementColloqueScientifiqueEditChercheurCompone
 import { DisciplineScientifiqueEvenementColloqueScientifiqueViewChercheurComponent } from './view/discipline-scientifique-evenement-colloque-scientifique-chercheur/view-chercheur/discipline-scientifique-evenement-colloque-scientifique-view-chercheur.component';
 import { DisciplineScientifiqueEvenementColloqueScientifiqueListChercheurComponent } from './view/discipline-scientifique-evenement-colloque-scientifique-chercheur/list-chercheur/discipline-scientifique-evenement-colloque-scientifique-list-chercheur.component';
 import { DisciplineScientifiqueEvenementColloqueScientifiqueChercheurComponent } from './view/discipline-scientifique-evenement-colloque-scientifique-chercheur/discipline-scientifique-evenement-colloque-scientifique-chercheur.component';
-import { DisciplineScientifiqueParentCreateChercheurComponent } from './view/discipline-scientifique-parent-chercheur/create-chercheur/discipline-scientifique-parent-create-chercheur.component';
-import { DisciplineScientifiqueParentEditChercheurComponent } from './view/discipline-scientifique-parent-chercheur/edit-chercheur/discipline-scientifique-parent-edit-chercheur.component';
-import { DisciplineScientifiqueParentViewChercheurComponent } from './view/discipline-scientifique-parent-chercheur/view-chercheur/discipline-scientifique-parent-view-chercheur.component';
-import { DisciplineScientifiqueParentListChercheurComponent } from './view/discipline-scientifique-parent-chercheur/list-chercheur/discipline-scientifique-parent-list-chercheur.component';
-import { DisciplineScientifiqueParentChercheurComponent } from './view/discipline-scientifique-parent-chercheur/discipline-scientifique-parent-chercheur.component';
-import { TemplateOuvertureCreateChercheurComponent } from './view/template-ouverture-chercheur/create-chercheur/template-ouverture-create-chercheur.component';
-import { TemplateOuvertureEditChercheurComponent } from './view/template-ouverture-chercheur/edit-chercheur/template-ouverture-edit-chercheur.component';
-import { TemplateOuvertureViewChercheurComponent } from './view/template-ouverture-chercheur/view-chercheur/template-ouverture-view-chercheur.component';
-import { TemplateOuvertureListChercheurComponent } from './view/template-ouverture-chercheur/list-chercheur/template-ouverture-list-chercheur.component';
-import { TemplateOuvertureChercheurComponent } from './view/template-ouverture-chercheur/template-ouverture-chercheur.component';
-import { NatureExpertiseCreateChercheurComponent } from './view/nature-expertise-chercheur/create-chercheur/nature-expertise-create-chercheur.component';
-import { NatureExpertiseEditChercheurComponent } from './view/nature-expertise-chercheur/edit-chercheur/nature-expertise-edit-chercheur.component';
-import { NatureExpertiseViewChercheurComponent } from './view/nature-expertise-chercheur/view-chercheur/nature-expertise-view-chercheur.component';
-import { NatureExpertiseListChercheurComponent } from './view/nature-expertise-chercheur/list-chercheur/nature-expertise-list-chercheur.component';
-import { NatureExpertiseChercheurComponent } from './view/nature-expertise-chercheur/nature-expertise-chercheur.component';
-import { StatusCursusCreateChercheurComponent } from './view/status-cursus-chercheur/create-chercheur/status-cursus-create-chercheur.component';
-import { StatusCursusEditChercheurComponent } from './view/status-cursus-chercheur/edit-chercheur/status-cursus-edit-chercheur.component';
-import { StatusCursusViewChercheurComponent } from './view/status-cursus-chercheur/view-chercheur/status-cursus-view-chercheur.component';
-import { StatusCursusListChercheurComponent } from './view/status-cursus-chercheur/list-chercheur/status-cursus-list-chercheur.component';
-import { StatusCursusChercheurComponent } from './view/status-cursus-chercheur/status-cursus-chercheur.component';
+import { KeyWordCreateChercheurComponent } from './view/key-word-chercheur/create-chercheur/key-word-create-chercheur.component';
+import { KeyWordEditChercheurComponent } from './view/key-word-chercheur/edit-chercheur/key-word-edit-chercheur.component';
+import { KeyWordViewChercheurComponent } from './view/key-word-chercheur/view-chercheur/key-word-view-chercheur.component';
+import { KeyWordListChercheurComponent } from './view/key-word-chercheur/list-chercheur/key-word-list-chercheur.component';
+import { KeyWordChercheurComponent } from './view/key-word-chercheur/key-word-chercheur.component';
 import { OutilPedagogiqueDisciplineScientifiqueCreateChercheurComponent } from './view/outil-pedagogique-discipline-scientifique-chercheur/create-chercheur/outil-pedagogique-discipline-scientifique-create-chercheur.component';
 import { OutilPedagogiqueDisciplineScientifiqueEditChercheurComponent } from './view/outil-pedagogique-discipline-scientifique-chercheur/edit-chercheur/outil-pedagogique-discipline-scientifique-edit-chercheur.component';
 import { OutilPedagogiqueDisciplineScientifiqueViewChercheurComponent } from './view/outil-pedagogique-discipline-scientifique-chercheur/view-chercheur/outil-pedagogique-discipline-scientifique-view-chercheur.component';
 import { OutilPedagogiqueDisciplineScientifiqueListChercheurComponent } from './view/outil-pedagogique-discipline-scientifique-chercheur/list-chercheur/outil-pedagogique-discipline-scientifique-list-chercheur.component';
 import { OutilPedagogiqueDisciplineScientifiqueChercheurComponent } from './view/outil-pedagogique-discipline-scientifique-chercheur/outil-pedagogique-discipline-scientifique-chercheur.component';
+import { PaysCreateChercheurComponent } from './view/pays-chercheur/create-chercheur/pays-create-chercheur.component';
+import { PaysEditChercheurComponent } from './view/pays-chercheur/edit-chercheur/pays-edit-chercheur.component';
+import { PaysViewChercheurComponent } from './view/pays-chercheur/view-chercheur/pays-view-chercheur.component';
+import { PaysListChercheurComponent } from './view/pays-chercheur/list-chercheur/pays-list-chercheur.component';
+import { PaysChercheurComponent } from './view/pays-chercheur/pays-chercheur.component';
+import { NatureEnseignementCreateChercheurComponent } from './view/nature-enseignement-chercheur/create-chercheur/nature-enseignement-create-chercheur.component';
+import { NatureEnseignementEditChercheurComponent } from './view/nature-enseignement-chercheur/edit-chercheur/nature-enseignement-edit-chercheur.component';
+import { NatureEnseignementViewChercheurComponent } from './view/nature-enseignement-chercheur/view-chercheur/nature-enseignement-view-chercheur.component';
+import { NatureEnseignementListChercheurComponent } from './view/nature-enseignement-chercheur/list-chercheur/nature-enseignement-list-chercheur.component';
+import { NatureEnseignementChercheurComponent } from './view/nature-enseignement-chercheur/nature-enseignement-chercheur.component';
+import { ContexteCreateChercheurComponent } from './view/contexte-chercheur/create-chercheur/contexte-create-chercheur.component';
+import { ContexteEditChercheurComponent } from './view/contexte-chercheur/edit-chercheur/contexte-edit-chercheur.component';
+import { ContexteViewChercheurComponent } from './view/contexte-chercheur/view-chercheur/contexte-view-chercheur.component';
+import { ContexteListChercheurComponent } from './view/contexte-chercheur/list-chercheur/contexte-list-chercheur.component';
+import { ContexteChercheurComponent } from './view/contexte-chercheur/contexte-chercheur.component';
 import { CampagneRappelChercheurCreateChercheurComponent } from './view/campagne-rappel-chercheur-chercheur/create-chercheur/campagne-rappel-chercheur-create-chercheur.component';
 import { CampagneRappelChercheurEditChercheurComponent } from './view/campagne-rappel-chercheur-chercheur/edit-chercheur/campagne-rappel-chercheur-edit-chercheur.component';
 import { CampagneRappelChercheurViewChercheurComponent } from './view/campagne-rappel-chercheur-chercheur/view-chercheur/campagne-rappel-chercheur-view-chercheur.component';
 import { CampagneRappelChercheurListChercheurComponent } from './view/campagne-rappel-chercheur-chercheur/list-chercheur/campagne-rappel-chercheur-list-chercheur.component';
 import { CampagneRappelChercheurChercheurComponent } from './view/campagne-rappel-chercheur-chercheur/campagne-rappel-chercheur-chercheur.component';
-import { ModaliteFormationContinueCreateChercheurComponent } from './view/modalite-formation-continue-chercheur/create-chercheur/modalite-formation-continue-create-chercheur.component';
-import { ModaliteFormationContinueEditChercheurComponent } from './view/modalite-formation-continue-chercheur/edit-chercheur/modalite-formation-continue-edit-chercheur.component';
-import { ModaliteFormationContinueViewChercheurComponent } from './view/modalite-formation-continue-chercheur/view-chercheur/modalite-formation-continue-view-chercheur.component';
-import { ModaliteFormationContinueListChercheurComponent } from './view/modalite-formation-continue-chercheur/list-chercheur/modalite-formation-continue-list-chercheur.component';
-import { ModaliteFormationContinueChercheurComponent } from './view/modalite-formation-continue-chercheur/modalite-formation-continue-chercheur.component';
-import { IdentifiantRechercheCreateChercheurComponent } from './view/identifiant-recherche-chercheur/create-chercheur/identifiant-recherche-create-chercheur.component';
-import { IdentifiantRechercheEditChercheurComponent } from './view/identifiant-recherche-chercheur/edit-chercheur/identifiant-recherche-edit-chercheur.component';
-import { IdentifiantRechercheViewChercheurComponent } from './view/identifiant-recherche-chercheur/view-chercheur/identifiant-recherche-view-chercheur.component';
-import { IdentifiantRechercheListChercheurComponent } from './view/identifiant-recherche-chercheur/list-chercheur/identifiant-recherche-list-chercheur.component';
-import { IdentifiantRechercheChercheurComponent } from './view/identifiant-recherche-chercheur/identifiant-recherche-chercheur.component';
 import { EncadrementCreateChercheurComponent } from './view/encadrement-chercheur/create-chercheur/encadrement-create-chercheur.component';
 import { EncadrementEditChercheurComponent } from './view/encadrement-chercheur/edit-chercheur/encadrement-edit-chercheur.component';
 import { EncadrementViewChercheurComponent } from './view/encadrement-chercheur/view-chercheur/encadrement-view-chercheur.component';
 import { EncadrementListChercheurComponent } from './view/encadrement-chercheur/list-chercheur/encadrement-list-chercheur.component';
 import { EncadrementChercheurComponent } from './view/encadrement-chercheur/encadrement-chercheur.component';
+import { CommanditaireCreateChercheurComponent } from './view/commanditaire-chercheur/create-chercheur/commanditaire-create-chercheur.component';
+import { CommanditaireEditChercheurComponent } from './view/commanditaire-chercheur/edit-chercheur/commanditaire-edit-chercheur.component';
+import { CommanditaireViewChercheurComponent } from './view/commanditaire-chercheur/view-chercheur/commanditaire-view-chercheur.component';
+import { CommanditaireListChercheurComponent } from './view/commanditaire-chercheur/list-chercheur/commanditaire-list-chercheur.component';
+import { CommanditaireChercheurComponent } from './view/commanditaire-chercheur/commanditaire-chercheur.component';
 import { EnjeuxIrdConseilsScientifiqueCreateChercheurComponent } from './view/enjeux-ird-conseils-scientifique-chercheur/create-chercheur/enjeux-ird-conseils-scientifique-create-chercheur.component';
 import { EnjeuxIrdConseilsScientifiqueEditChercheurComponent } from './view/enjeux-ird-conseils-scientifique-chercheur/edit-chercheur/enjeux-ird-conseils-scientifique-edit-chercheur.component';
 import { EnjeuxIrdConseilsScientifiqueViewChercheurComponent } from './view/enjeux-ird-conseils-scientifique-chercheur/view-chercheur/enjeux-ird-conseils-scientifique-view-chercheur.component';
@@ -464,16 +451,21 @@ import { DisciplineScientifiqueConsultanceScientifiquePonctuelleEditChercheurCom
 import { DisciplineScientifiqueConsultanceScientifiquePonctuelleViewChercheurComponent } from './view/discipline-scientifique-consultance-scientifique-ponctuelle-chercheur/view-chercheur/discipline-scientifique-consultance-scientifique-ponctuelle-view-chercheur.component';
 import { DisciplineScientifiqueConsultanceScientifiquePonctuelleListChercheurComponent } from './view/discipline-scientifique-consultance-scientifique-ponctuelle-chercheur/list-chercheur/discipline-scientifique-consultance-scientifique-ponctuelle-list-chercheur.component';
 import { DisciplineScientifiqueConsultanceScientifiquePonctuelleChercheurComponent } from './view/discipline-scientifique-consultance-scientifique-ponctuelle-chercheur/discipline-scientifique-consultance-scientifique-ponctuelle-chercheur.component';
+import { CommunauteSavoirCreateChercheurComponent } from './view/communaute-savoir-chercheur/create-chercheur/communaute-savoir-create-chercheur.component';
+import { CommunauteSavoirEditChercheurComponent } from './view/communaute-savoir-chercheur/edit-chercheur/communaute-savoir-edit-chercheur.component';
+import { CommunauteSavoirViewChercheurComponent } from './view/communaute-savoir-chercheur/view-chercheur/communaute-savoir-view-chercheur.component';
+import { CommunauteSavoirListChercheurComponent } from './view/communaute-savoir-chercheur/list-chercheur/communaute-savoir-list-chercheur.component';
+import { CommunauteSavoirChercheurComponent } from './view/communaute-savoir-chercheur/communaute-savoir-chercheur.component';
+import { NiveauFormationPostBacCreateChercheurComponent } from './view/niveau-formation-post-bac-chercheur/create-chercheur/niveau-formation-post-bac-create-chercheur.component';
+import { NiveauFormationPostBacEditChercheurComponent } from './view/niveau-formation-post-bac-chercheur/edit-chercheur/niveau-formation-post-bac-edit-chercheur.component';
+import { NiveauFormationPostBacViewChercheurComponent } from './view/niveau-formation-post-bac-chercheur/view-chercheur/niveau-formation-post-bac-view-chercheur.component';
+import { NiveauFormationPostBacListChercheurComponent } from './view/niveau-formation-post-bac-chercheur/list-chercheur/niveau-formation-post-bac-list-chercheur.component';
+import { NiveauFormationPostBacChercheurComponent } from './view/niveau-formation-post-bac-chercheur/niveau-formation-post-bac-chercheur.component';
 import { FormationContinuePubliqueProfessionelCreateChercheurComponent } from './view/formation-continue-publique-professionel-chercheur/create-chercheur/formation-continue-publique-professionel-create-chercheur.component';
 import { FormationContinuePubliqueProfessionelEditChercheurComponent } from './view/formation-continue-publique-professionel-chercheur/edit-chercheur/formation-continue-publique-professionel-edit-chercheur.component';
 import { FormationContinuePubliqueProfessionelViewChercheurComponent } from './view/formation-continue-publique-professionel-chercheur/view-chercheur/formation-continue-publique-professionel-view-chercheur.component';
 import { FormationContinuePubliqueProfessionelListChercheurComponent } from './view/formation-continue-publique-professionel-chercheur/list-chercheur/formation-continue-publique-professionel-list-chercheur.component';
 import { FormationContinuePubliqueProfessionelChercheurComponent } from './view/formation-continue-publique-professionel-chercheur/formation-continue-publique-professionel-chercheur.component';
-import { DisciplineScientifiqueErcAssociationCreateChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/create-chercheur/discipline-scientifique-erc-association-create-chercheur.component';
-import { DisciplineScientifiqueErcAssociationEditChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/edit-chercheur/discipline-scientifique-erc-association-edit-chercheur.component';
-import { DisciplineScientifiqueErcAssociationViewChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/view-chercheur/discipline-scientifique-erc-association-view-chercheur.component';
-import { DisciplineScientifiqueErcAssociationListChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/list-chercheur/discipline-scientifique-erc-association-list-chercheur.component';
-import { DisciplineScientifiqueErcAssociationChercheurComponent } from './view/discipline-scientifique-erc-association-chercheur/discipline-scientifique-erc-association-chercheur.component';
 import { EnseignementEnjeuxIrdCreateChercheurComponent } from './view/enseignement-enjeux-ird-chercheur/create-chercheur/enseignement-enjeux-ird-create-chercheur.component';
 import { EnseignementEnjeuxIrdEditChercheurComponent } from './view/enseignement-enjeux-ird-chercheur/edit-chercheur/enseignement-enjeux-ird-edit-chercheur.component';
 import { EnseignementEnjeuxIrdViewChercheurComponent } from './view/enseignement-enjeux-ird-chercheur/view-chercheur/enseignement-enjeux-ird-view-chercheur.component';
@@ -489,6 +481,11 @@ import { DisciplineScientifiqueConseilEtComiteScientifiqueEditChercheurComponent
 import { DisciplineScientifiqueConseilEtComiteScientifiqueViewChercheurComponent } from './view/discipline-scientifique-conseil-et-comite-scientifique-chercheur/view-chercheur/discipline-scientifique-conseil-et-comite-scientifique-view-chercheur.component';
 import { DisciplineScientifiqueConseilEtComiteScientifiqueListChercheurComponent } from './view/discipline-scientifique-conseil-et-comite-scientifique-chercheur/list-chercheur/discipline-scientifique-conseil-et-comite-scientifique-list-chercheur.component';
 import { DisciplineScientifiqueConseilEtComiteScientifiqueChercheurComponent } from './view/discipline-scientifique-conseil-et-comite-scientifique-chercheur/discipline-scientifique-conseil-et-comite-scientifique-chercheur.component';
+import { TemplateRelanceCreateChercheurComponent } from './view/template-relance-chercheur/create-chercheur/template-relance-create-chercheur.component';
+import { TemplateRelanceEditChercheurComponent } from './view/template-relance-chercheur/edit-chercheur/template-relance-edit-chercheur.component';
+import { TemplateRelanceViewChercheurComponent } from './view/template-relance-chercheur/view-chercheur/template-relance-view-chercheur.component';
+import { TemplateRelanceListChercheurComponent } from './view/template-relance-chercheur/list-chercheur/template-relance-list-chercheur.component';
+import { TemplateRelanceChercheurComponent } from './view/template-relance-chercheur/template-relance-chercheur.component';
 import { EtatEtapeCampagneCreateChercheurComponent } from './view/etat-etape-campagne-chercheur/create-chercheur/etat-etape-campagne-create-chercheur.component';
 import { EtatEtapeCampagneEditChercheurComponent } from './view/etat-etape-campagne-chercheur/edit-chercheur/etat-etape-campagne-edit-chercheur.component';
 import { EtatEtapeCampagneViewChercheurComponent } from './view/etat-etape-campagne-chercheur/view-chercheur/etat-etape-campagne-view-chercheur.component';
@@ -499,11 +496,11 @@ import { ProjetActiviteRechercheDetailEditChercheurComponent } from './view/proj
 import { ProjetActiviteRechercheDetailViewChercheurComponent } from './view/projet-activite-recherche-detail-chercheur/view-chercheur/projet-activite-recherche-detail-view-chercheur.component';
 import { ProjetActiviteRechercheDetailListChercheurComponent } from './view/projet-activite-recherche-detail-chercheur/list-chercheur/projet-activite-recherche-detail-list-chercheur.component';
 import { ProjetActiviteRechercheDetailChercheurComponent } from './view/projet-activite-recherche-detail-chercheur/projet-activite-recherche-detail-chercheur.component';
-import { StructureIrdCreateChercheurComponent } from './view/structure-ird-chercheur/create-chercheur/structure-ird-create-chercheur.component';
-import { StructureIrdEditChercheurComponent } from './view/structure-ird-chercheur/edit-chercheur/structure-ird-edit-chercheur.component';
-import { StructureIrdViewChercheurComponent } from './view/structure-ird-chercheur/view-chercheur/structure-ird-view-chercheur.component';
-import { StructureIrdListChercheurComponent } from './view/structure-ird-chercheur/list-chercheur/structure-ird-list-chercheur.component';
-import { StructureIrdChercheurComponent } from './view/structure-ird-chercheur/structure-ird-chercheur.component';
+import { TypeSavoirCreateChercheurComponent } from './view/type-savoir-chercheur/create-chercheur/type-savoir-create-chercheur.component';
+import { TypeSavoirEditChercheurComponent } from './view/type-savoir-chercheur/edit-chercheur/type-savoir-edit-chercheur.component';
+import { TypeSavoirViewChercheurComponent } from './view/type-savoir-chercheur/view-chercheur/type-savoir-view-chercheur.component';
+import { TypeSavoirListChercheurComponent } from './view/type-savoir-chercheur/list-chercheur/type-savoir-list-chercheur.component';
+import { TypeSavoirChercheurComponent } from './view/type-savoir-chercheur/type-savoir-chercheur.component';
 import { ExpertiseCreateChercheurComponent } from './view/expertise-chercheur/create-chercheur/expertise-create-chercheur.component';
 import { ExpertiseEditChercheurComponent } from './view/expertise-chercheur/edit-chercheur/expertise-edit-chercheur.component';
 import { ExpertiseViewChercheurComponent } from './view/expertise-chercheur/view-chercheur/expertise-view-chercheur.component';
@@ -519,21 +516,16 @@ import { CampagneChercheurOuvertureEditChercheurComponent } from './view/campagn
 import { CampagneChercheurOuvertureViewChercheurComponent } from './view/campagne-chercheur-ouverture-chercheur/view-chercheur/campagne-chercheur-ouverture-view-chercheur.component';
 import { CampagneChercheurOuvertureListChercheurComponent } from './view/campagne-chercheur-ouverture-chercheur/list-chercheur/campagne-chercheur-ouverture-list-chercheur.component';
 import { CampagneChercheurOuvertureChercheurComponent } from './view/campagne-chercheur-ouverture-chercheur/campagne-chercheur-ouverture-chercheur.component';
-import { NatureEnseignementCreateChercheurComponent } from './view/nature-enseignement-chercheur/create-chercheur/nature-enseignement-create-chercheur.component';
-import { NatureEnseignementEditChercheurComponent } from './view/nature-enseignement-chercheur/edit-chercheur/nature-enseignement-edit-chercheur.component';
-import { NatureEnseignementViewChercheurComponent } from './view/nature-enseignement-chercheur/view-chercheur/nature-enseignement-view-chercheur.component';
-import { NatureEnseignementListChercheurComponent } from './view/nature-enseignement-chercheur/list-chercheur/nature-enseignement-list-chercheur.component';
-import { NatureEnseignementChercheurComponent } from './view/nature-enseignement-chercheur/nature-enseignement-chercheur.component';
+import { ModeDiffusionCreateChercheurComponent } from './view/mode-diffusion-chercheur/create-chercheur/mode-diffusion-create-chercheur.component';
+import { ModeDiffusionEditChercheurComponent } from './view/mode-diffusion-chercheur/edit-chercheur/mode-diffusion-edit-chercheur.component';
+import { ModeDiffusionViewChercheurComponent } from './view/mode-diffusion-chercheur/view-chercheur/mode-diffusion-view-chercheur.component';
+import { ModeDiffusionListChercheurComponent } from './view/mode-diffusion-chercheur/list-chercheur/mode-diffusion-list-chercheur.component';
+import { ModeDiffusionChercheurComponent } from './view/mode-diffusion-chercheur/mode-diffusion-chercheur.component';
 import { EnjeuxIrdConsultanceScientifiquePonctuelleCreateChercheurComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-chercheur/create-chercheur/enjeux-ird-consultance-scientifique-ponctuelle-create-chercheur.component';
 import { EnjeuxIrdConsultanceScientifiquePonctuelleEditChercheurComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-chercheur/edit-chercheur/enjeux-ird-consultance-scientifique-ponctuelle-edit-chercheur.component';
 import { EnjeuxIrdConsultanceScientifiquePonctuelleViewChercheurComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-chercheur/view-chercheur/enjeux-ird-consultance-scientifique-ponctuelle-view-chercheur.component';
 import { EnjeuxIrdConsultanceScientifiquePonctuelleListChercheurComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-chercheur/list-chercheur/enjeux-ird-consultance-scientifique-ponctuelle-list-chercheur.component';
 import { EnjeuxIrdConsultanceScientifiquePonctuelleChercheurComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-chercheur/enjeux-ird-consultance-scientifique-ponctuelle-chercheur.component';
-import { TypeUtilisateurCreateChercheurComponent } from './view/type-utilisateur-chercheur/create-chercheur/type-utilisateur-create-chercheur.component';
-import { TypeUtilisateurEditChercheurComponent } from './view/type-utilisateur-chercheur/edit-chercheur/type-utilisateur-edit-chercheur.component';
-import { TypeUtilisateurViewChercheurComponent } from './view/type-utilisateur-chercheur/view-chercheur/type-utilisateur-view-chercheur.component';
-import { TypeUtilisateurListChercheurComponent } from './view/type-utilisateur-chercheur/list-chercheur/type-utilisateur-list-chercheur.component';
-import { TypeUtilisateurChercheurComponent } from './view/type-utilisateur-chercheur/type-utilisateur-chercheur.component';
 import { EtablissementComiteEtCommissionEvaluationCreateChercheurComponent } from './view/etablissement-comite-et-commission-evaluation-chercheur/create-chercheur/etablissement-comite-et-commission-evaluation-create-chercheur.component';
 import { EtablissementComiteEtCommissionEvaluationEditChercheurComponent } from './view/etablissement-comite-et-commission-evaluation-chercheur/edit-chercheur/etablissement-comite-et-commission-evaluation-edit-chercheur.component';
 import { EtablissementComiteEtCommissionEvaluationViewChercheurComponent } from './view/etablissement-comite-et-commission-evaluation-chercheur/view-chercheur/etablissement-comite-et-commission-evaluation-view-chercheur.component';
@@ -544,11 +536,21 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionEditChercheur
 import { DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-chercheur/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-chercheur.component';
-import { MasterInternationalCreateChercheurComponent } from './view/master-international-chercheur/create-chercheur/master-international-create-chercheur.component';
-import { MasterInternationalEditChercheurComponent } from './view/master-international-chercheur/edit-chercheur/master-international-edit-chercheur.component';
-import { MasterInternationalViewChercheurComponent } from './view/master-international-chercheur/view-chercheur/master-international-view-chercheur.component';
-import { MasterInternationalListChercheurComponent } from './view/master-international-chercheur/list-chercheur/master-international-list-chercheur.component';
-import { MasterInternationalChercheurComponent } from './view/master-international-chercheur/master-international-chercheur.component';
+import { CorpsCreateChercheurComponent } from './view/corps-chercheur/create-chercheur/corps-create-chercheur.component';
+import { CorpsEditChercheurComponent } from './view/corps-chercheur/edit-chercheur/corps-edit-chercheur.component';
+import { CorpsViewChercheurComponent } from './view/corps-chercheur/view-chercheur/corps-view-chercheur.component';
+import { CorpsListChercheurComponent } from './view/corps-chercheur/list-chercheur/corps-list-chercheur.component';
+import { CorpsChercheurComponent } from './view/corps-chercheur/corps-chercheur.component';
+import { ZoneGeographiqueCreateChercheurComponent } from './view/zone-geographique-chercheur/create-chercheur/zone-geographique-create-chercheur.component';
+import { ZoneGeographiqueEditChercheurComponent } from './view/zone-geographique-chercheur/edit-chercheur/zone-geographique-edit-chercheur.component';
+import { ZoneGeographiqueViewChercheurComponent } from './view/zone-geographique-chercheur/view-chercheur/zone-geographique-view-chercheur.component';
+import { ZoneGeographiqueListChercheurComponent } from './view/zone-geographique-chercheur/list-chercheur/zone-geographique-list-chercheur.component';
+import { ZoneGeographiqueChercheurComponent } from './view/zone-geographique-chercheur/zone-geographique-chercheur.component';
+import { InstrumentIrdCreateChercheurComponent } from './view/instrument-ird-chercheur/create-chercheur/instrument-ird-create-chercheur.component';
+import { InstrumentIrdEditChercheurComponent } from './view/instrument-ird-chercheur/edit-chercheur/instrument-ird-edit-chercheur.component';
+import { InstrumentIrdViewChercheurComponent } from './view/instrument-ird-chercheur/view-chercheur/instrument-ird-view-chercheur.component';
+import { InstrumentIrdListChercheurComponent } from './view/instrument-ird-chercheur/list-chercheur/instrument-ird-list-chercheur.component';
+import { InstrumentIrdChercheurComponent } from './view/instrument-ird-chercheur/instrument-ird-chercheur.component';
 import { ResponsabilitePedagogiqueEnjeuxIrdCreateChercheurComponent } from './view/responsabilite-pedagogique-enjeux-ird-chercheur/create-chercheur/responsabilite-pedagogique-enjeux-ird-create-chercheur.component';
 import { ResponsabilitePedagogiqueEnjeuxIrdEditChercheurComponent } from './view/responsabilite-pedagogique-enjeux-ird-chercheur/edit-chercheur/responsabilite-pedagogique-enjeux-ird-edit-chercheur.component';
 import { ResponsabilitePedagogiqueEnjeuxIrdViewChercheurComponent } from './view/responsabilite-pedagogique-enjeux-ird-chercheur/view-chercheur/responsabilite-pedagogique-enjeux-ird-view-chercheur.component';
@@ -559,16 +561,16 @@ import { FaqEditChercheurComponent } from './view/faq-chercheur/edit-chercheur/f
 import { FaqViewChercheurComponent } from './view/faq-chercheur/view-chercheur/faq-view-chercheur.component';
 import { FaqListChercheurComponent } from './view/faq-chercheur/list-chercheur/faq-list-chercheur.component';
 import { FaqChercheurComponent } from './view/faq-chercheur/faq-chercheur.component';
-import { FinancementDoctorantCreateChercheurComponent } from './view/financement-doctorant-chercheur/create-chercheur/financement-doctorant-create-chercheur.component';
-import { FinancementDoctorantEditChercheurComponent } from './view/financement-doctorant-chercheur/edit-chercheur/financement-doctorant-edit-chercheur.component';
-import { FinancementDoctorantViewChercheurComponent } from './view/financement-doctorant-chercheur/view-chercheur/financement-doctorant-view-chercheur.component';
-import { FinancementDoctorantListChercheurComponent } from './view/financement-doctorant-chercheur/list-chercheur/financement-doctorant-list-chercheur.component';
-import { FinancementDoctorantChercheurComponent } from './view/financement-doctorant-chercheur/financement-doctorant-chercheur.component';
 import { ExpertiseScientifiqueCreateChercheurComponent } from './view/expertise-scientifique-chercheur/create-chercheur/expertise-scientifique-create-chercheur.component';
 import { ExpertiseScientifiqueEditChercheurComponent } from './view/expertise-scientifique-chercheur/edit-chercheur/expertise-scientifique-edit-chercheur.component';
 import { ExpertiseScientifiqueViewChercheurComponent } from './view/expertise-scientifique-chercheur/view-chercheur/expertise-scientifique-view-chercheur.component';
 import { ExpertiseScientifiqueListChercheurComponent } from './view/expertise-scientifique-chercheur/list-chercheur/expertise-scientifique-list-chercheur.component';
 import { ExpertiseScientifiqueChercheurComponent } from './view/expertise-scientifique-chercheur/expertise-scientifique-chercheur.component';
+import { NatureEtudeCreateChercheurComponent } from './view/nature-etude-chercheur/create-chercheur/nature-etude-create-chercheur.component';
+import { NatureEtudeEditChercheurComponent } from './view/nature-etude-chercheur/edit-chercheur/nature-etude-edit-chercheur.component';
+import { NatureEtudeViewChercheurComponent } from './view/nature-etude-chercheur/view-chercheur/nature-etude-view-chercheur.component';
+import { NatureEtudeListChercheurComponent } from './view/nature-etude-chercheur/list-chercheur/nature-etude-list-chercheur.component';
+import { NatureEtudeChercheurComponent } from './view/nature-etude-chercheur/nature-etude-chercheur.component';
 import { EtablissementEnseignementCreateChercheurComponent } from './view/etablissement-enseignement-chercheur/create-chercheur/etablissement-enseignement-create-chercheur.component';
 import { EtablissementEnseignementEditChercheurComponent } from './view/etablissement-enseignement-chercheur/edit-chercheur/etablissement-enseignement-edit-chercheur.component';
 import { EtablissementEnseignementViewChercheurComponent } from './view/etablissement-enseignement-chercheur/view-chercheur/etablissement-enseignement-view-chercheur.component';
@@ -579,11 +581,11 @@ import { OutilPedagogiquePaysConceptionEditChercheurComponent } from './view/out
 import { OutilPedagogiquePaysConceptionViewChercheurComponent } from './view/outil-pedagogique-pays-conception-chercheur/view-chercheur/outil-pedagogique-pays-conception-view-chercheur.component';
 import { OutilPedagogiquePaysConceptionListChercheurComponent } from './view/outil-pedagogique-pays-conception-chercheur/list-chercheur/outil-pedagogique-pays-conception-list-chercheur.component';
 import { OutilPedagogiquePaysConceptionChercheurComponent } from './view/outil-pedagogique-pays-conception-chercheur/outil-pedagogique-pays-conception-chercheur.component';
-import { TypePubliqueCultureScientifiqueCreateChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/create-chercheur/type-publique-culture-scientifique-create-chercheur.component';
-import { TypePubliqueCultureScientifiqueEditChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/edit-chercheur/type-publique-culture-scientifique-edit-chercheur.component';
-import { TypePubliqueCultureScientifiqueViewChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/view-chercheur/type-publique-culture-scientifique-view-chercheur.component';
-import { TypePubliqueCultureScientifiqueListChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/list-chercheur/type-publique-culture-scientifique-list-chercheur.component';
-import { TypePubliqueCultureScientifiqueChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/type-publique-culture-scientifique-chercheur.component';
+import { InstitutionCreateChercheurComponent } from './view/institution-chercheur/create-chercheur/institution-create-chercheur.component';
+import { InstitutionEditChercheurComponent } from './view/institution-chercheur/edit-chercheur/institution-edit-chercheur.component';
+import { InstitutionViewChercheurComponent } from './view/institution-chercheur/view-chercheur/institution-view-chercheur.component';
+import { InstitutionListChercheurComponent } from './view/institution-chercheur/list-chercheur/institution-list-chercheur.component';
+import { InstitutionChercheurComponent } from './view/institution-chercheur/institution-chercheur.component';
 import { CampagneChercheurFermetureCreateChercheurComponent } from './view/campagne-chercheur-fermeture-chercheur/create-chercheur/campagne-chercheur-fermeture-create-chercheur.component';
 import { CampagneChercheurFermetureEditChercheurComponent } from './view/campagne-chercheur-fermeture-chercheur/edit-chercheur/campagne-chercheur-fermeture-edit-chercheur.component';
 import { CampagneChercheurFermetureViewChercheurComponent } from './view/campagne-chercheur-fermeture-chercheur/view-chercheur/campagne-chercheur-fermeture-view-chercheur.component';
@@ -599,61 +601,61 @@ import { CommunauteSavoirConseilEtComiteScientifiqueEditChercheurComponent } fro
 import { CommunauteSavoirConseilEtComiteScientifiqueViewChercheurComponent } from './view/communaute-savoir-conseil-et-comite-scientifique-chercheur/view-chercheur/communaute-savoir-conseil-et-comite-scientifique-view-chercheur.component';
 import { CommunauteSavoirConseilEtComiteScientifiqueListChercheurComponent } from './view/communaute-savoir-conseil-et-comite-scientifique-chercheur/list-chercheur/communaute-savoir-conseil-et-comite-scientifique-list-chercheur.component';
 import { CommunauteSavoirConseilEtComiteScientifiqueChercheurComponent } from './view/communaute-savoir-conseil-et-comite-scientifique-chercheur/communaute-savoir-conseil-et-comite-scientifique-chercheur.component';
-import { TemplateClotureCreateChercheurComponent } from './view/template-cloture-chercheur/create-chercheur/template-cloture-create-chercheur.component';
-import { TemplateClotureEditChercheurComponent } from './view/template-cloture-chercheur/edit-chercheur/template-cloture-edit-chercheur.component';
-import { TemplateClotureViewChercheurComponent } from './view/template-cloture-chercheur/view-chercheur/template-cloture-view-chercheur.component';
-import { TemplateClotureListChercheurComponent } from './view/template-cloture-chercheur/list-chercheur/template-cloture-list-chercheur.component';
-import { TemplateClotureChercheurComponent } from './view/template-cloture-chercheur/template-cloture-chercheur.component';
+import { PubliqueFormationCreateChercheurComponent } from './view/publique-formation-chercheur/create-chercheur/publique-formation-create-chercheur.component';
+import { PubliqueFormationEditChercheurComponent } from './view/publique-formation-chercheur/edit-chercheur/publique-formation-edit-chercheur.component';
+import { PubliqueFormationViewChercheurComponent } from './view/publique-formation-chercheur/view-chercheur/publique-formation-view-chercheur.component';
+import { PubliqueFormationListChercheurComponent } from './view/publique-formation-chercheur/list-chercheur/publique-formation-list-chercheur.component';
+import { PubliqueFormationChercheurComponent } from './view/publique-formation-chercheur/publique-formation-chercheur.component';
 import { OutilPedagogiqueTypeInstrumentIrdCreateChercheurComponent } from './view/outil-pedagogique-type-instrument-ird-chercheur/create-chercheur/outil-pedagogique-type-instrument-ird-create-chercheur.component';
 import { OutilPedagogiqueTypeInstrumentIrdEditChercheurComponent } from './view/outil-pedagogique-type-instrument-ird-chercheur/edit-chercheur/outil-pedagogique-type-instrument-ird-edit-chercheur.component';
 import { OutilPedagogiqueTypeInstrumentIrdViewChercheurComponent } from './view/outil-pedagogique-type-instrument-ird-chercheur/view-chercheur/outil-pedagogique-type-instrument-ird-view-chercheur.component';
 import { OutilPedagogiqueTypeInstrumentIrdListChercheurComponent } from './view/outil-pedagogique-type-instrument-ird-chercheur/list-chercheur/outil-pedagogique-type-instrument-ird-list-chercheur.component';
 import { OutilPedagogiqueTypeInstrumentIrdChercheurComponent } from './view/outil-pedagogique-type-instrument-ird-chercheur/outil-pedagogique-type-instrument-ird-chercheur.component';
-import { EtablissementCreateChercheurComponent } from './view/etablissement-chercheur/create-chercheur/etablissement-create-chercheur.component';
-import { EtablissementEditChercheurComponent } from './view/etablissement-chercheur/edit-chercheur/etablissement-edit-chercheur.component';
-import { EtablissementViewChercheurComponent } from './view/etablissement-chercheur/view-chercheur/etablissement-view-chercheur.component';
-import { EtablissementListChercheurComponent } from './view/etablissement-chercheur/list-chercheur/etablissement-list-chercheur.component';
-import { EtablissementChercheurComponent } from './view/etablissement-chercheur/etablissement-chercheur.component';
-import { CommanditaireCreateChercheurComponent } from './view/commanditaire-chercheur/create-chercheur/commanditaire-create-chercheur.component';
-import { CommanditaireEditChercheurComponent } from './view/commanditaire-chercheur/edit-chercheur/commanditaire-edit-chercheur.component';
-import { CommanditaireViewChercheurComponent } from './view/commanditaire-chercheur/view-chercheur/commanditaire-view-chercheur.component';
-import { CommanditaireListChercheurComponent } from './view/commanditaire-chercheur/list-chercheur/commanditaire-list-chercheur.component';
-import { CommanditaireChercheurComponent } from './view/commanditaire-chercheur/commanditaire-chercheur.component';
-import { DisciplineScientifiqueErcParentCreateChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/create-chercheur/discipline-scientifique-erc-parent-create-chercheur.component';
-import { DisciplineScientifiqueErcParentEditChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/edit-chercheur/discipline-scientifique-erc-parent-edit-chercheur.component';
-import { DisciplineScientifiqueErcParentViewChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/view-chercheur/discipline-scientifique-erc-parent-view-chercheur.component';
-import { DisciplineScientifiqueErcParentListChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/list-chercheur/discipline-scientifique-erc-parent-list-chercheur.component';
-import { DisciplineScientifiqueErcParentChercheurComponent } from './view/discipline-scientifique-erc-parent-chercheur/discipline-scientifique-erc-parent-chercheur.component';
+import { FinancementDoctorantCreateChercheurComponent } from './view/financement-doctorant-chercheur/create-chercheur/financement-doctorant-create-chercheur.component';
+import { FinancementDoctorantEditChercheurComponent } from './view/financement-doctorant-chercheur/edit-chercheur/financement-doctorant-edit-chercheur.component';
+import { FinancementDoctorantViewChercheurComponent } from './view/financement-doctorant-chercheur/view-chercheur/financement-doctorant-view-chercheur.component';
+import { FinancementDoctorantListChercheurComponent } from './view/financement-doctorant-chercheur/list-chercheur/financement-doctorant-list-chercheur.component';
+import { FinancementDoctorantChercheurComponent } from './view/financement-doctorant-chercheur/financement-doctorant-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueCreateChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur/create-chercheur/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-create-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueEditChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur/edit-chercheur/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-edit-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-chercheur.component';
+import { VilleCreateChercheurComponent } from './view/ville-chercheur/create-chercheur/ville-create-chercheur.component';
+import { VilleEditChercheurComponent } from './view/ville-chercheur/edit-chercheur/ville-edit-chercheur.component';
+import { VilleViewChercheurComponent } from './view/ville-chercheur/view-chercheur/ville-view-chercheur.component';
+import { VilleListChercheurComponent } from './view/ville-chercheur/list-chercheur/ville-list-chercheur.component';
+import { VilleChercheurComponent } from './view/ville-chercheur/ville-chercheur.component';
 import { RoleComiteEtCommissionEvaluationCreateChercheurComponent } from './view/role-comite-et-commission-evaluation-chercheur/create-chercheur/role-comite-et-commission-evaluation-create-chercheur.component';
 import { RoleComiteEtCommissionEvaluationEditChercheurComponent } from './view/role-comite-et-commission-evaluation-chercheur/edit-chercheur/role-comite-et-commission-evaluation-edit-chercheur.component';
 import { RoleComiteEtCommissionEvaluationViewChercheurComponent } from './view/role-comite-et-commission-evaluation-chercheur/view-chercheur/role-comite-et-commission-evaluation-view-chercheur.component';
 import { RoleComiteEtCommissionEvaluationListChercheurComponent } from './view/role-comite-et-commission-evaluation-chercheur/list-chercheur/role-comite-et-commission-evaluation-list-chercheur.component';
 import { RoleComiteEtCommissionEvaluationChercheurComponent } from './view/role-comite-et-commission-evaluation-chercheur/role-comite-et-commission-evaluation-chercheur.component';
-import { NiveauFormationPostBacCreateChercheurComponent } from './view/niveau-formation-post-bac-chercheur/create-chercheur/niveau-formation-post-bac-create-chercheur.component';
-import { NiveauFormationPostBacEditChercheurComponent } from './view/niveau-formation-post-bac-chercheur/edit-chercheur/niveau-formation-post-bac-edit-chercheur.component';
-import { NiveauFormationPostBacViewChercheurComponent } from './view/niveau-formation-post-bac-chercheur/view-chercheur/niveau-formation-post-bac-view-chercheur.component';
-import { NiveauFormationPostBacListChercheurComponent } from './view/niveau-formation-post-bac-chercheur/list-chercheur/niveau-formation-post-bac-list-chercheur.component';
-import { NiveauFormationPostBacChercheurComponent } from './view/niveau-formation-post-bac-chercheur/niveau-formation-post-bac-chercheur.component';
 import { ChercheurEmailCreateChercheurComponent } from './view/chercheur-email-chercheur/create-chercheur/chercheur-email-create-chercheur.component';
 import { ChercheurEmailEditChercheurComponent } from './view/chercheur-email-chercheur/edit-chercheur/chercheur-email-edit-chercheur.component';
 import { ChercheurEmailViewChercheurComponent } from './view/chercheur-email-chercheur/view-chercheur/chercheur-email-view-chercheur.component';
 import { ChercheurEmailListChercheurComponent } from './view/chercheur-email-chercheur/list-chercheur/chercheur-email-list-chercheur.component';
 import { ChercheurEmailChercheurComponent } from './view/chercheur-email-chercheur/chercheur-email-chercheur.component';
+import { EntiteAdministrativeCreateChercheurComponent } from './view/entite-administrative-chercheur/create-chercheur/entite-administrative-create-chercheur.component';
+import { EntiteAdministrativeEditChercheurComponent } from './view/entite-administrative-chercheur/edit-chercheur/entite-administrative-edit-chercheur.component';
+import { EntiteAdministrativeViewChercheurComponent } from './view/entite-administrative-chercheur/view-chercheur/entite-administrative-view-chercheur.component';
+import { EntiteAdministrativeListChercheurComponent } from './view/entite-administrative-chercheur/list-chercheur/entite-administrative-list-chercheur.component';
+import { EntiteAdministrativeChercheurComponent } from './view/entite-administrative-chercheur/entite-administrative-chercheur.component';
 import { EnjeuxIrdChercheurCreateChercheurComponent } from './view/enjeux-ird-chercheur-chercheur/create-chercheur/enjeux-ird-chercheur-create-chercheur.component';
 import { EnjeuxIrdChercheurEditChercheurComponent } from './view/enjeux-ird-chercheur-chercheur/edit-chercheur/enjeux-ird-chercheur-edit-chercheur.component';
 import { EnjeuxIrdChercheurViewChercheurComponent } from './view/enjeux-ird-chercheur-chercheur/view-chercheur/enjeux-ird-chercheur-view-chercheur.component';
 import { EnjeuxIrdChercheurListChercheurComponent } from './view/enjeux-ird-chercheur-chercheur/list-chercheur/enjeux-ird-chercheur-list-chercheur.component';
 import { EnjeuxIrdChercheurChercheurComponent } from './view/enjeux-ird-chercheur-chercheur/enjeux-ird-chercheur-chercheur.component';
-import { TypeEntiteAdministrativeCreateChercheurComponent } from './view/type-entite-administrative-chercheur/create-chercheur/type-entite-administrative-create-chercheur.component';
-import { TypeEntiteAdministrativeEditChercheurComponent } from './view/type-entite-administrative-chercheur/edit-chercheur/type-entite-administrative-edit-chercheur.component';
-import { TypeEntiteAdministrativeViewChercheurComponent } from './view/type-entite-administrative-chercheur/view-chercheur/type-entite-administrative-view-chercheur.component';
-import { TypeEntiteAdministrativeListChercheurComponent } from './view/type-entite-administrative-chercheur/list-chercheur/type-entite-administrative-list-chercheur.component';
-import { TypeEntiteAdministrativeChercheurComponent } from './view/type-entite-administrative-chercheur/type-entite-administrative-chercheur.component';
+import { EtablissementCreateChercheurComponent } from './view/etablissement-chercheur/create-chercheur/etablissement-create-chercheur.component';
+import { EtablissementEditChercheurComponent } from './view/etablissement-chercheur/edit-chercheur/etablissement-edit-chercheur.component';
+import { EtablissementViewChercheurComponent } from './view/etablissement-chercheur/view-chercheur/etablissement-view-chercheur.component';
+import { EtablissementListChercheurComponent } from './view/etablissement-chercheur/list-chercheur/etablissement-list-chercheur.component';
+import { EtablissementChercheurComponent } from './view/etablissement-chercheur/etablissement-chercheur.component';
+import { DisciplineScientifiqueParentCreateChercheurComponent } from './view/discipline-scientifique-parent-chercheur/create-chercheur/discipline-scientifique-parent-create-chercheur.component';
+import { DisciplineScientifiqueParentEditChercheurComponent } from './view/discipline-scientifique-parent-chercheur/edit-chercheur/discipline-scientifique-parent-edit-chercheur.component';
+import { DisciplineScientifiqueParentViewChercheurComponent } from './view/discipline-scientifique-parent-chercheur/view-chercheur/discipline-scientifique-parent-view-chercheur.component';
+import { DisciplineScientifiqueParentListChercheurComponent } from './view/discipline-scientifique-parent-chercheur/list-chercheur/discipline-scientifique-parent-list-chercheur.component';
+import { DisciplineScientifiqueParentChercheurComponent } from './view/discipline-scientifique-parent-chercheur/discipline-scientifique-parent-chercheur.component';
 import { ProjetActiviteRechercheDetailEnjeuxIrdCreateChercheurComponent } from './view/projet-activite-recherche-detail-enjeux-ird-chercheur/create-chercheur/projet-activite-recherche-detail-enjeux-ird-create-chercheur.component';
 import { ProjetActiviteRechercheDetailEnjeuxIrdEditChercheurComponent } from './view/projet-activite-recherche-detail-enjeux-ird-chercheur/edit-chercheur/projet-activite-recherche-detail-enjeux-ird-edit-chercheur.component';
 import { ProjetActiviteRechercheDetailEnjeuxIrdViewChercheurComponent } from './view/projet-activite-recherche-detail-enjeux-ird-chercheur/view-chercheur/projet-activite-recherche-detail-enjeux-ird-view-chercheur.component';
@@ -664,36 +666,36 @@ import { TypePubliqueRencontreGrandPubliqueJeunePubliqueEditChercheurComponent }
 import { TypePubliqueRencontreGrandPubliqueJeunePubliqueViewChercheurComponent } from './view/type-publique-rencontre-grand-publique-jeune-publique-chercheur/view-chercheur/type-publique-rencontre-grand-publique-jeune-publique-view-chercheur.component';
 import { TypePubliqueRencontreGrandPubliqueJeunePubliqueListChercheurComponent } from './view/type-publique-rencontre-grand-publique-jeune-publique-chercheur/list-chercheur/type-publique-rencontre-grand-publique-jeune-publique-list-chercheur.component';
 import { TypePubliqueRencontreGrandPubliqueJeunePubliqueChercheurComponent } from './view/type-publique-rencontre-grand-publique-jeune-publique-chercheur/type-publique-rencontre-grand-publique-jeune-publique-chercheur.component';
+import { MasterInternationalCreateChercheurComponent } from './view/master-international-chercheur/create-chercheur/master-international-create-chercheur.component';
+import { MasterInternationalEditChercheurComponent } from './view/master-international-chercheur/edit-chercheur/master-international-edit-chercheur.component';
+import { MasterInternationalViewChercheurComponent } from './view/master-international-chercheur/view-chercheur/master-international-view-chercheur.component';
+import { MasterInternationalListChercheurComponent } from './view/master-international-chercheur/list-chercheur/master-international-list-chercheur.component';
+import { MasterInternationalChercheurComponent } from './view/master-international-chercheur/master-international-chercheur.component';
 import { EnseignementDisciplineScientifiqueCreateChercheurComponent } from './view/enseignement-discipline-scientifique-chercheur/create-chercheur/enseignement-discipline-scientifique-create-chercheur.component';
 import { EnseignementDisciplineScientifiqueEditChercheurComponent } from './view/enseignement-discipline-scientifique-chercheur/edit-chercheur/enseignement-discipline-scientifique-edit-chercheur.component';
 import { EnseignementDisciplineScientifiqueViewChercheurComponent } from './view/enseignement-discipline-scientifique-chercheur/view-chercheur/enseignement-discipline-scientifique-view-chercheur.component';
 import { EnseignementDisciplineScientifiqueListChercheurComponent } from './view/enseignement-discipline-scientifique-chercheur/list-chercheur/enseignement-discipline-scientifique-list-chercheur.component';
 import { EnseignementDisciplineScientifiqueChercheurComponent } from './view/enseignement-discipline-scientifique-chercheur/enseignement-discipline-scientifique-chercheur.component';
-import { KeyWordDisciplineScientifiqueErcCreateChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/create-chercheur/key-word-discipline-scientifique-erc-create-chercheur.component';
-import { KeyWordDisciplineScientifiqueErcEditChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/edit-chercheur/key-word-discipline-scientifique-erc-edit-chercheur.component';
-import { KeyWordDisciplineScientifiqueErcViewChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/view-chercheur/key-word-discipline-scientifique-erc-view-chercheur.component';
-import { KeyWordDisciplineScientifiqueErcListChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/list-chercheur/key-word-discipline-scientifique-erc-list-chercheur.component';
-import { KeyWordDisciplineScientifiqueErcChercheurComponent } from './view/key-word-discipline-scientifique-erc-chercheur/key-word-discipline-scientifique-erc-chercheur.component';
 import { CommunauteSavoirChercheurCreateChercheurComponent } from './view/communaute-savoir-chercheur-chercheur/create-chercheur/communaute-savoir-chercheur-create-chercheur.component';
 import { CommunauteSavoirChercheurEditChercheurComponent } from './view/communaute-savoir-chercheur-chercheur/edit-chercheur/communaute-savoir-chercheur-edit-chercheur.component';
 import { CommunauteSavoirChercheurViewChercheurComponent } from './view/communaute-savoir-chercheur-chercheur/view-chercheur/communaute-savoir-chercheur-view-chercheur.component';
 import { CommunauteSavoirChercheurListChercheurComponent } from './view/communaute-savoir-chercheur-chercheur/list-chercheur/communaute-savoir-chercheur-list-chercheur.component';
 import { CommunauteSavoirChercheurChercheurComponent } from './view/communaute-savoir-chercheur-chercheur/communaute-savoir-chercheur-chercheur.component';
-import { CategorieFaqCreateChercheurComponent } from './view/categorie-faq-chercheur/create-chercheur/categorie-faq-create-chercheur.component';
-import { CategorieFaqEditChercheurComponent } from './view/categorie-faq-chercheur/edit-chercheur/categorie-faq-edit-chercheur.component';
-import { CategorieFaqViewChercheurComponent } from './view/categorie-faq-chercheur/view-chercheur/categorie-faq-view-chercheur.component';
-import { CategorieFaqListChercheurComponent } from './view/categorie-faq-chercheur/list-chercheur/categorie-faq-list-chercheur.component';
-import { CategorieFaqChercheurComponent } from './view/categorie-faq-chercheur/categorie-faq-chercheur.component';
+import { TypeExpertiseEvaluationCreateChercheurComponent } from './view/type-expertise-evaluation-chercheur/create-chercheur/type-expertise-evaluation-create-chercheur.component';
+import { TypeExpertiseEvaluationEditChercheurComponent } from './view/type-expertise-evaluation-chercheur/edit-chercheur/type-expertise-evaluation-edit-chercheur.component';
+import { TypeExpertiseEvaluationViewChercheurComponent } from './view/type-expertise-evaluation-chercheur/view-chercheur/type-expertise-evaluation-view-chercheur.component';
+import { TypeExpertiseEvaluationListChercheurComponent } from './view/type-expertise-evaluation-chercheur/list-chercheur/type-expertise-evaluation-list-chercheur.component';
+import { TypeExpertiseEvaluationChercheurComponent } from './view/type-expertise-evaluation-chercheur/type-expertise-evaluation-chercheur.component';
 import { ComiteEtCommissionEvaluationCreateChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/create-chercheur/comite-et-commission-evaluation-create-chercheur.component';
 import { ComiteEtCommissionEvaluationEditChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/edit-chercheur/comite-et-commission-evaluation-edit-chercheur.component';
 import { ComiteEtCommissionEvaluationViewChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/view-chercheur/comite-et-commission-evaluation-view-chercheur.component';
 import { ComiteEtCommissionEvaluationListChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/list-chercheur/comite-et-commission-evaluation-list-chercheur.component';
 import { ComiteEtCommissionEvaluationChercheurComponent } from './view/comite-et-commission-evaluation-chercheur/comite-et-commission-evaluation-chercheur.component';
-import { ModaliteEtudeCreateChercheurComponent } from './view/modalite-etude-chercheur/create-chercheur/modalite-etude-create-chercheur.component';
-import { ModaliteEtudeEditChercheurComponent } from './view/modalite-etude-chercheur/edit-chercheur/modalite-etude-edit-chercheur.component';
-import { ModaliteEtudeViewChercheurComponent } from './view/modalite-etude-chercheur/view-chercheur/modalite-etude-view-chercheur.component';
-import { ModaliteEtudeListChercheurComponent } from './view/modalite-etude-chercheur/list-chercheur/modalite-etude-list-chercheur.component';
-import { ModaliteEtudeChercheurComponent } from './view/modalite-etude-chercheur/modalite-etude-chercheur.component';
+import { EtudiantCreateChercheurComponent } from './view/etudiant-chercheur/create-chercheur/etudiant-create-chercheur.component';
+import { EtudiantEditChercheurComponent } from './view/etudiant-chercheur/edit-chercheur/etudiant-edit-chercheur.component';
+import { EtudiantViewChercheurComponent } from './view/etudiant-chercheur/view-chercheur/etudiant-view-chercheur.component';
+import { EtudiantListChercheurComponent } from './view/etudiant-chercheur/list-chercheur/etudiant-list-chercheur.component';
+import { EtudiantChercheurComponent } from './view/etudiant-chercheur/etudiant-chercheur.component';
 import { EvenementColloqueScienntifiqueCreateChercheurComponent } from './view/evenement-colloque-scienntifique-chercheur/create-chercheur/evenement-colloque-scienntifique-create-chercheur.component';
 import { EvenementColloqueScienntifiqueEditChercheurComponent } from './view/evenement-colloque-scienntifique-chercheur/edit-chercheur/evenement-colloque-scienntifique-edit-chercheur.component';
 import { EvenementColloqueScienntifiqueViewChercheurComponent } from './view/evenement-colloque-scienntifique-chercheur/view-chercheur/evenement-colloque-scienntifique-view-chercheur.component';
@@ -704,6 +706,11 @@ import { FormationContinueObjetFormationGeneriqueEditChercheurComponent } from '
 import { FormationContinueObjetFormationGeneriqueViewChercheurComponent } from './view/formation-continue-objet-formation-generique-chercheur/view-chercheur/formation-continue-objet-formation-generique-view-chercheur.component';
 import { FormationContinueObjetFormationGeneriqueListChercheurComponent } from './view/formation-continue-objet-formation-generique-chercheur/list-chercheur/formation-continue-objet-formation-generique-list-chercheur.component';
 import { FormationContinueObjetFormationGeneriqueChercheurComponent } from './view/formation-continue-objet-formation-generique-chercheur/formation-continue-objet-formation-generique-chercheur.component';
+import { ModaliteCreateChercheurComponent } from './view/modalite-chercheur/create-chercheur/modalite-create-chercheur.component';
+import { ModaliteEditChercheurComponent } from './view/modalite-chercheur/edit-chercheur/modalite-edit-chercheur.component';
+import { ModaliteViewChercheurComponent } from './view/modalite-chercheur/view-chercheur/modalite-view-chercheur.component';
+import { ModaliteListChercheurComponent } from './view/modalite-chercheur/list-chercheur/modalite-list-chercheur.component';
+import { ModaliteChercheurComponent } from './view/modalite-chercheur/modalite-chercheur.component';
 import { FormationContinueCreateChercheurComponent } from './view/formation-continue-chercheur/create-chercheur/formation-continue-create-chercheur.component';
 import { FormationContinueEditChercheurComponent } from './view/formation-continue-chercheur/edit-chercheur/formation-continue-edit-chercheur.component';
 import { FormationContinueViewChercheurComponent } from './view/formation-continue-chercheur/view-chercheur/formation-continue-view-chercheur.component';
@@ -714,21 +721,51 @@ import { ProjetActiviteRechercheDetailInstitutionCoContractantEditChercheurCompo
 import { ProjetActiviteRechercheDetailInstitutionCoContractantViewChercheurComponent } from './view/projet-activite-recherche-detail-institution-co-contractant-chercheur/view-chercheur/projet-activite-recherche-detail-institution-co-contractant-view-chercheur.component';
 import { ProjetActiviteRechercheDetailInstitutionCoContractantListChercheurComponent } from './view/projet-activite-recherche-detail-institution-co-contractant-chercheur/list-chercheur/projet-activite-recherche-detail-institution-co-contractant-list-chercheur.component';
 import { ProjetActiviteRechercheDetailInstitutionCoContractantChercheurComponent } from './view/projet-activite-recherche-detail-institution-co-contractant-chercheur/projet-activite-recherche-detail-institution-co-contractant-chercheur.component';
+import { ModaliteFormationContinueCreateChercheurComponent } from './view/modalite-formation-continue-chercheur/create-chercheur/modalite-formation-continue-create-chercheur.component';
+import { ModaliteFormationContinueEditChercheurComponent } from './view/modalite-formation-continue-chercheur/edit-chercheur/modalite-formation-continue-edit-chercheur.component';
+import { ModaliteFormationContinueViewChercheurComponent } from './view/modalite-formation-continue-chercheur/view-chercheur/modalite-formation-continue-view-chercheur.component';
+import { ModaliteFormationContinueListChercheurComponent } from './view/modalite-formation-continue-chercheur/list-chercheur/modalite-formation-continue-list-chercheur.component';
+import { ModaliteFormationContinueChercheurComponent } from './view/modalite-formation-continue-chercheur/modalite-formation-continue-chercheur.component';
 import { ConsultanceScientifiquePonctuelleCreateChercheurComponent } from './view/consultance-scientifique-ponctuelle-chercheur/create-chercheur/consultance-scientifique-ponctuelle-create-chercheur.component';
 import { ConsultanceScientifiquePonctuelleEditChercheurComponent } from './view/consultance-scientifique-ponctuelle-chercheur/edit-chercheur/consultance-scientifique-ponctuelle-edit-chercheur.component';
 import { ConsultanceScientifiquePonctuelleViewChercheurComponent } from './view/consultance-scientifique-ponctuelle-chercheur/view-chercheur/consultance-scientifique-ponctuelle-view-chercheur.component';
 import { ConsultanceScientifiquePonctuelleListChercheurComponent } from './view/consultance-scientifique-ponctuelle-chercheur/list-chercheur/consultance-scientifique-ponctuelle-list-chercheur.component';
 import { ConsultanceScientifiquePonctuelleChercheurComponent } from './view/consultance-scientifique-ponctuelle-chercheur/consultance-scientifique-ponctuelle-chercheur.component';
-import { ModaliteInterventionCreateChercheurComponent } from './view/modalite-intervention-chercheur/create-chercheur/modalite-intervention-create-chercheur.component';
-import { ModaliteInterventionEditChercheurComponent } from './view/modalite-intervention-chercheur/edit-chercheur/modalite-intervention-edit-chercheur.component';
-import { ModaliteInterventionViewChercheurComponent } from './view/modalite-intervention-chercheur/view-chercheur/modalite-intervention-view-chercheur.component';
-import { ModaliteInterventionListChercheurComponent } from './view/modalite-intervention-chercheur/list-chercheur/modalite-intervention-list-chercheur.component';
-import { ModaliteInterventionChercheurComponent } from './view/modalite-intervention-chercheur/modalite-intervention-chercheur.component';
+import { TypeEntiteAdministrativeCreateChercheurComponent } from './view/type-entite-administrative-chercheur/create-chercheur/type-entite-administrative-create-chercheur.component';
+import { TypeEntiteAdministrativeEditChercheurComponent } from './view/type-entite-administrative-chercheur/edit-chercheur/type-entite-administrative-edit-chercheur.component';
+import { TypeEntiteAdministrativeViewChercheurComponent } from './view/type-entite-administrative-chercheur/view-chercheur/type-entite-administrative-view-chercheur.component';
+import { TypeEntiteAdministrativeListChercheurComponent } from './view/type-entite-administrative-chercheur/list-chercheur/type-entite-administrative-list-chercheur.component';
+import { TypeEntiteAdministrativeChercheurComponent } from './view/type-entite-administrative-chercheur/type-entite-administrative-chercheur.component';
+import { TypeUtilisateurCreateChercheurComponent } from './view/type-utilisateur-chercheur/create-chercheur/type-utilisateur-create-chercheur.component';
+import { TypeUtilisateurEditChercheurComponent } from './view/type-utilisateur-chercheur/edit-chercheur/type-utilisateur-edit-chercheur.component';
+import { TypeUtilisateurViewChercheurComponent } from './view/type-utilisateur-chercheur/view-chercheur/type-utilisateur-view-chercheur.component';
+import { TypeUtilisateurListChercheurComponent } from './view/type-utilisateur-chercheur/list-chercheur/type-utilisateur-list-chercheur.component';
+import { TypeUtilisateurChercheurComponent } from './view/type-utilisateur-chercheur/type-utilisateur-chercheur.component';
+import { TypeInstrumentIrdCreateChercheurComponent } from './view/type-instrument-ird-chercheur/create-chercheur/type-instrument-ird-create-chercheur.component';
+import { TypeInstrumentIrdEditChercheurComponent } from './view/type-instrument-ird-chercheur/edit-chercheur/type-instrument-ird-edit-chercheur.component';
+import { TypeInstrumentIrdViewChercheurComponent } from './view/type-instrument-ird-chercheur/view-chercheur/type-instrument-ird-view-chercheur.component';
+import { TypeInstrumentIrdListChercheurComponent } from './view/type-instrument-ird-chercheur/list-chercheur/type-instrument-ird-list-chercheur.component';
+import { TypeInstrumentIrdChercheurComponent } from './view/type-instrument-ird-chercheur/type-instrument-ird-chercheur.component';
+import { EtablissementPartenaireCreateChercheurComponent } from './view/etablissement-partenaire-chercheur/create-chercheur/etablissement-partenaire-create-chercheur.component';
+import { EtablissementPartenaireEditChercheurComponent } from './view/etablissement-partenaire-chercheur/edit-chercheur/etablissement-partenaire-edit-chercheur.component';
+import { EtablissementPartenaireViewChercheurComponent } from './view/etablissement-partenaire-chercheur/view-chercheur/etablissement-partenaire-view-chercheur.component';
+import { EtablissementPartenaireListChercheurComponent } from './view/etablissement-partenaire-chercheur/list-chercheur/etablissement-partenaire-list-chercheur.component';
+import { EtablissementPartenaireChercheurComponent } from './view/etablissement-partenaire-chercheur/etablissement-partenaire-chercheur.component';
+import { ModaliteEtudeCreateChercheurComponent } from './view/modalite-etude-chercheur/create-chercheur/modalite-etude-create-chercheur.component';
+import { ModaliteEtudeEditChercheurComponent } from './view/modalite-etude-chercheur/edit-chercheur/modalite-etude-edit-chercheur.component';
+import { ModaliteEtudeViewChercheurComponent } from './view/modalite-etude-chercheur/view-chercheur/modalite-etude-view-chercheur.component';
+import { ModaliteEtudeListChercheurComponent } from './view/modalite-etude-chercheur/list-chercheur/modalite-etude-list-chercheur.component';
+import { ModaliteEtudeChercheurComponent } from './view/modalite-etude-chercheur/modalite-etude-chercheur.component';
 import { ZoneGeographiqueFormationContinueCreateChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/create-chercheur/zone-geographique-formation-continue-create-chercheur.component';
 import { ZoneGeographiqueFormationContinueEditChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/edit-chercheur/zone-geographique-formation-continue-edit-chercheur.component';
 import { ZoneGeographiqueFormationContinueViewChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/view-chercheur/zone-geographique-formation-continue-view-chercheur.component';
 import { ZoneGeographiqueFormationContinueListChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/list-chercheur/zone-geographique-formation-continue-list-chercheur.component';
 import { ZoneGeographiqueFormationContinueChercheurComponent } from './view/zone-geographique-formation-continue-chercheur/zone-geographique-formation-continue-chercheur.component';
+import { TemplateClotureCreateChercheurComponent } from './view/template-cloture-chercheur/create-chercheur/template-cloture-create-chercheur.component';
+import { TemplateClotureEditChercheurComponent } from './view/template-cloture-chercheur/edit-chercheur/template-cloture-edit-chercheur.component';
+import { TemplateClotureViewChercheurComponent } from './view/template-cloture-chercheur/view-chercheur/template-cloture-view-chercheur.component';
+import { TemplateClotureListChercheurComponent } from './view/template-cloture-chercheur/list-chercheur/template-cloture-list-chercheur.component';
+import { TemplateClotureChercheurComponent } from './view/template-cloture-chercheur/template-cloture-chercheur.component';
 import { ProjetActiviteRechercheDetailInstrumentIrdCreateChercheurComponent } from './view/projet-activite-recherche-detail-instrument-ird-chercheur/create-chercheur/projet-activite-recherche-detail-instrument-ird-create-chercheur.component';
 import { ProjetActiviteRechercheDetailInstrumentIrdEditChercheurComponent } from './view/projet-activite-recherche-detail-instrument-ird-chercheur/edit-chercheur/projet-activite-recherche-detail-instrument-ird-edit-chercheur.component';
 import { ProjetActiviteRechercheDetailInstrumentIrdViewChercheurComponent } from './view/projet-activite-recherche-detail-instrument-ird-chercheur/view-chercheur/projet-activite-recherche-detail-instrument-ird-view-chercheur.component';
@@ -754,16 +791,6 @@ import { DeveloppementDeSavoirEtInnovationScientifiquePaysEditChercheurComponent
 import { DeveloppementDeSavoirEtInnovationScientifiquePaysViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-pays-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-pays-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiquePaysListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-pays-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-pays-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiquePaysChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-pays-chercheur/developpement-de-savoir-et-innovation-scientifique-pays-chercheur.component';
-import { ZoneGeographiqueCreateChercheurComponent } from './view/zone-geographique-chercheur/create-chercheur/zone-geographique-create-chercheur.component';
-import { ZoneGeographiqueEditChercheurComponent } from './view/zone-geographique-chercheur/edit-chercheur/zone-geographique-edit-chercheur.component';
-import { ZoneGeographiqueViewChercheurComponent } from './view/zone-geographique-chercheur/view-chercheur/zone-geographique-view-chercheur.component';
-import { ZoneGeographiqueListChercheurComponent } from './view/zone-geographique-chercheur/list-chercheur/zone-geographique-list-chercheur.component';
-import { ZoneGeographiqueChercheurComponent } from './view/zone-geographique-chercheur/zone-geographique-chercheur.component';
-import { CommissionScientifiqueCreateChercheurComponent } from './view/commission-scientifique-chercheur/create-chercheur/commission-scientifique-create-chercheur.component';
-import { CommissionScientifiqueEditChercheurComponent } from './view/commission-scientifique-chercheur/edit-chercheur/commission-scientifique-edit-chercheur.component';
-import { CommissionScientifiqueViewChercheurComponent } from './view/commission-scientifique-chercheur/view-chercheur/commission-scientifique-view-chercheur.component';
-import { CommissionScientifiqueListChercheurComponent } from './view/commission-scientifique-chercheur/list-chercheur/commission-scientifique-list-chercheur.component';
-import { CommissionScientifiqueChercheurComponent } from './view/commission-scientifique-chercheur/commission-scientifique-chercheur.component';
 import { RoleDeveloppementDeSavoirCreateChercheurComponent } from './view/role-developpement-de-savoir-chercheur/create-chercheur/role-developpement-de-savoir-create-chercheur.component';
 import { RoleDeveloppementDeSavoirEditChercheurComponent } from './view/role-developpement-de-savoir-chercheur/edit-chercheur/role-developpement-de-savoir-edit-chercheur.component';
 import { RoleDeveloppementDeSavoirViewChercheurComponent } from './view/role-developpement-de-savoir-chercheur/view-chercheur/role-developpement-de-savoir-view-chercheur.component';
@@ -774,11 +801,6 @@ import { TypeUtilisateurSavoirConcuEditChercheurComponent } from './view/type-ut
 import { TypeUtilisateurSavoirConcuViewChercheurComponent } from './view/type-utilisateur-savoir-concu-chercheur/view-chercheur/type-utilisateur-savoir-concu-view-chercheur.component';
 import { TypeUtilisateurSavoirConcuListChercheurComponent } from './view/type-utilisateur-savoir-concu-chercheur/list-chercheur/type-utilisateur-savoir-concu-list-chercheur.component';
 import { TypeUtilisateurSavoirConcuChercheurComponent } from './view/type-utilisateur-savoir-concu-chercheur/type-utilisateur-savoir-concu-chercheur.component';
-import { NatureEtudeCreateChercheurComponent } from './view/nature-etude-chercheur/create-chercheur/nature-etude-create-chercheur.component';
-import { NatureEtudeEditChercheurComponent } from './view/nature-etude-chercheur/edit-chercheur/nature-etude-edit-chercheur.component';
-import { NatureEtudeViewChercheurComponent } from './view/nature-etude-chercheur/view-chercheur/nature-etude-view-chercheur.component';
-import { NatureEtudeListChercheurComponent } from './view/nature-etude-chercheur/list-chercheur/nature-etude-list-chercheur.component';
-import { NatureEtudeChercheurComponent } from './view/nature-etude-chercheur/nature-etude-chercheur.component';
 import { EncadrementEtudiantDisciplineScientifiqueCreateChercheurComponent } from './view/encadrement-etudiant-discipline-scientifique-chercheur/create-chercheur/encadrement-etudiant-discipline-scientifique-create-chercheur.component';
 import { EncadrementEtudiantDisciplineScientifiqueEditChercheurComponent } from './view/encadrement-etudiant-discipline-scientifique-chercheur/edit-chercheur/encadrement-etudiant-discipline-scientifique-edit-chercheur.component';
 import { EncadrementEtudiantDisciplineScientifiqueViewChercheurComponent } from './view/encadrement-etudiant-discipline-scientifique-chercheur/view-chercheur/encadrement-etudiant-discipline-scientifique-view-chercheur.component';
@@ -789,26 +811,21 @@ import { CommunauteSavoirExpertiseScientifiqueEditChercheurComponent } from './v
 import { CommunauteSavoirExpertiseScientifiqueViewChercheurComponent } from './view/communaute-savoir-expertise-scientifique-chercheur/view-chercheur/communaute-savoir-expertise-scientifique-view-chercheur.component';
 import { CommunauteSavoirExpertiseScientifiqueListChercheurComponent } from './view/communaute-savoir-expertise-scientifique-chercheur/list-chercheur/communaute-savoir-expertise-scientifique-list-chercheur.component';
 import { CommunauteSavoirExpertiseScientifiqueChercheurComponent } from './view/communaute-savoir-expertise-scientifique-chercheur/communaute-savoir-expertise-scientifique-chercheur.component';
-import { TemplateRappelCreateChercheurComponent } from './view/template-rappel-chercheur/create-chercheur/template-rappel-create-chercheur.component';
-import { TemplateRappelEditChercheurComponent } from './view/template-rappel-chercheur/edit-chercheur/template-rappel-edit-chercheur.component';
-import { TemplateRappelViewChercheurComponent } from './view/template-rappel-chercheur/view-chercheur/template-rappel-view-chercheur.component';
-import { TemplateRappelListChercheurComponent } from './view/template-rappel-chercheur/list-chercheur/template-rappel-list-chercheur.component';
-import { TemplateRappelChercheurComponent } from './view/template-rappel-chercheur/template-rappel-chercheur.component';
-import { TypeReclamationCreateChercheurComponent } from './view/type-reclamation-chercheur/create-chercheur/type-reclamation-create-chercheur.component';
-import { TypeReclamationEditChercheurComponent } from './view/type-reclamation-chercheur/edit-chercheur/type-reclamation-edit-chercheur.component';
-import { TypeReclamationViewChercheurComponent } from './view/type-reclamation-chercheur/view-chercheur/type-reclamation-view-chercheur.component';
-import { TypeReclamationListChercheurComponent } from './view/type-reclamation-chercheur/list-chercheur/type-reclamation-list-chercheur.component';
-import { TypeReclamationChercheurComponent } from './view/type-reclamation-chercheur/type-reclamation-chercheur.component';
 import { DisciplineScientifiqueComiteEtCommissionEvaluationCreateChercheurComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-chercheur/create-chercheur/discipline-scientifique-comite-et-commission-evaluation-create-chercheur.component';
 import { DisciplineScientifiqueComiteEtCommissionEvaluationEditChercheurComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-chercheur/edit-chercheur/discipline-scientifique-comite-et-commission-evaluation-edit-chercheur.component';
 import { DisciplineScientifiqueComiteEtCommissionEvaluationViewChercheurComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-chercheur/view-chercheur/discipline-scientifique-comite-et-commission-evaluation-view-chercheur.component';
 import { DisciplineScientifiqueComiteEtCommissionEvaluationListChercheurComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-chercheur/list-chercheur/discipline-scientifique-comite-et-commission-evaluation-list-chercheur.component';
 import { DisciplineScientifiqueComiteEtCommissionEvaluationChercheurComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-chercheur/discipline-scientifique-comite-et-commission-evaluation-chercheur.component';
-import { TypeInstrumentIrdCreateChercheurComponent } from './view/type-instrument-ird-chercheur/create-chercheur/type-instrument-ird-create-chercheur.component';
-import { TypeInstrumentIrdEditChercheurComponent } from './view/type-instrument-ird-chercheur/edit-chercheur/type-instrument-ird-edit-chercheur.component';
-import { TypeInstrumentIrdViewChercheurComponent } from './view/type-instrument-ird-chercheur/view-chercheur/type-instrument-ird-view-chercheur.component';
-import { TypeInstrumentIrdListChercheurComponent } from './view/type-instrument-ird-chercheur/list-chercheur/type-instrument-ird-list-chercheur.component';
-import { TypeInstrumentIrdChercheurComponent } from './view/type-instrument-ird-chercheur/type-instrument-ird-chercheur.component';
+import { TypePubliqueCultureScientifiqueCreateChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/create-chercheur/type-publique-culture-scientifique-create-chercheur.component';
+import { TypePubliqueCultureScientifiqueEditChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/edit-chercheur/type-publique-culture-scientifique-edit-chercheur.component';
+import { TypePubliqueCultureScientifiqueViewChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/view-chercheur/type-publique-culture-scientifique-view-chercheur.component';
+import { TypePubliqueCultureScientifiqueListChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/list-chercheur/type-publique-culture-scientifique-list-chercheur.component';
+import { TypePubliqueCultureScientifiqueChercheurComponent } from './view/type-publique-culture-scientifique-chercheur/type-publique-culture-scientifique-chercheur.component';
+import { StatusCursusCreateChercheurComponent } from './view/status-cursus-chercheur/create-chercheur/status-cursus-create-chercheur.component';
+import { StatusCursusEditChercheurComponent } from './view/status-cursus-chercheur/edit-chercheur/status-cursus-edit-chercheur.component';
+import { StatusCursusViewChercheurComponent } from './view/status-cursus-chercheur/view-chercheur/status-cursus-view-chercheur.component';
+import { StatusCursusListChercheurComponent } from './view/status-cursus-chercheur/list-chercheur/status-cursus-list-chercheur.component';
+import { StatusCursusChercheurComponent } from './view/status-cursus-chercheur/status-cursus-chercheur.component';
 import { DistinctionEtablissementPaysCreateChercheurComponent } from './view/distinction-etablissement-pays-chercheur/create-chercheur/distinction-etablissement-pays-create-chercheur.component';
 import { DistinctionEtablissementPaysEditChercheurComponent } from './view/distinction-etablissement-pays-chercheur/edit-chercheur/distinction-etablissement-pays-edit-chercheur.component';
 import { DistinctionEtablissementPaysViewChercheurComponent } from './view/distinction-etablissement-pays-chercheur/view-chercheur/distinction-etablissement-pays-view-chercheur.component';
@@ -824,61 +841,61 @@ import { RencontreGrandPubliqueJeunePubliqueEnjeuxIrdEditChercheurComponent } fr
 import { RencontreGrandPubliqueJeunePubliqueEnjeuxIrdViewChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-enjeux-ird-chercheur/view-chercheur/rencontre-grand-publique-jeune-publique-enjeux-ird-view-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueEnjeuxIrdListChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-enjeux-ird-chercheur/list-chercheur/rencontre-grand-publique-jeune-publique-enjeux-ird-list-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueEnjeuxIrdChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-enjeux-ird-chercheur/rencontre-grand-publique-jeune-publique-enjeux-ird-chercheur.component';
-import { DisciplineScientifiqueCreateChercheurComponent } from './view/discipline-scientifique-chercheur/create-chercheur/discipline-scientifique-create-chercheur.component';
-import { DisciplineScientifiqueEditChercheurComponent } from './view/discipline-scientifique-chercheur/edit-chercheur/discipline-scientifique-edit-chercheur.component';
-import { DisciplineScientifiqueViewChercheurComponent } from './view/discipline-scientifique-chercheur/view-chercheur/discipline-scientifique-view-chercheur.component';
-import { DisciplineScientifiqueListChercheurComponent } from './view/discipline-scientifique-chercheur/list-chercheur/discipline-scientifique-list-chercheur.component';
-import { DisciplineScientifiqueChercheurComponent } from './view/discipline-scientifique-chercheur/discipline-scientifique-chercheur.component';
-import { TypeExpertiseCreateChercheurComponent } from './view/type-expertise-chercheur/create-chercheur/type-expertise-create-chercheur.component';
-import { TypeExpertiseEditChercheurComponent } from './view/type-expertise-chercheur/edit-chercheur/type-expertise-edit-chercheur.component';
-import { TypeExpertiseViewChercheurComponent } from './view/type-expertise-chercheur/view-chercheur/type-expertise-view-chercheur.component';
-import { TypeExpertiseListChercheurComponent } from './view/type-expertise-chercheur/list-chercheur/type-expertise-list-chercheur.component';
-import { TypeExpertiseChercheurComponent } from './view/type-expertise-chercheur/type-expertise-chercheur.component';
-import { DoctorantCreateChercheurComponent } from './view/doctorant-chercheur/create-chercheur/doctorant-create-chercheur.component';
-import { DoctorantEditChercheurComponent } from './view/doctorant-chercheur/edit-chercheur/doctorant-edit-chercheur.component';
-import { DoctorantViewChercheurComponent } from './view/doctorant-chercheur/view-chercheur/doctorant-view-chercheur.component';
-import { DoctorantListChercheurComponent } from './view/doctorant-chercheur/list-chercheur/doctorant-list-chercheur.component';
-import { DoctorantChercheurComponent } from './view/doctorant-chercheur/doctorant-chercheur.component';
-import { CorpsCreateChercheurComponent } from './view/corps-chercheur/create-chercheur/corps-create-chercheur.component';
-import { CorpsEditChercheurComponent } from './view/corps-chercheur/edit-chercheur/corps-edit-chercheur.component';
-import { CorpsViewChercheurComponent } from './view/corps-chercheur/view-chercheur/corps-view-chercheur.component';
-import { CorpsListChercheurComponent } from './view/corps-chercheur/list-chercheur/corps-list-chercheur.component';
-import { CorpsChercheurComponent } from './view/corps-chercheur/corps-chercheur.component';
+import { CategorieFaqCreateChercheurComponent } from './view/categorie-faq-chercheur/create-chercheur/categorie-faq-create-chercheur.component';
+import { CategorieFaqEditChercheurComponent } from './view/categorie-faq-chercheur/edit-chercheur/categorie-faq-edit-chercheur.component';
+import { CategorieFaqViewChercheurComponent } from './view/categorie-faq-chercheur/view-chercheur/categorie-faq-view-chercheur.component';
+import { CategorieFaqListChercheurComponent } from './view/categorie-faq-chercheur/list-chercheur/categorie-faq-list-chercheur.component';
+import { CategorieFaqChercheurComponent } from './view/categorie-faq-chercheur/categorie-faq-chercheur.component';
+import { IdentifiantRechercheCreateChercheurComponent } from './view/identifiant-recherche-chercheur/create-chercheur/identifiant-recherche-create-chercheur.component';
+import { IdentifiantRechercheEditChercheurComponent } from './view/identifiant-recherche-chercheur/edit-chercheur/identifiant-recherche-edit-chercheur.component';
+import { IdentifiantRechercheViewChercheurComponent } from './view/identifiant-recherche-chercheur/view-chercheur/identifiant-recherche-view-chercheur.component';
+import { IdentifiantRechercheListChercheurComponent } from './view/identifiant-recherche-chercheur/list-chercheur/identifiant-recherche-list-chercheur.component';
+import { IdentifiantRechercheChercheurComponent } from './view/identifiant-recherche-chercheur/identifiant-recherche-chercheur.component';
 import { EnseignementEtFormationCreateChercheurComponent } from './view/enseignement-et-formation-chercheur/create-chercheur/enseignement-et-formation-create-chercheur.component';
 import { EnseignementEtFormationEditChercheurComponent } from './view/enseignement-et-formation-chercheur/edit-chercheur/enseignement-et-formation-edit-chercheur.component';
 import { EnseignementEtFormationViewChercheurComponent } from './view/enseignement-et-formation-chercheur/view-chercheur/enseignement-et-formation-view-chercheur.component';
 import { EnseignementEtFormationListChercheurComponent } from './view/enseignement-et-formation-chercheur/list-chercheur/enseignement-et-formation-list-chercheur.component';
 import { EnseignementEtFormationChercheurComponent } from './view/enseignement-et-formation-chercheur/enseignement-et-formation-chercheur.component';
-import { DepartementScientifiqueCreateChercheurComponent } from './view/departement-scientifique-chercheur/create-chercheur/departement-scientifique-create-chercheur.component';
-import { DepartementScientifiqueEditChercheurComponent } from './view/departement-scientifique-chercheur/edit-chercheur/departement-scientifique-edit-chercheur.component';
-import { DepartementScientifiqueViewChercheurComponent } from './view/departement-scientifique-chercheur/view-chercheur/departement-scientifique-view-chercheur.component';
-import { DepartementScientifiqueListChercheurComponent } from './view/departement-scientifique-chercheur/list-chercheur/departement-scientifique-list-chercheur.component';
-import { DepartementScientifiqueChercheurComponent } from './view/departement-scientifique-chercheur/departement-scientifique-chercheur.component';
+import { ModaliteInterventionCreateChercheurComponent } from './view/modalite-intervention-chercheur/create-chercheur/modalite-intervention-create-chercheur.component';
+import { ModaliteInterventionEditChercheurComponent } from './view/modalite-intervention-chercheur/edit-chercheur/modalite-intervention-edit-chercheur.component';
+import { ModaliteInterventionViewChercheurComponent } from './view/modalite-intervention-chercheur/view-chercheur/modalite-intervention-view-chercheur.component';
+import { ModaliteInterventionListChercheurComponent } from './view/modalite-intervention-chercheur/list-chercheur/modalite-intervention-list-chercheur.component';
+import { ModaliteInterventionChercheurComponent } from './view/modalite-intervention-chercheur/modalite-intervention-chercheur.component';
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueCreateChercheurComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur/create-chercheur/pays-organisateur-rencontre-grand-publique-jeune-publique-create-chercheur.component';
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueEditChercheurComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur/edit-chercheur/pays-organisateur-rencontre-grand-publique-jeune-publique-edit-chercheur.component';
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueViewChercheurComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur/view-chercheur/pays-organisateur-rencontre-grand-publique-jeune-publique-view-chercheur.component';
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueListChercheurComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur/list-chercheur/pays-organisateur-rencontre-grand-publique-jeune-publique-list-chercheur.component';
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueChercheurComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur/pays-organisateur-rencontre-grand-publique-jeune-publique-chercheur.component';
-import { CommunauteSavoirCreateChercheurComponent } from './view/communaute-savoir-chercheur/create-chercheur/communaute-savoir-create-chercheur.component';
-import { CommunauteSavoirEditChercheurComponent } from './view/communaute-savoir-chercheur/edit-chercheur/communaute-savoir-edit-chercheur.component';
-import { CommunauteSavoirViewChercheurComponent } from './view/communaute-savoir-chercheur/view-chercheur/communaute-savoir-view-chercheur.component';
-import { CommunauteSavoirListChercheurComponent } from './view/communaute-savoir-chercheur/list-chercheur/communaute-savoir-list-chercheur.component';
-import { CommunauteSavoirChercheurComponent } from './view/communaute-savoir-chercheur/communaute-savoir-chercheur.component';
 import { DisciplineScientifiqueExpertiseScientifiqueCreateChercheurComponent } from './view/discipline-scientifique-expertise-scientifique-chercheur/create-chercheur/discipline-scientifique-expertise-scientifique-create-chercheur.component';
 import { DisciplineScientifiqueExpertiseScientifiqueEditChercheurComponent } from './view/discipline-scientifique-expertise-scientifique-chercheur/edit-chercheur/discipline-scientifique-expertise-scientifique-edit-chercheur.component';
 import { DisciplineScientifiqueExpertiseScientifiqueViewChercheurComponent } from './view/discipline-scientifique-expertise-scientifique-chercheur/view-chercheur/discipline-scientifique-expertise-scientifique-view-chercheur.component';
 import { DisciplineScientifiqueExpertiseScientifiqueListChercheurComponent } from './view/discipline-scientifique-expertise-scientifique-chercheur/list-chercheur/discipline-scientifique-expertise-scientifique-list-chercheur.component';
 import { DisciplineScientifiqueExpertiseScientifiqueChercheurComponent } from './view/discipline-scientifique-expertise-scientifique-chercheur/discipline-scientifique-expertise-scientifique-chercheur.component';
+import { DisciplineScientifiqueErcCreateChercheurComponent } from './view/discipline-scientifique-erc-chercheur/create-chercheur/discipline-scientifique-erc-create-chercheur.component';
+import { DisciplineScientifiqueErcEditChercheurComponent } from './view/discipline-scientifique-erc-chercheur/edit-chercheur/discipline-scientifique-erc-edit-chercheur.component';
+import { DisciplineScientifiqueErcViewChercheurComponent } from './view/discipline-scientifique-erc-chercheur/view-chercheur/discipline-scientifique-erc-view-chercheur.component';
+import { DisciplineScientifiqueErcListChercheurComponent } from './view/discipline-scientifique-erc-chercheur/list-chercheur/discipline-scientifique-erc-list-chercheur.component';
+import { DisciplineScientifiqueErcChercheurComponent } from './view/discipline-scientifique-erc-chercheur/discipline-scientifique-erc-chercheur.component';
+import { TypeInstanceCreateChercheurComponent } from './view/type-instance-chercheur/create-chercheur/type-instance-create-chercheur.component';
+import { TypeInstanceEditChercheurComponent } from './view/type-instance-chercheur/edit-chercheur/type-instance-edit-chercheur.component';
+import { TypeInstanceViewChercheurComponent } from './view/type-instance-chercheur/view-chercheur/type-instance-view-chercheur.component';
+import { TypeInstanceListChercheurComponent } from './view/type-instance-chercheur/list-chercheur/type-instance-list-chercheur.component';
+import { TypeInstanceChercheurComponent } from './view/type-instance-chercheur/type-instance-chercheur.component';
+import { NiveauFormationCreateChercheurComponent } from './view/niveau-formation-chercheur/create-chercheur/niveau-formation-create-chercheur.component';
+import { NiveauFormationEditChercheurComponent } from './view/niveau-formation-chercheur/edit-chercheur/niveau-formation-edit-chercheur.component';
+import { NiveauFormationViewChercheurComponent } from './view/niveau-formation-chercheur/view-chercheur/niveau-formation-view-chercheur.component';
+import { NiveauFormationListChercheurComponent } from './view/niveau-formation-chercheur/list-chercheur/niveau-formation-list-chercheur.component';
+import { NiveauFormationChercheurComponent } from './view/niveau-formation-chercheur/niveau-formation-chercheur.component';
+import { FournisseurAppelProjetRechercheCreateChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/create-chercheur/fournisseur-appel-projet-recherche-create-chercheur.component';
+import { FournisseurAppelProjetRechercheEditChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/edit-chercheur/fournisseur-appel-projet-recherche-edit-chercheur.component';
+import { FournisseurAppelProjetRechercheViewChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/view-chercheur/fournisseur-appel-projet-recherche-view-chercheur.component';
+import { FournisseurAppelProjetRechercheListChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/list-chercheur/fournisseur-appel-projet-recherche-list-chercheur.component';
+import { FournisseurAppelProjetRechercheChercheurComponent } from './view/fournisseur-appel-projet-recherche-chercheur/fournisseur-appel-projet-recherche-chercheur.component';
 import { OutilPedagogiqueEnjeuxIrdCreateChercheurComponent } from './view/outil-pedagogique-enjeux-ird-chercheur/create-chercheur/outil-pedagogique-enjeux-ird-create-chercheur.component';
 import { OutilPedagogiqueEnjeuxIrdEditChercheurComponent } from './view/outil-pedagogique-enjeux-ird-chercheur/edit-chercheur/outil-pedagogique-enjeux-ird-edit-chercheur.component';
 import { OutilPedagogiqueEnjeuxIrdViewChercheurComponent } from './view/outil-pedagogique-enjeux-ird-chercheur/view-chercheur/outil-pedagogique-enjeux-ird-view-chercheur.component';
 import { OutilPedagogiqueEnjeuxIrdListChercheurComponent } from './view/outil-pedagogique-enjeux-ird-chercheur/list-chercheur/outil-pedagogique-enjeux-ird-list-chercheur.component';
 import { OutilPedagogiqueEnjeuxIrdChercheurComponent } from './view/outil-pedagogique-enjeux-ird-chercheur/outil-pedagogique-enjeux-ird-chercheur.component';
-import { ResponsabiliteEncadrementDoctorantCreateChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/create-chercheur/responsabilite-encadrement-doctorant-create-chercheur.component';
-import { ResponsabiliteEncadrementDoctorantEditChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/edit-chercheur/responsabilite-encadrement-doctorant-edit-chercheur.component';
-import { ResponsabiliteEncadrementDoctorantViewChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/view-chercheur/responsabilite-encadrement-doctorant-view-chercheur.component';
-import { ResponsabiliteEncadrementDoctorantListChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/list-chercheur/responsabilite-encadrement-doctorant-list-chercheur.component';
-import { ResponsabiliteEncadrementDoctorantChercheurComponent } from './view/responsabilite-encadrement-doctorant-chercheur/responsabilite-encadrement-doctorant-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueCreateChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-discipline-scientifique-chercheur/create-chercheur/rencontre-grand-publique-jeune-publique-discipline-scientifique-create-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueEditChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-discipline-scientifique-chercheur/edit-chercheur/rencontre-grand-publique-jeune-publique-discipline-scientifique-edit-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueViewChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-discipline-scientifique-chercheur/view-chercheur/rencontre-grand-publique-jeune-publique-discipline-scientifique-view-chercheur.component';
@@ -919,6 +936,11 @@ import { FormationContinueEnjeuxIrdEditChercheurComponent } from './view/formati
 import { FormationContinueEnjeuxIrdViewChercheurComponent } from './view/formation-continue-enjeux-ird-chercheur/view-chercheur/formation-continue-enjeux-ird-view-chercheur.component';
 import { FormationContinueEnjeuxIrdListChercheurComponent } from './view/formation-continue-enjeux-ird-chercheur/list-chercheur/formation-continue-enjeux-ird-list-chercheur.component';
 import { FormationContinueEnjeuxIrdChercheurComponent } from './view/formation-continue-enjeux-ird-chercheur/formation-continue-enjeux-ird-chercheur.component';
+import { TypeExpertiseCreateChercheurComponent } from './view/type-expertise-chercheur/create-chercheur/type-expertise-create-chercheur.component';
+import { TypeExpertiseEditChercheurComponent } from './view/type-expertise-chercheur/edit-chercheur/type-expertise-edit-chercheur.component';
+import { TypeExpertiseViewChercheurComponent } from './view/type-expertise-chercheur/view-chercheur/type-expertise-view-chercheur.component';
+import { TypeExpertiseListChercheurComponent } from './view/type-expertise-chercheur/list-chercheur/type-expertise-list-chercheur.component';
+import { TypeExpertiseChercheurComponent } from './view/type-expertise-chercheur/type-expertise-chercheur.component';
 import { ZoneGeographiqueConsultanceScientifiquePonctuelleCreateChercheurComponent } from './view/zone-geographique-consultance-scientifique-ponctuelle-chercheur/create-chercheur/zone-geographique-consultance-scientifique-ponctuelle-create-chercheur.component';
 import { ZoneGeographiqueConsultanceScientifiquePonctuelleEditChercheurComponent } from './view/zone-geographique-consultance-scientifique-ponctuelle-chercheur/edit-chercheur/zone-geographique-consultance-scientifique-ponctuelle-edit-chercheur.component';
 import { ZoneGeographiqueConsultanceScientifiquePonctuelleViewChercheurComponent } from './view/zone-geographique-consultance-scientifique-ponctuelle-chercheur/view-chercheur/zone-geographique-consultance-scientifique-ponctuelle-view-chercheur.component';
@@ -939,11 +961,6 @@ import { CommunauteSavoirProjetActiviteRechercheEditChercheurComponent } from '.
 import { CommunauteSavoirProjetActiviteRechercheViewChercheurComponent } from './view/communaute-savoir-projet-activite-recherche-chercheur/view-chercheur/communaute-savoir-projet-activite-recherche-view-chercheur.component';
 import { CommunauteSavoirProjetActiviteRechercheListChercheurComponent } from './view/communaute-savoir-projet-activite-recherche-chercheur/list-chercheur/communaute-savoir-projet-activite-recherche-list-chercheur.component';
 import { CommunauteSavoirProjetActiviteRechercheChercheurComponent } from './view/communaute-savoir-projet-activite-recherche-chercheur/communaute-savoir-projet-activite-recherche-chercheur.component';
-import { PaysCreateChercheurComponent } from './view/pays-chercheur/create-chercheur/pays-create-chercheur.component';
-import { PaysEditChercheurComponent } from './view/pays-chercheur/edit-chercheur/pays-edit-chercheur.component';
-import { PaysViewChercheurComponent } from './view/pays-chercheur/view-chercheur/pays-view-chercheur.component';
-import { PaysListChercheurComponent } from './view/pays-chercheur/list-chercheur/pays-list-chercheur.component';
-import { PaysChercheurComponent } from './view/pays-chercheur/pays-chercheur.component';
 import { OutilPedagogiqueLangueCreateChercheurComponent } from './view/outil-pedagogique-langue-chercheur/create-chercheur/outil-pedagogique-langue-create-chercheur.component';
 import { OutilPedagogiqueLangueEditChercheurComponent } from './view/outil-pedagogique-langue-chercheur/edit-chercheur/outil-pedagogique-langue-edit-chercheur.component';
 import { OutilPedagogiqueLangueViewChercheurComponent } from './view/outil-pedagogique-langue-chercheur/view-chercheur/outil-pedagogique-langue-view-chercheur.component';
@@ -969,36 +986,31 @@ import { DeveloppementDeSavoirEtInnovationScientifiqueEtablissementEditChercheur
 import { DeveloppementDeSavoirEtInnovationScientifiqueEtablissementViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-etablissement-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-etablissement-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEtablissementListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-etablissement-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-etablissement-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEtablissementChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-etablissement-chercheur/developpement-de-savoir-et-innovation-scientifique-etablissement-chercheur.component';
-import { TypeInstanceCreateChercheurComponent } from './view/type-instance-chercheur/create-chercheur/type-instance-create-chercheur.component';
-import { TypeInstanceEditChercheurComponent } from './view/type-instance-chercheur/edit-chercheur/type-instance-edit-chercheur.component';
-import { TypeInstanceViewChercheurComponent } from './view/type-instance-chercheur/view-chercheur/type-instance-view-chercheur.component';
-import { TypeInstanceListChercheurComponent } from './view/type-instance-chercheur/list-chercheur/type-instance-list-chercheur.component';
-import { TypeInstanceChercheurComponent } from './view/type-instance-chercheur/type-instance-chercheur.component';
-import { ModeDiffusionCreateChercheurComponent } from './view/mode-diffusion-chercheur/create-chercheur/mode-diffusion-create-chercheur.component';
-import { ModeDiffusionEditChercheurComponent } from './view/mode-diffusion-chercheur/edit-chercheur/mode-diffusion-edit-chercheur.component';
-import { ModeDiffusionViewChercheurComponent } from './view/mode-diffusion-chercheur/view-chercheur/mode-diffusion-view-chercheur.component';
-import { ModeDiffusionListChercheurComponent } from './view/mode-diffusion-chercheur/list-chercheur/mode-diffusion-list-chercheur.component';
-import { ModeDiffusionChercheurComponent } from './view/mode-diffusion-chercheur/mode-diffusion-chercheur.component';
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueCreateChercheurComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-chercheur/create-chercheur/objet-formation-generique-de-responsabilite-pedagogique-create-chercheur.component';
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueEditChercheurComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-chercheur/edit-chercheur/objet-formation-generique-de-responsabilite-pedagogique-edit-chercheur.component';
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueViewChercheurComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-chercheur/view-chercheur/objet-formation-generique-de-responsabilite-pedagogique-view-chercheur.component';
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueListChercheurComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-chercheur/list-chercheur/objet-formation-generique-de-responsabilite-pedagogique-list-chercheur.component';
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueChercheurComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-chercheur/objet-formation-generique-de-responsabilite-pedagogique-chercheur.component';
+import { NiveauEtudeCreateChercheurComponent } from './view/niveau-etude-chercheur/create-chercheur/niveau-etude-create-chercheur.component';
+import { NiveauEtudeEditChercheurComponent } from './view/niveau-etude-chercheur/edit-chercheur/niveau-etude-edit-chercheur.component';
+import { NiveauEtudeViewChercheurComponent } from './view/niveau-etude-chercheur/view-chercheur/niveau-etude-view-chercheur.component';
+import { NiveauEtudeListChercheurComponent } from './view/niveau-etude-chercheur/list-chercheur/niveau-etude-list-chercheur.component';
+import { NiveauEtudeChercheurComponent } from './view/niveau-etude-chercheur/niveau-etude-chercheur.component';
+import { RoleEvaluationCreateChercheurComponent } from './view/role-evaluation-chercheur/create-chercheur/role-evaluation-create-chercheur.component';
+import { RoleEvaluationEditChercheurComponent } from './view/role-evaluation-chercheur/edit-chercheur/role-evaluation-edit-chercheur.component';
+import { RoleEvaluationViewChercheurComponent } from './view/role-evaluation-chercheur/view-chercheur/role-evaluation-view-chercheur.component';
+import { RoleEvaluationListChercheurComponent } from './view/role-evaluation-chercheur/list-chercheur/role-evaluation-list-chercheur.component';
+import { RoleEvaluationChercheurComponent } from './view/role-evaluation-chercheur/role-evaluation-chercheur.component';
 import { TypeInstrumentIrdChercheurCreateChercheurComponent } from './view/type-instrument-ird-chercheur-chercheur/create-chercheur/type-instrument-ird-chercheur-create-chercheur.component';
 import { TypeInstrumentIrdChercheurEditChercheurComponent } from './view/type-instrument-ird-chercheur-chercheur/edit-chercheur/type-instrument-ird-chercheur-edit-chercheur.component';
 import { TypeInstrumentIrdChercheurViewChercheurComponent } from './view/type-instrument-ird-chercheur-chercheur/view-chercheur/type-instrument-ird-chercheur-view-chercheur.component';
 import { TypeInstrumentIrdChercheurListChercheurComponent } from './view/type-instrument-ird-chercheur-chercheur/list-chercheur/type-instrument-ird-chercheur-list-chercheur.component';
 import { TypeInstrumentIrdChercheurChercheurComponent } from './view/type-instrument-ird-chercheur-chercheur/type-instrument-ird-chercheur-chercheur.component';
-import { TemplateRelanceCreateChercheurComponent } from './view/template-relance-chercheur/create-chercheur/template-relance-create-chercheur.component';
-import { TemplateRelanceEditChercheurComponent } from './view/template-relance-chercheur/edit-chercheur/template-relance-edit-chercheur.component';
-import { TemplateRelanceViewChercheurComponent } from './view/template-relance-chercheur/view-chercheur/template-relance-view-chercheur.component';
-import { TemplateRelanceListChercheurComponent } from './view/template-relance-chercheur/list-chercheur/template-relance-list-chercheur.component';
-import { TemplateRelanceChercheurComponent } from './view/template-relance-chercheur/template-relance-chercheur.component';
-import { EtablissementPartenaireCreateChercheurComponent } from './view/etablissement-partenaire-chercheur/create-chercheur/etablissement-partenaire-create-chercheur.component';
-import { EtablissementPartenaireEditChercheurComponent } from './view/etablissement-partenaire-chercheur/edit-chercheur/etablissement-partenaire-edit-chercheur.component';
-import { EtablissementPartenaireViewChercheurComponent } from './view/etablissement-partenaire-chercheur/view-chercheur/etablissement-partenaire-view-chercheur.component';
-import { EtablissementPartenaireListChercheurComponent } from './view/etablissement-partenaire-chercheur/list-chercheur/etablissement-partenaire-list-chercheur.component';
-import { EtablissementPartenaireChercheurComponent } from './view/etablissement-partenaire-chercheur/etablissement-partenaire-chercheur.component';
+import { SemanticRelationshipCreateChercheurComponent } from './view/semantic-relationship-chercheur/create-chercheur/semantic-relationship-create-chercheur.component';
+import { SemanticRelationshipEditChercheurComponent } from './view/semantic-relationship-chercheur/edit-chercheur/semantic-relationship-edit-chercheur.component';
+import { SemanticRelationshipViewChercheurComponent } from './view/semantic-relationship-chercheur/view-chercheur/semantic-relationship-view-chercheur.component';
+import { SemanticRelationshipListChercheurComponent } from './view/semantic-relationship-chercheur/list-chercheur/semantic-relationship-list-chercheur.component';
+import { SemanticRelationshipChercheurComponent } from './view/semantic-relationship-chercheur/semantic-relationship-chercheur.component';
 import { DisciplineScientifiqueEncadrementDoctorantCreateChercheurComponent } from './view/discipline-scientifique-encadrement-doctorant-chercheur/create-chercheur/discipline-scientifique-encadrement-doctorant-create-chercheur.component';
 import { DisciplineScientifiqueEncadrementDoctorantEditChercheurComponent } from './view/discipline-scientifique-encadrement-doctorant-chercheur/edit-chercheur/discipline-scientifique-encadrement-doctorant-edit-chercheur.component';
 import { DisciplineScientifiqueEncadrementDoctorantViewChercheurComponent } from './view/discipline-scientifique-encadrement-doctorant-chercheur/view-chercheur/discipline-scientifique-encadrement-doctorant-view-chercheur.component';
@@ -1009,11 +1021,6 @@ import { PaysRencontreMediaEditChercheurComponent } from './view/pays-rencontre-
 import { PaysRencontreMediaViewChercheurComponent } from './view/pays-rencontre-media-chercheur/view-chercheur/pays-rencontre-media-view-chercheur.component';
 import { PaysRencontreMediaListChercheurComponent } from './view/pays-rencontre-media-chercheur/list-chercheur/pays-rencontre-media-list-chercheur.component';
 import { PaysRencontreMediaChercheurComponent } from './view/pays-rencontre-media-chercheur/pays-rencontre-media-chercheur.component';
-import { RoleEvaluationCreateChercheurComponent } from './view/role-evaluation-chercheur/create-chercheur/role-evaluation-create-chercheur.component';
-import { RoleEvaluationEditChercheurComponent } from './view/role-evaluation-chercheur/edit-chercheur/role-evaluation-edit-chercheur.component';
-import { RoleEvaluationViewChercheurComponent } from './view/role-evaluation-chercheur/view-chercheur/role-evaluation-view-chercheur.component';
-import { RoleEvaluationListChercheurComponent } from './view/role-evaluation-chercheur/list-chercheur/role-evaluation-list-chercheur.component';
-import { RoleEvaluationChercheurComponent } from './view/role-evaluation-chercheur/role-evaluation-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueCreateChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-chercheur/create-chercheur/rencontre-grand-publique-jeune-publique-create-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueEditChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-chercheur/edit-chercheur/rencontre-grand-publique-jeune-publique-edit-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueViewChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-chercheur/view-chercheur/rencontre-grand-publique-jeune-publique-view-chercheur.component';
@@ -1029,31 +1036,21 @@ import { EvenementColloqueScienntifiquePaysEditChercheurComponent } from './view
 import { EvenementColloqueScienntifiquePaysViewChercheurComponent } from './view/evenement-colloque-scienntifique-pays-chercheur/view-chercheur/evenement-colloque-scienntifique-pays-view-chercheur.component';
 import { EvenementColloqueScienntifiquePaysListChercheurComponent } from './view/evenement-colloque-scienntifique-pays-chercheur/list-chercheur/evenement-colloque-scienntifique-pays-list-chercheur.component';
 import { EvenementColloqueScienntifiquePaysChercheurComponent } from './view/evenement-colloque-scienntifique-pays-chercheur/evenement-colloque-scienntifique-pays-chercheur.component';
-import { TypeExpertiseEvaluationCreateChercheurComponent } from './view/type-expertise-evaluation-chercheur/create-chercheur/type-expertise-evaluation-create-chercheur.component';
-import { TypeExpertiseEvaluationEditChercheurComponent } from './view/type-expertise-evaluation-chercheur/edit-chercheur/type-expertise-evaluation-edit-chercheur.component';
-import { TypeExpertiseEvaluationViewChercheurComponent } from './view/type-expertise-evaluation-chercheur/view-chercheur/type-expertise-evaluation-view-chercheur.component';
-import { TypeExpertiseEvaluationListChercheurComponent } from './view/type-expertise-evaluation-chercheur/list-chercheur/type-expertise-evaluation-list-chercheur.component';
-import { TypeExpertiseEvaluationChercheurComponent } from './view/type-expertise-evaluation-chercheur/type-expertise-evaluation-chercheur.component';
 import { EtatCampagneCreateChercheurComponent } from './view/etat-campagne-chercheur/create-chercheur/etat-campagne-create-chercheur.component';
 import { EtatCampagneEditChercheurComponent } from './view/etat-campagne-chercheur/edit-chercheur/etat-campagne-edit-chercheur.component';
 import { EtatCampagneViewChercheurComponent } from './view/etat-campagne-chercheur/view-chercheur/etat-campagne-view-chercheur.component';
 import { EtatCampagneListChercheurComponent } from './view/etat-campagne-chercheur/list-chercheur/etat-campagne-list-chercheur.component';
 import { EtatCampagneChercheurComponent } from './view/etat-campagne-chercheur/etat-campagne-chercheur.component';
-import { TypeSavoirCreateChercheurComponent } from './view/type-savoir-chercheur/create-chercheur/type-savoir-create-chercheur.component';
-import { TypeSavoirEditChercheurComponent } from './view/type-savoir-chercheur/edit-chercheur/type-savoir-edit-chercheur.component';
-import { TypeSavoirViewChercheurComponent } from './view/type-savoir-chercheur/view-chercheur/type-savoir-view-chercheur.component';
-import { TypeSavoirListChercheurComponent } from './view/type-savoir-chercheur/list-chercheur/type-savoir-list-chercheur.component';
-import { TypeSavoirChercheurComponent } from './view/type-savoir-chercheur/type-savoir-chercheur.component';
+import { TypeEtudeCreateChercheurComponent } from './view/type-etude-chercheur/create-chercheur/type-etude-create-chercheur.component';
+import { TypeEtudeEditChercheurComponent } from './view/type-etude-chercheur/edit-chercheur/type-etude-edit-chercheur.component';
+import { TypeEtudeViewChercheurComponent } from './view/type-etude-chercheur/view-chercheur/type-etude-view-chercheur.component';
+import { TypeEtudeListChercheurComponent } from './view/type-etude-chercheur/list-chercheur/type-etude-list-chercheur.component';
+import { TypeEtudeChercheurComponent } from './view/type-etude-chercheur/type-etude-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdCreateChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur/create-chercheur/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-create-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdEditChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur/edit-chercheur/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-edit-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdViewChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur/view-chercheur/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-view-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdListChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur/list-chercheur/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-list-chercheur.component';
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdChercheurComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-chercheur.component';
-import { InstitutionCreateChercheurComponent } from './view/institution-chercheur/create-chercheur/institution-create-chercheur.component';
-import { InstitutionEditChercheurComponent } from './view/institution-chercheur/edit-chercheur/institution-edit-chercheur.component';
-import { InstitutionViewChercheurComponent } from './view/institution-chercheur/view-chercheur/institution-view-chercheur.component';
-import { InstitutionListChercheurComponent } from './view/institution-chercheur/list-chercheur/institution-list-chercheur.component';
-import { InstitutionChercheurComponent } from './view/institution-chercheur/institution-chercheur.component';
 import { StructureOganisatriceCreateChercheurComponent } from './view/structure-oganisatrice-chercheur/create-chercheur/structure-oganisatrice-create-chercheur.component';
 import { StructureOganisatriceEditChercheurComponent } from './view/structure-oganisatrice-chercheur/edit-chercheur/structure-oganisatrice-edit-chercheur.component';
 import { StructureOganisatriceViewChercheurComponent } from './view/structure-oganisatrice-chercheur/view-chercheur/structure-oganisatrice-view-chercheur.component';
@@ -1069,6 +1066,11 @@ import { FormationContinueCommanditaireEditChercheurComponent } from './view/for
 import { FormationContinueCommanditaireViewChercheurComponent } from './view/formation-continue-commanditaire-chercheur/view-chercheur/formation-continue-commanditaire-view-chercheur.component';
 import { FormationContinueCommanditaireListChercheurComponent } from './view/formation-continue-commanditaire-chercheur/list-chercheur/formation-continue-commanditaire-list-chercheur.component';
 import { FormationContinueCommanditaireChercheurComponent } from './view/formation-continue-commanditaire-chercheur/formation-continue-commanditaire-chercheur.component';
+import { TemplateRappelCreateChercheurComponent } from './view/template-rappel-chercheur/create-chercheur/template-rappel-create-chercheur.component';
+import { TemplateRappelEditChercheurComponent } from './view/template-rappel-chercheur/edit-chercheur/template-rappel-edit-chercheur.component';
+import { TemplateRappelViewChercheurComponent } from './view/template-rappel-chercheur/view-chercheur/template-rappel-view-chercheur.component';
+import { TemplateRappelListChercheurComponent } from './view/template-rappel-chercheur/list-chercheur/template-rappel-list-chercheur.component';
+import { TemplateRappelChercheurComponent } from './view/template-rappel-chercheur/template-rappel-chercheur.component';
 import { AffectationStructurelleCreateChercheurComponent } from './view/affectation-structurelle-chercheur/create-chercheur/affectation-structurelle-create-chercheur.component';
 import { AffectationStructurelleEditChercheurComponent } from './view/affectation-structurelle-chercheur/edit-chercheur/affectation-structurelle-edit-chercheur.component';
 import { AffectationStructurelleViewChercheurComponent } from './view/affectation-structurelle-chercheur/view-chercheur/affectation-structurelle-view-chercheur.component';
@@ -1079,31 +1081,26 @@ import { CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueEditCherche
 import { CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent } from './view/caracterisation-developpement-de-savoir-et-innovation-scientifique-chercheur/view-chercheur/caracterisation-developpement-de-savoir-et-innovation-scientifique-view-chercheur.component';
 import { CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueListChercheurComponent } from './view/caracterisation-developpement-de-savoir-et-innovation-scientifique-chercheur/list-chercheur/caracterisation-developpement-de-savoir-et-innovation-scientifique-list-chercheur.component';
 import { CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent } from './view/caracterisation-developpement-de-savoir-et-innovation-scientifique-chercheur/caracterisation-developpement-de-savoir-et-innovation-scientifique-chercheur.component';
-import { PubliqueCibleCreateChercheurComponent } from './view/publique-cible-chercheur/create-chercheur/publique-cible-create-chercheur.component';
-import { PubliqueCibleEditChercheurComponent } from './view/publique-cible-chercheur/edit-chercheur/publique-cible-edit-chercheur.component';
-import { PubliqueCibleViewChercheurComponent } from './view/publique-cible-chercheur/view-chercheur/publique-cible-view-chercheur.component';
-import { PubliqueCibleListChercheurComponent } from './view/publique-cible-chercheur/list-chercheur/publique-cible-list-chercheur.component';
-import { PubliqueCibleChercheurComponent } from './view/publique-cible-chercheur/publique-cible-chercheur.component';
-import { NationaliteCreateChercheurComponent } from './view/nationalite-chercheur/create-chercheur/nationalite-create-chercheur.component';
-import { NationaliteEditChercheurComponent } from './view/nationalite-chercheur/edit-chercheur/nationalite-edit-chercheur.component';
-import { NationaliteViewChercheurComponent } from './view/nationalite-chercheur/view-chercheur/nationalite-view-chercheur.component';
-import { NationaliteListChercheurComponent } from './view/nationalite-chercheur/list-chercheur/nationalite-list-chercheur.component';
-import { NationaliteChercheurComponent } from './view/nationalite-chercheur/nationalite-chercheur.component';
 import { PaysCommanditaireCreateChercheurComponent } from './view/pays-commanditaire-chercheur/create-chercheur/pays-commanditaire-create-chercheur.component';
 import { PaysCommanditaireEditChercheurComponent } from './view/pays-commanditaire-chercheur/edit-chercheur/pays-commanditaire-edit-chercheur.component';
 import { PaysCommanditaireViewChercheurComponent } from './view/pays-commanditaire-chercheur/view-chercheur/pays-commanditaire-view-chercheur.component';
 import { PaysCommanditaireListChercheurComponent } from './view/pays-commanditaire-chercheur/list-chercheur/pays-commanditaire-list-chercheur.component';
 import { PaysCommanditaireChercheurComponent } from './view/pays-commanditaire-chercheur/pays-commanditaire-chercheur.component';
+import { FormatRencontreCreateChercheurComponent } from './view/format-rencontre-chercheur/create-chercheur/format-rencontre-create-chercheur.component';
+import { FormatRencontreEditChercheurComponent } from './view/format-rencontre-chercheur/edit-chercheur/format-rencontre-edit-chercheur.component';
+import { FormatRencontreViewChercheurComponent } from './view/format-rencontre-chercheur/view-chercheur/format-rencontre-view-chercheur.component';
+import { FormatRencontreListChercheurComponent } from './view/format-rencontre-chercheur/list-chercheur/format-rencontre-list-chercheur.component';
+import { FormatRencontreChercheurComponent } from './view/format-rencontre-chercheur/format-rencontre-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdCreateChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/create-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-create-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdEditChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/edit-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-edit-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/view-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-view-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdListChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/list-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-list-chercheur.component';
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdChercheurComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur/rencontre-grand-publique-jeune-publique-type-instrument-ird-chercheur.component';
-import { TypeEnseignementCreateChercheurComponent } from './view/type-enseignement-chercheur/create-chercheur/type-enseignement-create-chercheur.component';
-import { TypeEnseignementEditChercheurComponent } from './view/type-enseignement-chercheur/edit-chercheur/type-enseignement-edit-chercheur.component';
-import { TypeEnseignementViewChercheurComponent } from './view/type-enseignement-chercheur/view-chercheur/type-enseignement-view-chercheur.component';
-import { TypeEnseignementListChercheurComponent } from './view/type-enseignement-chercheur/list-chercheur/type-enseignement-list-chercheur.component';
-import { TypeEnseignementChercheurComponent } from './view/type-enseignement-chercheur/type-enseignement-chercheur.component';
+import { TypeReclamationCreateChercheurComponent } from './view/type-reclamation-chercheur/create-chercheur/type-reclamation-create-chercheur.component';
+import { TypeReclamationEditChercheurComponent } from './view/type-reclamation-chercheur/edit-chercheur/type-reclamation-edit-chercheur.component';
+import { TypeReclamationViewChercheurComponent } from './view/type-reclamation-chercheur/view-chercheur/type-reclamation-view-chercheur.component';
+import { TypeReclamationListChercheurComponent } from './view/type-reclamation-chercheur/list-chercheur/type-reclamation-list-chercheur.component';
+import { TypeReclamationChercheurComponent } from './view/type-reclamation-chercheur/type-reclamation-chercheur.component';
 import { FormationContinueDisciplineScientifiqueCreateChercheurComponent } from './view/formation-continue-discipline-scientifique-chercheur/create-chercheur/formation-continue-discipline-scientifique-create-chercheur.component';
 import { FormationContinueDisciplineScientifiqueEditChercheurComponent } from './view/formation-continue-discipline-scientifique-chercheur/edit-chercheur/formation-continue-discipline-scientifique-edit-chercheur.component';
 import { FormationContinueDisciplineScientifiqueViewChercheurComponent } from './view/formation-continue-discipline-scientifique-chercheur/view-chercheur/formation-continue-discipline-scientifique-view-chercheur.component';
@@ -1129,6 +1126,11 @@ import { NiveauEtudeEnseignementEditChercheurComponent } from './view/niveau-etu
 import { NiveauEtudeEnseignementViewChercheurComponent } from './view/niveau-etude-enseignement-chercheur/view-chercheur/niveau-etude-enseignement-view-chercheur.component';
 import { NiveauEtudeEnseignementListChercheurComponent } from './view/niveau-etude-enseignement-chercheur/list-chercheur/niveau-etude-enseignement-list-chercheur.component';
 import { NiveauEtudeEnseignementChercheurComponent } from './view/niveau-etude-enseignement-chercheur/niveau-etude-enseignement-chercheur.component';
+import { CommissionScientifiqueCreateChercheurComponent } from './view/commission-scientifique-chercheur/create-chercheur/commission-scientifique-create-chercheur.component';
+import { CommissionScientifiqueEditChercheurComponent } from './view/commission-scientifique-chercheur/edit-chercheur/commission-scientifique-edit-chercheur.component';
+import { CommissionScientifiqueViewChercheurComponent } from './view/commission-scientifique-chercheur/view-chercheur/commission-scientifique-view-chercheur.component';
+import { CommissionScientifiqueListChercheurComponent } from './view/commission-scientifique-chercheur/list-chercheur/commission-scientifique-list-chercheur.component';
+import { CommissionScientifiqueChercheurComponent } from './view/commission-scientifique-chercheur/commission-scientifique-chercheur.component';
 import { CategorieNotificationCreateChercheurComponent } from './view/categorie-notification-chercheur/create-chercheur/categorie-notification-create-chercheur.component';
 import { CategorieNotificationEditChercheurComponent } from './view/categorie-notification-chercheur/edit-chercheur/categorie-notification-edit-chercheur.component';
 import { CategorieNotificationViewChercheurComponent } from './view/categorie-notification-chercheur/view-chercheur/categorie-notification-view-chercheur.component';
@@ -1149,16 +1151,16 @@ import { CampagneEditChercheurComponent } from './view/campagne-chercheur/edit-c
 import { CampagneViewChercheurComponent } from './view/campagne-chercheur/view-chercheur/campagne-view-chercheur.component';
 import { CampagneListChercheurComponent } from './view/campagne-chercheur/list-chercheur/campagne-list-chercheur.component';
 import { CampagneChercheurComponent } from './view/campagne-chercheur/campagne-chercheur.component';
+import { SexeCreateChercheurComponent } from './view/sexe-chercheur/create-chercheur/sexe-create-chercheur.component';
+import { SexeEditChercheurComponent } from './view/sexe-chercheur/edit-chercheur/sexe-edit-chercheur.component';
+import { SexeViewChercheurComponent } from './view/sexe-chercheur/view-chercheur/sexe-view-chercheur.component';
+import { SexeListChercheurComponent } from './view/sexe-chercheur/list-chercheur/sexe-list-chercheur.component';
+import { SexeChercheurComponent } from './view/sexe-chercheur/sexe-chercheur.component';
 import { EtatCampagneChercheurCreateChercheurComponent } from './view/etat-campagne-chercheur-chercheur/create-chercheur/etat-campagne-chercheur-create-chercheur.component';
 import { EtatCampagneChercheurEditChercheurComponent } from './view/etat-campagne-chercheur-chercheur/edit-chercheur/etat-campagne-chercheur-edit-chercheur.component';
 import { EtatCampagneChercheurViewChercheurComponent } from './view/etat-campagne-chercheur-chercheur/view-chercheur/etat-campagne-chercheur-view-chercheur.component';
 import { EtatCampagneChercheurListChercheurComponent } from './view/etat-campagne-chercheur-chercheur/list-chercheur/etat-campagne-chercheur-list-chercheur.component';
 import { EtatCampagneChercheurChercheurComponent } from './view/etat-campagne-chercheur-chercheur/etat-campagne-chercheur-chercheur.component';
-import { ObjetFormationGeneriqueCreateChercheurComponent } from './view/objet-formation-generique-chercheur/create-chercheur/objet-formation-generique-create-chercheur.component';
-import { ObjetFormationGeneriqueEditChercheurComponent } from './view/objet-formation-generique-chercheur/edit-chercheur/objet-formation-generique-edit-chercheur.component';
-import { ObjetFormationGeneriqueViewChercheurComponent } from './view/objet-formation-generique-chercheur/view-chercheur/objet-formation-generique-view-chercheur.component';
-import { ObjetFormationGeneriqueListChercheurComponent } from './view/objet-formation-generique-chercheur/list-chercheur/objet-formation-generique-list-chercheur.component';
-import { ObjetFormationGeneriqueChercheurComponent } from './view/objet-formation-generique-chercheur/objet-formation-generique-chercheur.component';
 
 import { PasswordModule } from 'primeng/password';
 import { InputTextModule } from 'primeng/inputtext';
@@ -1194,11 +1196,6 @@ import {MessagesModule} from 'primeng/messages';
     StatusContratEtConventionViewChercheurComponent,
     StatusContratEtConventionEditChercheurComponent,
     StatusContratEtConventionChercheurComponent,
-    VilleCreateChercheurComponent,
-    VilleListChercheurComponent,
-    VilleViewChercheurComponent,
-    VilleEditChercheurComponent,
-    VilleChercheurComponent,
     ResponsabilitePedagogiqueCreateChercheurComponent,
     ResponsabilitePedagogiqueListChercheurComponent,
     ResponsabilitePedagogiqueViewChercheurComponent,
@@ -1214,26 +1211,11 @@ import {MessagesModule} from 'primeng/messages';
     DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirChercheurComponent,
-    FournisseurAppelProjetRechercheCreateChercheurComponent,
-    FournisseurAppelProjetRechercheListChercheurComponent,
-    FournisseurAppelProjetRechercheViewChercheurComponent,
-    FournisseurAppelProjetRechercheEditChercheurComponent,
-    FournisseurAppelProjetRechercheChercheurComponent,
-    GradeCreateChercheurComponent,
-    GradeListChercheurComponent,
-    GradeViewChercheurComponent,
-    GradeEditChercheurComponent,
-    GradeChercheurComponent,
     TypeEtudeEnseignementCreateChercheurComponent,
     TypeEtudeEnseignementListChercheurComponent,
     TypeEtudeEnseignementViewChercheurComponent,
     TypeEtudeEnseignementEditChercheurComponent,
     TypeEtudeEnseignementChercheurComponent,
-    TypeOutilCreateChercheurComponent,
-    TypeOutilListChercheurComponent,
-    TypeOutilViewChercheurComponent,
-    TypeOutilEditChercheurComponent,
-    TypeOutilChercheurComponent,
     SavoirEtInnovationCreateChercheurComponent,
     SavoirEtInnovationListChercheurComponent,
     SavoirEtInnovationViewChercheurComponent,
@@ -1244,11 +1226,6 @@ import {MessagesModule} from 'primeng/messages';
     DeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent,
-    TypeEtudeCreateChercheurComponent,
-    TypeEtudeListChercheurComponent,
-    TypeEtudeViewChercheurComponent,
-    TypeEtudeEditChercheurComponent,
-    TypeEtudeChercheurComponent,
     EnseignementZoneGeographiqueCreateChercheurComponent,
     EnseignementZoneGeographiqueListChercheurComponent,
     EnseignementZoneGeographiqueViewChercheurComponent,
@@ -1264,21 +1241,11 @@ import {MessagesModule} from 'primeng/messages';
     CommunauteSavoirEncadrementDoctorantViewChercheurComponent,
     CommunauteSavoirEncadrementDoctorantEditChercheurComponent,
     CommunauteSavoirEncadrementDoctorantChercheurComponent,
-    SemanticRelationshipCreateChercheurComponent,
-    SemanticRelationshipListChercheurComponent,
-    SemanticRelationshipViewChercheurComponent,
-    SemanticRelationshipEditChercheurComponent,
-    SemanticRelationshipChercheurComponent,
     ZoneActiviteInteractionRechercheCreateChercheurComponent,
     ZoneActiviteInteractionRechercheListChercheurComponent,
     ZoneActiviteInteractionRechercheViewChercheurComponent,
     ZoneActiviteInteractionRechercheEditChercheurComponent,
     ZoneActiviteInteractionRechercheChercheurComponent,
-    TypeExpertCreateChercheurComponent,
-    TypeExpertListChercheurComponent,
-    TypeExpertViewChercheurComponent,
-    TypeExpertEditChercheurComponent,
-    TypeExpertChercheurComponent,
     DisciplineScientifiqueConseilsScientifiqueCreateChercheurComponent,
     DisciplineScientifiqueConseilsScientifiqueListChercheurComponent,
     DisciplineScientifiqueConseilsScientifiqueViewChercheurComponent,
@@ -1294,16 +1261,6 @@ import {MessagesModule} from 'primeng/messages';
     CommunauteSavoirEncadrementEtudiantViewChercheurComponent,
     CommunauteSavoirEncadrementEtudiantEditChercheurComponent,
     CommunauteSavoirEncadrementEtudiantChercheurComponent,
-    StatusProjetCreateChercheurComponent,
-    StatusProjetListChercheurComponent,
-    StatusProjetViewChercheurComponent,
-    StatusProjetEditChercheurComponent,
-    StatusProjetChercheurComponent,
-    ModaliteCreateChercheurComponent,
-    ModaliteListChercheurComponent,
-    ModaliteViewChercheurComponent,
-    ModaliteEditChercheurComponent,
-    ModaliteChercheurComponent,
     ConseilsScientifiqueCreateChercheurComponent,
     ConseilsScientifiqueListChercheurComponent,
     ConseilsScientifiqueViewChercheurComponent,
@@ -1314,11 +1271,6 @@ import {MessagesModule} from 'primeng/messages';
     InstrumentsEtDispositifsIrdViewChercheurComponent,
     InstrumentsEtDispositifsIrdEditChercheurComponent,
     InstrumentsEtDispositifsIrdChercheurComponent,
-    NiveauFormationCreateChercheurComponent,
-    NiveauFormationListChercheurComponent,
-    NiveauFormationViewChercheurComponent,
-    NiveauFormationEditChercheurComponent,
-    NiveauFormationChercheurComponent,
     EtatReclamationCreateChercheurComponent,
     EtatReclamationListChercheurComponent,
     EtatReclamationViewChercheurComponent,
@@ -1349,16 +1301,6 @@ import {MessagesModule} from 'primeng/messages';
     TypeOutilPedagogiqueViewChercheurComponent,
     TypeOutilPedagogiqueEditChercheurComponent,
     TypeOutilPedagogiqueChercheurComponent,
-    InstrumentIrdCreateChercheurComponent,
-    InstrumentIrdListChercheurComponent,
-    InstrumentIrdViewChercheurComponent,
-    InstrumentIrdEditChercheurComponent,
-    InstrumentIrdChercheurComponent,
-    SexeCreateChercheurComponent,
-    SexeListChercheurComponent,
-    SexeViewChercheurComponent,
-    SexeEditChercheurComponent,
-    SexeChercheurComponent,
     DisciplineScientifiqueChercheurCreateChercheurComponent,
     DisciplineScientifiqueChercheurListChercheurComponent,
     DisciplineScientifiqueChercheurViewChercheurComponent,
@@ -1384,21 +1326,6 @@ import {MessagesModule} from 'primeng/messages';
     VieInstitutionnelleDetailViewChercheurComponent,
     VieInstitutionnelleDetailEditChercheurComponent,
     VieInstitutionnelleDetailChercheurComponent,
-    PubliqueFormationCreateChercheurComponent,
-    PubliqueFormationListChercheurComponent,
-    PubliqueFormationViewChercheurComponent,
-    PubliqueFormationEditChercheurComponent,
-    PubliqueFormationChercheurComponent,
-    EtudiantCreateChercheurComponent,
-    EtudiantListChercheurComponent,
-    EtudiantViewChercheurComponent,
-    EtudiantEditChercheurComponent,
-    EtudiantChercheurComponent,
-    FormatRencontreCreateChercheurComponent,
-    FormatRencontreListChercheurComponent,
-    FormatRencontreViewChercheurComponent,
-    FormatRencontreEditChercheurComponent,
-    FormatRencontreChercheurComponent,
     NiveauResponsabilitePedagogiqueCreateChercheurComponent,
     NiveauResponsabilitePedagogiqueListChercheurComponent,
     NiveauResponsabilitePedagogiqueViewChercheurComponent,
@@ -1409,11 +1336,6 @@ import {MessagesModule} from 'primeng/messages';
     ZoneGeographiqueConseilsScientifiqueViewChercheurComponent,
     ZoneGeographiqueConseilsScientifiqueEditChercheurComponent,
     ZoneGeographiqueConseilsScientifiqueChercheurComponent,
-    EnjeuxIrdCreateChercheurComponent,
-    EnjeuxIrdListChercheurComponent,
-    EnjeuxIrdViewChercheurComponent,
-    EnjeuxIrdEditChercheurComponent,
-    EnjeuxIrdChercheurComponent,
     EtablissementConsultanceScientifiquePonctuelleCreateChercheurComponent,
     EtablissementConsultanceScientifiquePonctuelleListChercheurComponent,
     EtablissementConsultanceScientifiquePonctuelleViewChercheurComponent,
@@ -1429,11 +1351,6 @@ import {MessagesModule} from 'primeng/messages';
     ContratEtConventionIrdViewChercheurComponent,
     ContratEtConventionIrdEditChercheurComponent,
     ContratEtConventionIrdChercheurComponent,
-    PubliqueProfessionelCreateChercheurComponent,
-    PubliqueProfessionelListChercheurComponent,
-    PubliqueProfessionelViewChercheurComponent,
-    PubliqueProfessionelEditChercheurComponent,
-    PubliqueProfessionelChercheurComponent,
     ProjetActiviteRechercheDetailPaysCreateChercheurComponent,
     ProjetActiviteRechercheDetailPaysListChercheurComponent,
     ProjetActiviteRechercheDetailPaysViewChercheurComponent,
@@ -1454,11 +1371,6 @@ import {MessagesModule} from 'primeng/messages';
     VieInstitutionnelleDetailInstrumentIrdViewChercheurComponent,
     VieInstitutionnelleDetailInstrumentIrdEditChercheurComponent,
     VieInstitutionnelleDetailInstrumentIrdChercheurComponent,
-    DisciplineScientifiqueErcCreateChercheurComponent,
-    DisciplineScientifiqueErcListChercheurComponent,
-    DisciplineScientifiqueErcViewChercheurComponent,
-    DisciplineScientifiqueErcEditChercheurComponent,
-    DisciplineScientifiqueErcChercheurComponent,
     EvenementColloqueScienntifiqueEnjeuxIrdCreateChercheurComponent,
     EvenementColloqueScienntifiqueEnjeuxIrdListChercheurComponent,
     EvenementColloqueScienntifiqueEnjeuxIrdViewChercheurComponent,
@@ -1479,41 +1391,11 @@ import {MessagesModule} from 'primeng/messages';
     PaysZoneGeographiqueViewChercheurComponent,
     PaysZoneGeographiqueEditChercheurComponent,
     PaysZoneGeographiqueChercheurComponent,
-    RoleProjetCreateChercheurComponent,
-    RoleProjetListChercheurComponent,
-    RoleProjetViewChercheurComponent,
-    RoleProjetEditChercheurComponent,
-    RoleProjetChercheurComponent,
-    ResponsabiliteDirectionEncadrementEtudiantCreateChercheurComponent,
-    ResponsabiliteDirectionEncadrementEtudiantListChercheurComponent,
-    ResponsabiliteDirectionEncadrementEtudiantViewChercheurComponent,
-    ResponsabiliteDirectionEncadrementEtudiantEditChercheurComponent,
-    ResponsabiliteDirectionEncadrementEtudiantChercheurComponent,
     EncadrementEtudiantCreateChercheurComponent,
     EncadrementEtudiantListChercheurComponent,
     EncadrementEtudiantViewChercheurComponent,
     EncadrementEtudiantEditChercheurComponent,
     EncadrementEtudiantChercheurComponent,
-    CaracterisationCreateChercheurComponent,
-    CaracterisationListChercheurComponent,
-    CaracterisationViewChercheurComponent,
-    CaracterisationEditChercheurComponent,
-    CaracterisationChercheurComponent,
-    EtablissementProjetCreateChercheurComponent,
-    EtablissementProjetListChercheurComponent,
-    EtablissementProjetViewChercheurComponent,
-    EtablissementProjetEditChercheurComponent,
-    EtablissementProjetChercheurComponent,
-    ContexteCreateChercheurComponent,
-    ContexteListChercheurComponent,
-    ContexteViewChercheurComponent,
-    ContexteEditChercheurComponent,
-    ContexteChercheurComponent,
-    KeyWordCreateChercheurComponent,
-    KeyWordListChercheurComponent,
-    KeyWordViewChercheurComponent,
-    KeyWordEditChercheurComponent,
-    KeyWordChercheurComponent,
     EnjeuxIrdComiteEtCommissionEvaluationCreateChercheurComponent,
     EnjeuxIrdComiteEtCommissionEvaluationListChercheurComponent,
     EnjeuxIrdComiteEtCommissionEvaluationViewChercheurComponent,
@@ -1529,16 +1411,6 @@ import {MessagesModule} from 'primeng/messages';
     RencontreMediaViewChercheurComponent,
     RencontreMediaEditChercheurComponent,
     RencontreMediaChercheurComponent,
-    NiveauEtudeCreateChercheurComponent,
-    NiveauEtudeListChercheurComponent,
-    NiveauEtudeViewChercheurComponent,
-    NiveauEtudeEditChercheurComponent,
-    NiveauEtudeChercheurComponent,
-    EntiteAdministrativeCreateChercheurComponent,
-    EntiteAdministrativeListChercheurComponent,
-    EntiteAdministrativeViewChercheurComponent,
-    EntiteAdministrativeEditChercheurComponent,
-    EntiteAdministrativeChercheurComponent,
     ReclamationCreateChercheurComponent,
     ReclamationListChercheurComponent,
     ReclamationViewChercheurComponent,
@@ -1564,26 +1436,6 @@ import {MessagesModule} from 'primeng/messages';
     DisciplineScientifiqueEvenementColloqueScientifiqueViewChercheurComponent,
     DisciplineScientifiqueEvenementColloqueScientifiqueEditChercheurComponent,
     DisciplineScientifiqueEvenementColloqueScientifiqueChercheurComponent,
-    DisciplineScientifiqueParentCreateChercheurComponent,
-    DisciplineScientifiqueParentListChercheurComponent,
-    DisciplineScientifiqueParentViewChercheurComponent,
-    DisciplineScientifiqueParentEditChercheurComponent,
-    DisciplineScientifiqueParentChercheurComponent,
-    TemplateOuvertureCreateChercheurComponent,
-    TemplateOuvertureListChercheurComponent,
-    TemplateOuvertureViewChercheurComponent,
-    TemplateOuvertureEditChercheurComponent,
-    TemplateOuvertureChercheurComponent,
-    NatureExpertiseCreateChercheurComponent,
-    NatureExpertiseListChercheurComponent,
-    NatureExpertiseViewChercheurComponent,
-    NatureExpertiseEditChercheurComponent,
-    NatureExpertiseChercheurComponent,
-    StatusCursusCreateChercheurComponent,
-    StatusCursusListChercheurComponent,
-    StatusCursusViewChercheurComponent,
-    StatusCursusEditChercheurComponent,
-    StatusCursusChercheurComponent,
     OutilPedagogiqueDisciplineScientifiqueCreateChercheurComponent,
     OutilPedagogiqueDisciplineScientifiqueListChercheurComponent,
     OutilPedagogiqueDisciplineScientifiqueViewChercheurComponent,
@@ -1594,16 +1446,6 @@ import {MessagesModule} from 'primeng/messages';
     CampagneRappelChercheurViewChercheurComponent,
     CampagneRappelChercheurEditChercheurComponent,
     CampagneRappelChercheurChercheurComponent,
-    ModaliteFormationContinueCreateChercheurComponent,
-    ModaliteFormationContinueListChercheurComponent,
-    ModaliteFormationContinueViewChercheurComponent,
-    ModaliteFormationContinueEditChercheurComponent,
-    ModaliteFormationContinueChercheurComponent,
-    IdentifiantRechercheCreateChercheurComponent,
-    IdentifiantRechercheListChercheurComponent,
-    IdentifiantRechercheViewChercheurComponent,
-    IdentifiantRechercheEditChercheurComponent,
-    IdentifiantRechercheChercheurComponent,
     EncadrementCreateChercheurComponent,
     EncadrementListChercheurComponent,
     EncadrementViewChercheurComponent,
@@ -1624,11 +1466,6 @@ import {MessagesModule} from 'primeng/messages';
     FormationContinuePubliqueProfessionelViewChercheurComponent,
     FormationContinuePubliqueProfessionelEditChercheurComponent,
     FormationContinuePubliqueProfessionelChercheurComponent,
-    DisciplineScientifiqueErcAssociationCreateChercheurComponent,
-    DisciplineScientifiqueErcAssociationListChercheurComponent,
-    DisciplineScientifiqueErcAssociationViewChercheurComponent,
-    DisciplineScientifiqueErcAssociationEditChercheurComponent,
-    DisciplineScientifiqueErcAssociationChercheurComponent,
     EnseignementEnjeuxIrdCreateChercheurComponent,
     EnseignementEnjeuxIrdListChercheurComponent,
     EnseignementEnjeuxIrdViewChercheurComponent,
@@ -1654,11 +1491,6 @@ import {MessagesModule} from 'primeng/messages';
     ProjetActiviteRechercheDetailViewChercheurComponent,
     ProjetActiviteRechercheDetailEditChercheurComponent,
     ProjetActiviteRechercheDetailChercheurComponent,
-    StructureIrdCreateChercheurComponent,
-    StructureIrdListChercheurComponent,
-    StructureIrdViewChercheurComponent,
-    StructureIrdEditChercheurComponent,
-    StructureIrdChercheurComponent,
     ExpertiseCreateChercheurComponent,
     ExpertiseListChercheurComponent,
     ExpertiseViewChercheurComponent,
@@ -1674,21 +1506,11 @@ import {MessagesModule} from 'primeng/messages';
     CampagneChercheurOuvertureViewChercheurComponent,
     CampagneChercheurOuvertureEditChercheurComponent,
     CampagneChercheurOuvertureChercheurComponent,
-    NatureEnseignementCreateChercheurComponent,
-    NatureEnseignementListChercheurComponent,
-    NatureEnseignementViewChercheurComponent,
-    NatureEnseignementEditChercheurComponent,
-    NatureEnseignementChercheurComponent,
     EnjeuxIrdConsultanceScientifiquePonctuelleCreateChercheurComponent,
     EnjeuxIrdConsultanceScientifiquePonctuelleListChercheurComponent,
     EnjeuxIrdConsultanceScientifiquePonctuelleViewChercheurComponent,
     EnjeuxIrdConsultanceScientifiquePonctuelleEditChercheurComponent,
     EnjeuxIrdConsultanceScientifiquePonctuelleChercheurComponent,
-    TypeUtilisateurCreateChercheurComponent,
-    TypeUtilisateurListChercheurComponent,
-    TypeUtilisateurViewChercheurComponent,
-    TypeUtilisateurEditChercheurComponent,
-    TypeUtilisateurChercheurComponent,
     EtablissementComiteEtCommissionEvaluationCreateChercheurComponent,
     EtablissementComiteEtCommissionEvaluationListChercheurComponent,
     EtablissementComiteEtCommissionEvaluationViewChercheurComponent,
@@ -1699,11 +1521,6 @@ import {MessagesModule} from 'primeng/messages';
     DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionChercheurComponent,
-    MasterInternationalCreateChercheurComponent,
-    MasterInternationalListChercheurComponent,
-    MasterInternationalViewChercheurComponent,
-    MasterInternationalEditChercheurComponent,
-    MasterInternationalChercheurComponent,
     ResponsabilitePedagogiqueEnjeuxIrdCreateChercheurComponent,
     ResponsabilitePedagogiqueEnjeuxIrdListChercheurComponent,
     ResponsabilitePedagogiqueEnjeuxIrdViewChercheurComponent,
@@ -1714,11 +1531,6 @@ import {MessagesModule} from 'primeng/messages';
     FaqViewChercheurComponent,
     FaqEditChercheurComponent,
     FaqChercheurComponent,
-    FinancementDoctorantCreateChercheurComponent,
-    FinancementDoctorantListChercheurComponent,
-    FinancementDoctorantViewChercheurComponent,
-    FinancementDoctorantEditChercheurComponent,
-    FinancementDoctorantChercheurComponent,
     ExpertiseScientifiqueCreateChercheurComponent,
     ExpertiseScientifiqueListChercheurComponent,
     ExpertiseScientifiqueViewChercheurComponent,
@@ -1734,11 +1546,6 @@ import {MessagesModule} from 'primeng/messages';
     OutilPedagogiquePaysConceptionViewChercheurComponent,
     OutilPedagogiquePaysConceptionEditChercheurComponent,
     OutilPedagogiquePaysConceptionChercheurComponent,
-    TypePubliqueCultureScientifiqueCreateChercheurComponent,
-    TypePubliqueCultureScientifiqueListChercheurComponent,
-    TypePubliqueCultureScientifiqueViewChercheurComponent,
-    TypePubliqueCultureScientifiqueEditChercheurComponent,
-    TypePubliqueCultureScientifiqueChercheurComponent,
     CampagneChercheurFermetureCreateChercheurComponent,
     CampagneChercheurFermetureListChercheurComponent,
     CampagneChercheurFermetureViewChercheurComponent,
@@ -1754,31 +1561,11 @@ import {MessagesModule} from 'primeng/messages';
     CommunauteSavoirConseilEtComiteScientifiqueViewChercheurComponent,
     CommunauteSavoirConseilEtComiteScientifiqueEditChercheurComponent,
     CommunauteSavoirConseilEtComiteScientifiqueChercheurComponent,
-    TemplateClotureCreateChercheurComponent,
-    TemplateClotureListChercheurComponent,
-    TemplateClotureViewChercheurComponent,
-    TemplateClotureEditChercheurComponent,
-    TemplateClotureChercheurComponent,
     OutilPedagogiqueTypeInstrumentIrdCreateChercheurComponent,
     OutilPedagogiqueTypeInstrumentIrdListChercheurComponent,
     OutilPedagogiqueTypeInstrumentIrdViewChercheurComponent,
     OutilPedagogiqueTypeInstrumentIrdEditChercheurComponent,
     OutilPedagogiqueTypeInstrumentIrdChercheurComponent,
-    EtablissementCreateChercheurComponent,
-    EtablissementListChercheurComponent,
-    EtablissementViewChercheurComponent,
-    EtablissementEditChercheurComponent,
-    EtablissementChercheurComponent,
-    CommanditaireCreateChercheurComponent,
-    CommanditaireListChercheurComponent,
-    CommanditaireViewChercheurComponent,
-    CommanditaireEditChercheurComponent,
-    CommanditaireChercheurComponent,
-    DisciplineScientifiqueErcParentCreateChercheurComponent,
-    DisciplineScientifiqueErcParentListChercheurComponent,
-    DisciplineScientifiqueErcParentViewChercheurComponent,
-    DisciplineScientifiqueErcParentEditChercheurComponent,
-    DisciplineScientifiqueErcParentChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueCreateChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueListChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueViewChercheurComponent,
@@ -1789,11 +1576,6 @@ import {MessagesModule} from 'primeng/messages';
     RoleComiteEtCommissionEvaluationViewChercheurComponent,
     RoleComiteEtCommissionEvaluationEditChercheurComponent,
     RoleComiteEtCommissionEvaluationChercheurComponent,
-    NiveauFormationPostBacCreateChercheurComponent,
-    NiveauFormationPostBacListChercheurComponent,
-    NiveauFormationPostBacViewChercheurComponent,
-    NiveauFormationPostBacEditChercheurComponent,
-    NiveauFormationPostBacChercheurComponent,
     ChercheurEmailCreateChercheurComponent,
     ChercheurEmailListChercheurComponent,
     ChercheurEmailViewChercheurComponent,
@@ -1804,11 +1586,6 @@ import {MessagesModule} from 'primeng/messages';
     EnjeuxIrdChercheurViewChercheurComponent,
     EnjeuxIrdChercheurEditChercheurComponent,
     EnjeuxIrdChercheurChercheurComponent,
-    TypeEntiteAdministrativeCreateChercheurComponent,
-    TypeEntiteAdministrativeListChercheurComponent,
-    TypeEntiteAdministrativeViewChercheurComponent,
-    TypeEntiteAdministrativeEditChercheurComponent,
-    TypeEntiteAdministrativeChercheurComponent,
     ProjetActiviteRechercheDetailEnjeuxIrdCreateChercheurComponent,
     ProjetActiviteRechercheDetailEnjeuxIrdListChercheurComponent,
     ProjetActiviteRechercheDetailEnjeuxIrdViewChercheurComponent,
@@ -1824,31 +1601,16 @@ import {MessagesModule} from 'primeng/messages';
     EnseignementDisciplineScientifiqueViewChercheurComponent,
     EnseignementDisciplineScientifiqueEditChercheurComponent,
     EnseignementDisciplineScientifiqueChercheurComponent,
-    KeyWordDisciplineScientifiqueErcCreateChercheurComponent,
-    KeyWordDisciplineScientifiqueErcListChercheurComponent,
-    KeyWordDisciplineScientifiqueErcViewChercheurComponent,
-    KeyWordDisciplineScientifiqueErcEditChercheurComponent,
-    KeyWordDisciplineScientifiqueErcChercheurComponent,
     CommunauteSavoirChercheurCreateChercheurComponent,
     CommunauteSavoirChercheurListChercheurComponent,
     CommunauteSavoirChercheurViewChercheurComponent,
     CommunauteSavoirChercheurEditChercheurComponent,
     CommunauteSavoirChercheurChercheurComponent,
-    CategorieFaqCreateChercheurComponent,
-    CategorieFaqListChercheurComponent,
-    CategorieFaqViewChercheurComponent,
-    CategorieFaqEditChercheurComponent,
-    CategorieFaqChercheurComponent,
     ComiteEtCommissionEvaluationCreateChercheurComponent,
     ComiteEtCommissionEvaluationListChercheurComponent,
     ComiteEtCommissionEvaluationViewChercheurComponent,
     ComiteEtCommissionEvaluationEditChercheurComponent,
     ComiteEtCommissionEvaluationChercheurComponent,
-    ModaliteEtudeCreateChercheurComponent,
-    ModaliteEtudeListChercheurComponent,
-    ModaliteEtudeViewChercheurComponent,
-    ModaliteEtudeEditChercheurComponent,
-    ModaliteEtudeChercheurComponent,
     EvenementColloqueScienntifiqueCreateChercheurComponent,
     EvenementColloqueScienntifiqueListChercheurComponent,
     EvenementColloqueScienntifiqueViewChercheurComponent,
@@ -1874,11 +1636,6 @@ import {MessagesModule} from 'primeng/messages';
     ConsultanceScientifiquePonctuelleViewChercheurComponent,
     ConsultanceScientifiquePonctuelleEditChercheurComponent,
     ConsultanceScientifiquePonctuelleChercheurComponent,
-    ModaliteInterventionCreateChercheurComponent,
-    ModaliteInterventionListChercheurComponent,
-    ModaliteInterventionViewChercheurComponent,
-    ModaliteInterventionEditChercheurComponent,
-    ModaliteInterventionChercheurComponent,
     ZoneGeographiqueFormationContinueCreateChercheurComponent,
     ZoneGeographiqueFormationContinueListChercheurComponent,
     ZoneGeographiqueFormationContinueViewChercheurComponent,
@@ -1909,16 +1666,6 @@ import {MessagesModule} from 'primeng/messages';
     DeveloppementDeSavoirEtInnovationScientifiquePaysViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiquePaysEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiquePaysChercheurComponent,
-    ZoneGeographiqueCreateChercheurComponent,
-    ZoneGeographiqueListChercheurComponent,
-    ZoneGeographiqueViewChercheurComponent,
-    ZoneGeographiqueEditChercheurComponent,
-    ZoneGeographiqueChercheurComponent,
-    CommissionScientifiqueCreateChercheurComponent,
-    CommissionScientifiqueListChercheurComponent,
-    CommissionScientifiqueViewChercheurComponent,
-    CommissionScientifiqueEditChercheurComponent,
-    CommissionScientifiqueChercheurComponent,
     RoleDeveloppementDeSavoirCreateChercheurComponent,
     RoleDeveloppementDeSavoirListChercheurComponent,
     RoleDeveloppementDeSavoirViewChercheurComponent,
@@ -1929,11 +1676,6 @@ import {MessagesModule} from 'primeng/messages';
     TypeUtilisateurSavoirConcuViewChercheurComponent,
     TypeUtilisateurSavoirConcuEditChercheurComponent,
     TypeUtilisateurSavoirConcuChercheurComponent,
-    NatureEtudeCreateChercheurComponent,
-    NatureEtudeListChercheurComponent,
-    NatureEtudeViewChercheurComponent,
-    NatureEtudeEditChercheurComponent,
-    NatureEtudeChercheurComponent,
     EncadrementEtudiantDisciplineScientifiqueCreateChercheurComponent,
     EncadrementEtudiantDisciplineScientifiqueListChercheurComponent,
     EncadrementEtudiantDisciplineScientifiqueViewChercheurComponent,
@@ -1944,26 +1686,11 @@ import {MessagesModule} from 'primeng/messages';
     CommunauteSavoirExpertiseScientifiqueViewChercheurComponent,
     CommunauteSavoirExpertiseScientifiqueEditChercheurComponent,
     CommunauteSavoirExpertiseScientifiqueChercheurComponent,
-    TemplateRappelCreateChercheurComponent,
-    TemplateRappelListChercheurComponent,
-    TemplateRappelViewChercheurComponent,
-    TemplateRappelEditChercheurComponent,
-    TemplateRappelChercheurComponent,
-    TypeReclamationCreateChercheurComponent,
-    TypeReclamationListChercheurComponent,
-    TypeReclamationViewChercheurComponent,
-    TypeReclamationEditChercheurComponent,
-    TypeReclamationChercheurComponent,
     DisciplineScientifiqueComiteEtCommissionEvaluationCreateChercheurComponent,
     DisciplineScientifiqueComiteEtCommissionEvaluationListChercheurComponent,
     DisciplineScientifiqueComiteEtCommissionEvaluationViewChercheurComponent,
     DisciplineScientifiqueComiteEtCommissionEvaluationEditChercheurComponent,
     DisciplineScientifiqueComiteEtCommissionEvaluationChercheurComponent,
-    TypeInstrumentIrdCreateChercheurComponent,
-    TypeInstrumentIrdListChercheurComponent,
-    TypeInstrumentIrdViewChercheurComponent,
-    TypeInstrumentIrdEditChercheurComponent,
-    TypeInstrumentIrdChercheurComponent,
     DistinctionEtablissementPaysCreateChercheurComponent,
     DistinctionEtablissementPaysListChercheurComponent,
     DistinctionEtablissementPaysViewChercheurComponent,
@@ -1979,46 +1706,16 @@ import {MessagesModule} from 'primeng/messages';
     RencontreGrandPubliqueJeunePubliqueEnjeuxIrdViewChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueEnjeuxIrdEditChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueEnjeuxIrdChercheurComponent,
-    DisciplineScientifiqueCreateChercheurComponent,
-    DisciplineScientifiqueListChercheurComponent,
-    DisciplineScientifiqueViewChercheurComponent,
-    DisciplineScientifiqueEditChercheurComponent,
-    DisciplineScientifiqueChercheurComponent,
-    TypeExpertiseCreateChercheurComponent,
-    TypeExpertiseListChercheurComponent,
-    TypeExpertiseViewChercheurComponent,
-    TypeExpertiseEditChercheurComponent,
-    TypeExpertiseChercheurComponent,
-    DoctorantCreateChercheurComponent,
-    DoctorantListChercheurComponent,
-    DoctorantViewChercheurComponent,
-    DoctorantEditChercheurComponent,
-    DoctorantChercheurComponent,
-    CorpsCreateChercheurComponent,
-    CorpsListChercheurComponent,
-    CorpsViewChercheurComponent,
-    CorpsEditChercheurComponent,
-    CorpsChercheurComponent,
     EnseignementEtFormationCreateChercheurComponent,
     EnseignementEtFormationListChercheurComponent,
     EnseignementEtFormationViewChercheurComponent,
     EnseignementEtFormationEditChercheurComponent,
     EnseignementEtFormationChercheurComponent,
-    DepartementScientifiqueCreateChercheurComponent,
-    DepartementScientifiqueListChercheurComponent,
-    DepartementScientifiqueViewChercheurComponent,
-    DepartementScientifiqueEditChercheurComponent,
-    DepartementScientifiqueChercheurComponent,
     PaysOrganisateurRencontreGrandPubliqueJeunePubliqueCreateChercheurComponent,
     PaysOrganisateurRencontreGrandPubliqueJeunePubliqueListChercheurComponent,
     PaysOrganisateurRencontreGrandPubliqueJeunePubliqueViewChercheurComponent,
     PaysOrganisateurRencontreGrandPubliqueJeunePubliqueEditChercheurComponent,
     PaysOrganisateurRencontreGrandPubliqueJeunePubliqueChercheurComponent,
-    CommunauteSavoirCreateChercheurComponent,
-    CommunauteSavoirListChercheurComponent,
-    CommunauteSavoirViewChercheurComponent,
-    CommunauteSavoirEditChercheurComponent,
-    CommunauteSavoirChercheurComponent,
     DisciplineScientifiqueExpertiseScientifiqueCreateChercheurComponent,
     DisciplineScientifiqueExpertiseScientifiqueListChercheurComponent,
     DisciplineScientifiqueExpertiseScientifiqueViewChercheurComponent,
@@ -2029,11 +1726,6 @@ import {MessagesModule} from 'primeng/messages';
     OutilPedagogiqueEnjeuxIrdViewChercheurComponent,
     OutilPedagogiqueEnjeuxIrdEditChercheurComponent,
     OutilPedagogiqueEnjeuxIrdChercheurComponent,
-    ResponsabiliteEncadrementDoctorantCreateChercheurComponent,
-    ResponsabiliteEncadrementDoctorantListChercheurComponent,
-    ResponsabiliteEncadrementDoctorantViewChercheurComponent,
-    ResponsabiliteEncadrementDoctorantEditChercheurComponent,
-    ResponsabiliteEncadrementDoctorantChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueCreateChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueListChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueViewChercheurComponent,
@@ -2094,11 +1786,6 @@ import {MessagesModule} from 'primeng/messages';
     CommunauteSavoirProjetActiviteRechercheViewChercheurComponent,
     CommunauteSavoirProjetActiviteRechercheEditChercheurComponent,
     CommunauteSavoirProjetActiviteRechercheChercheurComponent,
-    PaysCreateChercheurComponent,
-    PaysListChercheurComponent,
-    PaysViewChercheurComponent,
-    PaysEditChercheurComponent,
-    PaysChercheurComponent,
     OutilPedagogiqueLangueCreateChercheurComponent,
     OutilPedagogiqueLangueListChercheurComponent,
     OutilPedagogiqueLangueViewChercheurComponent,
@@ -2124,16 +1811,6 @@ import {MessagesModule} from 'primeng/messages';
     DeveloppementDeSavoirEtInnovationScientifiqueEtablissementViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEtablissementEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEtablissementChercheurComponent,
-    TypeInstanceCreateChercheurComponent,
-    TypeInstanceListChercheurComponent,
-    TypeInstanceViewChercheurComponent,
-    TypeInstanceEditChercheurComponent,
-    TypeInstanceChercheurComponent,
-    ModeDiffusionCreateChercheurComponent,
-    ModeDiffusionListChercheurComponent,
-    ModeDiffusionViewChercheurComponent,
-    ModeDiffusionEditChercheurComponent,
-    ModeDiffusionChercheurComponent,
     ObjetFormationGeneriqueDeResponsabilitePedagogiqueCreateChercheurComponent,
     ObjetFormationGeneriqueDeResponsabilitePedagogiqueListChercheurComponent,
     ObjetFormationGeneriqueDeResponsabilitePedagogiqueViewChercheurComponent,
@@ -2144,16 +1821,6 @@ import {MessagesModule} from 'primeng/messages';
     TypeInstrumentIrdChercheurViewChercheurComponent,
     TypeInstrumentIrdChercheurEditChercheurComponent,
     TypeInstrumentIrdChercheurChercheurComponent,
-    TemplateRelanceCreateChercheurComponent,
-    TemplateRelanceListChercheurComponent,
-    TemplateRelanceViewChercheurComponent,
-    TemplateRelanceEditChercheurComponent,
-    TemplateRelanceChercheurComponent,
-    EtablissementPartenaireCreateChercheurComponent,
-    EtablissementPartenaireListChercheurComponent,
-    EtablissementPartenaireViewChercheurComponent,
-    EtablissementPartenaireEditChercheurComponent,
-    EtablissementPartenaireChercheurComponent,
     DisciplineScientifiqueEncadrementDoctorantCreateChercheurComponent,
     DisciplineScientifiqueEncadrementDoctorantListChercheurComponent,
     DisciplineScientifiqueEncadrementDoctorantViewChercheurComponent,
@@ -2164,11 +1831,6 @@ import {MessagesModule} from 'primeng/messages';
     PaysRencontreMediaViewChercheurComponent,
     PaysRencontreMediaEditChercheurComponent,
     PaysRencontreMediaChercheurComponent,
-    RoleEvaluationCreateChercheurComponent,
-    RoleEvaluationListChercheurComponent,
-    RoleEvaluationViewChercheurComponent,
-    RoleEvaluationEditChercheurComponent,
-    RoleEvaluationChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueCreateChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueListChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueViewChercheurComponent,
@@ -2184,31 +1846,16 @@ import {MessagesModule} from 'primeng/messages';
     EvenementColloqueScienntifiquePaysViewChercheurComponent,
     EvenementColloqueScienntifiquePaysEditChercheurComponent,
     EvenementColloqueScienntifiquePaysChercheurComponent,
-    TypeExpertiseEvaluationCreateChercheurComponent,
-    TypeExpertiseEvaluationListChercheurComponent,
-    TypeExpertiseEvaluationViewChercheurComponent,
-    TypeExpertiseEvaluationEditChercheurComponent,
-    TypeExpertiseEvaluationChercheurComponent,
     EtatCampagneCreateChercheurComponent,
     EtatCampagneListChercheurComponent,
     EtatCampagneViewChercheurComponent,
     EtatCampagneEditChercheurComponent,
     EtatCampagneChercheurComponent,
-    TypeSavoirCreateChercheurComponent,
-    TypeSavoirListChercheurComponent,
-    TypeSavoirViewChercheurComponent,
-    TypeSavoirEditChercheurComponent,
-    TypeSavoirChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdCreateChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdListChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdViewChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdEditChercheurComponent,
     DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdChercheurComponent,
-    InstitutionCreateChercheurComponent,
-    InstitutionListChercheurComponent,
-    InstitutionViewChercheurComponent,
-    InstitutionEditChercheurComponent,
-    InstitutionChercheurComponent,
     StructureOganisatriceCreateChercheurComponent,
     StructureOganisatriceListChercheurComponent,
     StructureOganisatriceViewChercheurComponent,
@@ -2234,16 +1881,6 @@ import {MessagesModule} from 'primeng/messages';
     CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent,
     CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueEditChercheurComponent,
     CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent,
-    PubliqueCibleCreateChercheurComponent,
-    PubliqueCibleListChercheurComponent,
-    PubliqueCibleViewChercheurComponent,
-    PubliqueCibleEditChercheurComponent,
-    PubliqueCibleChercheurComponent,
-    NationaliteCreateChercheurComponent,
-    NationaliteListChercheurComponent,
-    NationaliteViewChercheurComponent,
-    NationaliteEditChercheurComponent,
-    NationaliteChercheurComponent,
     PaysCommanditaireCreateChercheurComponent,
     PaysCommanditaireListChercheurComponent,
     PaysCommanditaireViewChercheurComponent,
@@ -2254,11 +1891,6 @@ import {MessagesModule} from 'primeng/messages';
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdEditChercheurComponent,
     RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdChercheurComponent,
-    TypeEnseignementCreateChercheurComponent,
-    TypeEnseignementListChercheurComponent,
-    TypeEnseignementViewChercheurComponent,
-    TypeEnseignementEditChercheurComponent,
-    TypeEnseignementChercheurComponent,
     FormationContinueDisciplineScientifiqueCreateChercheurComponent,
     FormationContinueDisciplineScientifiqueListChercheurComponent,
     FormationContinueDisciplineScientifiqueViewChercheurComponent,
@@ -2309,11 +1941,6 @@ import {MessagesModule} from 'primeng/messages';
     EtatCampagneChercheurViewChercheurComponent,
     EtatCampagneChercheurEditChercheurComponent,
     EtatCampagneChercheurChercheurComponent,
-    ObjetFormationGeneriqueCreateChercheurComponent,
-    ObjetFormationGeneriqueListChercheurComponent,
-    ObjetFormationGeneriqueViewChercheurComponent,
-    ObjetFormationGeneriqueEditChercheurComponent,
-    ObjetFormationGeneriqueChercheurComponent,
   ],
   imports: [
     CommonModule,
@@ -2340,7 +1967,8 @@ import {MessagesModule} from 'primeng/messages';
     MessagesModule,
     InputNumberModule,
     BadgeModule,
-    MultiSelectModule
+    MultiSelectModule,
+    ArchivableChercheurModule
   ],
   exports: [
   LoginChercheurComponent,
@@ -2365,11 +1993,6 @@ import {MessagesModule} from 'primeng/messages';
   StatusContratEtConventionViewChercheurComponent,
   StatusContratEtConventionEditChercheurComponent,
   StatusContratEtConventionChercheurComponent,
-  VilleCreateChercheurComponent,
-  VilleListChercheurComponent,
-  VilleViewChercheurComponent,
-  VilleEditChercheurComponent,
-  VilleChercheurComponent,
   ResponsabilitePedagogiqueCreateChercheurComponent,
   ResponsabilitePedagogiqueListChercheurComponent,
   ResponsabilitePedagogiqueViewChercheurComponent,
@@ -2385,26 +2008,11 @@ import {MessagesModule} from 'primeng/messages';
   DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirChercheurComponent,
-  FournisseurAppelProjetRechercheCreateChercheurComponent,
-  FournisseurAppelProjetRechercheListChercheurComponent,
-  FournisseurAppelProjetRechercheViewChercheurComponent,
-  FournisseurAppelProjetRechercheEditChercheurComponent,
-  FournisseurAppelProjetRechercheChercheurComponent,
-  GradeCreateChercheurComponent,
-  GradeListChercheurComponent,
-  GradeViewChercheurComponent,
-  GradeEditChercheurComponent,
-  GradeChercheurComponent,
   TypeEtudeEnseignementCreateChercheurComponent,
   TypeEtudeEnseignementListChercheurComponent,
   TypeEtudeEnseignementViewChercheurComponent,
   TypeEtudeEnseignementEditChercheurComponent,
   TypeEtudeEnseignementChercheurComponent,
-  TypeOutilCreateChercheurComponent,
-  TypeOutilListChercheurComponent,
-  TypeOutilViewChercheurComponent,
-  TypeOutilEditChercheurComponent,
-  TypeOutilChercheurComponent,
   SavoirEtInnovationCreateChercheurComponent,
   SavoirEtInnovationListChercheurComponent,
   SavoirEtInnovationViewChercheurComponent,
@@ -2415,11 +2023,6 @@ import {MessagesModule} from 'primeng/messages';
   DeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent,
-  TypeEtudeCreateChercheurComponent,
-  TypeEtudeListChercheurComponent,
-  TypeEtudeViewChercheurComponent,
-  TypeEtudeEditChercheurComponent,
-  TypeEtudeChercheurComponent,
   EnseignementZoneGeographiqueCreateChercheurComponent,
   EnseignementZoneGeographiqueListChercheurComponent,
   EnseignementZoneGeographiqueViewChercheurComponent,
@@ -2435,21 +2038,11 @@ import {MessagesModule} from 'primeng/messages';
   CommunauteSavoirEncadrementDoctorantViewChercheurComponent,
   CommunauteSavoirEncadrementDoctorantEditChercheurComponent,
   CommunauteSavoirEncadrementDoctorantChercheurComponent,
-  SemanticRelationshipCreateChercheurComponent,
-  SemanticRelationshipListChercheurComponent,
-  SemanticRelationshipViewChercheurComponent,
-  SemanticRelationshipEditChercheurComponent,
-  SemanticRelationshipChercheurComponent,
   ZoneActiviteInteractionRechercheCreateChercheurComponent,
   ZoneActiviteInteractionRechercheListChercheurComponent,
   ZoneActiviteInteractionRechercheViewChercheurComponent,
   ZoneActiviteInteractionRechercheEditChercheurComponent,
   ZoneActiviteInteractionRechercheChercheurComponent,
-  TypeExpertCreateChercheurComponent,
-  TypeExpertListChercheurComponent,
-  TypeExpertViewChercheurComponent,
-  TypeExpertEditChercheurComponent,
-  TypeExpertChercheurComponent,
   DisciplineScientifiqueConseilsScientifiqueCreateChercheurComponent,
   DisciplineScientifiqueConseilsScientifiqueListChercheurComponent,
   DisciplineScientifiqueConseilsScientifiqueViewChercheurComponent,
@@ -2465,16 +2058,6 @@ import {MessagesModule} from 'primeng/messages';
   CommunauteSavoirEncadrementEtudiantViewChercheurComponent,
   CommunauteSavoirEncadrementEtudiantEditChercheurComponent,
   CommunauteSavoirEncadrementEtudiantChercheurComponent,
-  StatusProjetCreateChercheurComponent,
-  StatusProjetListChercheurComponent,
-  StatusProjetViewChercheurComponent,
-  StatusProjetEditChercheurComponent,
-  StatusProjetChercheurComponent,
-  ModaliteCreateChercheurComponent,
-  ModaliteListChercheurComponent,
-  ModaliteViewChercheurComponent,
-  ModaliteEditChercheurComponent,
-  ModaliteChercheurComponent,
   ConseilsScientifiqueCreateChercheurComponent,
   ConseilsScientifiqueListChercheurComponent,
   ConseilsScientifiqueViewChercheurComponent,
@@ -2485,11 +2068,6 @@ import {MessagesModule} from 'primeng/messages';
   InstrumentsEtDispositifsIrdViewChercheurComponent,
   InstrumentsEtDispositifsIrdEditChercheurComponent,
   InstrumentsEtDispositifsIrdChercheurComponent,
-  NiveauFormationCreateChercheurComponent,
-  NiveauFormationListChercheurComponent,
-  NiveauFormationViewChercheurComponent,
-  NiveauFormationEditChercheurComponent,
-  NiveauFormationChercheurComponent,
   EtatReclamationCreateChercheurComponent,
   EtatReclamationListChercheurComponent,
   EtatReclamationViewChercheurComponent,
@@ -2520,16 +2098,6 @@ import {MessagesModule} from 'primeng/messages';
   TypeOutilPedagogiqueViewChercheurComponent,
   TypeOutilPedagogiqueEditChercheurComponent,
   TypeOutilPedagogiqueChercheurComponent,
-  InstrumentIrdCreateChercheurComponent,
-  InstrumentIrdListChercheurComponent,
-  InstrumentIrdViewChercheurComponent,
-  InstrumentIrdEditChercheurComponent,
-  InstrumentIrdChercheurComponent,
-  SexeCreateChercheurComponent,
-  SexeListChercheurComponent,
-  SexeViewChercheurComponent,
-  SexeEditChercheurComponent,
-  SexeChercheurComponent,
   DisciplineScientifiqueChercheurCreateChercheurComponent,
   DisciplineScientifiqueChercheurListChercheurComponent,
   DisciplineScientifiqueChercheurViewChercheurComponent,
@@ -2555,21 +2123,6 @@ import {MessagesModule} from 'primeng/messages';
   VieInstitutionnelleDetailViewChercheurComponent,
   VieInstitutionnelleDetailEditChercheurComponent,
   VieInstitutionnelleDetailChercheurComponent,
-  PubliqueFormationCreateChercheurComponent,
-  PubliqueFormationListChercheurComponent,
-  PubliqueFormationViewChercheurComponent,
-  PubliqueFormationEditChercheurComponent,
-  PubliqueFormationChercheurComponent,
-  EtudiantCreateChercheurComponent,
-  EtudiantListChercheurComponent,
-  EtudiantViewChercheurComponent,
-  EtudiantEditChercheurComponent,
-  EtudiantChercheurComponent,
-  FormatRencontreCreateChercheurComponent,
-  FormatRencontreListChercheurComponent,
-  FormatRencontreViewChercheurComponent,
-  FormatRencontreEditChercheurComponent,
-  FormatRencontreChercheurComponent,
   NiveauResponsabilitePedagogiqueCreateChercheurComponent,
   NiveauResponsabilitePedagogiqueListChercheurComponent,
   NiveauResponsabilitePedagogiqueViewChercheurComponent,
@@ -2580,11 +2133,6 @@ import {MessagesModule} from 'primeng/messages';
   ZoneGeographiqueConseilsScientifiqueViewChercheurComponent,
   ZoneGeographiqueConseilsScientifiqueEditChercheurComponent,
   ZoneGeographiqueConseilsScientifiqueChercheurComponent,
-  EnjeuxIrdCreateChercheurComponent,
-  EnjeuxIrdListChercheurComponent,
-  EnjeuxIrdViewChercheurComponent,
-  EnjeuxIrdEditChercheurComponent,
-  EnjeuxIrdChercheurComponent,
   EtablissementConsultanceScientifiquePonctuelleCreateChercheurComponent,
   EtablissementConsultanceScientifiquePonctuelleListChercheurComponent,
   EtablissementConsultanceScientifiquePonctuelleViewChercheurComponent,
@@ -2600,11 +2148,6 @@ import {MessagesModule} from 'primeng/messages';
   ContratEtConventionIrdViewChercheurComponent,
   ContratEtConventionIrdEditChercheurComponent,
   ContratEtConventionIrdChercheurComponent,
-  PubliqueProfessionelCreateChercheurComponent,
-  PubliqueProfessionelListChercheurComponent,
-  PubliqueProfessionelViewChercheurComponent,
-  PubliqueProfessionelEditChercheurComponent,
-  PubliqueProfessionelChercheurComponent,
   ProjetActiviteRechercheDetailPaysCreateChercheurComponent,
   ProjetActiviteRechercheDetailPaysListChercheurComponent,
   ProjetActiviteRechercheDetailPaysViewChercheurComponent,
@@ -2625,11 +2168,6 @@ import {MessagesModule} from 'primeng/messages';
   VieInstitutionnelleDetailInstrumentIrdViewChercheurComponent,
   VieInstitutionnelleDetailInstrumentIrdEditChercheurComponent,
   VieInstitutionnelleDetailInstrumentIrdChercheurComponent,
-  DisciplineScientifiqueErcCreateChercheurComponent,
-  DisciplineScientifiqueErcListChercheurComponent,
-  DisciplineScientifiqueErcViewChercheurComponent,
-  DisciplineScientifiqueErcEditChercheurComponent,
-  DisciplineScientifiqueErcChercheurComponent,
   EvenementColloqueScienntifiqueEnjeuxIrdCreateChercheurComponent,
   EvenementColloqueScienntifiqueEnjeuxIrdListChercheurComponent,
   EvenementColloqueScienntifiqueEnjeuxIrdViewChercheurComponent,
@@ -2650,41 +2188,11 @@ import {MessagesModule} from 'primeng/messages';
   PaysZoneGeographiqueViewChercheurComponent,
   PaysZoneGeographiqueEditChercheurComponent,
   PaysZoneGeographiqueChercheurComponent,
-  RoleProjetCreateChercheurComponent,
-  RoleProjetListChercheurComponent,
-  RoleProjetViewChercheurComponent,
-  RoleProjetEditChercheurComponent,
-  RoleProjetChercheurComponent,
-  ResponsabiliteDirectionEncadrementEtudiantCreateChercheurComponent,
-  ResponsabiliteDirectionEncadrementEtudiantListChercheurComponent,
-  ResponsabiliteDirectionEncadrementEtudiantViewChercheurComponent,
-  ResponsabiliteDirectionEncadrementEtudiantEditChercheurComponent,
-  ResponsabiliteDirectionEncadrementEtudiantChercheurComponent,
   EncadrementEtudiantCreateChercheurComponent,
   EncadrementEtudiantListChercheurComponent,
   EncadrementEtudiantViewChercheurComponent,
   EncadrementEtudiantEditChercheurComponent,
   EncadrementEtudiantChercheurComponent,
-  CaracterisationCreateChercheurComponent,
-  CaracterisationListChercheurComponent,
-  CaracterisationViewChercheurComponent,
-  CaracterisationEditChercheurComponent,
-  CaracterisationChercheurComponent,
-  EtablissementProjetCreateChercheurComponent,
-  EtablissementProjetListChercheurComponent,
-  EtablissementProjetViewChercheurComponent,
-  EtablissementProjetEditChercheurComponent,
-  EtablissementProjetChercheurComponent,
-  ContexteCreateChercheurComponent,
-  ContexteListChercheurComponent,
-  ContexteViewChercheurComponent,
-  ContexteEditChercheurComponent,
-  ContexteChercheurComponent,
-  KeyWordCreateChercheurComponent,
-  KeyWordListChercheurComponent,
-  KeyWordViewChercheurComponent,
-  KeyWordEditChercheurComponent,
-  KeyWordChercheurComponent,
   EnjeuxIrdComiteEtCommissionEvaluationCreateChercheurComponent,
   EnjeuxIrdComiteEtCommissionEvaluationListChercheurComponent,
   EnjeuxIrdComiteEtCommissionEvaluationViewChercheurComponent,
@@ -2700,16 +2208,6 @@ import {MessagesModule} from 'primeng/messages';
   RencontreMediaViewChercheurComponent,
   RencontreMediaEditChercheurComponent,
   RencontreMediaChercheurComponent,
-  NiveauEtudeCreateChercheurComponent,
-  NiveauEtudeListChercheurComponent,
-  NiveauEtudeViewChercheurComponent,
-  NiveauEtudeEditChercheurComponent,
-  NiveauEtudeChercheurComponent,
-  EntiteAdministrativeCreateChercheurComponent,
-  EntiteAdministrativeListChercheurComponent,
-  EntiteAdministrativeViewChercheurComponent,
-  EntiteAdministrativeEditChercheurComponent,
-  EntiteAdministrativeChercheurComponent,
   ReclamationCreateChercheurComponent,
   ReclamationListChercheurComponent,
   ReclamationViewChercheurComponent,
@@ -2735,26 +2233,6 @@ import {MessagesModule} from 'primeng/messages';
   DisciplineScientifiqueEvenementColloqueScientifiqueViewChercheurComponent,
   DisciplineScientifiqueEvenementColloqueScientifiqueEditChercheurComponent,
   DisciplineScientifiqueEvenementColloqueScientifiqueChercheurComponent,
-  DisciplineScientifiqueParentCreateChercheurComponent,
-  DisciplineScientifiqueParentListChercheurComponent,
-  DisciplineScientifiqueParentViewChercheurComponent,
-  DisciplineScientifiqueParentEditChercheurComponent,
-  DisciplineScientifiqueParentChercheurComponent,
-  TemplateOuvertureCreateChercheurComponent,
-  TemplateOuvertureListChercheurComponent,
-  TemplateOuvertureViewChercheurComponent,
-  TemplateOuvertureEditChercheurComponent,
-  TemplateOuvertureChercheurComponent,
-  NatureExpertiseCreateChercheurComponent,
-  NatureExpertiseListChercheurComponent,
-  NatureExpertiseViewChercheurComponent,
-  NatureExpertiseEditChercheurComponent,
-  NatureExpertiseChercheurComponent,
-  StatusCursusCreateChercheurComponent,
-  StatusCursusListChercheurComponent,
-  StatusCursusViewChercheurComponent,
-  StatusCursusEditChercheurComponent,
-  StatusCursusChercheurComponent,
   OutilPedagogiqueDisciplineScientifiqueCreateChercheurComponent,
   OutilPedagogiqueDisciplineScientifiqueListChercheurComponent,
   OutilPedagogiqueDisciplineScientifiqueViewChercheurComponent,
@@ -2765,16 +2243,6 @@ import {MessagesModule} from 'primeng/messages';
   CampagneRappelChercheurViewChercheurComponent,
   CampagneRappelChercheurEditChercheurComponent,
   CampagneRappelChercheurChercheurComponent,
-  ModaliteFormationContinueCreateChercheurComponent,
-  ModaliteFormationContinueListChercheurComponent,
-  ModaliteFormationContinueViewChercheurComponent,
-  ModaliteFormationContinueEditChercheurComponent,
-  ModaliteFormationContinueChercheurComponent,
-  IdentifiantRechercheCreateChercheurComponent,
-  IdentifiantRechercheListChercheurComponent,
-  IdentifiantRechercheViewChercheurComponent,
-  IdentifiantRechercheEditChercheurComponent,
-  IdentifiantRechercheChercheurComponent,
   EncadrementCreateChercheurComponent,
   EncadrementListChercheurComponent,
   EncadrementViewChercheurComponent,
@@ -2795,11 +2263,6 @@ import {MessagesModule} from 'primeng/messages';
   FormationContinuePubliqueProfessionelViewChercheurComponent,
   FormationContinuePubliqueProfessionelEditChercheurComponent,
   FormationContinuePubliqueProfessionelChercheurComponent,
-  DisciplineScientifiqueErcAssociationCreateChercheurComponent,
-  DisciplineScientifiqueErcAssociationListChercheurComponent,
-  DisciplineScientifiqueErcAssociationViewChercheurComponent,
-  DisciplineScientifiqueErcAssociationEditChercheurComponent,
-  DisciplineScientifiqueErcAssociationChercheurComponent,
   EnseignementEnjeuxIrdCreateChercheurComponent,
   EnseignementEnjeuxIrdListChercheurComponent,
   EnseignementEnjeuxIrdViewChercheurComponent,
@@ -2825,11 +2288,6 @@ import {MessagesModule} from 'primeng/messages';
   ProjetActiviteRechercheDetailViewChercheurComponent,
   ProjetActiviteRechercheDetailEditChercheurComponent,
   ProjetActiviteRechercheDetailChercheurComponent,
-  StructureIrdCreateChercheurComponent,
-  StructureIrdListChercheurComponent,
-  StructureIrdViewChercheurComponent,
-  StructureIrdEditChercheurComponent,
-  StructureIrdChercheurComponent,
   ExpertiseCreateChercheurComponent,
   ExpertiseListChercheurComponent,
   ExpertiseViewChercheurComponent,
@@ -2845,21 +2303,11 @@ import {MessagesModule} from 'primeng/messages';
   CampagneChercheurOuvertureViewChercheurComponent,
   CampagneChercheurOuvertureEditChercheurComponent,
   CampagneChercheurOuvertureChercheurComponent,
-  NatureEnseignementCreateChercheurComponent,
-  NatureEnseignementListChercheurComponent,
-  NatureEnseignementViewChercheurComponent,
-  NatureEnseignementEditChercheurComponent,
-  NatureEnseignementChercheurComponent,
   EnjeuxIrdConsultanceScientifiquePonctuelleCreateChercheurComponent,
   EnjeuxIrdConsultanceScientifiquePonctuelleListChercheurComponent,
   EnjeuxIrdConsultanceScientifiquePonctuelleViewChercheurComponent,
   EnjeuxIrdConsultanceScientifiquePonctuelleEditChercheurComponent,
   EnjeuxIrdConsultanceScientifiquePonctuelleChercheurComponent,
-  TypeUtilisateurCreateChercheurComponent,
-  TypeUtilisateurListChercheurComponent,
-  TypeUtilisateurViewChercheurComponent,
-  TypeUtilisateurEditChercheurComponent,
-  TypeUtilisateurChercheurComponent,
   EtablissementComiteEtCommissionEvaluationCreateChercheurComponent,
   EtablissementComiteEtCommissionEvaluationListChercheurComponent,
   EtablissementComiteEtCommissionEvaluationViewChercheurComponent,
@@ -2870,11 +2318,6 @@ import {MessagesModule} from 'primeng/messages';
   DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionChercheurComponent,
-  MasterInternationalCreateChercheurComponent,
-  MasterInternationalListChercheurComponent,
-  MasterInternationalViewChercheurComponent,
-  MasterInternationalEditChercheurComponent,
-  MasterInternationalChercheurComponent,
   ResponsabilitePedagogiqueEnjeuxIrdCreateChercheurComponent,
   ResponsabilitePedagogiqueEnjeuxIrdListChercheurComponent,
   ResponsabilitePedagogiqueEnjeuxIrdViewChercheurComponent,
@@ -2885,11 +2328,6 @@ import {MessagesModule} from 'primeng/messages';
   FaqViewChercheurComponent,
   FaqEditChercheurComponent,
   FaqChercheurComponent,
-  FinancementDoctorantCreateChercheurComponent,
-  FinancementDoctorantListChercheurComponent,
-  FinancementDoctorantViewChercheurComponent,
-  FinancementDoctorantEditChercheurComponent,
-  FinancementDoctorantChercheurComponent,
   ExpertiseScientifiqueCreateChercheurComponent,
   ExpertiseScientifiqueListChercheurComponent,
   ExpertiseScientifiqueViewChercheurComponent,
@@ -2905,11 +2343,6 @@ import {MessagesModule} from 'primeng/messages';
   OutilPedagogiquePaysConceptionViewChercheurComponent,
   OutilPedagogiquePaysConceptionEditChercheurComponent,
   OutilPedagogiquePaysConceptionChercheurComponent,
-  TypePubliqueCultureScientifiqueCreateChercheurComponent,
-  TypePubliqueCultureScientifiqueListChercheurComponent,
-  TypePubliqueCultureScientifiqueViewChercheurComponent,
-  TypePubliqueCultureScientifiqueEditChercheurComponent,
-  TypePubliqueCultureScientifiqueChercheurComponent,
   CampagneChercheurFermetureCreateChercheurComponent,
   CampagneChercheurFermetureListChercheurComponent,
   CampagneChercheurFermetureViewChercheurComponent,
@@ -2925,31 +2358,11 @@ import {MessagesModule} from 'primeng/messages';
   CommunauteSavoirConseilEtComiteScientifiqueViewChercheurComponent,
   CommunauteSavoirConseilEtComiteScientifiqueEditChercheurComponent,
   CommunauteSavoirConseilEtComiteScientifiqueChercheurComponent,
-  TemplateClotureCreateChercheurComponent,
-  TemplateClotureListChercheurComponent,
-  TemplateClotureViewChercheurComponent,
-  TemplateClotureEditChercheurComponent,
-  TemplateClotureChercheurComponent,
   OutilPedagogiqueTypeInstrumentIrdCreateChercheurComponent,
   OutilPedagogiqueTypeInstrumentIrdListChercheurComponent,
   OutilPedagogiqueTypeInstrumentIrdViewChercheurComponent,
   OutilPedagogiqueTypeInstrumentIrdEditChercheurComponent,
   OutilPedagogiqueTypeInstrumentIrdChercheurComponent,
-  EtablissementCreateChercheurComponent,
-  EtablissementListChercheurComponent,
-  EtablissementViewChercheurComponent,
-  EtablissementEditChercheurComponent,
-  EtablissementChercheurComponent,
-  CommanditaireCreateChercheurComponent,
-  CommanditaireListChercheurComponent,
-  CommanditaireViewChercheurComponent,
-  CommanditaireEditChercheurComponent,
-  CommanditaireChercheurComponent,
-  DisciplineScientifiqueErcParentCreateChercheurComponent,
-  DisciplineScientifiqueErcParentListChercheurComponent,
-  DisciplineScientifiqueErcParentViewChercheurComponent,
-  DisciplineScientifiqueErcParentEditChercheurComponent,
-  DisciplineScientifiqueErcParentChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueCreateChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueListChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueViewChercheurComponent,
@@ -2960,11 +2373,6 @@ import {MessagesModule} from 'primeng/messages';
   RoleComiteEtCommissionEvaluationViewChercheurComponent,
   RoleComiteEtCommissionEvaluationEditChercheurComponent,
   RoleComiteEtCommissionEvaluationChercheurComponent,
-  NiveauFormationPostBacCreateChercheurComponent,
-  NiveauFormationPostBacListChercheurComponent,
-  NiveauFormationPostBacViewChercheurComponent,
-  NiveauFormationPostBacEditChercheurComponent,
-  NiveauFormationPostBacChercheurComponent,
   ChercheurEmailCreateChercheurComponent,
   ChercheurEmailListChercheurComponent,
   ChercheurEmailViewChercheurComponent,
@@ -2975,11 +2383,6 @@ import {MessagesModule} from 'primeng/messages';
   EnjeuxIrdChercheurViewChercheurComponent,
   EnjeuxIrdChercheurEditChercheurComponent,
   EnjeuxIrdChercheurChercheurComponent,
-  TypeEntiteAdministrativeCreateChercheurComponent,
-  TypeEntiteAdministrativeListChercheurComponent,
-  TypeEntiteAdministrativeViewChercheurComponent,
-  TypeEntiteAdministrativeEditChercheurComponent,
-  TypeEntiteAdministrativeChercheurComponent,
   ProjetActiviteRechercheDetailEnjeuxIrdCreateChercheurComponent,
   ProjetActiviteRechercheDetailEnjeuxIrdListChercheurComponent,
   ProjetActiviteRechercheDetailEnjeuxIrdViewChercheurComponent,
@@ -2995,31 +2398,16 @@ import {MessagesModule} from 'primeng/messages';
   EnseignementDisciplineScientifiqueViewChercheurComponent,
   EnseignementDisciplineScientifiqueEditChercheurComponent,
   EnseignementDisciplineScientifiqueChercheurComponent,
-  KeyWordDisciplineScientifiqueErcCreateChercheurComponent,
-  KeyWordDisciplineScientifiqueErcListChercheurComponent,
-  KeyWordDisciplineScientifiqueErcViewChercheurComponent,
-  KeyWordDisciplineScientifiqueErcEditChercheurComponent,
-  KeyWordDisciplineScientifiqueErcChercheurComponent,
   CommunauteSavoirChercheurCreateChercheurComponent,
   CommunauteSavoirChercheurListChercheurComponent,
   CommunauteSavoirChercheurViewChercheurComponent,
   CommunauteSavoirChercheurEditChercheurComponent,
   CommunauteSavoirChercheurChercheurComponent,
-  CategorieFaqCreateChercheurComponent,
-  CategorieFaqListChercheurComponent,
-  CategorieFaqViewChercheurComponent,
-  CategorieFaqEditChercheurComponent,
-  CategorieFaqChercheurComponent,
   ComiteEtCommissionEvaluationCreateChercheurComponent,
   ComiteEtCommissionEvaluationListChercheurComponent,
   ComiteEtCommissionEvaluationViewChercheurComponent,
   ComiteEtCommissionEvaluationEditChercheurComponent,
   ComiteEtCommissionEvaluationChercheurComponent,
-  ModaliteEtudeCreateChercheurComponent,
-  ModaliteEtudeListChercheurComponent,
-  ModaliteEtudeViewChercheurComponent,
-  ModaliteEtudeEditChercheurComponent,
-  ModaliteEtudeChercheurComponent,
   EvenementColloqueScienntifiqueCreateChercheurComponent,
   EvenementColloqueScienntifiqueListChercheurComponent,
   EvenementColloqueScienntifiqueViewChercheurComponent,
@@ -3045,11 +2433,6 @@ import {MessagesModule} from 'primeng/messages';
   ConsultanceScientifiquePonctuelleViewChercheurComponent,
   ConsultanceScientifiquePonctuelleEditChercheurComponent,
   ConsultanceScientifiquePonctuelleChercheurComponent,
-  ModaliteInterventionCreateChercheurComponent,
-  ModaliteInterventionListChercheurComponent,
-  ModaliteInterventionViewChercheurComponent,
-  ModaliteInterventionEditChercheurComponent,
-  ModaliteInterventionChercheurComponent,
   ZoneGeographiqueFormationContinueCreateChercheurComponent,
   ZoneGeographiqueFormationContinueListChercheurComponent,
   ZoneGeographiqueFormationContinueViewChercheurComponent,
@@ -3080,16 +2463,6 @@ import {MessagesModule} from 'primeng/messages';
   DeveloppementDeSavoirEtInnovationScientifiquePaysViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiquePaysEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiquePaysChercheurComponent,
-  ZoneGeographiqueCreateChercheurComponent,
-  ZoneGeographiqueListChercheurComponent,
-  ZoneGeographiqueViewChercheurComponent,
-  ZoneGeographiqueEditChercheurComponent,
-  ZoneGeographiqueChercheurComponent,
-  CommissionScientifiqueCreateChercheurComponent,
-  CommissionScientifiqueListChercheurComponent,
-  CommissionScientifiqueViewChercheurComponent,
-  CommissionScientifiqueEditChercheurComponent,
-  CommissionScientifiqueChercheurComponent,
   RoleDeveloppementDeSavoirCreateChercheurComponent,
   RoleDeveloppementDeSavoirListChercheurComponent,
   RoleDeveloppementDeSavoirViewChercheurComponent,
@@ -3100,11 +2473,6 @@ import {MessagesModule} from 'primeng/messages';
   TypeUtilisateurSavoirConcuViewChercheurComponent,
   TypeUtilisateurSavoirConcuEditChercheurComponent,
   TypeUtilisateurSavoirConcuChercheurComponent,
-  NatureEtudeCreateChercheurComponent,
-  NatureEtudeListChercheurComponent,
-  NatureEtudeViewChercheurComponent,
-  NatureEtudeEditChercheurComponent,
-  NatureEtudeChercheurComponent,
   EncadrementEtudiantDisciplineScientifiqueCreateChercheurComponent,
   EncadrementEtudiantDisciplineScientifiqueListChercheurComponent,
   EncadrementEtudiantDisciplineScientifiqueViewChercheurComponent,
@@ -3115,26 +2483,11 @@ import {MessagesModule} from 'primeng/messages';
   CommunauteSavoirExpertiseScientifiqueViewChercheurComponent,
   CommunauteSavoirExpertiseScientifiqueEditChercheurComponent,
   CommunauteSavoirExpertiseScientifiqueChercheurComponent,
-  TemplateRappelCreateChercheurComponent,
-  TemplateRappelListChercheurComponent,
-  TemplateRappelViewChercheurComponent,
-  TemplateRappelEditChercheurComponent,
-  TemplateRappelChercheurComponent,
-  TypeReclamationCreateChercheurComponent,
-  TypeReclamationListChercheurComponent,
-  TypeReclamationViewChercheurComponent,
-  TypeReclamationEditChercheurComponent,
-  TypeReclamationChercheurComponent,
   DisciplineScientifiqueComiteEtCommissionEvaluationCreateChercheurComponent,
   DisciplineScientifiqueComiteEtCommissionEvaluationListChercheurComponent,
   DisciplineScientifiqueComiteEtCommissionEvaluationViewChercheurComponent,
   DisciplineScientifiqueComiteEtCommissionEvaluationEditChercheurComponent,
   DisciplineScientifiqueComiteEtCommissionEvaluationChercheurComponent,
-  TypeInstrumentIrdCreateChercheurComponent,
-  TypeInstrumentIrdListChercheurComponent,
-  TypeInstrumentIrdViewChercheurComponent,
-  TypeInstrumentIrdEditChercheurComponent,
-  TypeInstrumentIrdChercheurComponent,
   DistinctionEtablissementPaysCreateChercheurComponent,
   DistinctionEtablissementPaysListChercheurComponent,
   DistinctionEtablissementPaysViewChercheurComponent,
@@ -3150,46 +2503,16 @@ import {MessagesModule} from 'primeng/messages';
   RencontreGrandPubliqueJeunePubliqueEnjeuxIrdViewChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueEnjeuxIrdEditChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueEnjeuxIrdChercheurComponent,
-  DisciplineScientifiqueCreateChercheurComponent,
-  DisciplineScientifiqueListChercheurComponent,
-  DisciplineScientifiqueViewChercheurComponent,
-  DisciplineScientifiqueEditChercheurComponent,
-  DisciplineScientifiqueChercheurComponent,
-  TypeExpertiseCreateChercheurComponent,
-  TypeExpertiseListChercheurComponent,
-  TypeExpertiseViewChercheurComponent,
-  TypeExpertiseEditChercheurComponent,
-  TypeExpertiseChercheurComponent,
-  DoctorantCreateChercheurComponent,
-  DoctorantListChercheurComponent,
-  DoctorantViewChercheurComponent,
-  DoctorantEditChercheurComponent,
-  DoctorantChercheurComponent,
-  CorpsCreateChercheurComponent,
-  CorpsListChercheurComponent,
-  CorpsViewChercheurComponent,
-  CorpsEditChercheurComponent,
-  CorpsChercheurComponent,
   EnseignementEtFormationCreateChercheurComponent,
   EnseignementEtFormationListChercheurComponent,
   EnseignementEtFormationViewChercheurComponent,
   EnseignementEtFormationEditChercheurComponent,
   EnseignementEtFormationChercheurComponent,
-  DepartementScientifiqueCreateChercheurComponent,
-  DepartementScientifiqueListChercheurComponent,
-  DepartementScientifiqueViewChercheurComponent,
-  DepartementScientifiqueEditChercheurComponent,
-  DepartementScientifiqueChercheurComponent,
   PaysOrganisateurRencontreGrandPubliqueJeunePubliqueCreateChercheurComponent,
   PaysOrganisateurRencontreGrandPubliqueJeunePubliqueListChercheurComponent,
   PaysOrganisateurRencontreGrandPubliqueJeunePubliqueViewChercheurComponent,
   PaysOrganisateurRencontreGrandPubliqueJeunePubliqueEditChercheurComponent,
   PaysOrganisateurRencontreGrandPubliqueJeunePubliqueChercheurComponent,
-  CommunauteSavoirCreateChercheurComponent,
-  CommunauteSavoirListChercheurComponent,
-  CommunauteSavoirViewChercheurComponent,
-  CommunauteSavoirEditChercheurComponent,
-  CommunauteSavoirChercheurComponent,
   DisciplineScientifiqueExpertiseScientifiqueCreateChercheurComponent,
   DisciplineScientifiqueExpertiseScientifiqueListChercheurComponent,
   DisciplineScientifiqueExpertiseScientifiqueViewChercheurComponent,
@@ -3200,11 +2523,6 @@ import {MessagesModule} from 'primeng/messages';
   OutilPedagogiqueEnjeuxIrdViewChercheurComponent,
   OutilPedagogiqueEnjeuxIrdEditChercheurComponent,
   OutilPedagogiqueEnjeuxIrdChercheurComponent,
-  ResponsabiliteEncadrementDoctorantCreateChercheurComponent,
-  ResponsabiliteEncadrementDoctorantListChercheurComponent,
-  ResponsabiliteEncadrementDoctorantViewChercheurComponent,
-  ResponsabiliteEncadrementDoctorantEditChercheurComponent,
-  ResponsabiliteEncadrementDoctorantChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueCreateChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueListChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueViewChercheurComponent,
@@ -3265,11 +2583,6 @@ import {MessagesModule} from 'primeng/messages';
   CommunauteSavoirProjetActiviteRechercheViewChercheurComponent,
   CommunauteSavoirProjetActiviteRechercheEditChercheurComponent,
   CommunauteSavoirProjetActiviteRechercheChercheurComponent,
-  PaysCreateChercheurComponent,
-  PaysListChercheurComponent,
-  PaysViewChercheurComponent,
-  PaysEditChercheurComponent,
-  PaysChercheurComponent,
   OutilPedagogiqueLangueCreateChercheurComponent,
   OutilPedagogiqueLangueListChercheurComponent,
   OutilPedagogiqueLangueViewChercheurComponent,
@@ -3295,16 +2608,6 @@ import {MessagesModule} from 'primeng/messages';
   DeveloppementDeSavoirEtInnovationScientifiqueEtablissementViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEtablissementEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEtablissementChercheurComponent,
-  TypeInstanceCreateChercheurComponent,
-  TypeInstanceListChercheurComponent,
-  TypeInstanceViewChercheurComponent,
-  TypeInstanceEditChercheurComponent,
-  TypeInstanceChercheurComponent,
-  ModeDiffusionCreateChercheurComponent,
-  ModeDiffusionListChercheurComponent,
-  ModeDiffusionViewChercheurComponent,
-  ModeDiffusionEditChercheurComponent,
-  ModeDiffusionChercheurComponent,
   ObjetFormationGeneriqueDeResponsabilitePedagogiqueCreateChercheurComponent,
   ObjetFormationGeneriqueDeResponsabilitePedagogiqueListChercheurComponent,
   ObjetFormationGeneriqueDeResponsabilitePedagogiqueViewChercheurComponent,
@@ -3315,16 +2618,6 @@ import {MessagesModule} from 'primeng/messages';
   TypeInstrumentIrdChercheurViewChercheurComponent,
   TypeInstrumentIrdChercheurEditChercheurComponent,
   TypeInstrumentIrdChercheurChercheurComponent,
-  TemplateRelanceCreateChercheurComponent,
-  TemplateRelanceListChercheurComponent,
-  TemplateRelanceViewChercheurComponent,
-  TemplateRelanceEditChercheurComponent,
-  TemplateRelanceChercheurComponent,
-  EtablissementPartenaireCreateChercheurComponent,
-  EtablissementPartenaireListChercheurComponent,
-  EtablissementPartenaireViewChercheurComponent,
-  EtablissementPartenaireEditChercheurComponent,
-  EtablissementPartenaireChercheurComponent,
   DisciplineScientifiqueEncadrementDoctorantCreateChercheurComponent,
   DisciplineScientifiqueEncadrementDoctorantListChercheurComponent,
   DisciplineScientifiqueEncadrementDoctorantViewChercheurComponent,
@@ -3335,11 +2628,6 @@ import {MessagesModule} from 'primeng/messages';
   PaysRencontreMediaViewChercheurComponent,
   PaysRencontreMediaEditChercheurComponent,
   PaysRencontreMediaChercheurComponent,
-  RoleEvaluationCreateChercheurComponent,
-  RoleEvaluationListChercheurComponent,
-  RoleEvaluationViewChercheurComponent,
-  RoleEvaluationEditChercheurComponent,
-  RoleEvaluationChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueCreateChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueListChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueViewChercheurComponent,
@@ -3355,31 +2643,16 @@ import {MessagesModule} from 'primeng/messages';
   EvenementColloqueScienntifiquePaysViewChercheurComponent,
   EvenementColloqueScienntifiquePaysEditChercheurComponent,
   EvenementColloqueScienntifiquePaysChercheurComponent,
-  TypeExpertiseEvaluationCreateChercheurComponent,
-  TypeExpertiseEvaluationListChercheurComponent,
-  TypeExpertiseEvaluationViewChercheurComponent,
-  TypeExpertiseEvaluationEditChercheurComponent,
-  TypeExpertiseEvaluationChercheurComponent,
   EtatCampagneCreateChercheurComponent,
   EtatCampagneListChercheurComponent,
   EtatCampagneViewChercheurComponent,
   EtatCampagneEditChercheurComponent,
   EtatCampagneChercheurComponent,
-  TypeSavoirCreateChercheurComponent,
-  TypeSavoirListChercheurComponent,
-  TypeSavoirViewChercheurComponent,
-  TypeSavoirEditChercheurComponent,
-  TypeSavoirChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdCreateChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdListChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdViewChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdEditChercheurComponent,
   DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdChercheurComponent,
-  InstitutionCreateChercheurComponent,
-  InstitutionListChercheurComponent,
-  InstitutionViewChercheurComponent,
-  InstitutionEditChercheurComponent,
-  InstitutionChercheurComponent,
   StructureOganisatriceCreateChercheurComponent,
   StructureOganisatriceListChercheurComponent,
   StructureOganisatriceViewChercheurComponent,
@@ -3405,16 +2678,6 @@ import {MessagesModule} from 'primeng/messages';
   CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueViewChercheurComponent,
   CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueEditChercheurComponent,
   CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueChercheurComponent,
-  PubliqueCibleCreateChercheurComponent,
-  PubliqueCibleListChercheurComponent,
-  PubliqueCibleViewChercheurComponent,
-  PubliqueCibleEditChercheurComponent,
-  PubliqueCibleChercheurComponent,
-  NationaliteCreateChercheurComponent,
-  NationaliteListChercheurComponent,
-  NationaliteViewChercheurComponent,
-  NationaliteEditChercheurComponent,
-  NationaliteChercheurComponent,
   PaysCommanditaireCreateChercheurComponent,
   PaysCommanditaireListChercheurComponent,
   PaysCommanditaireViewChercheurComponent,
@@ -3425,11 +2688,6 @@ import {MessagesModule} from 'primeng/messages';
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdViewChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdEditChercheurComponent,
   RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdChercheurComponent,
-  TypeEnseignementCreateChercheurComponent,
-  TypeEnseignementListChercheurComponent,
-  TypeEnseignementViewChercheurComponent,
-  TypeEnseignementEditChercheurComponent,
-  TypeEnseignementChercheurComponent,
   FormationContinueDisciplineScientifiqueCreateChercheurComponent,
   FormationContinueDisciplineScientifiqueListChercheurComponent,
   FormationContinueDisciplineScientifiqueViewChercheurComponent,
@@ -3480,11 +2738,6 @@ import {MessagesModule} from 'primeng/messages';
   EtatCampagneChercheurViewChercheurComponent,
   EtatCampagneChercheurEditChercheurComponent,
   EtatCampagneChercheurChercheurComponent,
-  ObjetFormationGeneriqueCreateChercheurComponent,
-  ObjetFormationGeneriqueListChercheurComponent,
-  ObjetFormationGeneriqueViewChercheurComponent,
-  ObjetFormationGeneriqueEditChercheurComponent,
-  ObjetFormationGeneriqueChercheurComponent,
   ],
   entryComponents: [],
 })

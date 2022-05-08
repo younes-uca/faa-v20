@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {EvenementColloqueScienntifiqueVo} from '../../../../../controller/model/EvenementColloqueScienntifique.model';
 import {EvenementColloqueScienntifiqueService} from '../../../../../controller/service/EvenementColloqueScienntifique.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-evenement-colloque-scienntifique-enjeux-ird-create-admin',
   templateUrl: './evenement-colloque-scienntifique-enjeux-ird-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private evenementColloqueScienntifiqueEn
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private evenementColloqueScienntifiqueService :EvenementColloqueScienntifiqueService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

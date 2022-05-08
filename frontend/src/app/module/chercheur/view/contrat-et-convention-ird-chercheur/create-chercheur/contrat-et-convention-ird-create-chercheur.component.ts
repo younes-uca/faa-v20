@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {SavoirEtInnovationVo} from '../../../../../controller/model/SavoirEtInnovation.model';
-import {SavoirEtInnovationService} from '../../../../../controller/service/SavoirEtInnovation.service';
 import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
 import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
 import {StatusContratEtConventionVo} from '../../../../../controller/model/StatusContratEtConvention.model';
 import {StatusContratEtConventionService} from '../../../../../controller/service/StatusContratEtConvention.service';
+import {SavoirEtInnovationVo} from '../../../../../controller/model/SavoirEtInnovation.model';
+import {SavoirEtInnovationService} from '../../../../../controller/service/SavoirEtInnovation.service';
 @Component({
   selector: 'app-contrat-et-convention-ird-create-chercheur',
   templateUrl: './contrat-et-convention-ird-create-chercheur.component.html',
@@ -41,9 +41,9 @@ constructor(private datePipe: DatePipe, private contratEtConventionIrdService: C
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private savoirEtInnovationService :SavoirEtInnovationService
 ,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private statusContratEtConventionService :StatusContratEtConventionService
+,       private savoirEtInnovationService :SavoirEtInnovationService
 ) {
 
 }

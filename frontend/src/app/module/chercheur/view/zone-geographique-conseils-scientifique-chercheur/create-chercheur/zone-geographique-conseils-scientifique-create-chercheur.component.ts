@@ -12,10 +12,10 @@ import {StringUtilService} from '../../../../../controller/service/StringUtil.se
 
 import {ConseilsScientifiqueVo} from '../../../../../controller/model/ConseilsScientifique.model';
 import {ConseilsScientifiqueService} from '../../../../../controller/service/ConseilsScientifique.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
 import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-zone-geographique-conseils-scientifique-create-chercheur',
   templateUrl: './zone-geographique-conseils-scientifique-create-chercheur.component.html',
@@ -46,8 +46,8 @@ constructor(private datePipe: DatePipe, private zoneGeographiqueConseilsScientif
  ,       private router: Router
  
 ,       private conseilsScientifiqueService :ConseilsScientifiqueService
-,       private paysService :PaysService
 ,       private zoneGeographiqueService :ZoneGeographiqueService
+,       private paysService :PaysService
 ) {
 
 }

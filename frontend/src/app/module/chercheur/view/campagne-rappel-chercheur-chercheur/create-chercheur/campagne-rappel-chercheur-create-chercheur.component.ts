@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CampagneRappelVo} from '../../../../../controller/model/CampagneRappel.model';
-import {CampagneRappelService} from '../../../../../controller/service/CampagneRappel.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {CampagneRappelVo} from '../../../../../controller/model/CampagneRappel.model';
+import {CampagneRappelService} from '../../../../../controller/service/CampagneRappel.service';
 @Component({
   selector: 'app-campagne-rappel-chercheur-create-chercheur',
   templateUrl: './campagne-rappel-chercheur-create-chercheur.component.html',
@@ -34,8 +34,8 @@ constructor(private datePipe: DatePipe, private campagneRappelChercheurService: 
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private campagneRappelService :CampagneRappelService
 ,       private chercheurService :ChercheurService
+,       private campagneRappelService :CampagneRappelService
 ) {
 
 }

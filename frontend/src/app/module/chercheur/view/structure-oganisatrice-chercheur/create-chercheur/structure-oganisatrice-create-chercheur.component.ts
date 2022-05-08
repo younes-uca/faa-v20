@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
-import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {RencontreGrandPubliqueJeunePubliqueVo} from '../../../../../controller/model/RencontreGrandPubliqueJeunePublique.model';
 import {RencontreGrandPubliqueJeunePubliqueService} from '../../../../../controller/service/RencontreGrandPubliqueJeunePublique.service';
+import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
+import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 @Component({
   selector: 'app-structure-oganisatrice-create-chercheur',
   templateUrl: './structure-oganisatrice-create-chercheur.component.html',
@@ -35,8 +35,8 @@ constructor(private datePipe: DatePipe, private structureOganisatriceService: St
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private etablissementService :EtablissementService
 ,       private rencontreGrandPubliqueJeunePubliqueService :RencontreGrandPubliqueJeunePubliqueService
+,       private etablissementService :EtablissementService
 ) {
 
 }

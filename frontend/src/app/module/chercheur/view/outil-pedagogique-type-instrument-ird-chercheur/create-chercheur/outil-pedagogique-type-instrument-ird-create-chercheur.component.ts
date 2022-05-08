@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
-import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 import {OutilPedagogiqueVo} from '../../../../../controller/model/OutilPedagogique.model';
 import {OutilPedagogiqueService} from '../../../../../controller/service/OutilPedagogique.service';
+import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
+import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 @Component({
   selector: 'app-outil-pedagogique-type-instrument-ird-create-chercheur',
   templateUrl: './outil-pedagogique-type-instrument-ird-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private outilPedagogiqueTypeInstrumentIr
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ,       private outilPedagogiqueService :OutilPedagogiqueService
+,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ) {
 
 }

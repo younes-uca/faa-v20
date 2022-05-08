@@ -85,14 +85,4 @@ private EtatCampagneConverter etatCampagneConverter;
             }
 
 
-            @PutMapping("/archiver/")
-            public EtatCampagneVo archiver(@RequestBody EtatCampagneVo etatCampagneVo){
-                EtatCampagne etatCampagne = etatCampagneService.archiver(etatCampagneConverter.toItem(etatCampagneVo));
-                return etatCampagneConverter.toVo(etatCampagne);
-                }
-
-            @PutMapping("/desarchiver/")
-            public EtatCampagneVo desarchiver(@RequestBody EtatCampagneVo etatCampagneVo){
-                EtatCampagne etatCampagne = etatCampagneService.desarchiver(etatCampagneConverter.toItem(etatCampagneVo));
-                return etatCampagneConverter.toVo(etatCampagne);}
             }

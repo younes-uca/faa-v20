@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
-import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
 import {DisciplineScientifiqueVo} from '../../../../../controller/model/DisciplineScientifique.model';
 import {DisciplineScientifiqueService} from '../../../../../controller/service/DisciplineScientifique.service';
+import {ConsultanceScientifiquePonctuelleVo} from '../../../../../controller/model/ConsultanceScientifiquePonctuelle.model';
+import {ConsultanceScientifiquePonctuelleService} from '../../../../../controller/service/ConsultanceScientifiquePonctuelle.service';
 @Component({
   selector: 'app-discipline-scientifique-consultance-scientifique-ponctuelle-create-admin',
   templateUrl: './discipline-scientifique-consultance-scientifique-ponctuelle-create-admin.component.html',
@@ -49,8 +49,8 @@ constructor(private datePipe: DatePipe, private disciplineScientifiqueConsultanc
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
 ,       private disciplineScientifiqueService :DisciplineScientifiqueService
+,       private consultanceScientifiquePonctuelleService :ConsultanceScientifiquePonctuelleService
 ) {
 
 }

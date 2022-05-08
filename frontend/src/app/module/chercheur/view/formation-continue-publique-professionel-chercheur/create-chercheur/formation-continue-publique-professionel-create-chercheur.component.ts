@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
-import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 import {PubliqueProfessionelVo} from '../../../../../controller/model/PubliqueProfessionel.model';
 import {PubliqueProfessionelService} from '../../../../../controller/service/PubliqueProfessionel.service';
+import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
+import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 @Component({
   selector: 'app-formation-continue-publique-professionel-create-chercheur',
   templateUrl: './formation-continue-publique-professionel-create-chercheur.component.html',
@@ -43,8 +43,8 @@ constructor(private datePipe: DatePipe, private formationContinuePubliqueProfess
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private formationContinueService :FormationContinueService
 ,       private publiqueProfessionelService :PubliqueProfessionelService
+,       private formationContinueService :FormationContinueService
 ) {
 
 }

@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 @Component({
   selector: 'app-instruments-et-dispositifs-ird-create-chercheur',
   templateUrl: './instruments-et-dispositifs-ird-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private instrumentsEtDispositifsIrdServi
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private campagneService :CampagneService
 ,       private chercheurService :ChercheurService
+,       private campagneService :CampagneService
 ) {
 
 }

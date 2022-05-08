@@ -111,7 +111,7 @@ if(templateRappel.getVisible() == null)
     templateRappel.setVisible(false);
     User currentUser = SecurityUtil.getCurrentUser();
     if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-        templateRappel.setChercheur(currentUser);
+        templateRappel.setUsername(currentUser.getUsername());
     }
 
 

@@ -39,7 +39,5 @@ public interface CampagneDao extends JpaRepository<Campagne,Long> {
 
     int deleteByTemplateClotureId(Long id);
 
-    List<Campagne> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
-    List<Campagne> findByChercheurUsername(String username);
 
 }

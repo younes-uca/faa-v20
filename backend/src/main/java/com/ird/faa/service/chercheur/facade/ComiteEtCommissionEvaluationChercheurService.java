@@ -40,7 +40,6 @@ public interface ComiteEtCommissionEvaluationChercheurService extends AbstractSe
 
 
 
-   public List<ComiteEtCommissionEvaluation> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
 
 
 

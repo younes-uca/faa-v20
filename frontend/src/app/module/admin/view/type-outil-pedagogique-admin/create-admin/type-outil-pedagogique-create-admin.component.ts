@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {TypeOutilVo} from '../../../../../controller/model/TypeOutil.model';
-import {TypeOutilService} from '../../../../../controller/service/TypeOutil.service';
 import {OutilPedagogiqueVo} from '../../../../../controller/model/OutilPedagogique.model';
 import {OutilPedagogiqueService} from '../../../../../controller/service/OutilPedagogique.service';
+import {TypeOutilVo} from '../../../../../controller/model/TypeOutil.model';
+import {TypeOutilService} from '../../../../../controller/service/TypeOutil.service';
 @Component({
   selector: 'app-type-outil-pedagogique-create-admin',
   templateUrl: './type-outil-pedagogique-create-admin.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private typeOutilPedagogiqueService: Typ
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private typeOutilService :TypeOutilService
 ,       private outilPedagogiqueService :OutilPedagogiqueService
+,       private typeOutilService :TypeOutilService
 ) {
 
 }

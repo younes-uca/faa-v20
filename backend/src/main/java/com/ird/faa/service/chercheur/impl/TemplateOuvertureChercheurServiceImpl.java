@@ -111,7 +111,7 @@ if(templateOuverture.getVisible() == null)
     templateOuverture.setVisible(false);
     User currentUser = SecurityUtil.getCurrentUser();
     if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-        templateOuverture.setChercheur(currentUser);
+        templateOuverture.setUsername(currentUser.getUsername());
     }
 
 

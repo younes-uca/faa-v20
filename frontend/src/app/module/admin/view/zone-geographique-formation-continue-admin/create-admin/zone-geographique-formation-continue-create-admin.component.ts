@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
-import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {ZoneGeographiqueVo} from '../../../../../controller/model/ZoneGeographique.model';
 import {ZoneGeographiqueService} from '../../../../../controller/service/ZoneGeographique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
+import {FormationContinueVo} from '../../../../../controller/model/FormationContinue.model';
+import {FormationContinueService} from '../../../../../controller/service/FormationContinue.service';
 @Component({
   selector: 'app-zone-geographique-formation-continue-create-admin',
   templateUrl: './zone-geographique-formation-continue-create-admin.component.html',
@@ -48,9 +48,9 @@ constructor(private datePipe: DatePipe, private zoneGeographiqueFormationContinu
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private formationContinueService :FormationContinueService
-,       private paysService :PaysService
 ,       private zoneGeographiqueService :ZoneGeographiqueService
+,       private paysService :PaysService
+,       private formationContinueService :FormationContinueService
 ) {
 
 }

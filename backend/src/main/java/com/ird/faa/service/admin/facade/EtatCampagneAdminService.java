@@ -47,7 +47,5 @@ public interface EtatCampagneAdminService extends AbstractService<EtatCampagne,L
 
 
 
-    EtatCampagne archiver(EtatCampagne etatCampagne) ;
-    EtatCampagne desarchiver(EtatCampagne etatCampagne);
 
 }

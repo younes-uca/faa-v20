@@ -10,14 +10,14 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
-import {GestionEquipeDetailVo} from '../../../../../controller/model/GestionEquipeDetail.model';
-import {GestionEquipeDetailService} from '../../../../../controller/service/GestionEquipeDetail.service';
 import {EtatEtapeCampagneVo} from '../../../../../controller/model/EtatEtapeCampagne.model';
 import {EtatEtapeCampagneService} from '../../../../../controller/service/EtatEtapeCampagne.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {GestionEquipeDetailVo} from '../../../../../controller/model/GestionEquipeDetail.model';
+import {GestionEquipeDetailService} from '../../../../../controller/service/GestionEquipeDetail.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 @Component({
   selector: 'app-gestion-equipe-create-admin',
   templateUrl: './gestion-equipe-create-admin.component.html',
@@ -42,10 +42,10 @@ constructor(private datePipe: DatePipe, private gestionEquipeService: GestionEqu
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private campagneService :CampagneService
-,       private gestionEquipeDetailService :GestionEquipeDetailService
 ,       private etatEtapeCampagneService :EtatEtapeCampagneService
 ,       private chercheurService :ChercheurService
+,       private gestionEquipeDetailService :GestionEquipeDetailService
+,       private campagneService :CampagneService
 ) {
 
 }

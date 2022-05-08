@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ProjetActiviteRechercheDetailVo} from '../../../../../controller/model/ProjetActiviteRechercheDetail.model';
-import {ProjetActiviteRechercheDetailService} from '../../../../../controller/service/ProjetActiviteRechercheDetail.service';
 import {InstrumentIrdVo} from '../../../../../controller/model/InstrumentIrd.model';
 import {InstrumentIrdService} from '../../../../../controller/service/InstrumentIrd.service';
+import {ProjetActiviteRechercheDetailVo} from '../../../../../controller/model/ProjetActiviteRechercheDetail.model';
+import {ProjetActiviteRechercheDetailService} from '../../../../../controller/service/ProjetActiviteRechercheDetail.service';
 @Component({
   selector: 'app-projet-activite-recherche-detail-instrument-ird-create-chercheur',
   templateUrl: './projet-activite-recherche-detail-instrument-ird-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private projetActiviteRechercheDetailIns
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private projetActiviteRechercheDetailService :ProjetActiviteRechercheDetailService
 ,       private instrumentIrdService :InstrumentIrdService
+,       private projetActiviteRechercheDetailService :ProjetActiviteRechercheDetailService
 ) {
 
 }

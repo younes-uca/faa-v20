@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
-import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
 import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
+import {EnjeuxIrdVo} from '../../../../../controller/model/EnjeuxIrd.model';
+import {EnjeuxIrdService} from '../../../../../controller/service/EnjeuxIrd.service';
 @Component({
   selector: 'app-enseignement-enjeux-ird-create-admin',
   templateUrl: './enseignement-enjeux-ird-create-admin.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private enseignementEnjeuxIrdService: En
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private enjeuxIrdService :EnjeuxIrdService
 ,       private enseignementService :EnseignementService
+,       private enjeuxIrdService :EnjeuxIrdService
 ) {
 
 }

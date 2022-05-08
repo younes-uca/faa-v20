@@ -31,7 +31,5 @@ public interface ComiteEtCommissionEvaluationDao extends JpaRepository<ComiteEtC
 
     int deleteByEtatEtapeCampagneId(Long id);
 
-    List<ComiteEtCommissionEvaluation> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
-    List<ComiteEtCommissionEvaluation> findByChercheurUsername(String username);
 
 }

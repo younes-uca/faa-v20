@@ -144,9 +144,5 @@ private RencontreMediaConverter rencontreMediaConverter;
         }
 
 
-            @GetMapping("/username/{username}/id/{compagneId}")
-            public List<RencontreMediaVo> findByChercheurUsernameAndCampagneId(@PathVariable String username,@PathVariable Long compagneId){
-            return rencontreMediaConverter.toVo(rencontreMediaService.findByChercheurUsernameAndCampagneId(username,compagneId));
-            }
 
             }

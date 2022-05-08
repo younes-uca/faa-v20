@@ -111,7 +111,7 @@ if(templateCloture.getVisible() == null)
     templateCloture.setVisible(false);
     User currentUser = SecurityUtil.getCurrentUser();
     if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-        templateCloture.setChercheur(currentUser);
+        templateCloture.setUsername(currentUser.getUsername());
     }
 
 

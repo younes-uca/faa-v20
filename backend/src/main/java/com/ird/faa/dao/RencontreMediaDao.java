@@ -31,7 +31,5 @@ public interface RencontreMediaDao extends JpaRepository<RencontreMedia,Long> {
 
     int deleteByEtatEtapeCampagneId(Long id);
 
-    List<RencontreMedia> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
-    List<RencontreMedia> findByChercheurUsername(String username);
 
 }

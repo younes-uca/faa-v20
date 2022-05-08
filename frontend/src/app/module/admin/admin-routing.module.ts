@@ -11,19 +11,43 @@ import { RegisterAdminComponent } from './register-admin/register-admin.componen
 import { GestionEquipeDetailAdminComponent } from './view/gestion-equipe-detail-admin/gestion-equipe-detail-admin.component';
 
 
+import { KeyWordDisciplineScientifiqueErcAdminComponent } from './view/key-word-discipline-scientifique-erc-admin/key-word-discipline-scientifique-erc-admin.component';
+
+
+import { GradeAdminComponent } from './view/grade-admin/grade-admin.component';
+
+
+import { DoctorantAdminComponent } from './view/doctorant-admin/doctorant-admin.component';
+
+
+import { ResponsabiliteEncadrementDoctorantAdminComponent } from './view/responsabilite-encadrement-doctorant-admin/responsabilite-encadrement-doctorant-admin.component';
+
+
 import { LangueAdminComponent } from './view/langue-admin/langue-admin.component';
 
 
 import { OutilPedagogiquePubliqueCibleAdminComponent } from './view/outil-pedagogique-publique-cible-admin/outil-pedagogique-publique-cible-admin.component';
 
 
+import { RoleProjetAdminComponent } from './view/role-projet-admin/role-projet-admin.component';
+
+
+import { DisciplineScientifiqueAdminComponent } from './view/discipline-scientifique-admin/discipline-scientifique-admin.component';
+
+
 import { StatusContratEtConventionAdminComponent } from './view/status-contrat-et-convention-admin/status-contrat-et-convention-admin.component';
 
 
-import { VilleAdminComponent } from './view/ville-admin/ville-admin.component';
+import { DisciplineScientifiqueErcParentAdminComponent } from './view/discipline-scientifique-erc-parent-admin/discipline-scientifique-erc-parent-admin.component';
+
+
+import { ResponsabiliteDirectionEncadrementEtudiantAdminComponent } from './view/responsabilite-direction-encadrement-etudiant-admin/responsabilite-direction-encadrement-etudiant-admin.component';
 
 
 import { ResponsabilitePedagogiqueAdminComponent } from './view/responsabilite-pedagogique-admin/responsabilite-pedagogique-admin.component';
+
+
+import { CaracterisationAdminComponent } from './view/caracterisation-admin/caracterisation-admin.component';
 
 
 import { ConseilEtComiteScientifiqueAdminComponent } from './view/conseil-et-comite-scientifique-admin/conseil-et-comite-scientifique-admin.component';
@@ -32,16 +56,10 @@ import { ConseilEtComiteScientifiqueAdminComponent } from './view/conseil-et-com
 import { DeveloppementDeSavoirEtInnovationScientifiqueCommunauteSavoirAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-admin/developpement-de-savoir-et-innovation-scientifique-communaute-savoir-admin.component';
 
 
-import { FournisseurAppelProjetRechercheAdminComponent } from './view/fournisseur-appel-projet-recherche-admin/fournisseur-appel-projet-recherche-admin.component';
-
-
-import { GradeAdminComponent } from './view/grade-admin/grade-admin.component';
+import { DepartementScientifiqueAdminComponent } from './view/departement-scientifique-admin/departement-scientifique-admin.component';
 
 
 import { TypeEtudeEnseignementAdminComponent } from './view/type-etude-enseignement-admin/type-etude-enseignement-admin.component';
-
-
-import { TypeOutilAdminComponent } from './view/type-outil-admin/type-outil-admin.component';
 
 
 import { SavoirEtInnovationAdminComponent } from './view/savoir-et-innovation-admin/savoir-et-innovation-admin.component';
@@ -50,10 +68,13 @@ import { SavoirEtInnovationAdminComponent } from './view/savoir-et-innovation-ad
 import { DeveloppementDeSavoirEtInnovationScientifiqueAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-admin/developpement-de-savoir-et-innovation-scientifique-admin.component';
 
 
-import { TypeEtudeAdminComponent } from './view/type-etude-admin/type-etude-admin.component';
+import { StructureIrdAdminComponent } from './view/structure-ird-admin/structure-ird-admin.component';
 
 
 import { EnseignementZoneGeographiqueAdminComponent } from './view/enseignement-zone-geographique-admin/enseignement-zone-geographique-admin.component';
+
+
+import { DisciplineScientifiqueErcAssociationAdminComponent } from './view/discipline-scientifique-erc-association-admin/discipline-scientifique-erc-association-admin.component';
 
 
 import { IdentifiantAuteurExpertAdminComponent } from './view/identifiant-auteur-expert-admin/identifiant-auteur-expert-admin.component';
@@ -62,13 +83,10 @@ import { IdentifiantAuteurExpertAdminComponent } from './view/identifiant-auteur
 import { CommunauteSavoirEncadrementDoctorantAdminComponent } from './view/communaute-savoir-encadrement-doctorant-admin/communaute-savoir-encadrement-doctorant-admin.component';
 
 
-import { SemanticRelationshipAdminComponent } from './view/semantic-relationship-admin/semantic-relationship-admin.component';
-
-
 import { ZoneActiviteInteractionRechercheAdminComponent } from './view/zone-activite-interaction-recherche-admin/zone-activite-interaction-recherche-admin.component';
 
 
-import { TypeExpertAdminComponent } from './view/type-expert-admin/type-expert-admin.component';
+import { TypeOutilAdminComponent } from './view/type-outil-admin/type-outil-admin.component';
 
 
 import { DisciplineScientifiqueConseilsScientifiqueAdminComponent } from './view/discipline-scientifique-conseils-scientifique-admin/discipline-scientifique-conseils-scientifique-admin.component';
@@ -80,22 +98,16 @@ import { VieInstitutionnelleAdminComponent } from './view/vie-institutionnelle-a
 import { CommunauteSavoirEncadrementEtudiantAdminComponent } from './view/communaute-savoir-encadrement-etudiant-admin/communaute-savoir-encadrement-etudiant-admin.component';
 
 
-import { StatusProjetAdminComponent } from './view/status-projet-admin/status-projet-admin.component';
-
-
-import { ModaliteAdminComponent } from './view/modalite-admin/modalite-admin.component';
-
-
 import { ConseilsScientifiqueAdminComponent } from './view/conseils-scientifique-admin/conseils-scientifique-admin.component';
 
 
 import { InstrumentsEtDispositifsIrdAdminComponent } from './view/instruments-et-dispositifs-ird-admin/instruments-et-dispositifs-ird-admin.component';
 
 
-import { NiveauFormationAdminComponent } from './view/niveau-formation-admin/niveau-formation-admin.component';
-
-
 import { EtatReclamationAdminComponent } from './view/etat-reclamation-admin/etat-reclamation-admin.component';
+
+
+import { TemplateOuvertureAdminComponent } from './view/template-ouverture-admin/template-ouverture-admin.component';
 
 
 import { NotificationAdminComponent } from './view/notification-admin/notification-admin.component';
@@ -113,10 +125,10 @@ import { OutilPedagogiqueAdminComponent } from './view/outil-pedagogique-admin/o
 import { TypeOutilPedagogiqueAdminComponent } from './view/type-outil-pedagogique-admin/type-outil-pedagogique-admin.component';
 
 
-import { InstrumentIrdAdminComponent } from './view/instrument-ird-admin/instrument-ird-admin.component';
+import { NatureExpertiseAdminComponent } from './view/nature-expertise-admin/nature-expertise-admin.component';
 
 
-import { SexeAdminComponent } from './view/sexe-admin/sexe-admin.component';
+import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-generique-admin/objet-formation-generique-admin.component';
 
 
 import { DisciplineScientifiqueChercheurAdminComponent } from './view/discipline-scientifique-chercheur-admin/discipline-scientifique-chercheur-admin.component';
@@ -131,16 +143,16 @@ import { RencontreMediaDisciplineScientifiqueAdminComponent } from './view/renco
 import { CommunauteSavoirEvenementColloqueScientifiqueAdminComponent } from './view/communaute-savoir-evenement-colloque-scientifique-admin/communaute-savoir-evenement-colloque-scientifique-admin.component';
 
 
+import { PubliqueCibleAdminComponent } from './view/publique-cible-admin/publique-cible-admin.component';
+
+
 import { VieInstitutionnelleDetailAdminComponent } from './view/vie-institutionnelle-detail-admin/vie-institutionnelle-detail-admin.component';
 
 
-import { PubliqueFormationAdminComponent } from './view/publique-formation-admin/publique-formation-admin.component';
+import { EtablissementProjetAdminComponent } from './view/etablissement-projet-admin/etablissement-projet-admin.component';
 
 
-import { EtudiantAdminComponent } from './view/etudiant-admin/etudiant-admin.component';
-
-
-import { FormatRencontreAdminComponent } from './view/format-rencontre-admin/format-rencontre-admin.component';
+import { StatusProjetAdminComponent } from './view/status-projet-admin/status-projet-admin.component';
 
 
 import { NiveauResponsabilitePedagogiqueAdminComponent } from './view/niveau-responsabilite-pedagogique-admin/niveau-responsabilite-pedagogique-admin.component';
@@ -149,19 +161,19 @@ import { NiveauResponsabilitePedagogiqueAdminComponent } from './view/niveau-res
 import { ZoneGeographiqueConseilsScientifiqueAdminComponent } from './view/zone-geographique-conseils-scientifique-admin/zone-geographique-conseils-scientifique-admin.component';
 
 
-import { EnjeuxIrdAdminComponent } from './view/enjeux-ird-admin/enjeux-ird-admin.component';
-
-
 import { EtablissementConsultanceScientifiquePonctuelleAdminComponent } from './view/etablissement-consultance-scientifique-ponctuelle-admin/etablissement-consultance-scientifique-ponctuelle-admin.component';
+
+
+import { PubliqueProfessionelAdminComponent } from './view/publique-professionel-admin/publique-professionel-admin.component';
 
 
 import { CampagneRelanceChercheurAdminComponent } from './view/campagne-relance-chercheur-admin/campagne-relance-chercheur-admin.component';
 
 
+import { TypeEnseignementAdminComponent } from './view/type-enseignement-admin/type-enseignement-admin.component';
+
+
 import { ContratEtConventionIrdAdminComponent } from './view/contrat-et-convention-ird-admin/contrat-et-convention-ird-admin.component';
-
-
-import { PubliqueProfessionelAdminComponent } from './view/publique-professionel-admin/publique-professionel-admin.component';
 
 
 import { ProjetActiviteRechercheDetailPaysAdminComponent } from './view/projet-activite-recherche-detail-pays-admin/projet-activite-recherche-detail-pays-admin.component';
@@ -176,10 +188,10 @@ import { PaysFormationContinueAdminComponent } from './view/pays-formation-conti
 import { VieInstitutionnelleDetailInstrumentIrdAdminComponent } from './view/vie-institutionnelle-detail-instrument-ird-admin/vie-institutionnelle-detail-instrument-ird-admin.component';
 
 
-import { DisciplineScientifiqueErcAdminComponent } from './view/discipline-scientifique-erc-admin/discipline-scientifique-erc-admin.component';
-
-
 import { EvenementColloqueScienntifiqueEnjeuxIrdAdminComponent } from './view/evenement-colloque-scienntifique-enjeux-ird-admin/evenement-colloque-scienntifique-enjeux-ird-admin.component';
+
+
+import { NationaliteAdminComponent } from './view/nationalite-admin/nationalite-admin.component';
 
 
 import { CultureScientifiqueAdminComponent } from './view/culture-scientifique-admin/culture-scientifique-admin.component';
@@ -191,25 +203,10 @@ import { EnseignementAdminComponent } from './view/enseignement-admin/enseigneme
 import { PaysZoneGeographiqueAdminComponent } from './view/pays-zone-geographique-admin/pays-zone-geographique-admin.component';
 
 
-import { RoleProjetAdminComponent } from './view/role-projet-admin/role-projet-admin.component';
-
-
-import { ResponsabiliteDirectionEncadrementEtudiantAdminComponent } from './view/responsabilite-direction-encadrement-etudiant-admin/responsabilite-direction-encadrement-etudiant-admin.component';
-
-
 import { EncadrementEtudiantAdminComponent } from './view/encadrement-etudiant-admin/encadrement-etudiant-admin.component';
 
 
-import { CaracterisationAdminComponent } from './view/caracterisation-admin/caracterisation-admin.component';
-
-
-import { EtablissementProjetAdminComponent } from './view/etablissement-projet-admin/etablissement-projet-admin.component';
-
-
-import { ContexteAdminComponent } from './view/contexte-admin/contexte-admin.component';
-
-
-import { KeyWordAdminComponent } from './view/key-word-admin/key-word-admin.component';
+import { EnjeuxIrdAdminComponent } from './view/enjeux-ird-admin/enjeux-ird-admin.component';
 
 
 import { EnjeuxIrdComiteEtCommissionEvaluationAdminComponent } from './view/enjeux-ird-comite-et-commission-evaluation-admin/enjeux-ird-comite-et-commission-evaluation-admin.component';
@@ -221,10 +218,7 @@ import { TypeExpertiseEvaluationComiteEtCommissionEvaluationAdminComponent } fro
 import { RencontreMediaAdminComponent } from './view/rencontre-media-admin/rencontre-media-admin.component';
 
 
-import { NiveauEtudeAdminComponent } from './view/niveau-etude-admin/niveau-etude-admin.component';
-
-
-import { EntiteAdministrativeAdminComponent } from './view/entite-administrative-admin/entite-administrative-admin.component';
+import { TypeExpertAdminComponent } from './view/type-expert-admin/type-expert-admin.component';
 
 
 import { ReclamationAdminComponent } from './view/reclamation-admin/reclamation-admin.component';
@@ -242,31 +236,28 @@ import { CampagneRappelAdminComponent } from './view/campagne-rappel-admin/campa
 import { DisciplineScientifiqueEvenementColloqueScientifiqueAdminComponent } from './view/discipline-scientifique-evenement-colloque-scientifique-admin/discipline-scientifique-evenement-colloque-scientifique-admin.component';
 
 
-import { DisciplineScientifiqueParentAdminComponent } from './view/discipline-scientifique-parent-admin/discipline-scientifique-parent-admin.component';
-
-
-import { TemplateOuvertureAdminComponent } from './view/template-ouverture-admin/template-ouverture-admin.component';
-
-
-import { NatureExpertiseAdminComponent } from './view/nature-expertise-admin/nature-expertise-admin.component';
-
-
-import { StatusCursusAdminComponent } from './view/status-cursus-admin/status-cursus-admin.component';
+import { KeyWordAdminComponent } from './view/key-word-admin/key-word-admin.component';
 
 
 import { OutilPedagogiqueDisciplineScientifiqueAdminComponent } from './view/outil-pedagogique-discipline-scientifique-admin/outil-pedagogique-discipline-scientifique-admin.component';
 
 
+import { PaysAdminComponent } from './view/pays-admin/pays-admin.component';
+
+
+import { NatureEnseignementAdminComponent } from './view/nature-enseignement-admin/nature-enseignement-admin.component';
+
+
+import { ContexteAdminComponent } from './view/contexte-admin/contexte-admin.component';
+
+
 import { CampagneRappelChercheurAdminComponent } from './view/campagne-rappel-chercheur-admin/campagne-rappel-chercheur-admin.component';
 
 
-import { ModaliteFormationContinueAdminComponent } from './view/modalite-formation-continue-admin/modalite-formation-continue-admin.component';
-
-
-import { IdentifiantRechercheAdminComponent } from './view/identifiant-recherche-admin/identifiant-recherche-admin.component';
-
-
 import { EncadrementAdminComponent } from './view/encadrement-admin/encadrement-admin.component';
+
+
+import { CommanditaireAdminComponent } from './view/commanditaire-admin/commanditaire-admin.component';
 
 
 import { EnjeuxIrdConseilsScientifiqueAdminComponent } from './view/enjeux-ird-conseils-scientifique-admin/enjeux-ird-conseils-scientifique-admin.component';
@@ -275,10 +266,13 @@ import { EnjeuxIrdConseilsScientifiqueAdminComponent } from './view/enjeux-ird-c
 import { DisciplineScientifiqueConsultanceScientifiquePonctuelleAdminComponent } from './view/discipline-scientifique-consultance-scientifique-ponctuelle-admin/discipline-scientifique-consultance-scientifique-ponctuelle-admin.component';
 
 
+import { CommunauteSavoirAdminComponent } from './view/communaute-savoir-admin/communaute-savoir-admin.component';
+
+
+import { NiveauFormationPostBacAdminComponent } from './view/niveau-formation-post-bac-admin/niveau-formation-post-bac-admin.component';
+
+
 import { FormationContinuePubliqueProfessionelAdminComponent } from './view/formation-continue-publique-professionel-admin/formation-continue-publique-professionel-admin.component';
-
-
-import { DisciplineScientifiqueErcAssociationAdminComponent } from './view/discipline-scientifique-erc-association-admin/discipline-scientifique-erc-association-admin.component';
 
 
 import { EnseignementEnjeuxIrdAdminComponent } from './view/enseignement-enjeux-ird-admin/enseignement-enjeux-ird-admin.component';
@@ -290,13 +284,16 @@ import { InstrumentIrdComiteEtCommissionEvaluationAdminComponent } from './view/
 import { DisciplineScientifiqueConseilEtComiteScientifiqueAdminComponent } from './view/discipline-scientifique-conseil-et-comite-scientifique-admin/discipline-scientifique-conseil-et-comite-scientifique-admin.component';
 
 
+import { TemplateRelanceAdminComponent } from './view/template-relance-admin/template-relance-admin.component';
+
+
 import { EtatEtapeCampagneAdminComponent } from './view/etat-etape-campagne-admin/etat-etape-campagne-admin.component';
 
 
 import { ProjetActiviteRechercheDetailAdminComponent } from './view/projet-activite-recherche-detail-admin/projet-activite-recherche-detail-admin.component';
 
 
-import { StructureIrdAdminComponent } from './view/structure-ird-admin/structure-ird-admin.component';
+import { TypeSavoirAdminComponent } from './view/type-savoir-admin/type-savoir-admin.component';
 
 
 import { ExpertiseAdminComponent } from './view/expertise-admin/expertise-admin.component';
@@ -308,13 +305,10 @@ import { TypePubliqueAdminComponent } from './view/type-publique-admin/type-publ
 import { CampagneChercheurOuvertureAdminComponent } from './view/campagne-chercheur-ouverture-admin/campagne-chercheur-ouverture-admin.component';
 
 
-import { NatureEnseignementAdminComponent } from './view/nature-enseignement-admin/nature-enseignement-admin.component';
+import { ModeDiffusionAdminComponent } from './view/mode-diffusion-admin/mode-diffusion-admin.component';
 
 
 import { EnjeuxIrdConsultanceScientifiquePonctuelleAdminComponent } from './view/enjeux-ird-consultance-scientifique-ponctuelle-admin/enjeux-ird-consultance-scientifique-ponctuelle-admin.component';
-
-
-import { TypeUtilisateurAdminComponent } from './view/type-utilisateur-admin/type-utilisateur-admin.component';
 
 
 import { EtablissementComiteEtCommissionEvaluationAdminComponent } from './view/etablissement-comite-et-commission-evaluation-admin/etablissement-comite-et-commission-evaluation-admin.component';
@@ -323,7 +317,13 @@ import { EtablissementComiteEtCommissionEvaluationAdminComponent } from './view/
 import { DeveloppementDeSavoirEtInnovationScientifiqueModeDiffusionAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-admin/developpement-de-savoir-et-innovation-scientifique-mode-diffusion-admin.component';
 
 
-import { MasterInternationalAdminComponent } from './view/master-international-admin/master-international-admin.component';
+import { CorpsAdminComponent } from './view/corps-admin/corps-admin.component';
+
+
+import { ZoneGeographiqueAdminComponent } from './view/zone-geographique-admin/zone-geographique-admin.component';
+
+
+import { InstrumentIrdAdminComponent } from './view/instrument-ird-admin/instrument-ird-admin.component';
 
 
 import { ResponsabilitePedagogiqueEnjeuxIrdAdminComponent } from './view/responsabilite-pedagogique-enjeux-ird-admin/responsabilite-pedagogique-enjeux-ird-admin.component';
@@ -332,10 +332,10 @@ import { ResponsabilitePedagogiqueEnjeuxIrdAdminComponent } from './view/respons
 import { FaqAdminComponent } from './view/faq-admin/faq-admin.component';
 
 
-import { FinancementDoctorantAdminComponent } from './view/financement-doctorant-admin/financement-doctorant-admin.component';
-
-
 import { ExpertiseScientifiqueAdminComponent } from './view/expertise-scientifique-admin/expertise-scientifique-admin.component';
+
+
+import { NatureEtudeAdminComponent } from './view/nature-etude-admin/nature-etude-admin.component';
 
 
 import { EtablissementEnseignementAdminComponent } from './view/etablissement-enseignement-admin/etablissement-enseignement-admin.component';
@@ -344,7 +344,7 @@ import { EtablissementEnseignementAdminComponent } from './view/etablissement-en
 import { OutilPedagogiquePaysConceptionAdminComponent } from './view/outil-pedagogique-pays-conception-admin/outil-pedagogique-pays-conception-admin.component';
 
 
-import { TypePubliqueCultureScientifiqueAdminComponent } from './view/type-publique-culture-scientifique-admin/type-publique-culture-scientifique-admin.component';
+import { InstitutionAdminComponent } from './view/institution-admin/institution-admin.component';
 
 
 import { CampagneChercheurFermetureAdminComponent } from './view/campagne-chercheur-fermeture-admin/campagne-chercheur-fermeture-admin.component';
@@ -356,37 +356,37 @@ import { EncadrementDoctorantAdminComponent } from './view/encadrement-doctorant
 import { CommunauteSavoirConseilEtComiteScientifiqueAdminComponent } from './view/communaute-savoir-conseil-et-comite-scientifique-admin/communaute-savoir-conseil-et-comite-scientifique-admin.component';
 
 
-import { TemplateClotureAdminComponent } from './view/template-cloture-admin/template-cloture-admin.component';
+import { PubliqueFormationAdminComponent } from './view/publique-formation-admin/publique-formation-admin.component';
 
 
 import { OutilPedagogiqueTypeInstrumentIrdAdminComponent } from './view/outil-pedagogique-type-instrument-ird-admin/outil-pedagogique-type-instrument-ird-admin.component';
 
 
-import { EtablissementAdminComponent } from './view/etablissement-admin/etablissement-admin.component';
-
-
-import { CommanditaireAdminComponent } from './view/commanditaire-admin/commanditaire-admin.component';
-
-
-import { DisciplineScientifiqueErcParentAdminComponent } from './view/discipline-scientifique-erc-parent-admin/discipline-scientifique-erc-parent-admin.component';
+import { FinancementDoctorantAdminComponent } from './view/financement-doctorant-admin/financement-doctorant-admin.component';
 
 
 import { DeveloppementDeSavoirEtInnovationScientifiqueDisciplineScientifiqueAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-admin/developpement-de-savoir-et-innovation-scientifique-discipline-scientifique-admin.component';
 
 
+import { VilleAdminComponent } from './view/ville-admin/ville-admin.component';
+
+
 import { RoleComiteEtCommissionEvaluationAdminComponent } from './view/role-comite-et-commission-evaluation-admin/role-comite-et-commission-evaluation-admin.component';
-
-
-import { NiveauFormationPostBacAdminComponent } from './view/niveau-formation-post-bac-admin/niveau-formation-post-bac-admin.component';
 
 
 import { ChercheurEmailAdminComponent } from './view/chercheur-email-admin/chercheur-email-admin.component';
 
 
+import { EntiteAdministrativeAdminComponent } from './view/entite-administrative-admin/entite-administrative-admin.component';
+
+
 import { EnjeuxIrdChercheurAdminComponent } from './view/enjeux-ird-chercheur-admin/enjeux-ird-chercheur-admin.component';
 
 
-import { TypeEntiteAdministrativeAdminComponent } from './view/type-entite-administrative-admin/type-entite-administrative-admin.component';
+import { EtablissementAdminComponent } from './view/etablissement-admin/etablissement-admin.component';
+
+
+import { DisciplineScientifiqueParentAdminComponent } from './view/discipline-scientifique-parent-admin/discipline-scientifique-parent-admin.component';
 
 
 import { ProjetActiviteRechercheDetailEnjeuxIrdAdminComponent } from './view/projet-activite-recherche-detail-enjeux-ird-admin/projet-activite-recherche-detail-enjeux-ird-admin.component';
@@ -395,22 +395,22 @@ import { ProjetActiviteRechercheDetailEnjeuxIrdAdminComponent } from './view/pro
 import { TypePubliqueRencontreGrandPubliqueJeunePubliqueAdminComponent } from './view/type-publique-rencontre-grand-publique-jeune-publique-admin/type-publique-rencontre-grand-publique-jeune-publique-admin.component';
 
 
+import { MasterInternationalAdminComponent } from './view/master-international-admin/master-international-admin.component';
+
+
 import { EnseignementDisciplineScientifiqueAdminComponent } from './view/enseignement-discipline-scientifique-admin/enseignement-discipline-scientifique-admin.component';
-
-
-import { KeyWordDisciplineScientifiqueErcAdminComponent } from './view/key-word-discipline-scientifique-erc-admin/key-word-discipline-scientifique-erc-admin.component';
 
 
 import { CommunauteSavoirChercheurAdminComponent } from './view/communaute-savoir-chercheur-admin/communaute-savoir-chercheur-admin.component';
 
 
-import { CategorieFaqAdminComponent } from './view/categorie-faq-admin/categorie-faq-admin.component';
+import { TypeExpertiseEvaluationAdminComponent } from './view/type-expertise-evaluation-admin/type-expertise-evaluation-admin.component';
 
 
 import { ComiteEtCommissionEvaluationAdminComponent } from './view/comite-et-commission-evaluation-admin/comite-et-commission-evaluation-admin.component';
 
 
-import { ModaliteEtudeAdminComponent } from './view/modalite-etude-admin/modalite-etude-admin.component';
+import { EtudiantAdminComponent } from './view/etudiant-admin/etudiant-admin.component';
 
 
 import { EvenementColloqueScienntifiqueAdminComponent } from './view/evenement-colloque-scienntifique-admin/evenement-colloque-scienntifique-admin.component';
@@ -419,19 +419,40 @@ import { EvenementColloqueScienntifiqueAdminComponent } from './view/evenement-c
 import { FormationContinueObjetFormationGeneriqueAdminComponent } from './view/formation-continue-objet-formation-generique-admin/formation-continue-objet-formation-generique-admin.component';
 
 
+import { ModaliteAdminComponent } from './view/modalite-admin/modalite-admin.component';
+
+
 import { FormationContinueAdminComponent } from './view/formation-continue-admin/formation-continue-admin.component';
 
 
 import { ProjetActiviteRechercheDetailInstitutionCoContractantAdminComponent } from './view/projet-activite-recherche-detail-institution-co-contractant-admin/projet-activite-recherche-detail-institution-co-contractant-admin.component';
 
 
+import { ModaliteFormationContinueAdminComponent } from './view/modalite-formation-continue-admin/modalite-formation-continue-admin.component';
+
+
 import { ConsultanceScientifiquePonctuelleAdminComponent } from './view/consultance-scientifique-ponctuelle-admin/consultance-scientifique-ponctuelle-admin.component';
 
 
-import { ModaliteInterventionAdminComponent } from './view/modalite-intervention-admin/modalite-intervention-admin.component';
+import { TypeEntiteAdministrativeAdminComponent } from './view/type-entite-administrative-admin/type-entite-administrative-admin.component';
+
+
+import { TypeUtilisateurAdminComponent } from './view/type-utilisateur-admin/type-utilisateur-admin.component';
+
+
+import { TypeInstrumentIrdAdminComponent } from './view/type-instrument-ird-admin/type-instrument-ird-admin.component';
+
+
+import { EtablissementPartenaireAdminComponent } from './view/etablissement-partenaire-admin/etablissement-partenaire-admin.component';
+
+
+import { ModaliteEtudeAdminComponent } from './view/modalite-etude-admin/modalite-etude-admin.component';
 
 
 import { ZoneGeographiqueFormationContinueAdminComponent } from './view/zone-geographique-formation-continue-admin/zone-geographique-formation-continue-admin.component';
+
+
+import { TemplateClotureAdminComponent } from './view/template-cloture-admin/template-cloture-admin.component';
 
 
 import { ProjetActiviteRechercheDetailInstrumentIrdAdminComponent } from './view/projet-activite-recherche-detail-instrument-ird-admin/projet-activite-recherche-detail-instrument-ird-admin.component';
@@ -449,19 +470,10 @@ import { NatureActiviteGrandPubliqueAdminComponent } from './view/nature-activit
 import { DeveloppementDeSavoirEtInnovationScientifiquePaysAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-pays-admin/developpement-de-savoir-et-innovation-scientifique-pays-admin.component';
 
 
-import { ZoneGeographiqueAdminComponent } from './view/zone-geographique-admin/zone-geographique-admin.component';
-
-
-import { CommissionScientifiqueAdminComponent } from './view/commission-scientifique-admin/commission-scientifique-admin.component';
-
-
 import { RoleDeveloppementDeSavoirAdminComponent } from './view/role-developpement-de-savoir-admin/role-developpement-de-savoir-admin.component';
 
 
 import { TypeUtilisateurSavoirConcuAdminComponent } from './view/type-utilisateur-savoir-concu-admin/type-utilisateur-savoir-concu-admin.component';
-
-
-import { NatureEtudeAdminComponent } from './view/nature-etude-admin/nature-etude-admin.component';
 
 
 import { EncadrementEtudiantDisciplineScientifiqueAdminComponent } from './view/encadrement-etudiant-discipline-scientifique-admin/encadrement-etudiant-discipline-scientifique-admin.component';
@@ -470,16 +482,13 @@ import { EncadrementEtudiantDisciplineScientifiqueAdminComponent } from './view/
 import { CommunauteSavoirExpertiseScientifiqueAdminComponent } from './view/communaute-savoir-expertise-scientifique-admin/communaute-savoir-expertise-scientifique-admin.component';
 
 
-import { TemplateRappelAdminComponent } from './view/template-rappel-admin/template-rappel-admin.component';
-
-
-import { TypeReclamationAdminComponent } from './view/type-reclamation-admin/type-reclamation-admin.component';
-
-
 import { DisciplineScientifiqueComiteEtCommissionEvaluationAdminComponent } from './view/discipline-scientifique-comite-et-commission-evaluation-admin/discipline-scientifique-comite-et-commission-evaluation-admin.component';
 
 
-import { TypeInstrumentIrdAdminComponent } from './view/type-instrument-ird-admin/type-instrument-ird-admin.component';
+import { TypePubliqueCultureScientifiqueAdminComponent } from './view/type-publique-culture-scientifique-admin/type-publique-culture-scientifique-admin.component';
+
+
+import { StatusCursusAdminComponent } from './view/status-cursus-admin/status-cursus-admin.component';
 
 
 import { DistinctionEtablissementPaysAdminComponent } from './view/distinction-etablissement-pays-admin/distinction-etablissement-pays-admin.component';
@@ -491,37 +500,37 @@ import { InstrumentIrdChercheurAdminComponent } from './view/instrument-ird-cher
 import { RencontreGrandPubliqueJeunePubliqueEnjeuxIrdAdminComponent } from './view/rencontre-grand-publique-jeune-publique-enjeux-ird-admin/rencontre-grand-publique-jeune-publique-enjeux-ird-admin.component';
 
 
-import { DisciplineScientifiqueAdminComponent } from './view/discipline-scientifique-admin/discipline-scientifique-admin.component';
+import { CategorieFaqAdminComponent } from './view/categorie-faq-admin/categorie-faq-admin.component';
 
 
-import { TypeExpertiseAdminComponent } from './view/type-expertise-admin/type-expertise-admin.component';
-
-
-import { DoctorantAdminComponent } from './view/doctorant-admin/doctorant-admin.component';
-
-
-import { CorpsAdminComponent } from './view/corps-admin/corps-admin.component';
+import { IdentifiantRechercheAdminComponent } from './view/identifiant-recherche-admin/identifiant-recherche-admin.component';
 
 
 import { EnseignementEtFormationAdminComponent } from './view/enseignement-et-formation-admin/enseignement-et-formation-admin.component';
 
 
-import { DepartementScientifiqueAdminComponent } from './view/departement-scientifique-admin/departement-scientifique-admin.component';
+import { ModaliteInterventionAdminComponent } from './view/modalite-intervention-admin/modalite-intervention-admin.component';
 
 
 import { PaysOrganisateurRencontreGrandPubliqueJeunePubliqueAdminComponent } from './view/pays-organisateur-rencontre-grand-publique-jeune-publique-admin/pays-organisateur-rencontre-grand-publique-jeune-publique-admin.component';
 
 
-import { CommunauteSavoirAdminComponent } from './view/communaute-savoir-admin/communaute-savoir-admin.component';
-
-
 import { DisciplineScientifiqueExpertiseScientifiqueAdminComponent } from './view/discipline-scientifique-expertise-scientifique-admin/discipline-scientifique-expertise-scientifique-admin.component';
 
 
+import { DisciplineScientifiqueErcAdminComponent } from './view/discipline-scientifique-erc-admin/discipline-scientifique-erc-admin.component';
+
+
+import { TypeInstanceAdminComponent } from './view/type-instance-admin/type-instance-admin.component';
+
+
+import { NiveauFormationAdminComponent } from './view/niveau-formation-admin/niveau-formation-admin.component';
+
+
+import { FournisseurAppelProjetRechercheAdminComponent } from './view/fournisseur-appel-projet-recherche-admin/fournisseur-appel-projet-recherche-admin.component';
+
+
 import { OutilPedagogiqueEnjeuxIrdAdminComponent } from './view/outil-pedagogique-enjeux-ird-admin/outil-pedagogique-enjeux-ird-admin.component';
-
-
-import { ResponsabiliteEncadrementDoctorantAdminComponent } from './view/responsabilite-encadrement-doctorant-admin/responsabilite-encadrement-doctorant-admin.component';
 
 
 import { RencontreGrandPubliqueJeunePubliqueDisciplineScientifiqueAdminComponent } from './view/rencontre-grand-publique-jeune-publique-discipline-scientifique-admin/rencontre-grand-publique-jeune-publique-discipline-scientifique-admin.component';
@@ -548,6 +557,9 @@ import { TypePubliqueRencontreMediaAdminComponent } from './view/type-publique-r
 import { FormationContinueEnjeuxIrdAdminComponent } from './view/formation-continue-enjeux-ird-admin/formation-continue-enjeux-ird-admin.component';
 
 
+import { TypeExpertiseAdminComponent } from './view/type-expertise-admin/type-expertise-admin.component';
+
+
 import { ZoneGeographiqueConsultanceScientifiquePonctuelleAdminComponent } from './view/zone-geographique-consultance-scientifique-ponctuelle-admin/zone-geographique-consultance-scientifique-ponctuelle-admin.component';
 
 
@@ -558,9 +570,6 @@ import { PaysRencontreGrandPubliqueJeunePubliqueAdminComponent } from './view/pa
 
 
 import { CommunauteSavoirProjetActiviteRechercheAdminComponent } from './view/communaute-savoir-projet-activite-recherche-admin/communaute-savoir-projet-activite-recherche-admin.component';
-
-
-import { PaysAdminComponent } from './view/pays-admin/pays-admin.component';
 
 
 import { OutilPedagogiqueLangueAdminComponent } from './view/outil-pedagogique-langue-admin/outil-pedagogique-langue-admin.component';
@@ -578,31 +587,25 @@ import { ResponsabilitePedagogiqueEtablissementAdminComponent } from './view/res
 import { DeveloppementDeSavoirEtInnovationScientifiqueEtablissementAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-etablissement-admin/developpement-de-savoir-et-innovation-scientifique-etablissement-admin.component';
 
 
-import { TypeInstanceAdminComponent } from './view/type-instance-admin/type-instance-admin.component';
-
-
-import { ModeDiffusionAdminComponent } from './view/mode-diffusion-admin/mode-diffusion-admin.component';
-
-
 import { ObjetFormationGeneriqueDeResponsabilitePedagogiqueAdminComponent } from './view/objet-formation-generique-de-responsabilite-pedagogique-admin/objet-formation-generique-de-responsabilite-pedagogique-admin.component';
+
+
+import { NiveauEtudeAdminComponent } from './view/niveau-etude-admin/niveau-etude-admin.component';
+
+
+import { RoleEvaluationAdminComponent } from './view/role-evaluation-admin/role-evaluation-admin.component';
 
 
 import { TypeInstrumentIrdChercheurAdminComponent } from './view/type-instrument-ird-chercheur-admin/type-instrument-ird-chercheur-admin.component';
 
 
-import { TemplateRelanceAdminComponent } from './view/template-relance-admin/template-relance-admin.component';
-
-
-import { EtablissementPartenaireAdminComponent } from './view/etablissement-partenaire-admin/etablissement-partenaire-admin.component';
+import { SemanticRelationshipAdminComponent } from './view/semantic-relationship-admin/semantic-relationship-admin.component';
 
 
 import { DisciplineScientifiqueEncadrementDoctorantAdminComponent } from './view/discipline-scientifique-encadrement-doctorant-admin/discipline-scientifique-encadrement-doctorant-admin.component';
 
 
 import { PaysRencontreMediaAdminComponent } from './view/pays-rencontre-media-admin/pays-rencontre-media-admin.component';
-
-
-import { RoleEvaluationAdminComponent } from './view/role-evaluation-admin/role-evaluation-admin.component';
 
 
 import { RencontreGrandPubliqueJeunePubliqueAdminComponent } from './view/rencontre-grand-publique-jeune-publique-admin/rencontre-grand-publique-jeune-publique-admin.component';
@@ -614,19 +617,13 @@ import { TypeParticipationAdminComponent } from './view/type-participation-admin
 import { EvenementColloqueScienntifiquePaysAdminComponent } from './view/evenement-colloque-scienntifique-pays-admin/evenement-colloque-scienntifique-pays-admin.component';
 
 
-import { TypeExpertiseEvaluationAdminComponent } from './view/type-expertise-evaluation-admin/type-expertise-evaluation-admin.component';
-
-
 import { EtatCampagneAdminComponent } from './view/etat-campagne-admin/etat-campagne-admin.component';
 
 
-import { TypeSavoirAdminComponent } from './view/type-savoir-admin/type-savoir-admin.component';
+import { TypeEtudeAdminComponent } from './view/type-etude-admin/type-etude-admin.component';
 
 
 import { DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdAdminComponent } from './view/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-admin/developpement-de-savoir-et-innovation-scientifique-enjeux-ird-admin.component';
-
-
-import { InstitutionAdminComponent } from './view/institution-admin/institution-admin.component';
 
 
 import { StructureOganisatriceAdminComponent } from './view/structure-oganisatrice-admin/structure-oganisatrice-admin.component';
@@ -638,25 +635,25 @@ import { DisciplineScientifiqueEncadrementEtudiantAdminComponent } from './view/
 import { FormationContinueCommanditaireAdminComponent } from './view/formation-continue-commanditaire-admin/formation-continue-commanditaire-admin.component';
 
 
+import { TemplateRappelAdminComponent } from './view/template-rappel-admin/template-rappel-admin.component';
+
+
 import { AffectationStructurelleAdminComponent } from './view/affectation-structurelle-admin/affectation-structurelle-admin.component';
 
 
 import { CaracterisationDeveloppementDeSavoirEtInnovationScientifiqueAdminComponent } from './view/caracterisation-developpement-de-savoir-et-innovation-scientifique-admin/caracterisation-developpement-de-savoir-et-innovation-scientifique-admin.component';
 
 
-import { PubliqueCibleAdminComponent } from './view/publique-cible-admin/publique-cible-admin.component';
-
-
-import { NationaliteAdminComponent } from './view/nationalite-admin/nationalite-admin.component';
-
-
 import { PaysCommanditaireAdminComponent } from './view/pays-commanditaire-admin/pays-commanditaire-admin.component';
+
+
+import { FormatRencontreAdminComponent } from './view/format-rencontre-admin/format-rencontre-admin.component';
 
 
 import { RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdAdminComponent } from './view/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin/rencontre-grand-publique-jeune-publique-type-instrument-ird-admin.component';
 
 
-import { TypeEnseignementAdminComponent } from './view/type-enseignement-admin/type-enseignement-admin.component';
+import { TypeReclamationAdminComponent } from './view/type-reclamation-admin/type-reclamation-admin.component';
 
 
 import { FormationContinueDisciplineScientifiqueAdminComponent } from './view/formation-continue-discipline-scientifique-admin/formation-continue-discipline-scientifique-admin.component';
@@ -674,6 +671,9 @@ import { TypeSavoirDeveloppementDeSavoirEtInnovationScientifiqueAdminComponent }
 import { NiveauEtudeEnseignementAdminComponent } from './view/niveau-etude-enseignement-admin/niveau-etude-enseignement-admin.component';
 
 
+import { CommissionScientifiqueAdminComponent } from './view/commission-scientifique-admin/commission-scientifique-admin.component';
+
+
 import { CategorieNotificationAdminComponent } from './view/categorie-notification-admin/categorie-notification-admin.component';
 
 
@@ -686,10 +686,10 @@ import { EtablissementConseilsScientifiqueAdminComponent } from './view/etabliss
 import { CampagneAdminComponent } from './view/campagne-admin/campagne-admin.component';
 
 
+import { SexeAdminComponent } from './view/sexe-admin/sexe-admin.component';
+
+
 import { EtatCampagneChercheurAdminComponent } from './view/etat-campagne-chercheur-admin/etat-campagne-chercheur-admin.component';
-
-
-import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-generique-admin/objet-formation-generique-admin.component';
 
 
 @NgModule({
@@ -718,6 +718,12 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                     canActivate: [AuthGuard]
                                 }
                               ]
+                        },
+                        {
+
+                            path: 'archivable',
+                            loadChildren: './view/archivable/archivable-routing.module#ArchivableRoutingModule',
+                            canActivate: [AuthGuard],
                         },
                         {
 
@@ -765,17 +771,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'ville',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: VilleAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'responsabilite-pedagogique',
                             children: [
                                 {
@@ -809,44 +804,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'fournisseur-appel-projet-recherche',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: FournisseurAppelProjetRechercheAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'grade',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: GradeAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'type-etude-enseignement',
                             children: [
                                 {
                                     path: 'list',
                                     component: TypeEtudeEnseignementAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-outil',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeOutilAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -869,17 +831,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: DeveloppementDeSavoirEtInnovationScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-etude',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeEtudeAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -919,33 +870,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'semantic-relationship',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: SemanticRelationshipAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'zone-activite-interaction-recherche',
                             children: [
                                 {
                                     path: 'list',
                                     component: ZoneActiviteInteractionRechercheAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-expert',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeExpertAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -985,28 +914,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'status-projet',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: StatusProjetAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'modalite',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ModaliteAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'conseils-scientifique',
                             children: [
                                 {
@@ -1023,17 +930,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: InstrumentsEtDispositifsIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'niveau-formation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NiveauFormationAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1106,28 +1002,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'instrument-ird',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: InstrumentIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'sexe',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: SexeAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'discipline-scientifique-chercheur',
                             children: [
                                 {
@@ -1183,39 +1057,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'publique-formation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: PubliqueFormationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etudiant',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtudiantAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'format-rencontre',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: FormatRencontreAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'niveau-responsabilite-pedagogique',
                             children: [
                                 {
@@ -1232,17 +1073,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: ZoneGeographiqueConseilsScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'enjeux-ird',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EnjeuxIrdAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1276,17 +1106,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: ContratEtConventionIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'publique-professionel',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: PubliqueProfessionelAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1337,17 +1156,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'discipline-scientifique-erc',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DisciplineScientifiqueErcAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'evenement-colloque-scienntifique-enjeux-ird',
                             children: [
                                 {
@@ -1392,77 +1200,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'role-projet',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: RoleProjetAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'responsabilite-direction-encadrement-etudiant',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ResponsabiliteDirectionEncadrementEtudiantAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'encadrement-etudiant',
                             children: [
                                 {
                                     path: 'list',
                                     component: EncadrementEtudiantAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'caracterisation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CaracterisationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etablissement-projet',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtablissementProjetAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'contexte',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ContexteAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'key-word',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: KeyWordAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1496,28 +1238,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: RencontreMediaAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'niveau-etude',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NiveauEtudeAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'entite-administrative',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EntiteAdministrativeAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1579,50 +1299,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'discipline-scientifique-parent',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DisciplineScientifiqueParentAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'template-ouverture',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TemplateOuvertureAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'nature-expertise',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NatureExpertiseAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'status-cursus',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: StatusCursusAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'outil-pedagogique-discipline-scientifique',
                             children: [
                                 {
@@ -1639,28 +1315,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: CampagneRappelChercheurAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'modalite-formation-continue',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ModaliteFormationContinueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'identifiant-recherche',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: IdentifiantRechercheAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1705,17 +1359,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: FormationContinuePubliqueProfessionelAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'discipline-scientifique-erc-association',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DisciplineScientifiqueErcAssociationAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1777,17 +1420,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'structure-ird',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: StructureIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'expertise',
                             children: [
                                 {
@@ -1821,33 +1453,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'nature-enseignement',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NatureEnseignementAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'enjeux-ird-consultance-scientifique-ponctuelle',
                             children: [
                                 {
                                     path: 'list',
                                     component: EnjeuxIrdConsultanceScientifiquePonctuelleAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-utilisateur',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeUtilisateurAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1876,17 +1486,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'master-international',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: MasterInternationalAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'responsabilite-pedagogique-enjeux-ird',
                             children: [
                                 {
@@ -1903,17 +1502,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: FaqAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'financement-doctorant',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: FinancementDoctorantAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -1953,17 +1541,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'type-publique-culture-scientifique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypePubliqueCultureScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'campagne-chercheur-fermeture',
                             children: [
                                 {
@@ -1997,55 +1574,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'template-cloture',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TemplateClotureAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'outil-pedagogique-type-instrument-ird',
                             children: [
                                 {
                                     path: 'list',
                                     component: OutilPedagogiqueTypeInstrumentIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etablissement',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtablissementAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'commanditaire',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CommanditaireAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'discipline-scientifique-erc-parent',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DisciplineScientifiqueErcParentAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2074,17 +1607,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'niveau-formation-post-bac',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NiveauFormationPostBacAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'chercheur-email',
                             children: [
                                 {
@@ -2101,17 +1623,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: EnjeuxIrdChercheurAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-entite-administrative',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeEntiteAdministrativeAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2151,17 +1662,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'key-word-discipline-scientifique-erc',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: KeyWordDisciplineScientifiqueErcAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'communaute-savoir-chercheur',
                             children: [
                                 {
@@ -2173,33 +1673,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'categorie-faq',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CategorieFaqAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'comite-et-commission-evaluation',
                             children: [
                                 {
                                     path: 'list',
                                     component: ComiteEtCommissionEvaluationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'modalite-etude',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ModaliteEtudeAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2255,17 +1733,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: ConsultanceScientifiquePonctuelleAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'modalite-intervention',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ModaliteInterventionAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2338,28 +1805,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'zone-geographique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ZoneGeographiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'commission-scientifique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CommissionScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'role-developpement-de-savoir',
                             children: [
                                 {
@@ -2376,17 +1821,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: TypeUtilisateurSavoirConcuAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'nature-etude',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NatureEtudeAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2415,44 +1849,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'template-rappel',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TemplateRappelAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-reclamation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeReclamationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'discipline-scientifique-comite-et-commission-evaluation',
                             children: [
                                 {
                                     path: 'list',
                                     component: DisciplineScientifiqueComiteEtCommissionEvaluationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-instrument-ird',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeInstrumentIrdAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2492,50 +1893,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'discipline-scientifique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DisciplineScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-expertise',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeExpertiseAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'doctorant',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DoctorantAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'corps',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CorpsAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'enseignement-et-formation',
                             children: [
                                 {
@@ -2547,33 +1904,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'departement-scientifique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: DepartementScientifiqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'pays-organisateur-rencontre-grand-publique-jeune-publique',
                             children: [
                                 {
                                     path: 'list',
                                     component: PaysOrganisateurRencontreGrandPubliqueJeunePubliqueAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'communaute-savoir',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: CommunauteSavoirAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2596,17 +1931,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: OutilPedagogiqueEnjeuxIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'responsabilite-encadrement-doctorant',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ResponsabiliteEncadrementDoctorantAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2745,17 +2069,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'pays',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: PaysAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'outil-pedagogique-langue',
                             children: [
                                 {
@@ -2811,28 +2124,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'type-instance',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeInstanceAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'mode-diffusion',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ModeDiffusionAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'objet-formation-generique-de-responsabilite-pedagogique',
                             children: [
                                 {
@@ -2855,28 +2146,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'template-relance',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TemplateRelanceAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'etablissement-partenaire',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: EtablissementPartenaireAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'discipline-scientifique-encadrement-doctorant',
                             children: [
                                 {
@@ -2893,17 +2162,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: PaysRencontreMediaAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'role-evaluation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: RoleEvaluationAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -2943,17 +2201,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'type-expertise-evaluation',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeExpertiseEvaluationAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'etat-campagne',
                             children: [
                                 {
@@ -2965,33 +2212,11 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'type-savoir',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeSavoirAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'developpement-de-savoir-et-innovation-scientifique-enjeux-ird',
                             children: [
                                 {
                                     path: 'list',
                                     component: DeveloppementDeSavoirEtInnovationScientifiqueEnjeuxIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'institution',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: InstitutionAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -3053,28 +2278,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                         },
                         {
 
-                            path: 'publique-cible',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: PubliqueCibleAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'nationalite',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: NationaliteAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
                             path: 'pays-commanditaire',
                             children: [
                                 {
@@ -3091,17 +2294,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrdAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'type-enseignement',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: TypeEnseignementAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]
@@ -3212,17 +2404,6 @@ import { ObjetFormationGeneriqueAdminComponent } from './view/objet-formation-ge
                                 {
                                     path: 'list',
                                     component: EtatCampagneChercheurAdminComponent ,
-                                    canActivate: [AuthGuard]
-                                }
-                            ]
-                        },
-                        {
-
-                            path: 'objet-formation-generique',
-                            children: [
-                                {
-                                    path: 'list',
-                                    component: ObjetFormationGeneriqueAdminComponent ,
                                     canActivate: [AuthGuard]
                                 }
                             ]

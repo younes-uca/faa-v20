@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
+import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
+import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 import {EtatReclamationVo} from '../../../../../controller/model/EtatReclamation.model';
 import {EtatReclamationService} from '../../../../../controller/service/EtatReclamation.service';
 import {TypeReclamationVo} from '../../../../../controller/model/TypeReclamation.model';
 import {TypeReclamationService} from '../../../../../controller/service/TypeReclamation.service';
-import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
-import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
 @Component({
   selector: 'app-reclamation-create-admin',
   templateUrl: './reclamation-create-admin.component.html',
@@ -41,9 +41,9 @@ constructor(private datePipe: DatePipe, private reclamationService: ReclamationS
  ,       private messageService: MessageService
  ,       private router: Router
  
+,       private chercheurService :ChercheurService
 ,       private etatReclamationService :EtatReclamationService
 ,       private typeReclamationService :TypeReclamationService
-,       private chercheurService :ChercheurService
 ) {
 
 }

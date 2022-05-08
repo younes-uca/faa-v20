@@ -18,10 +18,10 @@ import com.ird.faa.bean.Chercheur;
 
 import com.ird.faa.service.chercheur.facade.EtatReclamationChercheurService;
 import com.ird.faa.bean.EtatReclamation;
-import com.ird.faa.service.chercheur.facade.EtatCampagneChercheurService;
-import com.ird.faa.bean.EtatCampagne;
 import com.ird.faa.service.chercheur.facade.EtatEtapeCampagneChercheurService;
 import com.ird.faa.bean.EtatEtapeCampagne;
+import com.ird.faa.service.chercheur.facade.EtatCampagneChercheurService;
+import com.ird.faa.bean.EtatCampagne;
 import com.ird.faa.service.chercheur.facade.EtatCampagneChercheurChercheurService;
 import com.ird.faa.bean.EtatCampagneChercheur;
 
@@ -39,7 +39,7 @@ return ctx;
 
 @Bean
 public CommandLineRunner demo(UserService userService, RoleService roleService
-, EtatReclamationChercheurService etatReclamationChercheurService, EtatCampagneChercheurService etatCampagneChercheurService, EtatEtapeCampagneChercheurService etatEtapeCampagneChercheurService, EtatCampagneChercheurChercheurService etatCampagneChercheurChercheurService) {
+, EtatReclamationChercheurService etatReclamationChercheurService, EtatEtapeCampagneChercheurService etatEtapeCampagneChercheurService, EtatCampagneChercheurService etatCampagneChercheurService, EtatCampagneChercheurChercheurService etatCampagneChercheurChercheurService) {
 return (args) -> {
 if(true){
     Map<String,String> etats=new HashMap<>();
@@ -47,8 +47,8 @@ if(true){
     etats.put("En cours","encours");
     etats.put("Terminé","termine");
     etats.entrySet().stream().forEach(e->etatReclamationChercheurService.save(new EtatReclamation(e.getKey(),e.getValue())));
-    etats.entrySet().stream().forEach(e->etatCampagneChercheurService.save(new EtatCampagne(e.getKey(),e.getValue())));
     etats.entrySet().stream().forEach(e->etatEtapeCampagneChercheurService.save(new EtatEtapeCampagne(e.getKey(),e.getValue())));
+    etats.entrySet().stream().forEach(e->etatCampagneChercheurService.save(new EtatCampagne(e.getKey(),e.getValue())));
     etats.entrySet().stream().forEach(e->etatCampagneChercheurChercheurService.save(new EtatCampagneChercheur(e.getKey(),e.getValue())));
 
 
@@ -161,11 +161,6 @@ if(true){
                 permissions.add(new Permission("TypeEtude.view"));
                 permissions.add(new Permission("TypeEtude.add"));
                 permissions.add(new Permission("TypeEtude.delete"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.edit"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.list"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.view"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.add"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.delete"));
                 permissions.add(new Permission("EnseignementZoneGeographique.edit"));
                 permissions.add(new Permission("EnseignementZoneGeographique.list"));
                 permissions.add(new Permission("EnseignementZoneGeographique.view"));
@@ -256,6 +251,11 @@ if(true){
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.view"));
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.add"));
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.delete"));
+                permissions.add(new Permission("OutilPedagogique.edit"));
+                permissions.add(new Permission("OutilPedagogique.list"));
+                permissions.add(new Permission("OutilPedagogique.view"));
+                permissions.add(new Permission("OutilPedagogique.add"));
+                permissions.add(new Permission("OutilPedagogique.delete"));
                 permissions.add(new Permission("TypeOutilPedagogique.edit"));
                 permissions.add(new Permission("TypeOutilPedagogique.list"));
                 permissions.add(new Permission("TypeOutilPedagogique.view"));
@@ -321,11 +321,6 @@ if(true){
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.view"));
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.add"));
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.delete"));
-                permissions.add(new Permission("EtatCampagne.edit"));
-                permissions.add(new Permission("EtatCampagne.list"));
-                permissions.add(new Permission("EtatCampagne.view"));
-                permissions.add(new Permission("EtatCampagne.add"));
-                permissions.add(new Permission("EtatCampagne.delete"));
                 permissions.add(new Permission("EnjeuxIrd.edit"));
                 permissions.add(new Permission("EnjeuxIrd.list"));
                 permissions.add(new Permission("EnjeuxIrd.view"));
@@ -421,11 +416,6 @@ if(true){
                 permissions.add(new Permission("EtablissementProjet.view"));
                 permissions.add(new Permission("EtablissementProjet.add"));
                 permissions.add(new Permission("EtablissementProjet.delete"));
-                permissions.add(new Permission("OutilPedagogique.edit"));
-                permissions.add(new Permission("OutilPedagogique.list"));
-                permissions.add(new Permission("OutilPedagogique.view"));
-                permissions.add(new Permission("OutilPedagogique.add"));
-                permissions.add(new Permission("OutilPedagogique.delete"));
                 permissions.add(new Permission("Contexte.edit"));
                 permissions.add(new Permission("Contexte.list"));
                 permissions.add(new Permission("Contexte.view"));
@@ -446,6 +436,11 @@ if(true){
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.view"));
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.add"));
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.delete"));
+                permissions.add(new Permission("RencontreMedia.edit"));
+                permissions.add(new Permission("RencontreMedia.list"));
+                permissions.add(new Permission("RencontreMedia.view"));
+                permissions.add(new Permission("RencontreMedia.add"));
+                permissions.add(new Permission("RencontreMedia.delete"));
                 permissions.add(new Permission("NiveauEtude.edit"));
                 permissions.add(new Permission("NiveauEtude.list"));
                 permissions.add(new Permission("NiveauEtude.view"));
@@ -756,6 +751,11 @@ if(true){
                 permissions.add(new Permission("CategorieFaq.view"));
                 permissions.add(new Permission("CategorieFaq.add"));
                 permissions.add(new Permission("CategorieFaq.delete"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.edit"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.list"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.view"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.add"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.delete"));
                 permissions.add(new Permission("ModaliteEtude.edit"));
                 permissions.add(new Permission("ModaliteEtude.list"));
                 permissions.add(new Permission("ModaliteEtude.view"));
@@ -791,11 +791,6 @@ if(true){
                 permissions.add(new Permission("ModaliteIntervention.view"));
                 permissions.add(new Permission("ModaliteIntervention.add"));
                 permissions.add(new Permission("ModaliteIntervention.delete"));
-                permissions.add(new Permission("Campagne.edit"));
-                permissions.add(new Permission("Campagne.list"));
-                permissions.add(new Permission("Campagne.view"));
-                permissions.add(new Permission("Campagne.add"));
-                permissions.add(new Permission("Campagne.delete"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.edit"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.list"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.view"));
@@ -1106,6 +1101,11 @@ if(true){
                 permissions.add(new Permission("TypeExpertiseEvaluation.view"));
                 permissions.add(new Permission("TypeExpertiseEvaluation.add"));
                 permissions.add(new Permission("TypeExpertiseEvaluation.delete"));
+                permissions.add(new Permission("EtatCampagne.edit"));
+                permissions.add(new Permission("EtatCampagne.list"));
+                permissions.add(new Permission("EtatCampagne.view"));
+                permissions.add(new Permission("EtatCampagne.add"));
+                permissions.add(new Permission("EtatCampagne.delete"));
                 permissions.add(new Permission("TypeSavoir.edit"));
                 permissions.add(new Permission("TypeSavoir.list"));
                 permissions.add(new Permission("TypeSavoir.view"));
@@ -1161,11 +1161,6 @@ if(true){
                 permissions.add(new Permission("PaysCommanditaire.view"));
                 permissions.add(new Permission("PaysCommanditaire.add"));
                 permissions.add(new Permission("PaysCommanditaire.delete"));
-                permissions.add(new Permission("RencontreMedia.edit"));
-                permissions.add(new Permission("RencontreMedia.list"));
-                permissions.add(new Permission("RencontreMedia.view"));
-                permissions.add(new Permission("RencontreMedia.add"));
-                permissions.add(new Permission("RencontreMedia.delete"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.edit"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.list"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.view"));
@@ -1216,6 +1211,11 @@ if(true){
                 permissions.add(new Permission("EtablissementConseilsScientifique.view"));
                 permissions.add(new Permission("EtablissementConseilsScientifique.add"));
                 permissions.add(new Permission("EtablissementConseilsScientifique.delete"));
+                permissions.add(new Permission("Campagne.edit"));
+                permissions.add(new Permission("Campagne.list"));
+                permissions.add(new Permission("Campagne.view"));
+                permissions.add(new Permission("Campagne.add"));
+                permissions.add(new Permission("Campagne.delete"));
                 permissions.add(new Permission("EtatCampagneChercheur.edit"));
                 permissions.add(new Permission("EtatCampagneChercheur.list"));
                 permissions.add(new Permission("EtatCampagneChercheur.view"));
@@ -1304,11 +1304,6 @@ if(true){
                 permissions.add(new Permission("TypeEtude.view"));
                 permissions.add(new Permission("TypeEtude.add"));
                 permissions.add(new Permission("TypeEtude.delete"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.edit"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.list"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.view"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.add"));
-                permissions.add(new Permission("ComiteEtCommissionEvaluation.delete"));
                 permissions.add(new Permission("EnseignementZoneGeographique.edit"));
                 permissions.add(new Permission("EnseignementZoneGeographique.list"));
                 permissions.add(new Permission("EnseignementZoneGeographique.view"));
@@ -1399,6 +1394,11 @@ if(true){
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.view"));
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.add"));
                 permissions.add(new Permission("OutilPedagogiqueInstrumentIrd.delete"));
+                permissions.add(new Permission("OutilPedagogique.edit"));
+                permissions.add(new Permission("OutilPedagogique.list"));
+                permissions.add(new Permission("OutilPedagogique.view"));
+                permissions.add(new Permission("OutilPedagogique.add"));
+                permissions.add(new Permission("OutilPedagogique.delete"));
                 permissions.add(new Permission("TypeOutilPedagogique.edit"));
                 permissions.add(new Permission("TypeOutilPedagogique.list"));
                 permissions.add(new Permission("TypeOutilPedagogique.view"));
@@ -1464,11 +1464,6 @@ if(true){
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.view"));
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.add"));
                 permissions.add(new Permission("ZoneGeographiqueConseilsScientifique.delete"));
-                permissions.add(new Permission("EtatCampagne.edit"));
-                permissions.add(new Permission("EtatCampagne.list"));
-                permissions.add(new Permission("EtatCampagne.view"));
-                permissions.add(new Permission("EtatCampagne.add"));
-                permissions.add(new Permission("EtatCampagne.delete"));
                 permissions.add(new Permission("EnjeuxIrd.edit"));
                 permissions.add(new Permission("EnjeuxIrd.list"));
                 permissions.add(new Permission("EnjeuxIrd.view"));
@@ -1564,11 +1559,6 @@ if(true){
                 permissions.add(new Permission("EtablissementProjet.view"));
                 permissions.add(new Permission("EtablissementProjet.add"));
                 permissions.add(new Permission("EtablissementProjet.delete"));
-                permissions.add(new Permission("OutilPedagogique.edit"));
-                permissions.add(new Permission("OutilPedagogique.list"));
-                permissions.add(new Permission("OutilPedagogique.view"));
-                permissions.add(new Permission("OutilPedagogique.add"));
-                permissions.add(new Permission("OutilPedagogique.delete"));
                 permissions.add(new Permission("Contexte.edit"));
                 permissions.add(new Permission("Contexte.list"));
                 permissions.add(new Permission("Contexte.view"));
@@ -1589,6 +1579,11 @@ if(true){
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.view"));
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.add"));
                 permissions.add(new Permission("TypeExpertiseEvaluationComiteEtCommissionEvaluation.delete"));
+                permissions.add(new Permission("RencontreMedia.edit"));
+                permissions.add(new Permission("RencontreMedia.list"));
+                permissions.add(new Permission("RencontreMedia.view"));
+                permissions.add(new Permission("RencontreMedia.add"));
+                permissions.add(new Permission("RencontreMedia.delete"));
                 permissions.add(new Permission("NiveauEtude.edit"));
                 permissions.add(new Permission("NiveauEtude.list"));
                 permissions.add(new Permission("NiveauEtude.view"));
@@ -1899,6 +1894,11 @@ if(true){
                 permissions.add(new Permission("CategorieFaq.view"));
                 permissions.add(new Permission("CategorieFaq.add"));
                 permissions.add(new Permission("CategorieFaq.delete"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.edit"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.list"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.view"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.add"));
+                permissions.add(new Permission("ComiteEtCommissionEvaluation.delete"));
                 permissions.add(new Permission("ModaliteEtude.edit"));
                 permissions.add(new Permission("ModaliteEtude.list"));
                 permissions.add(new Permission("ModaliteEtude.view"));
@@ -1934,11 +1934,6 @@ if(true){
                 permissions.add(new Permission("ModaliteIntervention.view"));
                 permissions.add(new Permission("ModaliteIntervention.add"));
                 permissions.add(new Permission("ModaliteIntervention.delete"));
-                permissions.add(new Permission("Campagne.edit"));
-                permissions.add(new Permission("Campagne.list"));
-                permissions.add(new Permission("Campagne.view"));
-                permissions.add(new Permission("Campagne.add"));
-                permissions.add(new Permission("Campagne.delete"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.edit"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.list"));
                 permissions.add(new Permission("ZoneGeographiqueFormationContinue.view"));
@@ -2249,6 +2244,11 @@ if(true){
                 permissions.add(new Permission("TypeExpertiseEvaluation.view"));
                 permissions.add(new Permission("TypeExpertiseEvaluation.add"));
                 permissions.add(new Permission("TypeExpertiseEvaluation.delete"));
+                permissions.add(new Permission("EtatCampagne.edit"));
+                permissions.add(new Permission("EtatCampagne.list"));
+                permissions.add(new Permission("EtatCampagne.view"));
+                permissions.add(new Permission("EtatCampagne.add"));
+                permissions.add(new Permission("EtatCampagne.delete"));
                 permissions.add(new Permission("TypeSavoir.edit"));
                 permissions.add(new Permission("TypeSavoir.list"));
                 permissions.add(new Permission("TypeSavoir.view"));
@@ -2304,11 +2304,6 @@ if(true){
                 permissions.add(new Permission("PaysCommanditaire.view"));
                 permissions.add(new Permission("PaysCommanditaire.add"));
                 permissions.add(new Permission("PaysCommanditaire.delete"));
-                permissions.add(new Permission("RencontreMedia.edit"));
-                permissions.add(new Permission("RencontreMedia.list"));
-                permissions.add(new Permission("RencontreMedia.view"));
-                permissions.add(new Permission("RencontreMedia.add"));
-                permissions.add(new Permission("RencontreMedia.delete"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.edit"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.list"));
                 permissions.add(new Permission("RencontreGrandPubliqueJeunePubliqueTypeInstrumentIrd.view"));
@@ -2359,6 +2354,11 @@ if(true){
                 permissions.add(new Permission("EtablissementConseilsScientifique.view"));
                 permissions.add(new Permission("EtablissementConseilsScientifique.add"));
                 permissions.add(new Permission("EtablissementConseilsScientifique.delete"));
+                permissions.add(new Permission("Campagne.edit"));
+                permissions.add(new Permission("Campagne.list"));
+                permissions.add(new Permission("Campagne.view"));
+                permissions.add(new Permission("Campagne.add"));
+                permissions.add(new Permission("Campagne.delete"));
                 permissions.add(new Permission("EtatCampagneChercheur.edit"));
                 permissions.add(new Permission("EtatCampagneChercheur.list"));
                 permissions.add(new Permission("EtatCampagneChercheur.view"));

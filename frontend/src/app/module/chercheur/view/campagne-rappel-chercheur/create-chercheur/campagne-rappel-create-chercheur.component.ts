@@ -10,14 +10,14 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
-import {CampagneRappelChercheurVo} from '../../../../../controller/model/CampagneRappelChercheur.model';
-import {CampagneRappelChercheurService} from '../../../../../controller/service/CampagneRappelChercheur.service';
-import {TemplateRappelVo} from '../../../../../controller/model/TemplateRappel.model';
-import {TemplateRappelService} from '../../../../../controller/service/TemplateRappel.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {TemplateRappelVo} from '../../../../../controller/model/TemplateRappel.model';
+import {TemplateRappelService} from '../../../../../controller/service/TemplateRappel.service';
+import {CampagneRappelChercheurVo} from '../../../../../controller/model/CampagneRappelChercheur.model';
+import {CampagneRappelChercheurService} from '../../../../../controller/service/CampagneRappelChercheur.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 @Component({
   selector: 'app-campagne-rappel-create-chercheur',
   templateUrl: './campagne-rappel-create-chercheur.component.html',
@@ -41,10 +41,10 @@ constructor(private datePipe: DatePipe, private campagneRappelService: CampagneR
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private campagneService :CampagneService
-,       private campagneRappelChercheurService :CampagneRappelChercheurService
-,       private templateRappelService :TemplateRappelService
 ,       private chercheurService :ChercheurService
+,       private templateRappelService :TemplateRappelService
+,       private campagneRappelChercheurService :CampagneRappelChercheurService
+,       private campagneService :CampagneService
 ) {
 
 }

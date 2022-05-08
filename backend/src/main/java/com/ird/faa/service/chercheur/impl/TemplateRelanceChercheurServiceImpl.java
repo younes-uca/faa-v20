@@ -111,7 +111,7 @@ if(templateRelance.getVisible() == null)
     templateRelance.setVisible(false);
     User currentUser = SecurityUtil.getCurrentUser();
     if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-        templateRelance.setChercheur(currentUser);
+        templateRelance.setUsername(currentUser.getUsername());
     }
 
 

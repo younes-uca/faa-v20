@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import com.ird.faa.service.util.StringUtil;
-import com.ird.faa.security.common.SecurityUtil;
-import com.ird.faa.security.bean.User;
 import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import com.ird.faa.bean.ComiteEtCommissionEvaluation;
@@ -81,11 +78,7 @@ private EntityManager entityManager;
 
 @Override
 public List<ComiteEtCommissionEvaluation> findAll(){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())){
-    return comiteEtCommissionEvaluationDao.findByChercheurUsername(currentUser.getUsername());
-    }
-    return new ArrayList<>();
+        return comiteEtCommissionEvaluationDao.findAll();
 }
 
         @Override
@@ -254,21 +247,6 @@ prepareSave(comiteEtCommissionEvaluation);
 
 ComiteEtCommissionEvaluation result =null;
 
-    User currentUser = SecurityUtil.getCurrentUser();
-    if (currentUser == null || StringUtil.isEmpty(currentUser.getUsername())) {
-    return result;
-    }
-    String username = currentUser.getUsername();
-    Chercheur loadedChercheur = chercheurService.findByUsername(username);
-    if (loadedChercheur == null) {
-    return result;
-    }
-    Campagne laodedCampagne = campagneService.findProgressCampagneByChercheurUsername(username);
-    if (laodedCampagne == null) {
-    return result;
-    } else {
-    comiteEtCommissionEvaluation.setChercheur(loadedChercheur);
-    comiteEtCommissionEvaluation.setCampagne(laodedCampagne);
 
     findNatureExpertise(comiteEtCommissionEvaluation);
     findExpertise(comiteEtCommissionEvaluation);
@@ -283,7 +261,6 @@ ComiteEtCommissionEvaluation savedComiteEtCommissionEvaluation = comiteEtCommiss
        saveEnjeuxIrdComiteEtCommissionEvaluations(savedComiteEtCommissionEvaluation,comiteEtCommissionEvaluation.getEnjeuxIrdComiteEtCommissionEvaluations());
        saveInstrumentIrdComiteEtCommissionEvaluations(savedComiteEtCommissionEvaluation,comiteEtCommissionEvaluation.getInstrumentIrdComiteEtCommissionEvaluations());
 result = savedComiteEtCommissionEvaluation;
-}
 
 return result;
 }
@@ -347,11 +324,8 @@ return 1;
 
 
 public List<ComiteEtCommissionEvaluation> findByCriteria(ComiteEtCommissionEvaluationVo comiteEtCommissionEvaluationVo){
-User currentUser = SecurityUtil.getCurrentUser();
-if (currentUser != null && StringUtil.isNotEmpty(currentUser.getUsername())) {
 
 String query = "SELECT o FROM ComiteEtCommissionEvaluation o where 1=1 ";
-    query += SearchUtil.addConstraint("o", "chercheur.username", "=", currentUser.getUsername());
 
             query += SearchUtil.addConstraint( "o", "id","=",comiteEtCommissionEvaluationVo.getId());
             query += SearchUtil.addConstraint( "o", "nom","LIKE",comiteEtCommissionEvaluationVo.getNom());
@@ -376,8 +350,6 @@ String query = "SELECT o FROM ComiteEtCommissionEvaluation o where 1=1 ";
     }
 
 return entityManager.createQuery(query).getResultList();
-}
-return new ArrayList<>();
 }
         private  void saveTypeExpertiseEvaluationComiteEtCommissionEvaluations(ComiteEtCommissionEvaluation comiteEtCommissionEvaluation,List<TypeExpertiseEvaluationComiteEtCommissionEvaluation> typeExpertiseEvaluationComiteEtCommissionEvaluations){
 
@@ -518,10 +490,5 @@ private void associateInstrumentIrdComiteEtCommissionEvaluation(ComiteEtCommissi
     }
     }
 
-@Override
-public List<ComiteEtCommissionEvaluation> findByChercheurUsernameAndCampagneId(String username, Long compagneId){
-List<ComiteEtCommissionEvaluation> resultat= comiteEtCommissionEvaluationDao.findByChercheurUsernameAndCampagneId(username, compagneId);
-    return resultat;
-}
 
 }

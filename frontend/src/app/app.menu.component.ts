@@ -72,17 +72,6 @@ export class AppMenuComponent implements OnInit {
     this.modelchercheur =
       [
               {
-                label: 'Projet activite recherche detail instrument ird',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Projet activite recherche detail instrument ird',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/projet-activite-recherche-detail-instrument-ird/list']
-                    },
-                ]
-              },
-              {
                 label: 'Fournisseur appel projet recherche',
                 icon: 'pi pi-wallet',
                 items:[
@@ -90,6 +79,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Fournisseur appel projet recherche',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/fournisseur-appel-projet-recherche/list']
+                    },
+                ]
+              },
+              {
+                label: 'Projet activite recherche detail instrument ird',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Projet activite recherche detail instrument ird',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/projet-activite-recherche-detail-instrument-ird/list']
                     },
                 ]
               },
@@ -737,17 +737,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Mode diffusion',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Mode diffusion',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/mode-diffusion/list']
-                    },
-                ]
-              },
-              {
                 label: 'Developpement de savoir et innovation scientifique mode diffusion',
                 icon: 'pi pi-wallet',
                 items:[
@@ -755,6 +744,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Developpement de savoir et innovation scientifique mode diffusion',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/developpement-de-savoir-et-innovation-scientifique-mode-diffusion/list']
+                    },
+                ]
+              },
+              {
+                label: 'Mode diffusion',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Mode diffusion',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/mode-diffusion/list']
                     },
                 ]
               },
@@ -951,17 +951,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Discipline scientifique',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Discipline scientifique',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/discipline-scientifique/list']
-                    },
-                ]
-              },
-              {
                 label: 'Rencontre media',
                 icon: 'pi pi-wallet',
                 items:[
@@ -969,6 +958,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Rencontre media',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/rencontre-media/list']
+                    },
+                ]
+              },
+              {
+                label: 'Discipline scientifique',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Discipline scientifique',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/discipline-scientifique/list']
                     },
                 ]
               },
@@ -1236,17 +1236,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Pays formation continue',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Pays formation continue',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/pays-formation-continue/list']
-                    },
-                ]
-              },
-              {
                 label: 'Semantic relationship',
                 icon: 'pi pi-wallet',
                 items:[
@@ -1254,6 +1243,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Semantic relationship',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/semantic-relationship/list']
+                    },
+                ]
+              },
+              {
+                label: 'Pays formation continue',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Pays formation continue',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/pays-formation-continue/list']
                     },
                 ]
               },
@@ -1532,6 +1532,17 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
+                label: 'Discipline scientifique erc',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Discipline scientifique erc',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/discipline-scientifique-erc/list']
+                    },
+                ]
+              },
+              {
                 label: 'Enseignement et formation',
                 icon: 'pi pi-wallet',
                 items:[
@@ -1544,17 +1555,6 @@ export class AppMenuComponent implements OnInit {
                       label: 'Nouveau Enseignement et formation',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/enseignement-et-formation/create']
-                    },
-                ]
-              },
-              {
-                label: 'Discipline scientifique erc',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Discipline scientifique erc',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/discipline-scientifique-erc/list']
                     },
                 ]
               },
@@ -1592,17 +1592,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Type utilisateur',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Type utilisateur',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/type-utilisateur/list']
-                    },
-                ]
-              },
-              {
                 label: 'Identifiant recherche',
                 icon: 'pi pi-wallet',
                 items:[
@@ -1610,6 +1599,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Identifiant recherche',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/identifiant-recherche/list']
+                    },
+                ]
+              },
+              {
+                label: 'Type utilisateur',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Type utilisateur',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/type-utilisateur/list']
                     },
                 ]
               },
@@ -1905,17 +1905,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Caracterisation',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Caracterisation',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/caracterisation/list']
-                    },
-                ]
-              },
-              {
                 label: 'Vie institutionnelle detail',
                 icon: 'pi pi-wallet',
                 items:[
@@ -1923,6 +1912,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Vie institutionnelle detail',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/vie-institutionnelle-detail/list']
+                    },
+                ]
+              },
+              {
+                label: 'Caracterisation',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Caracterisation',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/caracterisation/list']
                     },
                 ]
               },
@@ -2432,17 +2432,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Formation continue publique professionel',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Formation continue publique professionel',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/chercheur/formation-continue-publique-professionel/list']
-                    },
-                ]
-              },
-              {
                 label: 'Ville',
                 icon: 'pi pi-wallet',
                 items:[
@@ -2450,6 +2439,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Ville',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/chercheur/ville/list']
+                    },
+                ]
+              },
+              {
+                label: 'Formation continue publique professionel',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Formation continue publique professionel',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/chercheur/formation-continue-publique-professionel/list']
                     },
                 ]
               },
@@ -2633,17 +2633,6 @@ export class AppMenuComponent implements OnInit {
     this.modeladmin =
       [
               {
-                label: 'Projet activite recherche detail instrument ird',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Projet activite recherche detail instrument ird',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/projet-activite-recherche-detail-instrument-ird/list']
-                    },
-                ]
-              },
-              {
                 label: 'Fournisseur appel projet recherche',
                 icon: 'pi pi-wallet',
                 items:[
@@ -2651,6 +2640,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Fournisseur appel projet recherche',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/fournisseur-appel-projet-recherche/list']
+                    },
+                ]
+              },
+              {
+                label: 'Projet activite recherche detail instrument ird',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Projet activite recherche detail instrument ird',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/projet-activite-recherche-detail-instrument-ird/list']
                     },
                 ]
               },
@@ -3298,17 +3298,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Mode diffusion',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Mode diffusion',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/mode-diffusion/list']
-                    },
-                ]
-              },
-              {
                 label: 'Developpement de savoir et innovation scientifique mode diffusion',
                 icon: 'pi pi-wallet',
                 items:[
@@ -3316,6 +3305,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Developpement de savoir et innovation scientifique mode diffusion',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/developpement-de-savoir-et-innovation-scientifique-mode-diffusion/list']
+                    },
+                ]
+              },
+              {
+                label: 'Mode diffusion',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Mode diffusion',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/mode-diffusion/list']
                     },
                 ]
               },
@@ -3512,17 +3512,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Discipline scientifique',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Discipline scientifique',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/discipline-scientifique/list']
-                    },
-                ]
-              },
-              {
                 label: 'Rencontre media',
                 icon: 'pi pi-wallet',
                 items:[
@@ -3530,6 +3519,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Rencontre media',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/rencontre-media/list']
+                    },
+                ]
+              },
+              {
+                label: 'Discipline scientifique',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Discipline scientifique',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/discipline-scientifique/list']
                     },
                 ]
               },
@@ -3797,17 +3797,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Pays formation continue',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Pays formation continue',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/pays-formation-continue/list']
-                    },
-                ]
-              },
-              {
                 label: 'Semantic relationship',
                 icon: 'pi pi-wallet',
                 items:[
@@ -3815,6 +3804,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Semantic relationship',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/semantic-relationship/list']
+                    },
+                ]
+              },
+              {
+                label: 'Pays formation continue',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Pays formation continue',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/pays-formation-continue/list']
                     },
                 ]
               },
@@ -4093,6 +4093,17 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
+                label: 'Discipline scientifique erc',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Discipline scientifique erc',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/discipline-scientifique-erc/list']
+                    },
+                ]
+              },
+              {
                 label: 'Enseignement et formation',
                 icon: 'pi pi-wallet',
                 items:[
@@ -4105,17 +4116,6 @@ export class AppMenuComponent implements OnInit {
                       label: 'Nouveau Enseignement et formation',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/enseignement-et-formation/create']
-                    },
-                ]
-              },
-              {
-                label: 'Discipline scientifique erc',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Discipline scientifique erc',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/discipline-scientifique-erc/list']
                     },
                 ]
               },
@@ -4153,17 +4153,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Type utilisateur',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Type utilisateur',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/type-utilisateur/list']
-                    },
-                ]
-              },
-              {
                 label: 'Identifiant recherche',
                 icon: 'pi pi-wallet',
                 items:[
@@ -4171,6 +4160,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Identifiant recherche',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/identifiant-recherche/list']
+                    },
+                ]
+              },
+              {
+                label: 'Type utilisateur',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Type utilisateur',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/type-utilisateur/list']
                     },
                 ]
               },
@@ -4466,17 +4466,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Caracterisation',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Caracterisation',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/caracterisation/list']
-                    },
-                ]
-              },
-              {
                 label: 'Vie institutionnelle detail',
                 icon: 'pi pi-wallet',
                 items:[
@@ -4484,6 +4473,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Vie institutionnelle detail',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/vie-institutionnelle-detail/list']
+                    },
+                ]
+              },
+              {
+                label: 'Caracterisation',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Caracterisation',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/caracterisation/list']
                     },
                 ]
               },
@@ -4993,17 +4993,6 @@ export class AppMenuComponent implements OnInit {
                 ]
               },
               {
-                label: 'Formation continue publique professionel',
-                icon: 'pi pi-wallet',
-                items:[
-                    {
-                      label: 'Liste Formation continue publique professionel',
-                      icon: 'pi pi-fw pi-plus-circle',
-                      routerLink: ['/app/admin/formation-continue-publique-professionel/list']
-                    },
-                ]
-              },
-              {
                 label: 'Ville',
                 icon: 'pi pi-wallet',
                 items:[
@@ -5011,6 +5000,17 @@ export class AppMenuComponent implements OnInit {
                       label: 'Liste Ville',
                       icon: 'pi pi-fw pi-plus-circle',
                       routerLink: ['/app/admin/ville/list']
+                    },
+                ]
+              },
+              {
+                label: 'Formation continue publique professionel',
+                icon: 'pi pi-wallet',
+                items:[
+                    {
+                      label: 'Liste Formation continue publique professionel',
+                      icon: 'pi pi-fw pi-plus-circle',
+                      routerLink: ['/app/admin/formation-continue-publique-professionel/list']
                     },
                 ]
               },

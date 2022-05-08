@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {NatureEnseignementVo} from '../../../../../controller/model/NatureEnseignement.model';
-import {NatureEnseignementService} from '../../../../../controller/service/NatureEnseignement.service';
 import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
 import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
+import {NatureEnseignementVo} from '../../../../../controller/model/NatureEnseignement.model';
+import {NatureEnseignementService} from '../../../../../controller/service/NatureEnseignement.service';
 @Component({
   selector: 'app-enseignement-nature-create-chercheur',
   templateUrl: './enseignement-nature-create-chercheur.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private enseignementNatureService: Ensei
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private natureEnseignementService :NatureEnseignementService
 ,       private enseignementService :EnseignementService
+,       private natureEnseignementService :NatureEnseignementService
 ) {
 
 }

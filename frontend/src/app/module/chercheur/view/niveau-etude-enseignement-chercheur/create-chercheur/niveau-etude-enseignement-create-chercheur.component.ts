@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {NiveauEtudeVo} from '../../../../../controller/model/NiveauEtude.model';
-import {NiveauEtudeService} from '../../../../../controller/service/NiveauEtude.service';
 import {EnseignementVo} from '../../../../../controller/model/Enseignement.model';
 import {EnseignementService} from '../../../../../controller/service/Enseignement.service';
+import {NiveauEtudeVo} from '../../../../../controller/model/NiveauEtude.model';
+import {NiveauEtudeService} from '../../../../../controller/service/NiveauEtude.service';
 @Component({
   selector: 'app-niveau-etude-enseignement-create-chercheur',
   templateUrl: './niveau-etude-enseignement-create-chercheur.component.html',
@@ -44,8 +44,8 @@ constructor(private datePipe: DatePipe, private niveauEtudeEnseignementService: 
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private niveauEtudeService :NiveauEtudeService
 ,       private enseignementService :EnseignementService
+,       private niveauEtudeService :NiveauEtudeService
 ) {
 
 }

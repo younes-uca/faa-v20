@@ -25,7 +25,5 @@ public interface OutilPedagogiqueDao extends JpaRepository<OutilPedagogique,Long
 
     int deleteByEtatEtapeCampagneId(Long id);
 
-    List<OutilPedagogique> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
-    List<OutilPedagogique> findByChercheurUsername(String username);
 
 }

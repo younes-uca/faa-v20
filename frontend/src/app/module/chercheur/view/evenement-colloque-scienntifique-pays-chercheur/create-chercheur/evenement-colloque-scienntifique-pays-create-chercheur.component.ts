@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {PaysVo} from '../../../../../controller/model/Pays.model';
-import {PaysService} from '../../../../../controller/service/Pays.service';
 import {EvenementColloqueScienntifiqueVo} from '../../../../../controller/model/EvenementColloqueScienntifique.model';
 import {EvenementColloqueScienntifiqueService} from '../../../../../controller/service/EvenementColloqueScienntifique.service';
+import {PaysVo} from '../../../../../controller/model/Pays.model';
+import {PaysService} from '../../../../../controller/service/Pays.service';
 @Component({
   selector: 'app-evenement-colloque-scienntifique-pays-create-chercheur',
   templateUrl: './evenement-colloque-scienntifique-pays-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private evenementColloqueScienntifiquePa
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private paysService :PaysService
 ,       private evenementColloqueScienntifiqueService :EvenementColloqueScienntifiqueService
+,       private paysService :PaysService
 ) {
 
 }

@@ -40,7 +40,6 @@ public interface RencontreMediaChercheurService extends AbstractService<Rencontr
 
 
 
-   public List<RencontreMedia> findByChercheurUsernameAndCampagneId(String username, Long compagneId);
 
 
 

@@ -144,9 +144,5 @@ private ComiteEtCommissionEvaluationConverter comiteEtCommissionEvaluationConver
         }
 
 
-            @GetMapping("/username/{username}/id/{compagneId}")
-            public List<ComiteEtCommissionEvaluationVo> findByChercheurUsernameAndCampagneId(@PathVariable String username,@PathVariable Long compagneId){
-            return comiteEtCommissionEvaluationConverter.toVo(comiteEtCommissionEvaluationService.findByChercheurUsernameAndCampagneId(username,compagneId));
-            }
 
             }

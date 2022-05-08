@@ -161,9 +161,5 @@ private CampagneConverter campagneConverter;
             return campagneConverter.toVo(campagneService.findProgressCampagneByChercheurUsername(username));
             }
 
-            @GetMapping("/username/{username}/id/{compagneId}")
-            public List<CampagneVo> findByChercheurUsernameAndCampagneId(@PathVariable String username,@PathVariable Long compagneId){
-            return campagneConverter.toVo(campagneService.findByChercheurUsernameAndCampagneId(username,compagneId));
-            }
 
             }

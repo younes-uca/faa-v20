@@ -10,12 +10,12 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {CampagneVo} from '../../../../../controller/model/Campagne.model';
-import {CampagneService} from '../../../../../controller/service/Campagne.service';
-import {EtatCampagneChercheurVo} from '../../../../../controller/model/EtatCampagneChercheur.model';
-import {EtatCampagneChercheurService} from '../../../../../controller/service/EtatCampagneChercheur.service';
 import {ChercheurVo} from '../../../../../controller/model/Chercheur.model';
 import {ChercheurService} from '../../../../../controller/service/Chercheur.service';
+import {EtatCampagneChercheurVo} from '../../../../../controller/model/EtatCampagneChercheur.model';
+import {EtatCampagneChercheurService} from '../../../../../controller/service/EtatCampagneChercheur.service';
+import {CampagneVo} from '../../../../../controller/model/Campagne.model';
+import {CampagneService} from '../../../../../controller/service/Campagne.service';
 @Component({
   selector: 'app-campagne-chercheur-ouverture-create-admin',
   templateUrl: './campagne-chercheur-ouverture-create-admin.component.html',
@@ -39,9 +39,9 @@ constructor(private datePipe: DatePipe, private campagneChercheurOuvertureServic
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private campagneService :CampagneService
-,       private etatCampagneChercheurService :EtatCampagneChercheurService
 ,       private chercheurService :ChercheurService
+,       private etatCampagneChercheurService :EtatCampagneChercheurService
+,       private campagneService :CampagneService
 ) {
 
 }

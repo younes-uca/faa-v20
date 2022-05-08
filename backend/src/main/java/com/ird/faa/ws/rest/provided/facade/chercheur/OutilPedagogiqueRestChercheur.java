@@ -120,9 +120,5 @@ private OutilPedagogiqueConverter outilPedagogiqueConverter;
         }
 
 
-            @GetMapping("/username/{username}/id/{compagneId}")
-            public List<OutilPedagogiqueVo> findByChercheurUsernameAndCampagneId(@PathVariable String username,@PathVariable Long compagneId){
-            return outilPedagogiqueConverter.toVo(outilPedagogiqueService.findByChercheurUsernameAndCampagneId(username,compagneId));
-            }
 
             }

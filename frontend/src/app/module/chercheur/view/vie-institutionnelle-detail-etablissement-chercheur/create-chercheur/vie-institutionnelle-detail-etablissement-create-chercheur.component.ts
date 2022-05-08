@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
-import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 import {VieInstitutionnelleDetailVo} from '../../../../../controller/model/VieInstitutionnelleDetail.model';
 import {VieInstitutionnelleDetailService} from '../../../../../controller/service/VieInstitutionnelleDetail.service';
+import {EtablissementVo} from '../../../../../controller/model/Etablissement.model';
+import {EtablissementService} from '../../../../../controller/service/Etablissement.service';
 @Component({
   selector: 'app-vie-institutionnelle-detail-etablissement-create-chercheur',
   templateUrl: './vie-institutionnelle-detail-etablissement-create-chercheur.component.html',
@@ -35,8 +35,8 @@ constructor(private datePipe: DatePipe, private vieInstitutionnelleDetailEtablis
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private etablissementService :EtablissementService
 ,       private vieInstitutionnelleDetailService :VieInstitutionnelleDetailService
+,       private etablissementService :EtablissementService
 ) {
 
 }

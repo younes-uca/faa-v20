@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
-import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 import {RencontreGrandPubliqueJeunePubliqueVo} from '../../../../../controller/model/RencontreGrandPubliqueJeunePublique.model';
 import {RencontreGrandPubliqueJeunePubliqueService} from '../../../../../controller/service/RencontreGrandPubliqueJeunePublique.service';
+import {TypeInstrumentIrdVo} from '../../../../../controller/model/TypeInstrumentIrd.model';
+import {TypeInstrumentIrdService} from '../../../../../controller/service/TypeInstrumentIrd.service';
 @Component({
   selector: 'app-rencontre-grand-publique-jeune-publique-type-instrument-ird-create-chercheur',
   templateUrl: './rencontre-grand-publique-jeune-publique-type-instrument-ird-create-chercheur.component.html',
@@ -36,8 +36,8 @@ constructor(private datePipe: DatePipe, private rencontreGrandPubliqueJeunePubli
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ,       private rencontreGrandPubliqueJeunePubliqueService :RencontreGrandPubliqueJeunePubliqueService
+,       private typeInstrumentIrdService :TypeInstrumentIrdService
 ) {
 
 }

@@ -10,10 +10,10 @@ import {DatePipe} from '@angular/common';
 import {StringUtilService} from '../../../../../controller/service/StringUtil.service';
 
 
-import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
-import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 import {RoleEvaluationVo} from '../../../../../controller/model/RoleEvaluation.model';
 import {RoleEvaluationService} from '../../../../../controller/service/RoleEvaluation.service';
+import {ComiteEtCommissionEvaluationVo} from '../../../../../controller/model/ComiteEtCommissionEvaluation.model';
+import {ComiteEtCommissionEvaluationService} from '../../../../../controller/service/ComiteEtCommissionEvaluation.service';
 @Component({
   selector: 'app-role-comite-et-commission-evaluation-create-admin',
   templateUrl: './role-comite-et-commission-evaluation-create-admin.component.html',
@@ -46,8 +46,8 @@ constructor(private datePipe: DatePipe, private roleComiteEtCommissionEvaluation
  ,       private messageService: MessageService
  ,       private router: Router
  
-,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ,       private roleEvaluationService :RoleEvaluationService
+,       private comiteEtCommissionEvaluationService :ComiteEtCommissionEvaluationService
 ) {
 
 }
