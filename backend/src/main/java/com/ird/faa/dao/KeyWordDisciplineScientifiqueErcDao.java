@@ -11,9 +11,6 @@ import com.ird.faa.bean.KeyWordDisciplineScientifiqueErc;
 public interface KeyWordDisciplineScientifiqueErcDao extends JpaRepository<KeyWordDisciplineScientifiqueErc,Long> {
 
 
-
-
-
     List<KeyWordDisciplineScientifiqueErc> findByKeyWordCode(String code);
     int deleteByKeyWordCode(String code);
 

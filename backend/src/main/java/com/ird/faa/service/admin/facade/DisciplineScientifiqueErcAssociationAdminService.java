@@ -4,6 +4,7 @@ import java.util.List;
 import com.ird.faa.bean.DisciplineScientifiqueErcAssociation;
 import com.ird.faa.ws.rest.provided.vo.DisciplineScientifiqueErcAssociationVo;
 import com.ird.faa.service.core.facade.AbstractService;
+import org.springframework.data.jpa.repository.Query;
 
 public interface DisciplineScientifiqueErcAssociationAdminService extends AbstractService<DisciplineScientifiqueErcAssociation,Long,DisciplineScientifiqueErcAssociationVo>{
 
@@ -16,6 +17,8 @@ public interface DisciplineScientifiqueErcAssociationAdminService extends Abstra
     *
     */
     int deleteById(Long id);
+
+//    @Query("SELECT ")
 
 
     List<DisciplineScientifiqueErcAssociation> findByDisciplineScientifiqueErcCode(String code);

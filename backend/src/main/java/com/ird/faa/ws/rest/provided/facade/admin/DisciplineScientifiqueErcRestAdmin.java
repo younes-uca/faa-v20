@@ -27,11 +27,12 @@ public class DisciplineScientifiqueErcRestAdmin {
 @Autowired
 private DisciplineScientifiqueErcAdminService disciplineScientifiqueErcService;
 
+
 @Autowired
 private DisciplineScientifiqueErcConverter disciplineScientifiqueErcConverter;
 
 
-            @ApiOperation("Updates the specified  disciplineScientifiqueErc")
+    @ApiOperation("Updates the specified  disciplineScientifiqueErc")
             @PutMapping("/")
             public  DisciplineScientifiqueErcVo update(@RequestBody  DisciplineScientifiqueErcVo  disciplineScientifiqueErcVo){
             DisciplineScientifiqueErc disciplineScientifiqueErc = disciplineScientifiqueErcConverter.toItem(disciplineScientifiqueErcVo);
@@ -44,6 +45,7 @@ private DisciplineScientifiqueErcConverter disciplineScientifiqueErcConverter;
     public List<DisciplineScientifiqueErcVo> findAll(){
         return disciplineScientifiqueErcConverter.toVo(disciplineScientifiqueErcService.findAll());
     }
+
 
     @ApiOperation("Finds a disciplineScientifiqueErc with associated lists by id")
     @GetMapping("/detail/id/{id}")

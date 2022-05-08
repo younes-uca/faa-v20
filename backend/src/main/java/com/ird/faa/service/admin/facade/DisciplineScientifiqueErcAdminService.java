@@ -7,6 +7,8 @@ import com.ird.faa.service.core.facade.AbstractService;
 
 public interface DisciplineScientifiqueErcAdminService extends AbstractService<DisciplineScientifiqueErc,Long,DisciplineScientifiqueErcVo>{
 
+//    List<SearchComboListV2> findDisciplineScientifiqueERCForDisciplineScientifique();
+
 
     /**
     * find DisciplineScientifiqueErc from database by code (reference)

@@ -24,8 +24,10 @@ import com.ird.faa.service.chercheur.facade.EtatCampagneChercheurService;
 import com.ird.faa.bean.EtatCampagne;
 import com.ird.faa.service.chercheur.facade.EtatCampagneChercheurChercheurService;
 import com.ird.faa.bean.EtatCampagneChercheur;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class FaaApplication {
 public static ConfigurableApplicationContext ctx;
 
@@ -41,7 +43,7 @@ return ctx;
 public CommandLineRunner demo(UserService userService, RoleService roleService
 , EtatReclamationChercheurService etatReclamationChercheurService, EtatEtapeCampagneChercheurService etatEtapeCampagneChercheurService, EtatCampagneChercheurService etatCampagneChercheurService, EtatCampagneChercheurChercheurService etatCampagneChercheurChercheurService) {
 return (args) -> {
-if(true){
+if(false){
     Map<String,String> etats=new HashMap<>();
     etats.put("Initialisé","initialise");
     etats.put("En cours","encours");

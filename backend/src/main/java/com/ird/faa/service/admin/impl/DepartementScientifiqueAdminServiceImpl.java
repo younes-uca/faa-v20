@@ -44,6 +44,9 @@ public List<DepartementScientifique> findAll(){
     return departementScientifiqueDao.findByCode(code);
     }
 
+
+
+
     @Override
     @Transactional
     public int deleteByCode(String  code) {

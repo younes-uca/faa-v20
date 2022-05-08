@@ -39,6 +39,12 @@ private Long id;
     private DisciplineScientifiqueErc disciplineScientifiqueErc ;
     @ManyToOne
     private DisciplineScientifique disciplineScientifique ;
+
+    /*
+    *
+    *
+    *
+    * */
     @ManyToOne
     private SemanticRelationship semanticRelationship ;
 
